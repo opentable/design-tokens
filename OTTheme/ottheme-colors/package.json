@@ -1,0 +1,13 @@
+{
+  "name": "ottheme-colors",
+  "version": "1.0.0",
+  "description": "OpenTable colors design token",
+  "author": {
+    "name": "Nick Balestra",
+    "email": "nick@balestra.ch"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT"
+}
