@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "lerna": "^2.0.0",
+    "theo": "^6.0.0-alpha.7"
+  },
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "clean": "lerna clean",
+    "publish": "lerna publish"
+  }
+}
