@@ -1,3 +1,11 @@
 props:
   spacing-xsmall:
     value: "0.25rem"
+  spacing-small:
+    value: "0.5rem"
+  spacing-medium:
+    value: "1rem"
+  spacing-large:
+    value: "2rem"
+  spacing-xlarge:
+    value: "4rem"
