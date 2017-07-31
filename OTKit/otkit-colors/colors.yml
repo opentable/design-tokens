@@ -1,3 +1,15 @@
 props:
-  # TODO
+  primary-action:
+    value: "#F91F14"
   
+  secondary-action:
+    value: "#E81106"
+    
+  primary-gray:
+    value: "#333333"
+    
+  secondary-gray:
+    value: "#717171"
+    
+  utility-gray:
+    value: "#E1E1E1"
