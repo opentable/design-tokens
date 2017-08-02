@@ -5,7 +5,9 @@
     "theo": "^6.0.0-alpha.7"
   },
   "scripts": {
-    "build": "lerna exec --scope ottheme-* otdt-scripts build scss",
+    "ottheme-build": "lerna exec --scope ottheme-* otdt-scripts build scss",
+    "otkit-build": "lerna exec --scope otkit-* otdt-scripts build cssmodules",
+    "build": "npm run otkit-build && npm run ottheme-build",
     "postinstall": "lerna bootstrap",
     "clean": "lerna clean",
     "publish": "lerna publish"
