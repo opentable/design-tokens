@@ -1,9 +1,11 @@
 {
   "devDependencies": {
     "lerna": "^2.0.0",
+    "ot-design-token-scripts": "file:./tools/ot-design-token-scripts",
     "theo": "^6.0.0-alpha.7"
   },
   "scripts": {
+    "build": "lerna exec --scope ottheme-* otdt-scripts build scss",
     "postinstall": "lerna bootstrap",
     "clean": "lerna clean",
     "publish": "lerna publish"
