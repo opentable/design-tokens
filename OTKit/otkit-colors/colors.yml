@@ -11,7 +11,7 @@ props:
     value: "#FB665F"
   
   color-primary-disabled:
-    value: "rgba(#F91F14, 0.40)"
+    value: "rgba(249, 31, 20, 0.40)"
   
   # Secondary Action
   # This color is only to be used on text sizes below 24px for actionable content (tabs, links, underlines, points)
@@ -24,24 +24,24 @@ props:
     value: "#FA4940"
   
   color-secondary-disabled:
-    value: "rgba(#E81106, 0.40)"
+    value: "rgba(216, 216, 216, 0.40)"
   
   # Primary Gray, used on all text sizes 
   # =============================================
   
-  color-primary-gray:
+  color-gray-primary:
     value: "#333333"
   
   # Secondary Gray, used on smaller font sizes 
   # =============================================
   
-  color-secondary-gray:
+  color-gray-secondary:
     value: "#717171"
   
   # Utility Gray, used for borders, dividers, containers 
   # =============================================
   
-  color-utility-gray:
+  color-gray-utility:
     value: "#E1E1E1"
   
   global:
