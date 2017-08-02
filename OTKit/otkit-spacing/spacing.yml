@@ -1,7 +1,5 @@
 props:
-  spacing:
-    value: "1rem"
-  
+
   spacing-xsmall:
     value: "0.25rem"  
 
