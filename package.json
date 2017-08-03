@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "lerna": "^2.0.0",
-    "theo-cli": "file:./tools/theo-cli"
+    "theo-cli": "^0.0.2"
   },
   "scripts": {
     "ottheme-build": "lerna exec --scope ottheme-* theo scss",
