@@ -44,6 +44,6 @@ props:
   color-gray-utility:
     value: "#E1E1E1"
   
-  global:
-    type: "color"
-    category: "colors"
+global:
+  type: "color"
+  category: "colors"
