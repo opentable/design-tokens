@@ -93,10 +93,8 @@ Typically you'll use this in your [npm scripts](https://docs.npmjs.com/misc/scri
 the following result will be printed on your terminal:
 
 ```
-✏️  scss tokens created at "yourToken/dist/index.scss"
-✏️  cssmodules.css tokens created at "yourToken/dist/index.cssmodules.css"
-✏️  cssmodules.css tokens created at "yourToken/dist/index.cssmodules.css"
-✏️  scss tokens created at "yourToken/dist/index.scss"
+✏️  scss tokens created at "yourToken/token.scss"
+✏️  cssmodules.css tokens created at "yourToken/token.cssmodules.css"
 ```
 
 ## MonoRepo with Lerna
