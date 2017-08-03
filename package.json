@@ -5,6 +5,8 @@
   },
   "scripts": {
     "ottheme-build": "lerna exec --scope ottheme-* theo scss",
+    "otkit-build": "lerna exec --scope otkit-* theo cssmodules.css",
+    "build": "npm run ottheme-build && npm run otkit-build",
     "postinstall": "lerna bootstrap",
     "clean": "lerna clean",
     "publish": "lerna publish"
