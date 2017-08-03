@@ -16,3 +16,11 @@ Design-tokens used by OpenTable systems:
 |--------|-------|-------|
 | [`ottheme-colors`](/OTTheme/ottheme-colors) | `scss` | [![npm version](https://badge.fury.io/js/ottheme-colors.svg)](http://badge.fury.io/js/ottheme-colors) |
 | [`ottheme-spacing`](/OTTheme/ottheme-spacing) | `scss` | [![npm version](https://badge.fury.io/js/ottheme-spacing.svg)](http://badge.fury.io/js/ottheme-spacing) |
+
+***
+
+## Tools:
+
+| Package | Description | Version |
+|--------|-------|-------|
+| [`theo-cli`](/tools/theo-cli) | CLI for [Theo](https://github.com/salesforce-ux/theo) | [![npm version](https://badge.fury.io/js/theo-cli.svg)](http://badge.fury.io/js/theo-cli) |
