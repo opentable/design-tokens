@@ -1,13 +1,10 @@
 {
   "devDependencies": {
     "lerna": "^2.0.0",
-    "ot-design-token-scripts": "file:./tools/ot-design-token-scripts",
-    "theo": "^6.0.0-alpha.7"
+    "theo-cli": "file:./tools/theo-cli"
   },
   "scripts": {
-    "ottheme-build": "lerna exec --scope ottheme-* otdt-scripts build scss",
-    "otkit-build": "lerna exec --scope otkit-* otdt-scripts build cssmodules",
-    "build": "npm run otkit-build && npm run ottheme-build",
+    "ottheme-build": "lerna exec --scope ottheme-* theo scss",
     "postinstall": "lerna bootstrap",
     "clean": "lerna clean",
     "publish": "lerna publish"
