@@ -34,8 +34,7 @@ and it will generate the following build structure:
 yourToken/
 ├── node_modules/
 ├── token.yml
-├── dist/
-│   └── index.<theo-format>
+├── token.<format>
 └── package.json
 ```
 
@@ -74,8 +73,8 @@ $ theo scss cssmodules.css
 |Name|Description|Default|
 |----|-----------|-------|
 |`--path` \| `-p` |The absolute path where source token is located|`process.cwd`|
-|`--dist` \| `-d` |The relative path where to generate the build|`dist/`|
-|`--output` \| `-o` |The output filename|`index.<format>` |
+|`--dist` \| `-d` |The relative path where to generate the build|`.`|
+|`--output` \| `-o` |The output filename|`token.<format>` |
 |`--src` \| `-s` |The src file|`token.yml` |
 
 
