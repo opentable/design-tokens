@@ -6,8 +6,13 @@
     "name": "Nick Balestra",
     "email": "nick@balestra.ch"
   },
-  "files": [
-    "dist"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opentable/design-tokens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/opentable/design-tokens/issues"
+  },
+  "homepage": "https://github.com/opentable/design-tokens/tree/master/OTTheme/ottheme-colors#readme",
   "license": "MIT"
 }

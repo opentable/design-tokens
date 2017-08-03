@@ -34,8 +34,7 @@ and it will generate the following build structure:
 yourToken/
 ├── node_modules/
 ├── token.yml
-├── dist/
-│   └── index.<theo-format>
+├── token.<format>
 └── package.json
 ```
 
@@ -74,8 +73,8 @@ $ theo scss cssmodules.css
 |Name|Description|Default|
 |----|-----------|-------|
 |`--path` \| `-p` |The absolute path where source token is located|`process.cwd`|
-|`--dist` \| `-d` |The relative path where to generate the build|`dist/`|
-|`--output` \| `-o` |The output filename|`index.<format>` |
+|`--dist` \| `-d` |The relative path where to generate the build|`.`|
+|`--output` \| `-o` |The output filename|`token.<format>` |
 |`--src` \| `-s` |The src file|`token.yml` |
 
 
@@ -94,10 +93,8 @@ Typically you'll use this in your [npm scripts](https://docs.npmjs.com/misc/scri
 the following result will be printed on your terminal:
 
 ```
-✏️  scss tokens created at "yourToken/dist/index.scss"
-✏️  cssmodules.css tokens created at "yourToken/dist/index.cssmodules.css"
-✏️  cssmodules.css tokens created at "yourToken/dist/index.cssmodules.css"
-✏️  scss tokens created at "yourToken/dist/index.scss"
+✏️  scss tokens created at "yourToken/token.scss"
+✏️  cssmodules.css tokens created at "yourToken/token.cssmodules.css"
 ```
 
 ## MonoRepo with Lerna

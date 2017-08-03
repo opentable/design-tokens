@@ -7,8 +7,8 @@ const argv = require('optimist').argv;
 
 const formats = argv._;
 const packagePath = argv.path || argv.p || process.cwd();
-const distPath = argv.dist || argv.d || 'dist';
-const fileName = argv.output || argv.o || 'index';
+const distPath = argv.dist || argv.d || '.';
+const fileName = argv.output || argv.o || 'token';
 const source = argv.src || argv.s || 'token.yml';
 
 fs.emptyDir(path.join(packagePath, 'dist'))
