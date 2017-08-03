@@ -2,7 +2,7 @@
 
 Design-tokens used by OpenTable systems:
 
-## [OTKit - OpenTable kit tokens]((/OTKit))
+## [OTKit - OpenTable kit tokens](/OTKit)
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
