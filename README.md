@@ -2,7 +2,7 @@
 
 Design-tokens used by OpenTable systems:
 
-## OTKit - OpenTable kit tokens
+## [OTKit - OpenTable kit tokens]((/OTKit))
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
@@ -10,7 +10,7 @@ Design-tokens used by OpenTable systems:
 | [`otkit-spacing`](/OTKit/otkit-spacing) | `css-modules` | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing) |
 
 
-## OTTheme - OpenTable theme tokens
+## [OTTheme - OpenTable theme tokens](/OTTheme)
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
