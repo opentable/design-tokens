@@ -4,8 +4,8 @@
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
-| [`otkit-colors`](/OTKit/otkit-colors) | `cssmodules.css` | [![npm version](https://badge.fury.io/js/otkit-colors.svg)](http://badge.fury.io/js/otkit-colors) |
-| [`otkit-spacing`](/OTKit/otkit-spacing) | `cssmodules.css` | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing) |
+| [`otkit-colors`](/OTKit/otkit-colors) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-colors.svg)](http://badge.fury.io/js/otkit-colors) |
+| [`otkit-spacing`](/OTKit/otkit-spacing) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing) |
 
 ***
 

@@ -4,8 +4,8 @@
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
-| [`ottheme-colors`](/OTTheme/ottheme-colors) | `scss` | [![npm version](https://badge.fury.io/js/ottheme-colors.svg)](http://badge.fury.io/js/ottheme-colors) |
-| [`ottheme-spacing`](/OTTheme/ottheme-spacing) | `scss` | [![npm version](https://badge.fury.io/js/ottheme-spacing.svg)](http://badge.fury.io/js/ottheme-spacing) |
+| [`ottheme-colors`](/OTTheme/ottheme-colors) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/ottheme-colors.svg)](http://badge.fury.io/js/ottheme-colors) |
+| [`ottheme-spacing`](/OTTheme/ottheme-spacing) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/ottheme-spacing.svg)](http://badge.fury.io/js/ottheme-spacing) |
 
 ***
 
