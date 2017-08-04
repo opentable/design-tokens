@@ -1,41 +1,43 @@
 props:
   spacing:
-    value: &spacing-value "1rem"
+    value: "{!spacing}"
   spacing-xxsmall:
-    value: "0.25rem"
+    value: "{!spacing-xxsmall}"
   spacing-small:
-    value: "0.5rem"
+    value: "{!spacing-small}"
   spacing-smaller:
-    value: "0.75rem"
+    value: "{!spacing-smaller}"
   spacing-medium:
-    value: "1.5rem"
+    value: "{!spacing-medium}"
   spacing-xmedium:
-    value: "1.75rem"
+    value: "{!spacing-xmedium}"
   spacing-large:
-    value: "2rem"
+    value: "{!spacing-large}"
   spacing-xlarge:
-    value: "2.2rem"
+    value: "{!spacing-xlarge}"
   spacing-xxlarge:
-    value: "3rem"
+    value: "{!spacing-xxlarge}"
   spacing-xxxlarge:
-    value: "4rem"
+    value: "{!spacing-xxxlarge}"
 
   spacing-list:
-    value: "0.8rem"
+    value: "{!spacing-list}"
 
   column-spacing:
-    value: "1rem"
+    value: "{!column-spacing}"
   column-gutter:
-    value: "2rem"
+    value: "{!column-gutter}"
   column-padding-tablet:
-    value: "1.25rem"
+    value: "{!column-padding-tablet}"
   container-max-width:
-    value: "100rem"
+    value: "{!container-max-width}"
   row-max-width:
-    value: "80rem"
+    value: "{!row-max-width}"
   base-line-height:
-    value: "150%"
+    value: "{!base-line-height}"
 
+imports:
+  - ../aliases.yml
 
 global:
   type: "spacing"

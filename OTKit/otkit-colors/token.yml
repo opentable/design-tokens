@@ -1,49 +1,26 @@
 props:
-
-  # Primary Action
-  # This is only used on objects, backgrounds with large text (24px or larger, bold), and will be used as a color to guide users towards actionable content.
-  # =============================================
-  
   color-primary:
-    value: "#F91F14"
-  
+    value: "{!color-primary}"
   color-primary-active:
-    value: "#FB665F"
-  
+    value: "{!color-primary-active}"
   color-primary-disabled:
-    value: "rgba(249, 31, 20, 0.40)"
-  
-  # Secondary Action
-  # This color is only to be used on text sizes below 24px for actionable content (tabs, links, underlines, points)
-  # =============================================
-  
+    value: "{!color-primary-disabled}"
   color-secondary:
-    value: "#E81106"
-  
+    value: "{!color-secondary}"
   color-secondary-active:
-    value: "#FA4940"
-  
+    value: "{!color-secondary-active}"
   color-secondary-disabled:
-    value: "rgba(216, 216, 216, 0.40)"
-  
-  # Primary Gray, used on all text sizes 
-  # =============================================
-  
+    value: "{!color-secondary-disabled}"
   color-gray-primary:
-    value: "#333333"
-  
-  # Secondary Gray, used on smaller font sizes 
-  # =============================================
-  
+    value: "{!color-gray-primary}"
   color-gray-secondary:
-    value: "#717171"
-  
-  # Utility Gray, used for borders, dividers, containers 
-  # =============================================
-  
+    value: "{!color-gray-secondary}"
   color-gray-utility:
-    value: "#E1E1E1"
-  
+    value: "{!color-gray-utility}"
+
+imports:
+  - ../aliases.yml
+
 global:
   type: "color"
   category: "colors"

@@ -1,19 +1,17 @@
 props:
-
   spacing-xsmall:
-    value: "0.25rem"  
-
+    value: "{!spacing-xsmall}"
   spacing-small:
-    value: "0.5rem"
-  
+    value: "{!spacing-small}"
   spacing-medium:
-    value: "1rem"
-  
+    value: "{!spacing-medium}"
   spacing-large:
-    value: "2rem"
-    
+    value: "{!spacing-large}"
   spacing-xlarge:
-    value: "4rem"
+    value: "{!spacing-xlarge}"
+
+imports:
+  - ../aliases.yml
 
 global:
   type: "spacing"

@@ -1,138 +1,140 @@
 props:
   color-white:
-    value: &color-white-value "#FFFFFF"
+    value: "{!color-white}"
 
   # Reds
   # =============================================
   color-brand-red:
-    value: &color-brand-red-value "#DA3743"
+    value: "{!color-brand-red}"
   color-early-girl:
-    value: "#DA3743"
+    value: "{!color-brand-red}"
   color-caspian-pink:
-    value: "#E5656E"
+    value: "{!color-caspian-pink}"
   color-black-cherry:
-    value: &color-black-cherry-value "#811520"
+    value: "{!color-black-cherry}"
   
   # Blues (mainly used for restaurant businesses)
   # =============================================
   color-brand-blue:
-    value: &color-brand-blue-value "#237B98"
+    value: "{!color-brand-blue}"
   color-blueberry:
-    value: "#60B2D0"
+    value: "{!color-blueberry}"
   color-huckleberry:
-    value: "#B1D9E7"
+    value: "{!color-huckleberry}"
   color-juneberry:
-    value: &color-juneberry-value "#356273"
+    value: "{!color-juneberry}"
 
   # Taupes
   # =============================================
   color-cashew:
-    value: "#F3F2F1"
+    value: "{!color-cashew}"
   color-macadamia:
-    value: "#DBD9D5"
+    value: "{!color-macadamia}"
   color-almond:
-    value: "#C4BFB9"
+    value: "{!color-almond}"
   
   # Greys
   # =============================================
   color-light-gray:
-    value: "#ECECEC"
+    value: "{!color-light-gray}"
   color-mid-gray:
-    value: "#CCCCCC"
+    value: "{!color-mid-gray}"
   color-light-silver:
-    value: "#ACACAC"
+    value: "{!color-light-silver}"
   color-dark-gray:
-    value: "#878787"
+    value: "{!color-dark-gray}"
   color-silver:
-    value: &color-silver-value "#666666"
+    value: "{!color-silver}"
   color-granite:
-    value: "#444444"
+    value: "{!color-granite}"
   color-chalkboard:
-    value: &color-chalkboard-value "#333333"
+    value: "{!color-chalkboard}"
 
   # Colors (primary palette)
   # =============================================
   color-primary:
-    value: *color-brand-red-value
+    value: "{!color-brand-red}"
   color-primary-darker:
-    value: *color-black-cherry-value
+    value: "{!color-black-cherry}"
   color-secondary:
-    value: *color-brand-blue-value
+    value: "{!color-brand-blue}"
   color-secondary-darker:
-    value: *color-juneberry-value
+    value: "{!color-juneberry}"
   color-secondary-lighter:
-    value: "rgba(#237B98, 0.14)"
+    value: "{!color-brand-blue-lighter}"
   color-logo-secondary:
-    value: *color-white-value
+    value: "{!color-white}"
 
   color-mustard:
-    value: "#FCCF44"
+    value: "{!color-mustard}"
   color-icecream:
-    value: "#72C9CA"
+    value: "{!color-icecream}"
   color-pumpkin:
-    value: "#EF8F4D"
+    value: "{!color-pumpkin}"
   color-plum:
-    value: "#AA6286"
+    value: "{!color-plum}"
 
   color-success:
-    value: "#75B96F"
+    value: "{!color-success}"
   color-alert:
-    value: "#D30303"
+    value: "{!color-alert}"
   color-gifts:
-    value: "#AED6D7"
+    value: "{!color-gifts}"
   star-color:
-    value: "#FEAB6C"
+    value: "{!star-color}"
   color-menu:
-    value: "#1E1E1E"
+    value: "{!color-menu}"
   color-menu-link:
-    value: "rgba(96,178,208,0.14)"
+    value: "{!color-menu-link}"
 
   # Colors (greys)
   # =============================================
   color-light:
-    value: "#999999"
+    value: "{!color-light}"
   color-medium:
-    value: *color-silver-value
+    value: "{!color-silver}"
   color-dark:
-    value: *color-chalkboard-value
+    value: "{!color-chalkboard}"
   color-darker: 
-    value: "#000000"
+    value: "{!color-darker}"
 
   color-transparent:
-    value: "rgba(255,255,255,0.6)"
+    value: "{!color-transparent}"
   darken-percent:
-    value: "10%"
+    value: "{!darken-percent}"
 
   # Colors (product-specific)
   # =============================================
   color-offers-primary:
-    value: "#3B9568"
+    value: "{!color-offers-primary}"
   color-premium-access-book-modal-background:
-    value: "#A67AD3"
+    value: "{!color-premium-access-book-modal-background}"
 
   # Backgrounds
   body-bg:
-    value: &body-bg-value "#F7F7F7"
+    value: "{!body-bg}"
   content-bg:
-    value: *body-bg-value
+    value: "{!body-bg}"
 
   # Opacity Colors
   # =============================================
   opacity-color:
-    value: "rgba(0,0,0,0.12)"
+    value: "{!opacity-color}"
   opacity-color-light:
-    value: "rgba(0,0,0,0.06)"
+    value: "{!opacity-color-light}"
   opacity-color-light-hex:
-    value: "#F0F0F0"
+    value: "{!opacity-color-light-hex}"
   opacity-color-dark:
-    value: "rgba(0,0,0,0.2)"
+    value: "{!opacity-color-dark}"
   opacity-color-darker:
-    value: "rgba(0,0,0,0.5)"
+    value: "{!opacity-color-darker}"
   opacity-color-dark-hex:
-    value: "#CCCCCC"
+    value: "{!color-mid-gray}"
   opacity-color-white:
-    value: "rgba(255,255,255,0.3)"
+    value: "{!opacity-color-white}"
 
+imports:
+  - ../aliases.yml
 
 global:
   type: "color"

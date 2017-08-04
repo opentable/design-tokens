@@ -1,8 +1,14 @@
 # design-tokens
 
-Design-tokens used by OpenTable systems:
+Design Token files are a central location to store design related information such as colors, fonts, widths, animations, etc. These raw values can then be transformed and formatted to meet the needs of any platform. Instead of hard coding this information in each platform/format, we store here centralized Design Tokens and publish on npm output files for each platform/format to be consumed.
 
-## [OTKit - OpenTable kit tokens](/OTKit)
+***
+
+## Project structure
+
+This project is structured to host design-tokens used by the following OpenTable design-systems:
+
+### [OTKit](/OTKit)
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
@@ -10,7 +16,7 @@ Design-tokens used by OpenTable systems:
 | [`otkit-spacing`](/OTKit/otkit-spacing) | `css-modules` | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing) |
 
 
-## [OTTheme - OpenTable theme tokens](/OTTheme)
+### [OTTheme](/OTTheme)
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
