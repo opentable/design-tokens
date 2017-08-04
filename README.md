@@ -12,16 +12,16 @@ This project is structured to host design-tokens used by the following OpenTable
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
-| [`otkit-colors`](/OTKit/otkit-colors) | `css-modules` | [![npm version](https://badge.fury.io/js/otkit-colors.svg)](http://badge.fury.io/js/otkit-colors) |
-| [`otkit-spacing`](/OTKit/otkit-spacing) | `css-modules` | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing) |
+| [`otkit-colors`](/OTKit/otkit-colors) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-colors.svg)](http://badge.fury.io/js/otkit-colors) |
+| [`otkit-spacing`](/OTKit/otkit-spacing) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing) |
 
 
 ### [OTTheme](/OTTheme)
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
-| [`ottheme-colors`](/OTTheme/ottheme-colors) | `scss` | [![npm version](https://badge.fury.io/js/ottheme-colors.svg)](http://badge.fury.io/js/ottheme-colors) |
-| [`ottheme-spacing`](/OTTheme/ottheme-spacing) | `scss` | [![npm version](https://badge.fury.io/js/ottheme-spacing.svg)](http://badge.fury.io/js/ottheme-spacing) |
+| [`ottheme-colors`](/OTTheme/ottheme-colors) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/ottheme-colors.svg)](http://badge.fury.io/js/ottheme-colors) |
+| [`ottheme-spacing`](/OTTheme/ottheme-spacing) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/ottheme-spacing.svg)](http://badge.fury.io/js/ottheme-spacing) |
 
 ***
 
