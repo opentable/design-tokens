@@ -9,6 +9,6 @@
     "build-otkit": "lerna exec --scope otkit-* theo scss cssmodules.css common.js",
     "clean": "lerna clean",
     "postinstall": "lerna bootstrap",
-    "publish": "lerna publish"
+    "publish": "npm run build && lerna publish"
   }
 }
