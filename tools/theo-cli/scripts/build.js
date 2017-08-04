@@ -10,12 +10,13 @@ const packagePath = argv.path || argv.p || process.cwd();
 const distPath = argv.dist || argv.d || '.';
 const fileName = argv.output || argv.o || 'token';
 const source = argv.src || argv.s || 'token.yml';
+const test = argv.test || argv.t || false;
 
-if (distPath !== '.') {
+if (distPath !== '.' && !test) {
   fs.emptyDirSync(path.join(packagePath, distPath))
+  console.log();
 }
 
-console.log();
 formats.forEach(format => {
   const outputFile = path.join(distPath, `${fileName}.${format}`);
   theo.convert({
@@ -28,8 +29,12 @@ formats.forEach(format => {
     }
   })
   .then(data => {
-    fs.outputFile(path.join(packagePath, outputFile), data)
-      .then(()=>console.log(`✏️  ${format} tokens created at "${path.basename(packagePath)}/${outputFile}"`))
+    if (!test) {
+      fs.outputFile(path.join(packagePath, outputFile), data)
+        .then(()=> console.log(`✏️  ${format} tokens created at "${path.basename(packagePath)}/${outputFile}"`))
+    } else {
+      console.log(`✓ ${path.basename(packagePath)}/${outputFile} compiled correctly`)
+    }
   })
   .catch(error => {
     console.log(`💩  Oups, something went wrong: ${error}`)
