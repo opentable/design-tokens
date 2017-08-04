@@ -8,6 +8,7 @@
     "build-ottheme": "lerna exec --scope ottheme-* theo scss cssmodules.css common.js",
     "build-otkit": "lerna exec --scope otkit-* theo scss cssmodules.css common.js",
     "clean": "lerna clean",
+    "test": "lerna exec --scope ot* theo scss cssmodules.css common.js -- --test",
     "postinstall": "lerna bootstrap",
     "publish": "npm run build && lerna publish"
   }
