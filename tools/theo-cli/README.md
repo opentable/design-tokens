@@ -76,6 +76,7 @@ $ theo scss cssmodules.css
 |`--dist` \| `-d` |The relative path where to generate the build|`.`|
 |`--output` \| `-o` |The output filename|`token.<format>` |
 |`--src` \| `-s` |The src file|`token.yml` |
+|`--test` \| `-t` |Disable writing to files for the token (test build scenario)|`false` |
 
 
 ## NPM Scripts
