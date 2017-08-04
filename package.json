@@ -4,11 +4,11 @@
     "theo-cli": "^0.0.3"
   },
   "scripts": {
-    "ottheme-build": "lerna exec --scope ottheme-* theo scss",
-    "otkit-build": "lerna exec --scope otkit-* theo cssmodules.css",
-    "build": "npm run ottheme-build && npm run otkit-build",
-    "postinstall": "lerna bootstrap",
+    "build": "npm run build-ottheme && npm run build-otkit",
+    "build-ottheme": "lerna exec --scope ottheme-* theo scss",
+    "build-otkit": "lerna exec --scope otkit-* theo cssmodules.css",
     "clean": "lerna clean",
+    "postinstall": "lerna bootstrap",
     "publish": "lerna publish"
   }
 }
