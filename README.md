@@ -8,7 +8,7 @@ Design Token files are a central location to store design related information su
 
 This project is structured to host design-tokens used by the following OpenTable design-systems:
 
-### [OTKit](/OTKit)
+### OTKit - [Documentation](https://github.com/opentable/design-tokens/blob/master/OTKit/README.md)
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
@@ -16,7 +16,7 @@ This project is structured to host design-tokens used by the following OpenTable
 | [`otkit-spacing`](/OTKit/otkit-spacing) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing) |
 
 
-### [OTTheme](/OTTheme)
+### OTTheme - [Documentation](https://github.com/opentable/design-tokens/blob/master/OTTheme/README.md)
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
