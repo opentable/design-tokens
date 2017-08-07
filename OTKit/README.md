@@ -4,31 +4,37 @@
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
-| [`otkit-colors`](/OTKit/otkit-colors) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-colors.svg)](http://badge.fury.io/js/otkit-colors) |
-| [`otkit-spacing`](/OTKit/otkit-spacing) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing) |
+| [`otkit-colors`](/OTKit/otkit-colors) | [`scss`, `cssmodules.css`, `common.js`] | [![npm version](https://badge.fury.io/js/otkit-colors.svg)](http://badge.fury.io/js/otkit-colors) |
+| [`otkit-spacing`](/OTKit/otkit-spacing) | [`scss`, `cssmodules.css`, `common.js`] | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing) |
 
 ***
 
 ## Usage
 
-Run the command below will add the needed tokens to your project:
+Install the token:
 
 ```bash
 $ npm install --save-dev <token-name>
 ```
 
-Or you can manually add the `<token-name>` package line to your project's `devDependnecies` inside `package.json`, then run:
+Use the token:
+A Token exposes multiple available formats (listed above). **The format need to be excplicitely referenced upon requiring/importing the token:**
 
-```bash
-$ npm install
+```
+require('<token-name>/token.<format>')
 ```
 
-A Token can be consumed multiple available formats (listed above); requiring the token could work differently based on the format you wish to consume.
-
-For example, to consume `cssmodules.css` format of the `otkit-colors` token, you will need to add this inside your css file:
-
-```css
+Examples
+```
+// cssmodules example:
 @value color-primary from 'otkit-colors/token.cssmodules.css';
+
+// common.js require/import examples:
+const color = require('otkit-colors/token.common.js');
+import color from 'otkit-colors/token.common.js';
+
+// scss example:
+@import '../node_modules/ottheme-colors/token.scss';
 ```
 
 ***

@@ -4,24 +4,36 @@
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
-| [`ottheme-colors`](/OTTheme/ottheme-colors) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/ottheme-colors.svg)](http://badge.fury.io/js/ottheme-colors) |
-| [`ottheme-spacing`](/OTTheme/ottheme-spacing) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/ottheme-spacing.svg)](http://badge.fury.io/js/ottheme-spacing) |
+| [`ottheme-colors`](/OTTheme/ottheme-colors) | [`scss`, `cssmodules.css`, `common.js`] | [![npm version](https://badge.fury.io/js/ottheme-colors.svg)](http://badge.fury.io/js/ottheme-colors) |
+| [`ottheme-spacing`](/OTTheme/ottheme-spacing) | [`scss`, `cssmodules.css`, `common.js`] | [![npm version](https://badge.fury.io/js/ottheme-spacing.svg)](http://badge.fury.io/js/ottheme-spacing) |
 
 ***
 
 ## Usage
 
-Add the needed tokens to your devDependnecies:
+Install the token:
+
+```bash
+$ npm install --save-dev <token-name>
+```
+
+Use the token:
+A Token exposes multiple available formats (listed above). **The format need to be excplicitely referenced upon requiring/importing the token:**
 
 ```
-$ npm install save-dev <token-name>
+require('<token-name>/token.<format>')
 ```
 
-Note: Dependending on the format that you wish to consume requiring could work differently.
+Examples
+```
+// cssmodules example:
+@value color-primary from 'otkit-colors/token.cssmodules.css';
 
-Example to consume scss format of the colors token, inside your css file: 
+// common.js require/import examples:
+const color = require('otkit-colors/token.common.js');
+import color from 'otkit-colors/token.common.js';
 
-```scss
+// scss example:
 @import '../node_modules/ottheme-colors/token.scss';
 ```
 
