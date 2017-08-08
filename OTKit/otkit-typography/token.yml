@@ -1,0 +1,11 @@
+props:
+# TODO
+  something:
+    type: "size"
+    value: "{!spacing-xsmall}"
+
+imports:
+  - ../aliases.yml
+
+global:
+  category: "typography"
