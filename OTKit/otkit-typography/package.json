@@ -1,0 +1,18 @@
+{
+  "name": "otkit-typography",
+  "version": "1.0.0",
+  "description": "OpenTable typography design token",
+  "author": {
+    "name": "Nick Balestra",
+    "email": "nick@balestra.ch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opentable/design-tokens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/opentable/design-tokens/issues"
+  },
+  "homepage": "https://github.com/opentable/design-tokens/tree/master/OTKit/#readme",
+  "license": "MIT"
+}
