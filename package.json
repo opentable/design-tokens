@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "lerna": "^2.0.0",
-    "theo-cli": "^0.0.5"
+    "theo-cli": "^0.0.6"
   },
   "scripts": {
     "build": "npm run build-ottheme && npm run build-otkit",
