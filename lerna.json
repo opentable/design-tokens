@@ -2,8 +2,7 @@
   "lerna": "2.0.0",
   "packages": [
     "OTTheme/*",
-    "OTKit/*",
-    "tools/*"
+    "OTKit/*"
   ],
   "version": "independent"
 }
