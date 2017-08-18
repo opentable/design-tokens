@@ -1,5 +1,7 @@
 # design-tokens
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/opentable/design-tokens.svg)](https://greenkeeper.io/)
+
 Design Token files are a central location to store design related information such as colors, fonts, widths, animations, etc. These raw values can then be transformed and formatted to meet the needs of any platform. Instead of hard coding this information in each platform/format, we store here centralized Design Tokens and publish on npm output files for each platform/format to be consumed.
 
 ***
