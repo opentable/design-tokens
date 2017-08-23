@@ -12,7 +12,7 @@ aliases:
     value: "#FB665F"
   color-primary-disabled:
     value: "rgba(249, 31, 20, 0.40)"
-  
+
   # Secondary Action
   # This color is only to be used on text sizes below 24px for actionable content (tabs, links, underlines, points)
   # =============================================
@@ -22,18 +22,18 @@ aliases:
     value: "#FA4940"
   color-secondary-disabled:
     value: "rgba(216, 216, 216, 0.40)"
-  
-  # Primary Gray, used on all text sizes 
+
+  # Primary Gray, used on all text sizes
   # =============================================
   color-gray-primary:
     value: "#333333"
-  
-  # Secondary Gray, used on smaller font sizes 
+
+  # Secondary Gray, used on smaller font sizes
   # =============================================
   color-gray-secondary:
     value: "#717171"
-  
-  # Utility Gray, used for borders, dividers, containers 
+
+  # Utility Gray, used for borders, dividers, containers
   # =============================================
   color-gray-utility:
     value: "#E1E1E1"
@@ -43,7 +43,7 @@ aliases:
   # Spacing
   # #############################################
   spacing-xsmall:
-    value: "0.25rem"  
+    value: "0.25rem"
   spacing-small:
     value: "0.5rem"
   spacing-medium:
@@ -54,7 +54,7 @@ aliases:
     value: "4rem"
 
   # #############################################
-  # Typography 
+  # Typography
   # #############################################
   font-size-xsmall:
     value: "0.875rem"
@@ -66,7 +66,7 @@ aliases:
     value: "1.625rem"
   font-size-xlarge:
     value: "3rem"
-  # line heights seem arbitrary because they are mapped to specific font sizes 
+  # line heights seem arbitrary because they are mapped to specific font sizes
   line-height-xsmall:
     value: "1.15"
   line-height-small:
