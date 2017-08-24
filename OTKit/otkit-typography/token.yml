@@ -33,7 +33,7 @@ props:
     type: "string"
     value: "{!font-weight-normal}"
   font-weight-medium:
-    type: "string"
+    type: "number"
     value: "{!font-weight-medium}"
   font-weight-bold:
     type: "string"
