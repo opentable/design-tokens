@@ -1,0 +1,18 @@
+{
+  "name": "otkit-breakpoints",
+  "version": "1.0.2",
+  "description": "OpenTable website breakpoints design token",
+  "author": {
+    "name": "Eric Zhao",
+    "email": "ezhao@opentable.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opentable/design-tokens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/opentable/design-tokens/issues"
+  },
+  "homepage": "https://github.com/opentable/design-tokens/tree/master/OTKit/otkit-breakpoints#readme",
+  "license": "MIT"
+}

@@ -1,0 +1,10 @@
+props:
+  breakpoint-desktop-tablet:
+    value: "{!breakpoint-desktop-tablet}"
+
+imports:
+  - ../aliases.yml
+
+global:
+  type: "breakpoints"
+  category: "breakpoints"

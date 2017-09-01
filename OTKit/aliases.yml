@@ -85,3 +85,9 @@ aliases:
     value: "bold"
   font-name:
     value: "Brandon Text"
+
+  # #############################################
+  # Layout
+  # #############################################
+  breakpoint-desktop-tablet:
+    value: 1056
