@@ -7,21 +7,11 @@ aliases:
   # This color is only used on objects, backgrounds with large text (24px or larger, bold), and will be used as a color to guide users towards actionable content.
   # =============================================
   color-primary:
-    value: "#F91F14"
+    value: "#DA3743"
   color-primary-active:
     value: "#FB665F"
   color-primary-disabled:
-    value: "rgba(249, 31, 20, 0.40)"
-
-  # Secondary Action
-  # This color is only to be used on text sizes below 24px for actionable content (tabs, links, underlines, points)
-  # =============================================
-  color-secondary:
-    value: "#E81106"
-  color-secondary-active:
-    value: "#FA4940"
-  color-secondary-disabled:
-    value: "rgba(216, 216, 216, 0.40)"
+    value: "rgba(218, 55, 67, 0.40)"
 
   # Primary Gray, used on all text sizes
   # =============================================
