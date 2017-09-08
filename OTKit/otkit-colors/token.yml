@@ -5,12 +5,6 @@ props:
     value: "{!color-primary-active}"
   color-primary-disabled:
     value: "{!color-primary-disabled}"
-  color-secondary:
-    value: "{!color-secondary}"
-  color-secondary-active:
-    value: "{!color-secondary-active}"
-  color-secondary-disabled:
-    value: "{!color-secondary-disabled}"
   color-gray-primary:
     value: "{!color-gray-primary}"
   color-gray-secondary:
