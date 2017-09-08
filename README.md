@@ -14,6 +14,7 @@ This project is structured to host design-tokens used by the following OpenTable
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
+| [`otkit-breakpoints`](/OTKit/otkit-breakpoints) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-breakpoints.svg)](http://badge.fury.io/js/otkit-breakpoints) |
 | [`otkit-colors`](/OTKit/otkit-colors) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-colors.svg)](http://badge.fury.io/js/otkit-colors) |
 | [`otkit-spacing`](/OTKit/otkit-spacing) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing) |
 | [`otkit-typography`](/OTKit/otkit-typography) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-typography.svg)](http://badge.fury.io/js/otkit-typography) |
