@@ -10,7 +10,7 @@ First of all, thank you for contributing. It’s appreciated.
 
 # To release new versions
 
-1. To check what needs to be published run `$(npm bin)/lerna updated`.
+1. To check what needs to be published run `npm run updated`.
 2. Make sure you are listed among the publishers for the related packages you need to release and that you logged in with that listed account to npm.
 3. To publish run `npm run publish` and follow the instruction on the terminal. The CLI will walk you through the publishing for each token that need to published.
 
