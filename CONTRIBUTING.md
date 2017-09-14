@@ -6,7 +6,8 @@ First of all, thank you for contributing. It’s appreciated.
 2. Clone the repo. If it was already cloned, then git pull to get the latest from master.
 3. Run `npm install` before anything else, and wait.
 4. Write code.
-5. Make sure tests pass (`npm run test`) and make a pull request against the master branch
+5. Make sure tests pass (`npm run test`) and make a pull request against the master branch. If you are adding a new token, make sure to update the related READMEs ([main radme](https://github.com/opentable/design-tokens/blob/master/README.md) and design-system specific: [ottheme readme](https://github.com/opentable/design-tokens/blob/master/OTTheme/README.md) or [otkit readme](https://github.com/opentable/design-tokens/blob/master/OTKit/README.md) )
+
 
 # To release new versions
 
