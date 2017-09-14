@@ -23,6 +23,8 @@ props:
     value: "{!color-huckleberry}"
   color-juneberry:
     value: "{!color-juneberry}"
+  color-malibu:
+    value: "{!color-malibu}"
 
   # Taupes
   # =============================================
