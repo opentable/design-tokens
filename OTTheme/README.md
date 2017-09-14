@@ -68,7 +68,7 @@ props:
 
 ### I need to ad a new format, how do we add it?
 
-1. Edit the related build system in the project root scripts (within the `package.json` file). Check the [theo](https://github.com/salesforce-ux/theo#available-formats) and [theo-cli](https://github.com/opentable/design-tokens/tree/master/tools/theo-cli#theo-cli) documentation for more information.
+1. Edit the related build system in the project root scripts (within the `package.json` file). Check the [theo](https://github.com/salesforce-ux/theo#available-formats) and [theo-cli](https://github.com/salesforce-ux/theo/blob/master/CLI.md) documentation for more information.
 
 ```json
 ...
