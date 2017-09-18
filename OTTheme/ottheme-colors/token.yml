@@ -12,7 +12,7 @@ props:
     value: "{!color-caspian-pink}"
   color-black-cherry:
     value: "{!color-black-cherry}"
-  
+
   # Blues (mainly used for restaurant businesses)
   # =============================================
   color-brand-blue:
@@ -34,7 +34,7 @@ props:
     value: "{!color-macadamia}"
   color-almond:
     value: "{!color-almond}"
-  
+
   # Greys
   # =============================================
   color-light-gray:
@@ -104,6 +104,7 @@ props:
     value: "{!color-transparent}"
   darken-percent:
     value: "{!darken-percent}"
+    type: "number"
 
   # Colors (product-specific)
   # =============================================
