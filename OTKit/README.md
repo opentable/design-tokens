@@ -39,6 +39,14 @@ import color from 'otkit-colors/token.common.js';
 @import '../node_modules/ottheme-colors/token.scss';
 ```
 
+Preview & debug the token:
+
+Executing `npm run build` will generate the token values in each token's folder, such as `token.scss` or other available formats you specified.
+
+When you publish a token, this step is executed as part of the publishing.
+
+If you are using a token in your project, you can execute `npm link '<token-name>'` in `node_modules` folder to test the token values before publishing.
+
 ***
 
 ## Contributing

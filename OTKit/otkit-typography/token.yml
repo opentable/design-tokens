@@ -30,13 +30,13 @@ props:
     type: "size"
     value: "{!line-height-xlarge}"
   font-weight-normal:
-    type: "string"
+    type: "raw"
     value: "{!font-weight-normal}"
   font-weight-medium:
     type: "number"
     value: "{!font-weight-medium}"
   font-weight-bold:
-    type: "string"
+    type: "raw"
     value: "{!font-weight-bold}"
   font-name:
     type: "string"
