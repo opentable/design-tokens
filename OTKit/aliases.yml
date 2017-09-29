@@ -51,9 +51,9 @@ aliases:
   font-size-small:
     value: "1rem"
   font-size-medium:
-    value: "1.25rem"
+    value: "1.125rem"
   font-size-large:
-    value: "1.625rem"
+    value: "1.5rem"
   font-size-xlarge:
     value: "3rem"
   # line heights seem arbitrary because they are mapped to specific font sizes
@@ -62,9 +62,9 @@ aliases:
   line-height-small:
     value: "1.5"
   line-height-medium:
-    value: "1.2"
+    value: "1.33"
   line-height-large:
-    value: "1.23"
+    value: "1.33"
   line-height-xlarge:
     value: "1.17"
   font-weight-normal:
