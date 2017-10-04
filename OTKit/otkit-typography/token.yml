@@ -30,17 +30,81 @@ props:
     type: "size"
     value: "{!line-height-xlarge}"
   font-weight-normal:
-    type: "raw"
+    type: "size"
     value: "{!font-weight-normal}"
   font-weight-medium:
     type: "number"
     value: "{!font-weight-medium}"
   font-weight-bold:
-    type: "raw"
+    type: "size"
     value: "{!font-weight-bold}"
   font-name:
     type: "string"
     value: "{!font-name}"
+
+  heading-xlarge-font-size:
+    type: "size"
+    value: "{!font-size-xlarge}"
+  heading-xlarge-font-weight:
+    type: "size"
+    value: "{!font-weight-bold}"
+  heading-xlarge-line-height:
+    type: "size"
+    value: "{!line-height-xlarge}"
+  heading-xlarge-color:
+    type: "color"
+    value: "{!color-gray-primary}"
+  heading-large-font-size:
+    type: "size"
+    value: "{!font-size-large}"
+  heading-large-font-weight:
+    type: "size"
+    value: "{!font-weight-normal}"
+  heading-large-line-height:
+    type: "size"
+    value: "{!line-height-large}"
+  heading-large-color:
+    type: "color"
+    value: "{!color-gray-primary}"
+  heading-medium-font-size:
+    type: "size"
+    value: "{!font-size-medium}"
+  heading-medium-font-weight:
+    type: "string"
+    value: "{!font-weight-medium}"
+  heading-medium-line-height:
+    type: "size"
+    value: "{!line-height-medium}"
+  heading-medium-color:
+    type: "color"
+    value: "{!color-gray-primary}"
+  subheading-small-desktop-font-size:
+    type: "size"
+    value: "{!font-size-small}"
+  subheading-small-desktop-font-weight:
+    type: "size"
+    value: "{!font-weight-medium}"
+  subheading-small-desktop-line-height:
+    type: "size"
+    value: "{!line-height-small}"
+  subheading-small-desktop-color:
+    type: "color"
+    value: "{!color-gray-primary}"
+  body-small-desktop-font-size:
+    type: "size"
+    value: "{!font-size-small}"
+  body-small-desktop-font-weight:
+    type: "size"
+    value: "{!font-weight-normal}"
+  body-small-desktop-line-height:
+    type: "size"
+    value: "{!line-height-small}"
+  body-small-desktop-color:
+    type: "color"
+    value: "{!color-gray-primary}"
+  subtext-xsmall-desktop-font-size:
+    type: "size"
+    value: "{!font-size-xsmall}"
 
 imports:
   - ../aliases.yml
