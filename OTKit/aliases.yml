@@ -28,6 +28,10 @@ aliases:
   color-gray-utility:
     value: "#E1E1E1"
 
+  # White, used for button text and (if necessary) backgrounds 
+  # =============================================
+  color-white:
+    value: "#FFFFFF"
 
   # #############################################
   # Spacing
