@@ -13,13 +13,14 @@
 
 ## Usage
 
-Install the token:
+### Install the token
 
 ```bash
 $ npm install --save-dev <token-name>
 ```
 
-Use the token:
+### Use the token
+
 A Token exposes multiple available formats (listed above). **The format need to be excplicitely referenced upon requiring/importing the token:**
 
 ```
@@ -39,7 +40,7 @@ import color from 'otkit-colors/token.common.js';
 @import '../node_modules/ottheme-colors/token.scss';
 ```
 
-Preview & debug the token:
+### Preview and debug
 
 Executing `npm run build` will generate the token values in each token's folder, such as `token.scss` or other available formats you specified.
 
@@ -48,6 +49,16 @@ When you publish a token, this step is executed as part of the publishing.
 If you are using a token in your project, you can execute `npm link '<token-name>'` in `node_modules` folder to test the token values before publishing.
 
 ***
+
+### Publish
+
+A token needs to be published in order for the changes to take effect. To publish a token, navigate to the token's directory, for example `./OTKit/otkit-colors/`, then run `npm publish otkit-colors`.
+
+You need to have an NPM account and be among the "Collaborators" list on the official NPM package page, for example  `https://www.npmjs.com/package/otkit-colors`, to publish. Contact one of the collaborators if you would like to be added.
+
+Note: if you are a developer of OpenTable organization, remember to remove the OpenTable credentials from your `~/.npmrc` file to make sure you are publishing to the public instead of a private registry.
+
+
 
 ## Contributing
 
