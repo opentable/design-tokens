@@ -4,7 +4,7 @@ props:
   color-primary-active:
     value: "{!color-primary-active}"
   color-primary-disabled:
-    value: "{!color-primary-disabled}"
+    value: "{!color-gray-secondary}"
   color-gray-primary:
     value: "{!color-gray-primary}"
   color-gray-secondary:
