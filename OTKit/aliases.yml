@@ -37,40 +37,40 @@ aliases:
   # Spacing
   # #############################################
   spacing-xsmall:
-    value: "0.25rem"
+    value: "4px"
   spacing-small:
-    value: "0.5rem"
+    value: "8px"
   spacing-medium:
-    value: "1rem"
+    value: "16px"
   spacing-large:
-    value: "2rem"
+    value: "32px"
   spacing-xlarge:
-    value: "4rem"
+    value: "64px"
 
   # #############################################
   # Typography
   # #############################################
   font-size-xsmall:
-    value: "0.875rem"
+    value: "14px"
   font-size-small:
-    value: "1rem"
+    value: "16px"
   font-size-medium:
-    value: "1.125rem"
+    value: "18px"
   font-size-large:
-    value: "1.5rem"
+    value: "24px"
   font-size-xlarge:
-    value: "3rem"
+    value: "48px"
   # line heights seem arbitrary because they are mapped to specific font sizes
   line-height-xsmall:
-    value: "1.43"
+    value: "16px"
   line-height-small:
-    value: "1.5"
+    value: "24px"
   line-height-medium:
-    value: "1.33"
+    value: "24px"
   line-height-large:
-    value: "1.33"
+    value: "32px"
   line-height-xlarge:
-    value: "1.17"
+    value: "48px"
   font-weight-normal:
     value: "normal"
   font-weight-medium:
