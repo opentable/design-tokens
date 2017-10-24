@@ -27,11 +27,11 @@ require('<token-name>/token.<format>')
 Examples
 ```
 // cssmodules example:
-@value color-primary from 'otkit-colors/token.cssmodules.css';
+@value color-primary from 'ottheme-colors/token.cssmodules.css';
 
 // common.js require/import examples:
-const color = require('otkit-colors/token.common.js');
-import color from 'otkit-colors/token.common.js';
+const color = require('ottheme-colors/token.common.js');
+import color from 'ottheme-colors/token.common.js';
 
 // scss example:
 @import '../node_modules/ottheme-colors/token.scss';
