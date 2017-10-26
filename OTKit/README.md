@@ -60,32 +60,35 @@ Note: if you are a developer of OpenTable organization, remember to remove the O
 
 
 
-## Contributing
+## Contributing a new value
 
-All the design related information are aliased and contained within the [aliases.yml](/aliases/yml) file. This is represent the single source of truth for a specific system and those aliases are then reused within each token for build purpose.
+All OTKit design system values are aliased and contained within the [OTKit/aliases.yml](/aliases/yml) file. This file represents the single source of truth for the OTKit design system. The values in aliases.yml are referenced within each token for build purposes.
 
-### I need to add a new color, where do I add it?
+### I need to add a new value, where do I add it?
 
-1. Add the unique name and value for which we intend to represent this color within the company in the [aliases.yml](/aliases/yml) file, for example:
+1. In the [OTKit/aliases.yml](/aliases/yml) file, add the value and a unique name for it. Follow the existing conventions as much as possible (place it in the right area, if it one exists, and add a helpful comment about how the value is used). 
+
+For example, to add a value named "color-gray-primary", which is used as the text color, you should add the section seen in between the ellipses (...) below:
 
 ```yml
 aliases:
   ...
-  the-new-color:
-    value: "#F91F14"
+  # Primary Gray, used on all text sizes
+  # =============================================
+  color-gray-primary:
+    value: "#333333"
   ...
 ```
-2. Use the new value in whichever specific token you need, for example in the otkit-colors token:
+2. Find the directory containing the tokens that are relevant to your new value (otkit-typography for typography, otkit-colors for colors, etc.). Within that directory, find the token.yml file and add the new value in the props section. For example, we would add the color-gray-primary value in otkit-colors/token.yml in the following way:
 
 ```yml
 props:
   ...
-  color-primary:
-    value: "!{the-new-color}"
-  border-color:
-    value: "!{the-new-color}"
+  color-gray-primary:
+    value: "!{color-gray-primary}"
   ...  
 ```
+3. Add, commit, and push your changes. Make a PR on `https://github.com/opentable/design-tokens`. Pat yourself on the back as you wait for your PR to be reviewed.
 
 ### I need to add a new format, how do I add it?
 
