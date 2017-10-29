@@ -11,6 +11,8 @@ props:
     value: "{!color-gray-secondary}"
   color-gray-utility:
     value: "{!color-gray-utility}"
+  color-white:
+    value: "{!color-white}"
 
 imports:
   - ../aliases.yml
