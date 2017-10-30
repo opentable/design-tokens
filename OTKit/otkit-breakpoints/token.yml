@@ -6,5 +6,6 @@ imports:
   - ../aliases.yml
 
 global:
+  platform: "core"
   type: "breakpoints"
   category: "breakpoints"

@@ -46,4 +46,5 @@ imports:
   - ../aliases.yml
 
 global:
+  platform: "core"
   category: "typography"
