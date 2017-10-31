@@ -30,10 +30,12 @@ Then add it to your [postcss](https://github.com/postcss/postcss) processors wit
 
 ```
 import pxtorem from 'postcss-pxtorem';
+import { fontSizeBase } from 'otkit-typography/token.cssmodules.css';
 
 const processors = [
   pxtorem({
-    rootValue: 16,
+    // fontSizeBase = '16px'.  Need to convert to 16.
+    rootValue: parseInt(fontSizeBase, 10),
     selectorBlackList: [/^html$/],
     replace: true
   })

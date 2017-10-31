@@ -50,6 +50,8 @@ aliases:
   # #############################################
   # Typography
   # #############################################
+  font-size-base:
+    value: "16px"
   font-size-xsmall:
     value: "14px"
   font-size-small:

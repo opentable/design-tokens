@@ -41,6 +41,9 @@ props:
   font-name:
     type: "string"
     value: "{!font-name}"
+  font-size-base:
+    type: "string"
+    value: "{!font-size-base}"
 
 imports:
   - ../aliases.yml
