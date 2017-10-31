@@ -28,7 +28,7 @@ npm install --save-dev postcss-pxtorem
 
 Then add it to your [postcss](https://github.com/postcss/postcss) processors with the following recommend configuration:
 
-```
+```javascript
 import pxtorem from 'postcss-pxtorem';
 import { fontSizeBase } from 'otkit-typography/token.cssmodules.css';
 
@@ -45,6 +45,16 @@ const processors = [
 Note that depending on how you use postcss, your processors array may be in a JSON configuration file instead.
 
 If you're not already using [postcss](https://github.com/postcss/postcss), you will either have to use it as an additional build step after you transform your CSS with your current tool or use it as a complete replacement for your current CSS transformation process.
+
+### Set your base font size
+
+```css
+@value font-size-base from 'otkit-typography/token.cssmodules.css';
+
+html {
+  font-size: font-size-base; 
+}
+```
 
 ### Use the token
 
