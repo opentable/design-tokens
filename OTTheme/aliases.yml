@@ -11,6 +11,10 @@ aliases:
     value: "#DA3743"
   color-caspian-pink:
     value: "#E5656E"
+  color-oyster-pink:
+    value: "#EFD4D4"
+  color-provincial-pink:
+    value: "#FEF8F0"
   color-black-cherry:
     value: "#811520"
 

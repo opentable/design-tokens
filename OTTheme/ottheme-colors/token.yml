@@ -10,6 +10,10 @@ props:
     value: "{!color-brand-red}"
   color-caspian-pink:
     value: "{!color-caspian-pink}"
+  color-oyster-pink:
+    value: "{!color-oyster-pink}"
+  color-provincial-pink:
+    value: "{!color-provincial-pink}"
   color-black-cherry:
     value: "{!color-black-cherry}"
 
