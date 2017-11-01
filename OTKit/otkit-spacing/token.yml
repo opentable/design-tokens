@@ -14,5 +14,6 @@ imports:
   - ../aliases.yml
 
 global:
+  platform: "core"
   type: "spacing"
   category: "spacing"

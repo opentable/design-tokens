@@ -18,5 +18,6 @@ imports:
   - ../aliases.yml
 
 global:
+  platform: "core"
   type: "color"
-  category: "colors"
+  category: "color"
