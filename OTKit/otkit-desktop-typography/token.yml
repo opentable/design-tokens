@@ -38,9 +38,6 @@ props:
   subheading-small-font-weight:
     type: "raw"
     value: "{!font-weight-medium}"
-  subheading-small-font-weight-alternate:
-    type: "raw"
-    value: "{!font-weight-normal}"
   subheading-small-line-height:
     type: "size"
     value: "{!line-height-small}"
