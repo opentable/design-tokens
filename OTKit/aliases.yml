@@ -62,9 +62,8 @@ aliases:
     value: "24px"
   font-size-xlarge:
     value: "48px"
-  # line heights seem arbitrary because they are mapped to specific font sizes
   line-height-xsmall:
-    value: "16px"
+    value: "20px"
   line-height-small:
     value: "24px"
   line-height-medium:
