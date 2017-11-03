@@ -56,9 +56,6 @@ A token needs to be published in order for the changes to take effect. To publis
 
 You need to have an NPM account and be among the "Collaborators" list on the official NPM package page, for example  `https://www.npmjs.com/package/otkit-colors`, to publish. Contact one of the collaborators if you would like to be added.
 
-Note: if you are a developer of OpenTable organization, remember to remove the OpenTable credentials from your `~/.npmrc` file to make sure you are publishing to the public instead of a private registry.
-
-
 
 ## Contributing a new value
 
