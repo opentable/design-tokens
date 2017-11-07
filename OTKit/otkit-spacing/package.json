@@ -14,5 +14,8 @@
     "url": "https://github.com/opentable/design-tokens/issues"
   },
   "homepage": "https://github.com/opentable/design-tokens/tree/master/OTKit/otkit-spacing#readme",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
 }
