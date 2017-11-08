@@ -28,6 +28,11 @@ aliases:
   color-gray-utility:
     value: "#E1E1E1"
 
+  # Lightest gray, used for backgrounds for the page and backgrounds for active/hover states
+  # =============================================
+  color-gray-active:
+    value: "#F7F7F7"
+
   # White, used for button text and (if necessary) backgrounds 
   # =============================================
   color-white:
