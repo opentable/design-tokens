@@ -29,6 +29,8 @@ props:
     value: "{!color-juneberry}"
   color-malibu:
     value: "{!color-malibu}"
+  color-highlight-blue:
+    value: "{!color-highlight-blue}"
 
   # Taupes
   # =============================================
@@ -101,7 +103,7 @@ props:
     value: "{!color-silver}"
   color-dark:
     value: "{!color-chalkboard}"
-  color-darker: 
+  color-darker:
     value: "{!color-darker}"
 
   color-transparent:

@@ -32,6 +32,8 @@ aliases:
     value: "#356273"
   color-malibu:
     value: "#6CB6F5"
+  color-highlight-blue:
+    value: "#EEF4FB"
 
   # Taupes
   # =============================================
@@ -60,7 +62,7 @@ aliases:
     value: "#333333"
   color-light:
     value: "#999999"
-  color-darker: 
+  color-darker:
     value: "#000000"
 
   # Colors (product-specific)
