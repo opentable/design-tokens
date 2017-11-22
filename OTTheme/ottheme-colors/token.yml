@@ -14,6 +14,8 @@ props:
     value: "{!color-oyster-pink}"
   color-provincial-pink:
     value: "{!color-provincial-pink}"
+  color-misty-rose:
+    value: "{!color-misty-rose}"
   color-black-cherry:
     value: "{!color-black-cherry}"
 
