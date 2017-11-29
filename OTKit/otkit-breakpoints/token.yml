@@ -1,9 +1,6 @@
 props:
   breakpoint-desktop-tablet:
-    value: "{!breakpoint-desktop-tablet}"
-
-imports:
-  - ../aliases.yml
+    value: 1056
 
 global:
   platform: "core"

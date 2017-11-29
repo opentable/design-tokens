@@ -1,59 +1,7 @@
 aliases:
   # #############################################
-  # Colors
-  # #############################################
-
-  # Primary Action
-  # This color is only used on objects, backgrounds with large text (24px or larger, bold), and will be used as a color to guide users towards actionable content.
-  # =============================================
-  color-primary:
-    value: "#DA3743"
-  color-primary-active:
-    value: "#FB665F"
-  color-primary-disabled:
-    value: "rgba(218, 55, 67, 0.40)"
-
-  # Primary Gray, used on all text sizes
-  # =============================================
-  color-gray-primary:
-    value: "#333333"
-
-  # Secondary Gray, used on smaller font sizes
-  # =============================================
-  color-gray-secondary:
-    value: "#717171"
-
-  # Utility Gray, used for borders, dividers, containers
-  # =============================================
-  color-gray-utility:
-    value: "#E1E1E1"
-
-  # Lightest gray, used for backgrounds for the page and backgrounds for active/hover states
-  # =============================================
-  color-gray-active:
-    value: "#F7F7F7"
-
-  # White, used for button text and (if necessary) backgrounds 
-  # =============================================
-  color-white:
-    value: "#FFFFFF"
-
-  # #############################################
-  # Spacing
-  # #############################################
-  spacing-xsmall:
-    value: "4px"
-  spacing-small:
-    value: "8px"
-  spacing-medium:
-    value: "16px"
-  spacing-large:
-    value: "32px"
-  spacing-xlarge:
-    value: "64px"
-
-  # #############################################
   # Typography
+  # Aliased because these values are used by both otkit-typography and otkit-desktop-typography.
   # #############################################
   font-size-base:
     value: "16px"
@@ -85,9 +33,3 @@ aliases:
     value: "bold"
   font-name:
     value: "Brandon Text"
-
-  # #############################################
-  # Layout
-  # #############################################
-  breakpoint-desktop-tablet:
-    value: 1056
