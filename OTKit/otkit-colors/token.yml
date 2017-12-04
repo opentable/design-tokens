@@ -5,16 +5,14 @@ props:
   color-primary:
     value: "#DA3743"
   color-primary-active:
-    value: "#FB665F"
-  color-primary-disabled:
-    value: "rgba(218, 55, 67, 0.40)"
+    value: "#AE2C35"
 
   # Primary Gray, used on all text sizes
-  # =============================================  
+  # =============================================
   color-gray-primary:
     value: "#333333"
 
-  # Secondary Gray, used on smaller font sizes
+  # Secondary Gray, used on smaller font sizes and for disabled primary buttons
   # =============================================
   color-gray-secondary:
     value: "#717171"
@@ -29,8 +27,8 @@ props:
   color-gray-active:
     value: "#F7F7F7"
 
-  # White, used for button text and (if necessary) backgrounds 
-  # =============================================  
+  # White, used for button text and (if necessary) backgrounds
+  # =============================================
   color-white:
     value: "#FFF"
 
