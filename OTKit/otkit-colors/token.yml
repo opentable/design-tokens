@@ -5,7 +5,7 @@ props:
   color-primary:
     value: "#DA3743"
   color-primary-active:
-    value: "#AE2C35"
+    value: "#b8222d"
 
   # Primary Gray, used on all text sizes
   # =============================================
