@@ -10,7 +10,7 @@ props:
   # Primary Gray, used on all text sizes
   # =============================================
   color-gray-primary:
-    value: "#333333"
+    value: "#333335"
 
   # Secondary Gray, used on smaller font sizes and for disabled primary buttons
   # =============================================
