@@ -29,8 +29,8 @@ props:
 
   # White, used for button text and (if necessary) backgrounds
   # =============================================
-  color-white:
-    value: "#FFF"
+  color-off-white:
+    value: "#F7F7F7"
 
 global:
   platform: "core"
