@@ -32,6 +32,11 @@ props:
   color-white:
     value: "#FFF"
 
+  # Green, used for success validation message
+  # =============================================
+  color-green:
+    value: "#28C593"
+
 global:
   platform: "core"
   type: "color"
