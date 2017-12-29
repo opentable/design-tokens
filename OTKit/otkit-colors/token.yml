@@ -10,7 +10,7 @@ props:
   # Black, used for fun
   # =============================================
   color-black-fun:
-    value: "#000"
+    value: "#222"
 
 # Primary Gray, used on all text sizes
   # =============================================
