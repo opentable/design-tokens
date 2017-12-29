@@ -7,7 +7,12 @@ props:
   color-primary-active:
     value: "#b8222d"
 
-  # Primary Gray, used on all text sizes
+  # Black, used for fun
+  # =============================================
+  color-black-fun:
+    value: "#000"
+
+# Primary Gray, used on all text sizes
   # =============================================
   color-gray-primary:
     value: "#333333"
