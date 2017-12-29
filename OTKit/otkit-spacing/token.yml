@@ -9,8 +9,6 @@ props:
     value: "32px"
   spacing-xlarge:
     value: "64px"
-  spacing-xxlarge:
-    value: "128px"
 
 global:
   platform: "core"
