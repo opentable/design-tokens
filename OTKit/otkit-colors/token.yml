@@ -17,6 +17,11 @@ props:
   color-gray-secondary:
     value: "#717171"
 
+ # Tertiary Gray, used on legalese text
+  # =============================================
+  color-gray-tertiary:
+    value: "#39474C"
+
   # Utility Gray, used for borders, dividers, containers
   # =============================================
   color-gray-utility:
