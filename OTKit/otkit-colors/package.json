@@ -3,8 +3,7 @@
   "version": "2.2.1",
   "description": "OpenTable colors design token",
   "author": {
-    "name": "Nick Balestra",
-    "email": "nick@balestra.ch"
+    "email": "design-tokens@opentable.com"
   },
   "repository": {
     "type": "git",
