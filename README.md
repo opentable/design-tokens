@@ -42,11 +42,12 @@ Standard design tokens. Use them if you are following the new design guidelines.
 
 | Token | Available Formats | Version |
 |--------|-------|-------|
+| [`otkit-borders`](/OTKit/otkit-borders) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-borders.svg)](http://badge.fury.io/js/otkit-borders) |
 | [`otkit-breakpoints`](/OTKit/otkit-breakpoints) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-breakpoints.svg)](http://badge.fury.io/js/otkit-breakpoints) |
 | [`otkit-colors`](/OTKit/otkit-colors) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-colors.svg)](http://badge.fury.io/js/otkit-colors) |
+| [`otkit-desktop-typography`](/OTKit/otkit-desktop-typography) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-desktop-typography.svg)](http://badge.fury.io/js/otkit-desktop-typography) |
 | [`otkit-spacing`](/OTKit/otkit-spacing) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing) |
 | [`otkit-typography`](/OTKit/otkit-typography) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-typography.svg)](http://badge.fury.io/js/otkit-typography) |
-| [`otkit-desktop-typography`](/OTKit/otkit-desktop-typography) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-desktop-typography.svg)](http://badge.fury.io/js/otkit-desktop-typography) |
 
 
 ### OTTheme
