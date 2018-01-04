@@ -1,0 +1,10 @@
+props:
+  # Used in containers, cards and modals
+  # =============================================
+  border-radius-small:
+    value: "2px"
+
+global:
+  platform: "core"
+  type: "border"
+  category: "border"
