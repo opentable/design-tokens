@@ -3,8 +3,7 @@
   "version": "2.0.0",
   "description": "OpenTable desktop web typography design token",
   "author": {
-    "name": "Vincent Zhang",
-    "email": "v@vincentzh.com"
+    "email": "design-tokens@opentable.com"
   },
   "repository": {
     "type": "git",
