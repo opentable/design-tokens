@@ -1,0 +1,41 @@
+props:
+  heading-xlarge:
+    font-size: "48px"
+    line-height: "48px"
+    font-weight: "bold"
+
+  heading-large:
+    font-size: "24px"
+    line-height: "32px"
+    font-weight: "bold"
+
+  heading-large-alternate:
+    font-size: "24px"
+    line-height: "32px"
+    font-weight: "normal"
+
+  heading-medium:
+    font-size: "18px"
+    line-height: "24px"
+    font-weight: "500"
+
+  subheading-small:
+    font-size: "16px"
+    line-height: "24px"
+    font-weight: "500"
+
+  bodytext-small:
+    font-size: "16px"
+    line-height: "24px"
+    font-weight: "normal"
+
+  subtext-xsmall:
+    font-size: "14px"
+    line-height: "20px"
+    font-weight: "500"
+
+  subtext-xsmall-alternate:
+    font-size: "14px"
+    line-height: "20px"
+    font-weight: "normal"
+
