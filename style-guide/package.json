@@ -1,0 +1,25 @@
+{
+  "name": "style-guide",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Static Style Guide for OpenTable's Design-Tokens",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opentable/design-tokens"
+  },
+  "homepage": "https://opentable.github.io/design-tokens/",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "dependencies": {
+    "gatsby": "^1.9.181",
+    "otkit-desktop-typography": "2.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}
