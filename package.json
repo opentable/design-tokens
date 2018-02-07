@@ -6,18 +6,8 @@
     "npm-watch": "^0.3.0",
     "concurrently": "^3.5.1"
   },
-  "watch": {
-    "build": {
-      "patterns": [
-        "OTKit",
-        "OTTheme"
-      ],
-      "extensions": "yml",
-      "delay": 0
-    }
-  },
   "scripts": {
-    "build": "npm run build-ottheme && npm run build-otkit",
+    "build": "npm run build-otkit && npm run build-ottheme",
     "build-ottheme": "lerna exec --scope ottheme-* theo token.yml -- --transform web --format scss,cssmodules.css,common.js --dest .",
     "build-otkit": "lerna exec --scope otkit-* theo token.yml -- --transform web --format scss,cssmodules.css,common.js --dest .",
     "clean": "lerna clean",
@@ -27,5 +17,15 @@
     "publish": "npm run build && lerna publish",
     "updated": "lerna updated",
     "develop": "concurrently 'lerna exec --scope style-guide npm run develop' 'npm-watch'"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "OTKit",
+        "OTTheme"
+      ],
+      "extensions": "yml",
+      "delay": 0
+    }
   }
 }
