@@ -1,6 +1,6 @@
 {
   "name": "otkit-shadows",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "OpenTable box & text shadows design token",
   "author": {
     "email": "design-tokens@opentable.com"
