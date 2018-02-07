@@ -1,0 +1,64 @@
+props:
+  font-size-xlarge:
+    type: "size"
+    value: "32px"
+  font-weight-xlarge:
+    type: "raw"
+    value: "{!font-weight-bold}"
+  line-height-xlarge:
+    type: "size"
+    value: "40px"
+
+  font-size-large:
+    type: "size"
+    value: "24px"
+  font-weight-large:
+    type: "raw"
+    value: "{!font-weight-bold}"
+  font-weight-large-alternate:
+    type: "raw"
+    value: "{!font-weight-normal}"
+  line-height-large:
+    type: "size"
+    value: "32px"
+
+  font-size-medium:
+    type: "size"
+    value: "18px"
+  font-weight-medium:
+    type: "raw"
+    value: "{!font-weight-medium}"
+  line-height-medium:
+    type: "size"
+    value: "24px}"
+
+  font-size-small:
+    type: "size"
+    value: "14px"
+  font-weight-small:
+    type: "raw"
+    value: "{!font-weight-medium}"
+  font-weight-small-alternate:
+    type: "raw"
+    value: "{!font-weight-normal}"
+  line-height-small:
+    type: "size"
+    value: "20px"
+
+  font-size-xsmall:
+    type: "size"
+    value: "12px"
+  font-weight-xsmall:
+    type: "raw"
+    value: "{!font-weight-normal}"
+  line-height-xsmall:
+    type: "size"
+    value: "16px"
+
+imports:
+  - ../aliases.yml
+
+global:
+  platform: "mobileweb"
+  type: "typography"
+  category: "typography"

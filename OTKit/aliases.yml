@@ -14,6 +14,8 @@ aliases:
   font-size-large:
     value: "24px"
   font-size-xlarge:
+    value: "32px"
+  font-size-xxlarge:
     value: "48px"
   line-height-xsmall:
     value: "20px"
@@ -24,7 +26,9 @@ aliases:
   line-height-large:
     value: "32px"
   line-height-xlarge:
-    value: "48px"
+    value: "40px"
+  line-height-xxlarge:
+    value: "56px"
   font-weight-normal:
     value: "normal"
   font-weight-medium:
