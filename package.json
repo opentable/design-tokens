@@ -13,6 +13,7 @@
     "postinstall": "lerna bootstrap",
     "updatetoc": "doctoc README.md --github",
     "publish": "npm run build && lerna publish",
-    "updated": "lerna updated"
+    "updated": "lerna updated",
+    "develop": "lerna exec --scope style-guide npm run develop"
   }
 }
