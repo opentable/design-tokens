@@ -1,0 +1,74 @@
+props:
+  heading-xlarge-font-size:
+    type: "size"
+    value: "{!font-size-xlarge}"
+  heading-xlarge-font-weight:
+    type: "raw"
+    value: "{!font-weight-bold}"
+  heading-xlarge-line-height:
+    type: "size"
+    value: "{!line-height-xlarge}"
+
+  heading-large-font-size:
+    type: "size"
+    value: "{!font-size-large}"
+  heading-large-font-weight:
+    type: "raw"
+    value: "{!font-weight-bold}"
+  heading-large-font-weight-alternate:
+    type: "raw"
+    value: "{!font-weight-normal}"
+  heading-large-line-height:
+    type: "size"
+    value: "{!line-height-large}"
+
+  heading-medium-font-size:
+    type: "size"
+    value: "{!font-size-medium}"
+  heading-medium-font-weight:
+    type: "raw"
+    value: "{!font-weight-medium}"
+  heading-medium-line-height:
+    type: "size"
+    value: "{!line-height-medium}"
+
+  subheading-small-font-size:
+    type: "size"
+    value: "{!font-size-small}"
+  subheading-small-font-weight:
+    type: "raw"
+    value: "{!font-weight-medium}"
+  subheading-small-line-height:
+    type: "size"
+    value: "{!line-height-small}"
+
+  bodytext-small-font-size:
+    type: "size"
+    value: "{!font-size-small}"
+  bodytext-small-font-weight:
+    type: "raw"
+    value: "{!font-weight-normal}"
+  bodytext-small-line-height:
+    type: "size"
+    value: "{!line-height-small}"
+
+  subtext-xsmall-font-size:
+    type: "size"
+    value: "{!font-size-xsmall}"
+  subtext-xsmall-font-weight:
+    type: "raw"
+    value: "{!font-weight-medium}"
+  subtext-xsmall-font-weight-alternate:
+    type: "raw"
+    value: "{!font-weight-normal}"
+  subtext-xsmall-line-height:
+    type: "size"
+    value: "{!line-height-xsmall}"
+
+imports:
+  - ../aliases.yml
+
+global:
+  platform: "desktop"
+  type: "typography"
+  category: "typography"

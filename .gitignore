@@ -4,3 +4,5 @@ node_modules
 *.scss
 *.cssmodules.css
 *.common.js
+docs/_site
+docs/Gemfile.lock
