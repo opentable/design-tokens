@@ -4,17 +4,29 @@
       "path---otkit-desktop-typography-a0e39f21c11f6a62c5ab.js",
       "path---otkit-desktop-typography-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-3d27f637c99e965037df.js",
+      "component---src-pages-index-js-3d27f637c99e965037df.js.map"
+    ],
     "component---src-pages-otkit-desktop-typography-js": [
-      "component---src-pages-otkit-desktop-typography-js-d265212b167bce7cec0a.js",
-      "component---src-pages-otkit-desktop-typography-js-d265212b167bce7cec0a.js.map"
+      "component---src-pages-otkit-desktop-typography-js-896b43913605df78686d.js",
+      "component---src-pages-otkit-desktop-typography-js-896b43913605df78686d.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-89721cf82538c454028e.js",
-      "commons-89721cf82538c454028e.js.map"
+      "commons-b14f6f1858e38eff902c.js",
+      "build-js-styles.css",
+      "commons-b14f6f1858e38eff902c.js.map",
+      "build-js-styles.css.map"
     ],
     "app": [
-      "app-b009ddf6f272e2e37c3a.js",
-      "app-b009ddf6f272e2e37c3a.js.map"
+      "app-a626f51e519aa80403cb.js",
+      "build-js-styles.css",
+      "app-a626f51e519aa80403cb.js.map",
+      "build-js-styles.css.map"
     ]
   }
 }
