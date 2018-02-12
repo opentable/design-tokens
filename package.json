@@ -25,7 +25,9 @@
     "postinstall": "lerna bootstrap",
     "updatetoc": "doctoc README.md --github",
     "publish": "npm run build && lerna publish --exact",
+    "postpublish": "npm run deploy-styleguide",
     "updated": "lerna updated",
-    "develop": "concurrently 'lerna exec --scope style-guide npm run develop' 'npm-watch'"
+    "develop": "concurrently 'lerna exec --scope style-guide npm run develop' 'npm-watch'",
+    "deploy-styleguide": "lerna exec --scope style-guide npm run deploy"
   }
 }
