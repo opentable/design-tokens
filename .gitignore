@@ -1,6 +1,1 @@
-node_modules
-*.log
 .DS_Store
-*.scss
-*.cssmodules.css
-*.common.js

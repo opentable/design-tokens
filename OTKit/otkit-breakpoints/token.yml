@@ -1,8 +1,0 @@
-props:
-  breakpoint-desktop-tablet:
-    value: 1056
-
-global:
-  platform: "core"
-  type: "breakpoints"
-  category: "breakpoints"
