@@ -6,3 +6,4 @@ node_modules
 *.common.js
 .cache
 public
+package-lock.json

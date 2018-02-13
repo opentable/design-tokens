@@ -1,0 +1,10 @@
+@value spacing-large from 'otkit-spacing/token.cssmodules.css';
+
+.font-column {
+	width: 500px;
+	font-family: 'BrandonText';
+}
+
+.font-item {
+	margin-bottom: spacing-large;
+}

@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'BrandonText';
+  src: url('https://cdn.otstatic.com/common/font/Brandon/Brandon_txt_reg-webfont.woff2') format('woff2'), url('https://cdn.otstatic.com/common/font/Brandon/Brandon_txt_reg-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'BrandonText';
+  src: url('https://cdn.otstatic.com/common/font/Brandon/Brandon_txt_med-webfont.woff2') format('woff2'), url('https://cdn.otstatic.com/common/font/Brandon/Brandon_txt_med-webfont.woff') format('woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'BrandonText';
+  src: url('https://cdn.otstatic.com/common/font/Brandon/Brandon_txt_bld-webfont.woff2') format('woff2'), url('https://cdn.otstatic.com/common/font/Brandon/Brandon_txt_bld-webfont.woff') format('woff');
+  font-weight: bold;
+}
