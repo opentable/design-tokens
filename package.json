@@ -1,8 +1,20 @@
 {
   "devDependencies": {
     "doctoc": "^1.3.0",
-    "lerna": "^2.0.0",
-    "theo": "^6.0.0-beta.4"
+    "lerna": "^2.8.0",
+    "theo": "^6.0.0",
+    "npm-watch": "^0.3.0",
+    "concurrently": "^3.5.1"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "OTKit",
+        "OTTheme"
+      ],
+      "extensions": "yml",
+      "delay": 0
+    }
   },
   "scripts": {
     "build": "npm run build-ottheme && npm run build-otkit",
@@ -12,7 +24,10 @@
     "test": "lerna exec --scope ot* theo token.yml -- --transform web --format scss,cssmodules.css,common.js",
     "postinstall": "lerna bootstrap",
     "updatetoc": "doctoc README.md --github",
-    "publish": "npm run build && lerna publish",
-    "updated": "lerna updated"
+    "publish": "npm run build && lerna publish --exact",
+    "postpublish": "npm run deploy-styleguide",
+    "updated": "lerna updated",
+    "develop": "concurrently 'lerna exec --scope style-guide npm run develop' 'npm-watch'",
+    "deploy-styleguide": "lerna exec --scope style-guide npm run deploy"
   }
 }
