@@ -5,12 +5,12 @@
       "path---otkit-desktop-typography-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-3d27f637c99e965037df.js",
-      "component---src-pages-index-js-3d27f637c99e965037df.js.map"
+      "component---src-pages-index-js-e3dfae9c57dc827ae391.js",
+      "component---src-pages-index-js-e3dfae9c57dc827ae391.js.map"
     ],
     "component---src-pages-otkit-desktop-typography-js": [
-      "component---src-pages-otkit-desktop-typography-js-896b43913605df78686d.js",
-      "component---src-pages-otkit-desktop-typography-js-896b43913605df78686d.js.map"
+      "component---src-pages-otkit-desktop-typography-js-3a01a2b416bd9eeaeaf9.js",
+      "component---src-pages-otkit-desktop-typography-js-3a01a2b416bd9eeaeaf9.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -23,9 +23,9 @@
       "build-js-styles.css.map"
     ],
     "app": [
-      "app-a626f51e519aa80403cb.js",
+      "app-6dcece02ad691631de62.js",
       "build-js-styles.css",
-      "app-a626f51e519aa80403cb.js.map",
+      "app-6dcece02ad691631de62.js.map",
       "build-js-styles.css.map"
     ]
   }
