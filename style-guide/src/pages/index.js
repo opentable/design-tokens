@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 import styles from '../styles/index.module.css';
+import fonts from '../styles/fonts.css';
 
 export default () => {
   return (
