@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/details/ic_thumbs_up</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/details/ic_thumbs_up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M19.9966602,10.6473354 C19.9547968,10.1335591 19.5245667,9.72965599 19,9.72965599 L14.4971678,9.72965599 L15.0775939,8.34343449 C15.6448973,6.98855382 15.6448973,5.99977755 15.1679497,5.28435619 C14.8228223,4.76666502 14.2093149,4.34983782 13.2893673,4.04949005 C12.8441398,3.90413062 12.3576667,4.08725924 12.1188171,4.49013089 L8.41964828,10.729656 L5,10.729656 C4.44771525,10.729656 4,11.1773713 4,11.729656 L4,18.729656 C4,19.2819407 4.44771525,19.729656 5,19.729656 L17.3603922,19.729656 C17.8370732,19.729656 18.247488,19.3931963 18.3409729,18.9257721 L19.9966602,10.6473354 Z" id="Shape" stroke="#333333" stroke-width="2"></path>
+        <rect id="Rectangle-path" fill="#333333" fill-rule="nonzero" x="7" y="10" width="2" height="10"></rect>
+    </g>
+</svg>
