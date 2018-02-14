@@ -1,0 +1,15 @@
+collectors:
+
+  - type: js-npm
+    path: /
+    actors:
+    # pull requests for updates to any version
+    - type: js-npm
+      versions: "Y.Y.Y"
+  
+  - type: js-npm
+    path: packages/style-guide
+    actors:
+    # pull requests for updates to any version
+    - type: js-npm
+      versions: "Y.Y.Y"
