@@ -1,0 +1,27 @@
+props:
+  ic_information:
+    value: >-
+      <svg xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24
+      24"><defs><circle id="a" cx="10" cy="10" r="10"/><rect id="b" width="2"
+      height="5" y="3" rx=".5"/><rect id="c" width="2" height="2"
+      rx=".5"/></defs><g fill-rule="evenodd"><path d="M0 0h24v24H0z"/><g
+      transform="translate(2 2)"><use xlink:href="#a"/><circle cx="10" cy="10"
+      r="9" stroke-width="2"/></g><g transform="matrix(1 0 0 -1 11 16)"><use
+      xlink:href="#b"/><rect width="1" height="4" x=".5" y="3.5" rx=".5"/></g><g
+      transform="matrix(1 0 0 -1 11 16)"><use xlink:href="#c"/><rect width="1"
+      height="1" x=".5" y=".5" rx=".5"/></g></g></svg>
+  ic_phone:
+    value: >-
+      <svg xmlns="http://www.w3.org/2000/svg" style="background:#fff" viewBox="0
+      0 24 24"><g fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path
+      stroke-width="2" d="M14.772 19.289a3 3 0 0 0 3.016-.742l1.697-1.697a1 1 0
+      0 0 0-1.414l-2.39-2.39a1 1 0 0
+      0-1.183-.172c-1.515.82-2.721.982-3.557.146l-.459-.459-.425-.425-.885-.885c-.852-.854-.703-2.077.124-3.565a1
+      1 0 0 0-.167-1.193L8.17 4.122a1 1 0 0 0-1.414 0L5.06 5.819a3 3 0 0 0-.742
+      3.016c.835 2.672 2.12 4.867 3.853 6.6 1.734 1.734 3.93 3.019 6.601
+      3.854z"/></g></svg>
+global:
+  platform: core
+  type: icon
+  category: icon
