@@ -8,7 +8,7 @@ collectors:
       versions: "Y.Y.Y"
   
   - type: js-npm
-    path: packages/style-guide
+    path: style-guide
     actors:
     # pull requests for updates to any version
     - type: js-npm
