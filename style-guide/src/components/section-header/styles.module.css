@@ -1,0 +1,15 @@
+@value spacing-large, spacing-medium from 'otkit-spacing/token.cssmodules.css';
+@value heading-large-font-size, heading-large-font-weight, heading-large-line-height from 'otkit-desktop-typography/token.cssmodules.css';
+@value color-gray-primary, color-gray-utility from 'otkit-colors/token.cssmodules.css';
+
+.section-header {
+  font-size: heading-large-font-size;
+  font-weight: heading-large-font-weight;
+  line-height: heading-large-line-height;
+  color: color-gray-primary;
+  border-bottom: 1px solid color-gray-utility;
+  padding-bottom: spacing-medium;
+  margin: 0 0 spacing-medium 0;
+  display: flex;
+  justify-content: space-between;
+}

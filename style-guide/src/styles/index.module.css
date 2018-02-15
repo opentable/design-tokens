@@ -1,8 +1,51 @@
-.body {
-  color: palegreen;
+@value spacing-medium from 'otkit-spacing/token.cssmodules.css';
+@value color-primary, color-gray-primary from 'otkit-colors/token.cssmodules.css';
+@value font-weight-medium from 'otkit-typography/token.cssmodules.css';
+
+/* local variables */
+@value width-two-column: 992px;
+@value width-nav: 320px;
+@value width-main: 640px;
+
+body {
+  font-family: 'BrandonText', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: color-gray-primary;
 }
 
-.link {
-  font-size: 20px;
-  color: paleturquoise;
+a {
+  text-decoration: none;
+  color: color-primary;
+}
+
+.two-column {
+  display: flex;
+  max-width: width-two-column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  width: width-nav;
+  margin: 0 spacing-medium 0 0;
+}
+
+.nav-link {
+  margin-bottom: spacing-medium;
+  font-weight: font-weight-medium;
+}
+
+.nav-link .link-active {
+  color: color-primary;
+  border-bottom: 2px solid color-primary;
+}
+
+.main {
+  width: width-main;
+  margin: spacing-medium 0 0 spacing-medium;
+}
+
+.link-secondary, .nav-link a {
+  color: color-gray-primary;
 }

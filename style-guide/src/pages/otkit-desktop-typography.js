@@ -1,6 +1,6 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import _ from 'lodash';
+import SectionHeader from '../components/section-header';
 
 import token from 'otkit-desktop-typography/token.common';
 import styles from '../styles/otkit-desktop-typography.module.css';
@@ -65,8 +65,8 @@ export default () => {
   });
   return (
     <div>
+      <SectionHeader text="Typography" />
       <div className={styles['font-column']}>{groups}</div>
-      <Link to="/">back to index</Link>
     </div>
   );
 };
