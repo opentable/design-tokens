@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "gatsby": "^1.9.181",
-    "gatsby-link": "^1.6.36",
+    "gatsby-link": "^1.6.37",
     "lodash": "^4.17.5",
     "otkit-desktop-typography": "2.0.2",
     "otkit-spacing": "2.0.3"
