@@ -4,28 +4,44 @@
       "path---otkit-desktop-typography-a0e39f21c11f6a62c5ab.js",
       "path---otkit-desktop-typography-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-otkit-colors-js": [
+      "component---src-pages-otkit-colors-js-54fb2b689d02c1f2b71e.js",
+      "component---src-pages-otkit-colors-js-54fb2b689d02c1f2b71e.js.map"
+    ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-e3dfae9c57dc827ae391.js",
-      "component---src-pages-index-js-e3dfae9c57dc827ae391.js.map"
+      "component---src-pages-index-js-9a5102b8ace784389c9d.js",
+      "component---src-pages-index-js-9a5102b8ace784389c9d.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---otkit-colors": [
+      "path---otkit-colors-a0e39f21c11f6a62c5ab.js",
+      "path---otkit-colors-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-otkit-desktop-typography-js": [
-      "component---src-pages-otkit-desktop-typography-js-3a01a2b416bd9eeaeaf9.js",
-      "component---src-pages-otkit-desktop-typography-js-3a01a2b416bd9eeaeaf9.js.map"
+      "component---src-pages-otkit-desktop-typography-js-31a0cde3896f5deecb9a.js",
+      "component---src-pages-otkit-desktop-typography-js-31a0cde3896f5deecb9a.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-bd86f6a70c57b8381992.js",
+      "component---src-layouts-index-js-bd86f6a70c57b8381992.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-b14f6f1858e38eff902c.js",
+      "commons-6e013d9a2b2bc221224b.js",
       "build-js-styles.css",
-      "commons-b14f6f1858e38eff902c.js.map",
+      "commons-6e013d9a2b2bc221224b.js.map",
       "build-js-styles.css.map"
     ],
     "app": [
-      "app-6dcece02ad691631de62.js",
+      "app-3f142fed9563d06ff44c.js",
       "build-js-styles.css",
-      "app-6dcece02ad691631de62.js.map",
+      "app-3f142fed9563d06ff44c.js.map",
       "build-js-styles.css.map"
     ]
   }
