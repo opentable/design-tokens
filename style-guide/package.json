@@ -16,7 +16,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
-    "gatsby": "^1.9.181",
+    "gatsby": "^1.9.199",
     "gatsby-link": "^1.6.36",
     "lodash": "^4.17.5",
     "otkit-desktop-typography": "2.0.2",
