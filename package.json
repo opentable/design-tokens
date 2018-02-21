@@ -5,8 +5,10 @@
     "husky": "^0.14.3",
     "lerna": "^2.9.0",
     "lint-staged": "^6.1.0",
+    "node-yaml": "^3.1.1",
     "npm-watch": "^0.3.0",
     "prettier": "^1.10.2",
+    "svgo": "^1.0.4",
     "theo": "^6.0.0"
   },
   "watch": {
@@ -21,6 +23,7 @@
   },
   "scripts": {
     "build": "npm run build-ottheme && npm run build-otkit",
+    "build-icons": "node icon-generator.js",
     "build-otkit": "lerna exec --scope otkit-* theo token.yml -- --transform web --format scss,cssmodules.css,common.js --dest .",
     "build-ottheme": "lerna exec --scope ottheme-* theo token.yml -- --transform web --format scss,cssmodules.css,common.js --dest .",
     "clean": "lerna clean",
