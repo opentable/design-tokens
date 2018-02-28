@@ -7,7 +7,7 @@
     "lint-staged": "^7.0.0",
     "npm-watch": "^0.3.0",
     "prettier": "^1.11.0",
-    "theo": "^6.0.0"
+    "theo": "^7.0.0"
   },
   "watch": {
     "build": {
