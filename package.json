@@ -6,7 +6,7 @@
     "lerna": "^2.9.0",
     "lint-staged": "^7.0.0",
     "npm-watch": "^0.3.0",
-    "theo": "^7.0.1"
+    "theo": "^7.0.1",
     "prettier": "^1.11.1"
   },
   "watch": {
