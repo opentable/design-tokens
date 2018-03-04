@@ -1,0 +1,49 @@
+@value spacing-xsmall, spacing-small, spacing-medium from 'otkit-spacing/token.cssmodules.css';
+@value font-size-xsmall, font-weight-medium from 'otkit-typography/token.cssmodules.css';
+@value border-radius-small from 'otkit-borders/token.cssmodules.css';
+@value color-gray-utility from 'otkit-colors/token.cssmodules.css';
+
+.section-color {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &:after {
+    content: "";
+    width: 23%;
+  }
+}
+
+.card {
+  text-align: center;
+  width: 23%;
+  margin-bottom: spacing-medium;
+}
+
+.color-block {
+  border-radius: border-radius-small;
+  padding: spacing-medium 0;
+  text-align: center;
+}
+
+.color-block-border {
+  composes: color-block;
+  border: 1px solid color-gray-utility;
+}
+
+.color-name {
+  border: 1px solid color-gray-utility;
+  font-size: font-size-xsmall;
+  padding: spacing-xsmall;
+  margin: spacing-small 0;
+}
+
+.color-hex {
+  font-weight: font-weight-medium;
+  text-transform: uppercase;
+}
+
+.color-rgb {
+  font-size: font-size-xsmall;
+  opacity: .7;
+  margin: spacing-xsmall 0;
+}

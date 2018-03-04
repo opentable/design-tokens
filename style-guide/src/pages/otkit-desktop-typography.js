@@ -40,8 +40,8 @@ const typographyGroups = [
   }
 ];
 
-export default () => {
-  const groups = typographyGroups.map(group => {
+const TypographyDesktop = () => {
+  const groups = typographyGroups.map((group, index) => {
     const fontSize = token[_.camelCase(`${group.name}-font-size`)];
     const fontWeight =
       token[
@@ -57,16 +57,18 @@ export default () => {
       lineHeight
     };
     return (
-      <div className={styles['font-item']} style={divStyle}>
+      <div className={styles['font-item']} style={divStyle} key={index}>
         {groupName} | font-size: {fontSize} | font-weight: {fontWeight} |
         line-height: {lineHeight}
       </div>
     );
   });
   return (
-    <div>
-      <SectionHeader text="Typography" />
+    <section>
+      <SectionHeader text="Typography – Desktop" />
       <div className={styles['font-column']}>{groups}</div>
-    </div>
+    </section>
   );
 };
+
+export default TypographyDesktop;

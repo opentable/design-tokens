@@ -1,9 +1,5 @@
-@value spacing-large from 'otkit-spacing/token.cssmodules.css';
-
-.font-column {
-  width: 500px;
-}
+@value spacing-medium from 'otkit-spacing/token.cssmodules.css';
 
 .font-item {
-  margin-bottom: spacing-large;
+  margin-bottom: spacing-medium;
 }
