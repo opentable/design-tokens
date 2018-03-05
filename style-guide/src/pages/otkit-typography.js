@@ -2,8 +2,8 @@ import React from 'react';
 import _ from 'lodash';
 import SectionHeader from '../components/section-header';
 
-import token from 'otkit-desktop-typography/token.common';
-import styles from '../styles/otkit-desktop-typography.module.css';
+import token from 'otkit-typography-desktop/token.common';
+import styles from '../styles/otkit-typography-desktop.module.css';
 
 const typographyGroups = [
   {
@@ -40,8 +40,8 @@ const typographyGroups = [
   }
 ];
 
-export default () => {
-  const groups = typographyGroups.map(group => {
+const TypographyDesktop = () => {
+  const groups = typographyGroups.map((group, index) => {
     const fontSize = token[_.camelCase(`${group.name}-font-size`)];
     const fontWeight =
       token[
@@ -57,16 +57,18 @@ export default () => {
       lineHeight
     };
     return (
-      <div className={styles['font-item']} style={divStyle}>
+      <div className={styles['font-item']} style={divStyle} key={index}>
         {groupName} | font-size: {fontSize} | font-weight: {fontWeight} |
         line-height: {lineHeight}
       </div>
     );
   });
   return (
-    <div>
-      <SectionHeader text="Typography" />
+    <section>
+      <SectionHeader text="Typography – Desktop" />
       <div className={styles['font-column']}>{groups}</div>
-    </div>
+    </section>
   );
 };
+
+export default TypographyDesktop;

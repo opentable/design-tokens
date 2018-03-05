@@ -17,11 +17,15 @@ export default ({ children }) => (
       <Link className={styles['link-secondary']} to="/">
         <h1>OTKit Style Guide</h1>
       </Link>
-      <NavLink to="/otkit-desktop-typography/">Typography</NavLink>
       <NavLink to="/otkit-colors/">Colors</NavLink>
+      <NavLink to="/otkit-typography">Typography</NavLink>
+      <NavLink to="/otkit-spacing/">Spacing</NavLink>
+      <NavLink to="/otkit-borders/">Borders</NavLink>
+      <NavLink to="/otkit-breakpoints/">Breakpoints</NavLink>
+      <NavLink to="/otkit-shadows/">Shadows</NavLink>
       <div className={styles['nav-link']}>
         <a href="https://github.com/opentable/design-tokens" target="_blank">
-          design-tokens repo
+          Github repo / design-tokens
         </a>
       </div>
     </div>

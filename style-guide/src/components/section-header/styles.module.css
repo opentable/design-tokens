@@ -1,5 +1,5 @@
 @value spacing-large, spacing-medium from 'otkit-spacing/token.cssmodules.css';
-@value heading-large-font-size, heading-large-font-weight, heading-large-line-height from 'otkit-desktop-typography/token.cssmodules.css';
+@value heading-large-font-size, heading-large-font-weight, heading-large-line-height from 'otkit-typography-desktop/token.cssmodules.css';
 @value color-gray-primary, color-gray-utility from 'otkit-colors/token.cssmodules.css';
 
 .section-header {

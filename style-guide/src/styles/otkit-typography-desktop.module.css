@@ -1,0 +1,5 @@
+@value spacing-medium from 'otkit-spacing/token.cssmodules.css';
+
+.font-item {
+  margin-bottom: spacing-medium;
+}
