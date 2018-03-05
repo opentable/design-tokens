@@ -21,8 +21,8 @@
       "path---otkit-colors-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-otkit-desktop-typography-js": [
-      "component---src-pages-otkit-desktop-typography-js-31a0cde3896f5deecb9a.js",
-      "component---src-pages-otkit-desktop-typography-js-31a0cde3896f5deecb9a.js.map"
+      "component---src-pages-otkit-desktop-typography-js-fe782d101edc091e82ce.js",
+      "component---src-pages-otkit-desktop-typography-js-fe782d101edc091e82ce.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-08ceb3155e29f8cf84d6.js",
@@ -33,9 +33,9 @@
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-6e013d9a2b2bc221224b.js",
+      "commons-3a1fae28b515c300c06d.js",
       "build-js-styles.css",
-      "commons-6e013d9a2b2bc221224b.js.map",
+      "commons-3a1fae28b515c300c06d.js.map",
       "build-js-styles.css.map"
     ],
     "app": [
