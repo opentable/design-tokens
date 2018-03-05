@@ -48,7 +48,7 @@ Standard design tokens. Use them if you are following the new design guidelines.
 | [`otkit-colors`](/OTKit/otkit-colors)                         | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-colors.svg)](http://badge.fury.io/js/otkit-colors)                         |
 | [`otkit-shadows`](/OTKit/otkit-shadows)                       | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-shadows.svg)](http://badge.fury.io/js/otkit-shadows)                       |
 | [`otkit-spacing`](/OTKit/otkit-spacing)                       | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing)                       |
-| [`otkit-typography`](/OTKit/otkit-typography)                 | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-typography.svg)](http://badge.fury.io/js/otkit-typography)                 |
+| [`otkit-typography` (DEPRECATED)](/OTKit/otkit-typography)                 | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-typography.svg)](http://badge.fury.io/js/otkit-typography)                 |
 | [`otkit-typography-desktop`](/OTKit/otkit-typography-desktop) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-typography-desktop.svg)](http://badge.fury.io/js/otkit-typography-desktop) |
 
 ### OTTheme
