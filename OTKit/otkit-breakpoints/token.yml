@@ -1,6 +1,12 @@
 props:
-  breakpoint-desktop-tablet:
+  breakpoint-desktop-min:
     value: "1056px"
+  breakpoint-tablet-max:
+    value: "1055px"
+  breakpoint-tablet-min:
+    value: "768px"
+  breakpoint-mobile-max:
+    value: "767px"
 
 global:
   platform: "core"
