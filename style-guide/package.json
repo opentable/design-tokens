@@ -1,7 +1,7 @@
 {
   "name": "style-guide",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Static Style Guide for OpenTable's Design-Tokens",
   "license": "MIT",
   "repository": {
