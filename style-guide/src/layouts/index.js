@@ -18,7 +18,7 @@ export default ({ children }) => (
         <h1>OTKit Style Guide</h1>
       </Link>
       <NavLink to="/otkit-colors/">Colors</NavLink>
-      <NavLink to="/otkit-typography/">Typography</NavLink>
+      <NavLink to="/otkit-typography">Typography</NavLink>
       <NavLink to="/otkit-spacing/">Spacing</NavLink>
       <NavLink to="/otkit-borders/">Borders</NavLink>
       <NavLink to="/otkit-breakpoints/">Breakpoints</NavLink>

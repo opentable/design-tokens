@@ -1,5 +1,5 @@
 @value spacing-xsmall, spacing-small, spacing-medium from 'otkit-spacing/token.cssmodules.css';
-@value font-size-xsmall, font-weight-medium from 'otkit-typography/token.cssmodules.css';
+@value font-size-xsmall, font-weight-medium from 'otkit-typography-desktop/token.cssmodules.css';
 @value border-radius-small from 'otkit-borders/token.cssmodules.css';
 @value color-gray-utility from 'otkit-colors/token.cssmodules.css';
 

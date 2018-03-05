@@ -1,6 +1,6 @@
 @value spacing-medium, spacing-large, spacing-xlarge from 'otkit-spacing/token.cssmodules.css';
 @value color-primary, color-gray-primary from 'otkit-colors/token.cssmodules.css';
-@value font-weight-medium from 'otkit-typography/token.cssmodules.css';
+@value font-weight-medium from 'otkit-typography-desktop/token.cssmodules.css';
 
 /* local variables */
 @value width-two-column: 992px;

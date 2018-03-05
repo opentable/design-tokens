@@ -1,55 +1,74 @@
 import React from 'react';
 import _ from 'lodash';
-
 import SectionHeader from '../components/section-header';
-import token from 'otkit-typography/token.common';
-import TypographyDesktop from './otkit-desktop-typography.js';
 
-// process & group typography tokens
-var tokens = _.toPairsIn(token);
-var tokenGroups = [];
+import token from 'otkit-typography-desktop/token.common';
+import styles from '../styles/otkit-typography-desktop.module.css';
 
-var typographyTokens = {
-  fontSize: [],
-  lineHeight: [],
-  fontWeight: []
-};
-
-for (var key in typographyTokens) {
-  for (var i = 0; i < tokens.length; i++) {
-    var tokenName = tokens[i][0];
-    if (tokenName.startsWith(key)) {
-      typographyTokens[key].push(tokens[i]);
-    }
+const typographyGroups = [
+  {
+    name: 'heading-xlarge',
+    isAlternate: false
+  },
+  {
+    name: 'heading-large',
+    isAlternate: false
+  },
+  {
+    name: 'heading-large',
+    isAlternate: true
+  },
+  {
+    name: 'heading-medium',
+    isAlternate: false
+  },
+  {
+    name: 'subheading-small',
+    isAlternate: false
+  },
+  {
+    name: 'bodytext-small',
+    isAlternate: false
+  },
+  {
+    name: 'subtext-xsmall',
+    isAlternate: false
+  },
+  {
+    name: 'subtext-xsmall',
+    isAlternate: true
   }
-  // name of the token group
-  tokenGroups.push(
-    <div style={{ marginTop: '10px', fontWeight: '500' }}>
-      {_.kebabCase(key)}
-    </div>
-  );
-  // tokens within the token group
-  tokenGroups.push(
-    typographyTokens[key].map((token, index) => {
-      return (
-        <div key={index}>
-          {_.kebabCase(token[0])}: {token[1]}
-        </div>
-      );
-    })
-  );
-}
+];
 
-const Typography = () => {
+const TypographyDesktop = () => {
+  const groups = typographyGroups.map((group, index) => {
+    const fontSize = token[_.camelCase(`${group.name}-font-size`)];
+    const fontWeight =
+      token[
+        _.camelCase(
+          `${group.name}-font-weight${group.isAlternate ? '-alternate' : ''}`
+        )
+      ];
+    const lineHeight = token[_.camelCase(`${group.name}-line-height`)];
+    const groupName = `${group.name}${group.isAlternate ? '-alternate' : ''}`;
+    const divStyle = {
+      fontSize,
+      fontWeight,
+      lineHeight
+    };
+    return (
+      <div className={styles['font-item']} style={divStyle} key={index}>
+        {groupName} | font-size: {fontSize} | font-weight: {fontWeight} |
+        line-height: {lineHeight}
+      </div>
+    );
+  });
   return (
-    <div>
-      <section>
-        <SectionHeader text="Typography" />
-        {tokenGroups}
-      </section>
-      <TypographyDesktop />
-    </div>
+    <section>
+      <SectionHeader text="Typography – Desktop" />
+      <div className={styles['font-column']}>{groups}</div>
+    </section>
   );
 };
 
-export default Typography;
+export default TypographyDesktop;
