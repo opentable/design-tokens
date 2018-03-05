@@ -1,16 +1,12 @@
 {
   "assetsByChunkName": {
-    "path---otkit-desktop-typography": [
-      "path---otkit-desktop-typography-a0e39f21c11f6a62c5ab.js",
-      "path---otkit-desktop-typography-a0e39f21c11f6a62c5ab.js.map"
-    ],
     "component---src-pages-otkit-colors-js": [
-      "component---src-pages-otkit-colors-js-54fb2b689d02c1f2b71e.js",
-      "component---src-pages-otkit-colors-js-54fb2b689d02c1f2b71e.js.map"
+      "component---src-pages-otkit-colors-js-17675a87dfa3a2de26f9.js",
+      "component---src-pages-otkit-colors-js-17675a87dfa3a2de26f9.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-9a5102b8ace784389c9d.js",
-      "component---src-pages-index-js-9a5102b8ace784389c9d.js.map"
+      "component---src-pages-index-js-9a1ff8cb926999229f5e.js",
+      "component---src-pages-index-js-9a1ff8cb926999229f5e.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -20,29 +16,65 @@
       "path---otkit-colors-a0e39f21c11f6a62c5ab.js",
       "path---otkit-colors-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "component---src-pages-otkit-desktop-typography-js": [
-      "component---src-pages-otkit-desktop-typography-js-fe782d101edc091e82ce.js",
-      "component---src-pages-otkit-desktop-typography-js-fe782d101edc091e82ce.js.map"
+    "component---src-pages-otkit-spacing-js": [
+      "component---src-pages-otkit-spacing-js-ab2cc333fabf2a9e6791.js",
+      "component---src-pages-otkit-spacing-js-ab2cc333fabf2a9e6791.js.map"
+    ],
+    "path---otkit-shadows": [
+      "path---otkit-shadows-a0e39f21c11f6a62c5ab.js",
+      "path---otkit-shadows-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-otkit-typography-js": [
+      "component---src-pages-otkit-typography-js-dfb5d4610cbc5c806503.js",
+      "component---src-pages-otkit-typography-js-dfb5d4610cbc5c806503.js.map"
+    ],
+    "path---otkit-borders": [
+      "path---otkit-borders-a0e39f21c11f6a62c5ab.js",
+      "path---otkit-borders-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-08ceb3155e29f8cf84d6.js",
-      "component---src-layouts-index-js-08ceb3155e29f8cf84d6.js.map"
+      "component---src-layouts-index-js-ee0d2438e23376142ab9.js",
+      "component---src-layouts-index-js-ee0d2438e23376142ab9.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-otkit-shadows-js": [
+      "component---src-pages-otkit-shadows-js-a80fe6426a466df307c0.js",
+      "component---src-pages-otkit-shadows-js-a80fe6426a466df307c0.js.map"
+    ],
     "commons": [
-      "commons-3a1fae28b515c300c06d.js",
+      "commons-2f6bcedf4002c67d815a.js",
       "build-js-styles.css",
-      "commons-3a1fae28b515c300c06d.js.map",
+      "commons-2f6bcedf4002c67d815a.js.map",
       "build-js-styles.css.map"
     ],
+    "component---src-pages-otkit-breakpoints-js": [
+      "component---src-pages-otkit-breakpoints-js-76943cafb7fd24d05be3.js",
+      "component---src-pages-otkit-breakpoints-js-76943cafb7fd24d05be3.js.map"
+    ],
+    "path---otkit-breakpoints": [
+      "path---otkit-breakpoints-a0e39f21c11f6a62c5ab.js",
+      "path---otkit-breakpoints-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---otkit-typography": [
+      "path---otkit-typography-a0e39f21c11f6a62c5ab.js",
+      "path---otkit-typography-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-otkit-borders-js": [
+      "component---src-pages-otkit-borders-js-9dc07cad3f2c9b61e949.js",
+      "component---src-pages-otkit-borders-js-9dc07cad3f2c9b61e949.js.map"
+    ],
     "app": [
-      "app-7148b7ded27d8a5c2eff.js",
+      "app-5af4df59d061d7816886.js",
       "build-js-styles.css",
-      "app-7148b7ded27d8a5c2eff.js.map",
+      "app-5af4df59d061d7816886.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---otkit-spacing": [
+      "path---otkit-spacing-a0e39f21c11f6a62c5ab.js",
+      "path---otkit-spacing-a0e39f21c11f6a62c5ab.js.map"
     ]
   }
 }
