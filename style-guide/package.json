@@ -1,7 +1,7 @@
 {
   "name": "style-guide",
   "private": true,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Static Style Guide for OpenTable's Design-Tokens",
   "license": "MIT",
   "repository": {
@@ -21,7 +21,7 @@
     "gatsby-link": "^1.6.36",
     "lodash": "^4.17.5",
     "otkit-borders": "1.0.3",
-    "otkit-breakpoints": "3.0.0",
+    "otkit-breakpoints": "4.0.0",
     "otkit-colors": "2.2.3",
     "otkit-shadows": "1.0.3",
     "otkit-spacing": "2.0.3",
