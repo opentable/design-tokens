@@ -1,4 +1,10 @@
 props:
+  font-family:
+    type: "raw"
+    value: "'BrandonText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+  font-family-brand:
+    type: "raw"
+    value: "BrandonText"
   font-size-xsmall:
     type: "size"
     value: "{!font-size-xsmall}"
@@ -31,19 +37,13 @@ props:
     value: "{!line-height-xlarge}"
   font-weight-normal:
     type: "raw"
-    value: "{!font-weight-normal}"
+    value: "normal"
   font-weight-medium:
     type: "number"
-    value: "{!font-weight-medium}"
+    value: "500"
   font-weight-bold:
     type: "raw"
-    value: "{!font-weight-bold}"
-  font-name:
-    type: "string"
-    value: "{!font-name}"
-  font-size-base:
-    type: "string"
-    value: "{!font-size-base}"
+    value: "bold"
 
   heading-xlarge-font-size:
     type: "size"

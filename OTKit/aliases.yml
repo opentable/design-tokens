@@ -1,8 +1,4 @@
 aliases:
-  # #############################################
-  # Typography
-  # Aliased because these values are used by both otkit-typography and otkit-desktop-typography.
-  # #############################################
   font-size-base:
     value: "16px"
   font-size-xsmall:
@@ -31,5 +27,3 @@ aliases:
     value: "500"
   font-weight-bold:
     value: "bold"
-  font-name:
-    value: "Brandon Text"
