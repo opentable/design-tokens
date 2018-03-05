@@ -21,7 +21,7 @@
     "gatsby-link": "^1.6.36",
     "lodash": "^4.17.5",
     "otkit-borders": "1.0.3",
-    "otkit-breakpoints": "4.0.0",
+    "otkit-breakpoints": "4.0.1",
     "otkit-colors": "2.2.3",
     "otkit-shadows": "1.0.3",
     "otkit-spacing": "2.0.3",

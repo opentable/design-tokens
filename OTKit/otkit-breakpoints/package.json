@@ -1,6 +1,6 @@
 {
   "name": "otkit-breakpoints",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "OpenTable breakpoints design token",
   "author": {
     "email": "design-tokens@opentable.com"
