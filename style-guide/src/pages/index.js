@@ -1,5 +1,5 @@
 import React from 'react';
-import fonts from '../styles/fonts.css';
+import fonts from '../styles/fonts.module.css';
 import styles from '../styles/index.module.css';
 import Colors from './otkit-colors.js';
 import Typography from './otkit-typography.js';
