@@ -1,4 +1,50 @@
 props:
+  font-size-xsmall:
+    type: "size"
+    value: "{!font-size-xsmall}"
+  font-size-small:
+    type: "size"
+    value: "{!font-size-small}"
+  font-size-medium:
+    type: "size"
+    value: "{!font-size-medium}"
+  font-size-large:
+    type: "size"
+    value: "{!font-size-large}"
+  font-size-xlarge:
+    type: "size"
+    value: "{!font-size-xlarge}"
+  line-height-xsmall:
+    type: "size"
+    value: "{!line-height-xsmall}"
+  line-height-small:
+    type: "size"
+    value: "{!line-height-small}"
+  line-height-medium:
+    type: "size"
+    value: "{!line-height-medium}"
+  line-height-large:
+    type: "size"
+    value: "{!line-height-large}"
+  line-height-xlarge:
+    type: "size"
+    value: "{!line-height-xlarge}"
+  font-weight-normal:
+    type: "raw"
+    value: "{!font-weight-normal}"
+  font-weight-medium:
+    type: "number"
+    value: "{!font-weight-medium}"
+  font-weight-bold:
+    type: "raw"
+    value: "{!font-weight-bold}"
+  font-name:
+    type: "string"
+    value: "{!font-name}"
+  font-size-base:
+    type: "string"
+    value: "{!font-size-base}"
+
   heading-xlarge-font-size:
     type: "size"
     value: "{!font-size-xlarge}"
