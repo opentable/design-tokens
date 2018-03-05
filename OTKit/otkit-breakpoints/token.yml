@@ -1,6 +1,6 @@
 props:
   breakpoint-desktop-tablet:
-    value: 1056
+    value: "1056px"
 
 global:
   platform: "core"
