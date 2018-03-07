@@ -1,7 +1,4 @@
-@value spacing-xsmall, spacing-small, spacing-medium from 'otkit-spacing/token.cssmodules.css';
-@value font-size-xsmall, font-weight-medium from 'otkit-typography-desktop/token.cssmodules.css';
-@value border-radius-small from 'otkit-borders/token.cssmodules.css';
-@value color-gray-utility from 'otkit-colors/token.cssmodules.css';
+@value spacing-xsmall, spacing-small, spacing-medium, font-size-xsmall, font-weight-medium, border-radius-small, color-gray-utility from './tokens.module.css';
 
 .section-color {
   display: flex;
