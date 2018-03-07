@@ -5,7 +5,9 @@
     "husky": "^0.14.3",
     "lerna": "^2.9.0",
     "lint-staged": "^7.0.0",
+    "node-yaml": "^3.1.1",    
     "npm-watch": "^0.3.0",
+    "svgo": "^1.0.4",    
     "theo": "^7.0.1",
     "prettier": "^1.11.1"
   },
@@ -15,13 +17,15 @@
         "OTKit",
         "OTTheme"
       ],
-      "extensions": "yml",
+      "ignore": "OTKit/otkit-icons/token.yml",
+      "extensions": "yml, svg",
       "delay": 0
     }
   },
   "scripts": {
     "build": "npm run build-ottheme && npm run build-otkit",
-    "build-otkit": "lerna exec --scope otkit-* theo token.yml -- --transform web --format scss,cssmodules.css,common.js --dest .",
+    "build-icons": "lerna exec --scope otkit-icons npm run build",
+    "build-otkit": "npm run build-icons && lerna exec --scope otkit-* theo token.yml -- --transform web --format scss,cssmodules.css,common.js --dest .",
     "build-ottheme": "lerna exec --scope ottheme-* theo token.yml -- --transform web --format scss,cssmodules.css,common.js --dest .",
     "clean": "lerna clean",
     "deploy-styleguide": "lerna exec --scope style-guide npm run deploy",
@@ -30,7 +34,7 @@
     "postpublish": "npm run deploy-styleguide",
     "precommit": "lint-staged",
     "publish": "npm run build && lerna publish --exact",
-    "test": "lerna exec --scope ot* theo token.yml -- --transform web --format scss,cssmodules.css,common.js",
+    "test": "npm run build-icons && lerna exec --scope ot* theo token.yml -- --transform web --format scss,cssmodules.css,common.js",
     "updated": "lerna updated",
     "updatetoc": "doctoc README.md --github"
   },
