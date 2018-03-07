@@ -1,4 +1,4 @@
-@value font-family-brand, font-weight-normal, font-weight-medium, font-weight-bold from 'otkit-typography-desktop/token.cssmodules.css';
+@value font-family-brand, font-weight-normal, font-weight-medium, font-weight-bold from './tokens.module.css';
 
 @font-face {
   font-family: font-family-brand;
