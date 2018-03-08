@@ -5,8 +5,12 @@
       "component---src-pages-otkit-colors-js-17675a87dfa3a2de26f9.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-cc2d6600875a53a4b1a0.js",
-      "component---src-pages-index-js-cc2d6600875a53a4b1a0.js.map"
+      "component---src-pages-index-js-03d9ce02a5449dd56d07.js",
+      "component---src-pages-index-js-03d9ce02a5449dd56d07.js.map"
+    ],
+    "path---otkit-icons": [
+      "path---otkit-icons-a0e39f21c11f6a62c5ab.js",
+      "path---otkit-icons-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -19,6 +23,10 @@
     "component---src-pages-otkit-spacing-js": [
       "component---src-pages-otkit-spacing-js-ab2cc333fabf2a9e6791.js",
       "component---src-pages-otkit-spacing-js-ab2cc333fabf2a9e6791.js.map"
+    ],
+    "component---src-pages-otkit-icons-js": [
+      "component---src-pages-otkit-icons-js-284eb41886d5c6cbcdfc.js",
+      "component---src-pages-otkit-icons-js-284eb41886d5c6cbcdfc.js.map"
     ],
     "path---otkit-shadows": [
       "path---otkit-shadows-a0e39f21c11f6a62c5ab.js",
@@ -33,8 +41,8 @@
       "path---otkit-borders-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-916ca647eb60bbfda35e.js",
-      "component---src-layouts-index-js-916ca647eb60bbfda35e.js.map"
+      "component---src-layouts-index-js-458276b2d89e4153a3f0.js",
+      "component---src-layouts-index-js-458276b2d89e4153a3f0.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -67,9 +75,9 @@
       "component---src-pages-otkit-borders-js-9dc07cad3f2c9b61e949.js.map"
     ],
     "app": [
-      "app-5af4df59d061d7816886.js",
+      "app-2f82b0d03cb3e6db2d10.js",
       "build-js-styles.css",
-      "app-5af4df59d061d7816886.js.map",
+      "app-2f82b0d03cb3e6db2d10.js.map",
       "build-js-styles.css.map"
     ],
     "path---otkit-spacing": [
