@@ -7,6 +7,7 @@ import Spacing from './otkit-spacing.js';
 import Borders from './otkit-borders.js';
 import Breakpoints from './otkit-breakpoints.js';
 import Shadows from './otkit-shadows.js';
+import Icons from './otkit-icons.js';
 
 export default () => {
   return (
@@ -17,6 +18,7 @@ export default () => {
       <Borders />
       <Breakpoints />
       <Shadows />
+      <Icons />
     </div>
   );
 };

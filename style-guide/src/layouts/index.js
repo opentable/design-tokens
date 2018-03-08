@@ -23,6 +23,7 @@ export default ({ children }) => (
       <NavLink to="/otkit-borders/">Borders</NavLink>
       <NavLink to="/otkit-breakpoints/">Breakpoints</NavLink>
       <NavLink to="/otkit-shadows/">Shadows</NavLink>
+      <NavLink to="/otkit-icons/">Icons</NavLink>
       <div className={styles['nav-link']}>
         <a href="https://github.com/opentable/design-tokens" target="_blank">
           Github repo / design-tokens

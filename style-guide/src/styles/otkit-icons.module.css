@@ -1,0 +1,30 @@
+@value spacing-xsmall, spacing-small, spacing-medium, font-size-xsmall, border-radius-small, color-gray-utility from './tokens.module.css';
+
+.section-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &:after {
+    content: "";
+    width: 23%;
+  }
+}
+
+.card {
+  text-align: center;
+  width: 23%;
+  margin-bottom: spacing-medium;
+}
+
+.icon-block {
+  border-radius: border-radius-small;
+  padding: spacing-medium 0;
+  text-align: center;
+}
+
+.icon-name {
+  border: 1px solid color-gray-utility;
+  font-size: font-size-xsmall;
+  padding: spacing-xsmall;
+  margin: spacing-small 0;
+}
