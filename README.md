@@ -51,6 +51,7 @@ Standard design tokens. Use them if you are following the new design guidelines.
 | [`otkit-spacing`](/OTKit/otkit-spacing)                       | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing)                       |
 | [`otkit-typography` (DEPRECATED)](/OTKit/otkit-typography)    | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-typography.svg)](http://badge.fury.io/js/otkit-typography)                 |
 | [`otkit-typography-desktop`](/OTKit/otkit-typography-desktop) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-typography-desktop.svg)](http://badge.fury.io/js/otkit-typography-desktop) |
+| [`otkit-mobileweb-typography`](/OTKit/otkit-typography-mobileweb) | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-typography-mobileweb.svg)](http://badge.fury.io/js/otkit-typography-typography) |
 
 ### OTTheme
 
