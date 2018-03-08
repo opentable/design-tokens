@@ -5,5 +5,6 @@
     "OTKit/*",
     "style-guide"
   ],
-  "version": "independent"
+  "version": "independent",
+  "npmClientArgs": ["--no-package-lock"]
 }
