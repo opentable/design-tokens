@@ -1,118 +1,143 @@
 props:
-  font-family:
-    type: "raw"
-    value: "'BrandonText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+  # The font name of OpenTable's desktop web brand font.
+  # =============================================
   font-family-brand:
     type: "raw"
     value: "BrandonText"
-  font-size-xsmall:
-    type: "size"
-    value: "{!font-size-xsmall}"
-  font-size-small:
-    type: "size"
-    value: "{!font-size-small}"
-  font-size-medium:
-    type: "size"
-    value: "{!font-size-medium}"
-  font-size-large:
-    type: "size"
-    value: "{!font-size-large}"
-  font-size-xlarge:
-    type: "size"
-    value: "{!font-size-xlarge}"
-  line-height-xsmall:
-    type: "size"
-    value: "{!line-height-xsmall}"
-  line-height-small:
-    type: "size"
-    value: "{!line-height-small}"
-  line-height-medium:
-    type: "size"
-    value: "{!line-height-medium}"
-  line-height-large:
-    type: "size"
-    value: "{!line-height-large}"
-  line-height-xlarge:
-    type: "size"
-    value: "{!line-height-xlarge}"
+
+  # Backward-compatible, generic font weights of OpenTable's desktop web brand font.
+  # Should only be used when composing font faces for the brand font.
+  # =============================================
   font-weight-normal:
     type: "raw"
     value: "normal"
   font-weight-medium:
-    type: "number"
+    type: "raw"
     value: "500"
   font-weight-bold:
     type: "raw"
     value: "bold"
 
-  heading-xlarge-font-size:
-    type: "size"
-    value: "{!font-size-xlarge}"
-  heading-xlarge-font-weight:
-    type: "raw"
-    value: "{!font-weight-bold}"
-  heading-xlarge-line-height:
-    type: "size"
-    value: "{!line-height-xlarge}"
 
-  heading-large-font-size:
-    type: "size"
-    value: "{!font-size-large}"
-  heading-large-font-weight:
+  # The entire font family definition for OpenTable's desktop web.
+  # Apply to the appropriate root element such as <html>, <body> or `reactroot`.
+  # =============================================
+  font-family:
     type: "raw"
-    value: "{!font-weight-bold}"
-  heading-large-font-weight-alternate:
-    type: "raw"
-    value: "{!font-weight-normal}"
-  heading-large-line-height:
-    type: "size"
-    value: "{!line-height-large}"
+    value: "'BrandonText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
 
-  heading-medium-font-size:
-    type: "size"
-    value: "{!font-size-medium}"
-  heading-medium-font-weight:
-    type: "raw"
-    value: "{!font-weight-medium}"
-  heading-medium-line-height:
-    type: "size"
-    value: "{!line-height-medium}"
 
-  subheading-small-font-size:
+  # Design decisions for font group sxmall-medium.
+  #
+  # =============================================
+  xsmall-medium-font-size:
     type: "size"
-    value: "{!font-size-small}"
-  subheading-small-font-weight:
+    value: "14px"
+  xsmall-medium-font-weight:
     type: "raw"
-    value: "{!font-weight-medium}"
-  subheading-small-line-height:
+    value: "500"
+  xsmall-medium-line-height:
     type: "size"
-    value: "{!line-height-small}"
+    value: "20px"
 
-  bodytext-small-font-size:
-    type: "size"
-    value: "{!font-size-small}"
-  bodytext-small-font-weight:
-    type: "raw"
-    value: "{!font-weight-normal}"
-  bodytext-small-line-height:
-    type: "size"
-    value: "{!line-height-small}"
 
-  subtext-xsmall-font-size:
+  # Design decisions for font group xsmall-regular.
+  #
+  # =============================================
+  xsmall-regular-font-size:
     type: "size"
-    value: "{!font-size-xsmall}"
-  subtext-xsmall-font-weight:
+    value: "14px"
+  xsmall-regular-font-weight:
     type: "raw"
-    value: "{!font-weight-medium}"
-  subtext-xsmall-font-weight-alternate:
-    type: "raw"
-    value: "{!font-weight-normal}"
-  subtext-xsmall-line-height:
+    value: "normal"
+  xsmall-regular-line-height:
     type: "size"
-    value: "{!line-height-xsmall}"
+    value: "20px"
 
-imports:
-  - ../aliases.yml
+
+  # Design decisions for font group small-regular.
+  #
+  # =============================================
+  small-regular-font-size:
+    type: "size"
+    value: "16px"
+  small-regular-font-weight:
+    type: "raw"
+    value: "normal"
+  small-regular-line-height:
+    type: "size"
+    value: "24px"
+
+
+  # Design decisions for font group small-medium.
+  #
+  # =============================================
+  small-medium-font-size:
+    type: "size"
+    value: "16px"
+  small-medium-font-weight:
+    type: "raw"
+    value: "500"
+  small-medium-line-height:
+    type: "size"
+    value: "24px"
+
+
+  # Design decisions for font group medium-bold.
+  #
+  # =============================================
+  medium-bold-font-size:
+    type: "size"
+    value: "18px"
+  medium-bold-font-weight:
+    type: "raw"
+    value: "bold"
+  medium-bold-line-height:
+    type: "size"
+    value: "24px"
+
+
+  # Design decisions for font group large-bold.
+  #
+  # =============================================
+  large-bold-font-size:
+    type: "size"
+    value: "24px"
+  large-bold-font-weight:
+    type: "raw"
+    value: "bold"
+  large-bold-line-height:
+    type: "size"
+    value: "32px"
+
+
+  # Design decisions for font group xlarge-bold.
+  #
+  # =============================================
+  xlarge-bold-font-size:
+    type: "size"
+    value: "32px"
+  xlarge-bold-font-weight:
+    type: "raw"
+    value: "bold"
+  xlarge-bold-line-height:
+    type: "size"
+    value: "40px"
+
+
+  # Design decisions for font group xxlarge-bold.
+  #
+  # =============================================
+  xxlarge-bold-font-size:
+    type: "size"
+    value: "48px"
+  xxlarge-bold-font-weight:
+    type: "raw"
+    value: "bold"
+  xxlarge-bold-line-height:
+    type: "size"
+    value: "56px"
+
 
 global:
   platform: "desktop"
