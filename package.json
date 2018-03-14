@@ -5,11 +5,16 @@
     "husky": "^0.14.3",
     "lerna": "^2.9.0",
     "lint-staged": "^7.0.0",
-    "node-yaml": "^3.1.1",    
+    "node-yaml": "^3.1.1",
     "npm-watch": "^0.3.0",
-    "svgo": "^1.0.4",    
+    "svgo": "^1.0.4",
     "theo": "^7.0.1",
-    "prettier": "^1.11.1"
+    "prettier": "^1.11.1",
+    "cross-spawn": "^6.0.5",
+    "fs-extra": "^5.0.0",
+    "yamljs": "^0.3.0",
+    "lodash": "^4.17.5",
+    "jest-diff": "^22.4.0"
   },
   "watch": {
     "build": {
