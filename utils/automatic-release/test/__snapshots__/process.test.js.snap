@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+Array [
+  Array [
+    "npm",
+    Array [
+      "run",
+      "updated",
+    ],
+    Object {
+      "cwd": "/Users/nbalestra/OT/design-tokens/utils/automatic-release,../../",
+    },
+  ],
+  Array [
+    "npm",
+    Array [
+      "install",
+      "ottheme-colors",
+    ],
+    Object {
+      "cwd": "/Users/nbalestra/OT/design-tokens/utils/automatic-release,./tempNpm",
+      "stdio": "inherit",
+    },
+  ],
+  Array [
+    "npm",
+    Array [
+      "install",
+      "otkit-borders",
+    ],
+    Object {
+      "cwd": "/Users/nbalestra/OT/design-tokens/utils/automatic-release,./tempNpm",
+      "stdio": "inherit",
+    },
+  ],
+  Array [
+    "npm",
+    Array [
+      "run",
+      "updated",
+    ],
+    Object {
+      "cwd": "/Users/nbalestra/OT/design-tokens/utils/automatic-release,../../",
+    },
+  ],
+]
+`;
+
+exports[` 2`] = `
+Array [
+  Array [
+    "/Users/nbalestra/OT/design-tokens/utils/automatic-release,./tempNpm",
+  ],
+]
+`;
+
+exports[` 3`] = `
+Array [
+  Array [
+    "/Users/nbalestra/OT/design-tokens/utils/automatic-release,./tempNpm/package.json",
+    Object {
+      "name": "release",
+    },
+  ],
+]
+`;
+
+exports[` 4`] = `Array []`;
+
+exports[` 5`] = `Array []`;
+
+exports[` 6`] = `
+Array [
+  Array [
+    "/Users/nbalestra/OT/design-tokens/utils/automatic-release",
+    "../../",
+  ],
+  Array [
+    "/Users/nbalestra/OT/design-tokens/utils/automatic-release",
+    "./tempNpm",
+  ],
+]
+`;
+
+exports[` 7`] = `Array []`;

@@ -1,0 +1,7 @@
+{
+  "name": "release",
+  "dependencies": {
+    "otkit-colors": "^2.2.3",
+    "otkit-icons": "^0.1.0"
+  }
+}

@@ -14,7 +14,8 @@
     "fs-extra": "^5.0.0",
     "yamljs": "^0.3.0",
     "lodash": "^4.17.5",
-    "jest-diff": "^22.4.0"
+    "jest-diff": "^22.4.0",
+    "jest": "^22.4.2"
   },
   "watch": {
     "build": {
@@ -39,14 +40,19 @@
     "postpublish": "npm run deploy-styleguide",
     "precommit": "lint-staged",
     "publish": "npm run build && lerna publish --exact",
-    "test": "npm run build-icons && lerna exec --scope ot* theo token.yml -- --transform web --format scss,cssmodules.css,common.js",
+    "test": "npm run build-icons && lerna exec --scope ot* theo token.yml -- --transform web --format scss,cssmodules.css,common.js && npm run unit",
+    "unit": "jest",
     "updated": "lerna updated",
-    "updatetoc": "doctoc README.md --github"
+    "updatetoc": "doctoc README.md --github",
+    "automatic-release": "node utils/automatic-release"
   },
   "lint-staged": {
     "*.js": [
       "prettier --single-quote --write",
       "git add"
     ]
+  },
+  "jest": {
+    "roots": ["utils"]
   }
 }
