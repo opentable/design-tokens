@@ -147,13 +147,12 @@ If you are using a token in your project, you can execute `npm link '<token-name
 
 ### Publish
 
-Since every token is a `npm` package, changes to the token, even if the code is merged, must need a new version published to take effect.
+Publish is automatic upon a PR get succesfully merged to master. **Please don't do manual publishing, in case of problem, open an issue**
+The following rules are automatically identified in CI:
 
-Before you publish, you need to have an NPM account and be among the "Collaborators" list on the official NPM package page, for example `https://www.npmjs.com/package/otkit-colors`, to publish. Contact one of the collaborators if you would like to be added.
-
-Before you publish, make sure you are on your local master branch, and it is fully in sync with this repository's master branch. You do not need to git pull the tags; our `lerna` powered interactive publishing process should take care of that behind the scenes.
-
-Executing `npm run publish` at the root of this repository to publish. Follow the interactive prompts; it should detect all the changes automatically. You will be able to select the version of each token.
+- **Patch version (0.0.x)** -> Release a patch when that contain backwards-compatible changes. This means that for a specific design-system some values are corrected and updated (ie: a color get updated)
+- **Minor version (0.x.0)** -> Release a minor when a new functionality is added in a backwards-compatible manner. This means that for a specific design-system you are adding new decisions (ie: a new color is added)
+- **Major version (x.0.0)** -> Release a major when a breaking changes is identified. This means that for a specific design token some values where removed (ie: a color was removed)
 
 ## Contribution
 

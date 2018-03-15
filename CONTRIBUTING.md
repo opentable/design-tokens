@@ -9,11 +9,9 @@ First of all, thank you for contributing. It’s appreciated.
 5. Make sure tests pass (`npm run test`) and make a pull request against the master branch. If you are adding a new token, make sure to update the related READMEs ([main radme](https://github.com/opentable/design-tokens/blob/master/README.md) and design-system specific: [ottheme readme](https://github.com/opentable/design-tokens/blob/master/OTTheme/README.md) or [otkit readme](https://github.com/opentable/design-tokens/blob/master/OTKit/README.md) )
 
 
-# To release new versions
+# Nothing is needed to release a new version, therefore **please don't manually publish tokens**
 
-1. To check what needs to be published run `npm run updated`.
-2. Make sure you are listed among the collaborators for the related packages that you want to release and that you are logged in with that  account to npm. To check if you are among the allowed collaborators of a specific token: `curl https://www.npmjs.com/package/<token-name>/collaborators` ([example](https://www.npmjs.com/package/otkit-typography/collaborators)). If you aren't just rechout to any of the person listed and ask to be added.
-3. To publish run `npm run publish` and follow the instruction on the terminal. The CLI will walk you through the publishing for each token that need to published.
+Upon merging to master a PR an automatic release system will make sure that related tokens that need to be updated get published on the public NPM registry following the rules listed below
 
 ## Version cheat sheet:
 - **Patch version (0.0.x)** -> Release a patch when you make backwards-compatible bug fixes. This means that for a specific design-system some values are corrected and updated (ie: a color get updated)
