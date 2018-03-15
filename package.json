@@ -37,14 +37,13 @@
     "deploy-styleguide": "lerna exec --scope style-guide npm run deploy",
     "develop": "concurrently 'lerna exec --scope style-guide npm run develop' 'npm-watch'",
     "postinstall": "lerna bootstrap",
-    "postpublish": "npm run deploy-styleguide",
     "precommit": "lint-staged",
     "publish": "npm run build && lerna publish --exact",
     "test": "npm run build-icons && lerna exec --scope ot* theo token.yml -- --transform web --format scss,cssmodules.css,common.js && npm run unit",
     "unit": "jest",
     "updated": "lerna updated",
     "updatetoc": "doctoc README.md --github",
-    "automatic-release": "node utils/automatic-release"
+    "automatic-release": "node utils/automatic-release && npm run deploy-styleguide"
   },
   "lint-staged": {
     "*.js": [
@@ -53,6 +52,7 @@
     ]
   },
   "jest": {
-    "roots": ["utils"]
+    "roots": ["utils"],
+    "clearMocks": true
   }
 }

@@ -1,13 +1,3 @@
-let tempDirname;
-beforeAll(() => {
-  tempDirname = global.__dirname;
-  global.__dirname = '.';
-});
-
-afterAll(() => {
-  global.__dirname = tempDirname;
-});
-
 const mockSpawn = jest.fn((cmd, params, options) => {
   if (params[0] === 'run' && params[1] === 'updated') {
     return {
@@ -25,7 +15,9 @@ const mockSpawn = jest.fn((cmd, params, options) => {
   } else {
     return {
       on: function(event, cb) {
-        cb(0);
+        if (event !== 'error') {
+          cb(0);
+        }
       }
     };
   }
@@ -37,7 +29,7 @@ jest.mock('cross-spawn', () => {
 
 const mockEnsureDirSync = jest.fn();
 const mockWriteJsonSync = jest.fn();
-const mockPathExistsSync = jest.fn();
+const mockPathExistsSync = jest.fn(() => true);
 const mockRemoveSync = jest.fn();
 jest.mock('fs-extra', () => {
   return {
@@ -57,48 +49,91 @@ jest.mock('path', () => {
 
 const mockLoad = jest.fn();
 mockLoad
-  .mockReturnValueOnce(1)
-  .mockReturnValueOnce(2)
-  .mockReturnValue(3);
+  .mockReturnValueOnce({ props: { color: '#000' } })
+  .mockReturnValueOnce({ props: { color: '#001' } })
+  .mockReturnValueOnce({ props: { color: '#003' } })
+  .mockReturnValueOnce({ props: { bgcolor: '#004' } })
+  .mockReturnValueOnce({ props: { color: '#005', supercolor: '#005b' } })
+  .mockReturnValueOnce({ props: { color: '#005' } })
+  .mockReturnValue({ props: { supercolor: '#007' } });
+
 jest.mock('yamljs', () => {
   return {
     load: mockLoad
   };
 });
 
+mockLog = jest.fn();
+jest.mock('console', () => {
+  return {
+    log: mockLog
+  };
+});
+
+let origDirname;
+let origiLog;
+beforeAll(() => {
+  origDirname = global.__dirname;
+  global.__dirname = '.';
+
+  origiLog = global.console.log;
+  global.console.log = mockLog;
+});
+
+afterAll(() => {
+  global.__dirname = origDirname;
+  global.console.log = origiLog;
+});
+
 const { checkUPdated, installLatestFromNPM, run } = require('../process');
 
-test('check updated', done => {
-  checkUPdated().then(toUpdate => {
-    expect(toUpdate).toEqual([
-      'ottheme-colors',
-      'otkit-borders',
-      'otkit-breakpoints',
-      'otkit-colors',
-      'otkit-icons'
-    ]);
-    done();
-  });
+test('check updated', async () => {
+  const updated = await checkUPdated();
+  expect(updated).toEqual([
+    'ottheme-colors',
+    'otkit-borders',
+    'otkit-breakpoints',
+    'otkit-colors',
+    'otkit-icons'
+  ]);
 });
 
-test('install latest from NPM', done => {
+test('install latest from NPM', async () => {
   const installing = installLatestFromNPM(['ottheme-colors', 'otkit-borders']);
-  Promise.all(installing).then(installed => {
-    expect(installed).toEqual(['ottheme-colors', 'otkit-borders']);
-    done();
-  });
+  expect(await Promise.all(installing)).toEqual([
+    'ottheme-colors',
+    'otkit-borders'
+  ]);
 });
 
-test('', () => {
-  run();
-  expect(mockSpawn.mock.calls).toMatchSnapshot();
+test('automatic-release process', async () => {
+  await run();
 
-  expect(mockEnsureDirSync.mock.calls).toMatchSnapshot();
-  expect(mockWriteJsonSync.mock.calls).toMatchSnapshot();
-  expect(mockPathExistsSync.mock.calls).toMatchSnapshot();
-  expect(mockRemoveSync.mock.calls).toMatchSnapshot();
+  const spawnCalls = mockSpawn.mock.calls.map(call => {
+    call[2]['cwd'] = call[2]['cwd'].substring(
+      call[2]['cwd'].indexOf('/utils/') + 1
+    );
+    return call;
+  });
+  expect(spawnCalls).toMatchSnapshot();
 
-  expect(mockJoin.mock.calls).toMatchSnapshot();
+  mockEnsureDirSync.mock.calls.forEach(call => {
+    expect(call[0]).toContain('./tempNpm');
+  });
 
-  expect(mockLoad.mock.calls).toMatchSnapshot();
+  mockWriteJsonSync.mock.calls.forEach(call => {
+    expect(call[0]).toContain('./tempNpm/package.json');
+    expect(call[1]).toEqual({ name: 'release' });
+  });
+
+  const pathExistCalls = mockPathExistsSync.mock.calls.map(call => {
+    return call[0].substring(call[0].indexOf('/tempNpm') + 1);
+  });
+  expect(pathExistCalls.length).toBe(5);
+  expect(pathExistCalls).toMatchSnapshot();
+
+  expect(mockRemoveSync).toHaveBeenCalledTimes(1);
+  expect(mockLoad).toHaveBeenCalledTimes(10);
+
+  expect(mockLog.mock.calls).toMatchSnapshot();
 });

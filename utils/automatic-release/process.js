@@ -6,6 +6,7 @@ const path = require('path');
 const yaml = require('yamljs');
 const differ = require('jest-diff');
 const diffToSemver = require('./diffToSemver');
+const console = require('console');
 
 // run lernaUpdate and return a list of the packages that need to be updated
 const root = path.join(__dirname, '../../');
@@ -51,65 +52,70 @@ const installLatestFromNPM = packages => {
 };
 
 const run = () => {
-  checkUPdated()
-    .then(updated => {
-      Promise.all(installLatestFromNPM(updated)).then(() => {
-        updated.forEach(pkg => {
-          const updatedPath = pkg.match(/^ottheme/)
-            ? `OTTheme/${pkg}/token.yml`
-            : `OTKit/${pkg}/token.yml`;
-          const updatedContent = yaml.load(path.join(root, updatedPath));
+  return new Promise((resolve, reject) => {
+    checkUPdated()
+      .then(updated => {
+        Promise.all(installLatestFromNPM(updated)).then(() => {
+          updated.forEach(pkg => {
+            const updatedPath = pkg.match(/^ottheme/)
+              ? `OTTheme/${pkg}/token.yml`
+              : `OTKit/${pkg}/token.yml`;
+            const updatedContent = yaml.load(path.join(root, updatedPath));
 
-          // If no version has been published yet, publish as major
-          let version = 'major';
-          let diff;
-          const latestPath = path.join(
-            latestTemp,
-            'node_modules',
-            pkg,
-            'token.yml'
-          );
-
-          if (fs.pathExistsSync(latestPath)) {
-            const latestContent = yaml.load(latestPath);
-            diff = differ(latestContent.props, updatedContent.props);
-            version = diffToSemver(latestContent.props, updatedContent.props);
-          }
-
-          if (version !== undefined) {
-            // spawn lerna publish --force-publish=package --cd-version=version --yes
-            // https://github.com/lerna/lerna#--force-publish-packages
-            // https://github.com/lerna/lerna#--yes
-            // https://github.com/lerna/lerna#--cd-version
-            const cmd = spawn(
-              'npm',
-              [
-                'run',
-                'publish',
-                '--',
-                `--force-publish=${pkg}`,
-                `--cd-version=${version}`,
-                '--yes'
-              ],
-              {
-                cwd: root
-              }
+            // If no version has been published yet, publish as major
+            let version = 'major';
+            let diff;
+            const latestPath = path.join(
+              latestTemp,
+              'node_modules',
+              pkg,
+              'token.yml'
             );
-            cmd.on('error', err => {
-              console.log(`Error publishing ${pkg} as ${version}`, err);
-            });
-          } else {
-            console.log(`Skipping publishing ${pkg}`);
-          }
-          console.log(diff);
-          console.log('--------------------------------');
+
+            if (fs.pathExistsSync(latestPath)) {
+              const latestContent = yaml.load(latestPath);
+              diff = differ(latestContent.props, updatedContent.props);
+              version = diffToSemver(latestContent.props, updatedContent.props);
+            }
+
+            if (version !== undefined) {
+              // spawn lerna publish --force-publish=package --cd-version=version --yes
+              // https://github.com/lerna/lerna#--force-publish-packages
+              // https://github.com/lerna/lerna#--yes
+              // https://github.com/lerna/lerna#--cd-version
+              console.log(`publishing ${pkg} as ${version}`);
+              const cmd = spawn(
+                'npm',
+                [
+                  'run',
+                  'publish',
+                  '--',
+                  `--force-publish=${pkg}`,
+                  `--cd-version=${version}`,
+                  '--yes'
+                ],
+                {
+                  cwd: root
+                }
+              );
+              cmd.on('error', err => {
+                console.log(`Error publishing ${pkg} as ${version}`, err);
+                throw err;
+              });
+            } else {
+              console.log(`Skipping publishing ${pkg}`);
+            }
+            console.log(diff);
+            console.log('--------------------------------');
+          });
+          fs.removeSync(latestTemp);
+          resolve('Automatic release successful');
         });
-        fs.removeSync(latestTemp);
+      })
+      .catch(err => {
+        reject(err);
       });
-    })
-    .catch(err => {
-      console.log('Oups something went wrong', err);
-    });
+  });
 };
 
 module.exports = { run, checkUPdated, installLatestFromNPM };

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` 1`] = `
+exports[`automatic-release process 1`] = `
 Array [
   Array [
     "npm",
@@ -9,7 +9,7 @@ Array [
       "updated",
     ],
     Object {
-      "cwd": "/Users/nbalestra/OT/design-tokens/utils/automatic-release,../../",
+      "cwd": "utils/automatic-release,../../",
     },
   ],
   Array [
@@ -19,7 +19,7 @@ Array [
       "ottheme-colors",
     ],
     Object {
-      "cwd": "/Users/nbalestra/OT/design-tokens/utils/automatic-release,./tempNpm",
+      "cwd": "utils/automatic-release,./tempNpm",
       "stdio": "inherit",
     },
   ],
@@ -30,7 +30,40 @@ Array [
       "otkit-borders",
     ],
     Object {
-      "cwd": "/Users/nbalestra/OT/design-tokens/utils/automatic-release,./tempNpm",
+      "cwd": "utils/automatic-release,./tempNpm",
+      "stdio": "inherit",
+    },
+  ],
+  Array [
+    "npm",
+    Array [
+      "install",
+      "otkit-breakpoints",
+    ],
+    Object {
+      "cwd": "utils/automatic-release,./tempNpm",
+      "stdio": "inherit",
+    },
+  ],
+  Array [
+    "npm",
+    Array [
+      "install",
+      "otkit-colors",
+    ],
+    Object {
+      "cwd": "utils/automatic-release,./tempNpm",
+      "stdio": "inherit",
+    },
+  ],
+  Array [
+    "npm",
+    Array [
+      "install",
+      "otkit-icons",
+    ],
+    Object {
+      "cwd": "utils/automatic-release,./tempNpm",
       "stdio": "inherit",
     },
   ],
@@ -38,49 +71,121 @@ Array [
     "npm",
     Array [
       "run",
-      "updated",
+      "publish",
+      "--",
+      "--force-publish=ottheme-colors",
+      "--cd-version=patch",
+      "--yes",
     ],
     Object {
-      "cwd": "/Users/nbalestra/OT/design-tokens/utils/automatic-release,../../",
+      "cwd": "utils/automatic-release,../../",
     },
   ],
-]
-`;
-
-exports[` 2`] = `
-Array [
   Array [
-    "/Users/nbalestra/OT/design-tokens/utils/automatic-release,./tempNpm",
-  ],
-]
-`;
-
-exports[` 3`] = `
-Array [
-  Array [
-    "/Users/nbalestra/OT/design-tokens/utils/automatic-release,./tempNpm/package.json",
+    "npm",
+    Array [
+      "run",
+      "publish",
+      "--",
+      "--force-publish=otkit-borders",
+      "--cd-version=major",
+      "--yes",
+    ],
     Object {
-      "name": "release",
+      "cwd": "utils/automatic-release,../../",
+    },
+  ],
+  Array [
+    "npm",
+    Array [
+      "run",
+      "publish",
+      "--",
+      "--force-publish=otkit-breakpoints",
+      "--cd-version=minor",
+      "--yes",
+    ],
+    Object {
+      "cwd": "utils/automatic-release,../../",
     },
   ],
 ]
 `;
 
-exports[` 4`] = `Array []`;
-
-exports[` 5`] = `Array []`;
-
-exports[` 6`] = `
+exports[`automatic-release process 2`] = `
 Array [
-  Array [
-    "/Users/nbalestra/OT/design-tokens/utils/automatic-release",
-    "../../",
-  ],
-  Array [
-    "/Users/nbalestra/OT/design-tokens/utils/automatic-release",
-    "./tempNpm",
-  ],
+  "tempNpm,node_modules,ottheme-colors,token.yml",
+  "tempNpm,node_modules,otkit-borders,token.yml",
+  "tempNpm,node_modules,otkit-breakpoints,token.yml",
+  "tempNpm,node_modules,otkit-colors,token.yml",
+  "tempNpm,node_modules,otkit-icons,token.yml",
 ]
 `;
 
-exports[` 7`] = `Array []`;
+exports[`automatic-release process 3`] = `
+Array [
+  Array [
+    "publishing ottheme-colors as patch",
+  ],
+  Array [
+    "[32m- Expected[39m
+[31m+ Received[39m
+
+[2m  Object {[22m
+[32m-   \\"color\\": \\"#001\\",[39m
+[31m+   \\"color\\": \\"#000\\",[39m
+[2m  }[22m",
+  ],
+  Array [
+    "--------------------------------",
+  ],
+  Array [
+    "publishing otkit-borders as major",
+  ],
+  Array [
+    "[32m- Expected[39m
+[31m+ Received[39m
+
+[2m  Object {[22m
+[32m-   \\"bgcolor\\": \\"#004\\",[39m
+[31m+   \\"color\\": \\"#003\\",[39m
+[2m  }[22m",
+  ],
+  Array [
+    "--------------------------------",
+  ],
+  Array [
+    "publishing otkit-breakpoints as minor",
+  ],
+  Array [
+    "[32m- Expected[39m
+[31m+ Received[39m
+
+[2m  Object {[22m
+[2m    \\"color\\": \\"#005\\",[22m
+[31m+   \\"supercolor\\": \\"#005b\\",[39m
+[2m  }[22m",
+  ],
+  Array [
+    "--------------------------------",
+  ],
+  Array [
+    "Skipping publishing otkit-colors",
+  ],
+  Array [
+    "[2mCompared values have no visual difference.[22m",
+  ],
+  Array [
+    "--------------------------------",
+  ],
+  Array [
+    "Skipping publishing otkit-icons",
+  ],
+  Array [
+    "[2mCompared values have no visual difference.[22m",
+  ],
+  Array [
+    "--------------------------------",
+  ],
+]
+`;
