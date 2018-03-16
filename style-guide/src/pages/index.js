@@ -13,7 +13,7 @@ import SectionHeader from '../components/section-header';
 export default () => {
   return (
     <div className={styles.body}>
-      <SectionHeader text="Welcome to OTKit Styleguide" />
+      <SectionHeader text="Welcome to OTKit Style Guide" />
       <Colors />
       <Typography />
       <Spacing />
