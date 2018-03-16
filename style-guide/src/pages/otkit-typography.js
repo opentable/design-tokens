@@ -6,59 +6,25 @@ import token from 'otkit-typography-desktop/token.common';
 import styles from '../styles/otkit-typography-desktop.module.css';
 
 const typographyGroups = [
-  {
-    name: 'heading-xlarge',
-    isAlternate: false
-  },
-  {
-    name: 'heading-large',
-    isAlternate: false
-  },
-  {
-    name: 'heading-large',
-    isAlternate: true
-  },
-  {
-    name: 'heading-medium',
-    isAlternate: false
-  },
-  {
-    name: 'subheading-small',
-    isAlternate: false
-  },
-  {
-    name: 'bodytext-small',
-    isAlternate: false
-  },
-  {
-    name: 'subtext-xsmall',
-    isAlternate: false
-  },
-  {
-    name: 'subtext-xsmall',
-    isAlternate: true
-  }
+  'xxlarge-bold',
+  'xlarge-bold',
+  'large-bold',
+  'medium-bold',
+  'small-medium',
+  'small-regular',
+  'xsmall-medium',
+  'xsmall-regular'
 ];
 
 const TypographyDesktop = () => {
   const groups = typographyGroups.map((group, index) => {
-    const fontSize = token[_.camelCase(`${group.name}-font-size`)];
-    const fontWeight =
-      token[
-        _.camelCase(
-          `${group.name}-font-weight${group.isAlternate ? '-alternate' : ''}`
-        )
-      ];
-    const lineHeight = token[_.camelCase(`${group.name}-line-height`)];
-    const groupName = `${group.name}${group.isAlternate ? '-alternate' : ''}`;
-    const divStyle = {
-      fontSize,
-      fontWeight,
-      lineHeight
-    };
+    const fontSize = token[_.camelCase(`${group}-font-size`)];
+    const fontWeight = token[_.camelCase(`${group}-font-weight`)];
+    const lineHeight = token[_.camelCase(`${group}-line-height`)];
+    const divStyle = { fontSize, fontWeight, lineHeight };
     return (
       <div className={styles['font-item']} style={divStyle} key={index}>
-        {groupName} | font-size: {fontSize} | font-weight: {fontWeight} |
+        {group} | font-size: {fontSize} | font-weight: {fontWeight} |
         line-height: {lineHeight}
       </div>
     );
