@@ -1,9 +1,9 @@
-@value spacing-large, spacing-medium, heading-large-font-size, heading-large-font-weight, heading-large-line-height, color-gray-primary, color-gray-utility from '../../styles/tokens.module.css';
+@value spacing-large, spacing-medium, large-bold-font-size, large-bold-font-weight, large-bold-line-height, color-gray-primary, color-gray-utility from '../../styles/tokens.module.css';
 
 .section-header {
-  font-size: heading-large-font-size;
-  font-weight: heading-large-font-weight;
-  line-height: heading-large-line-height;
+  font-size: large-font-size;
+  font-weight: large-bold-font-weight;
+  line-height: large-line-height;
   color: color-gray-primary;
   border-bottom: 1px solid color-gray-utility;
   padding-bottom: spacing-medium;

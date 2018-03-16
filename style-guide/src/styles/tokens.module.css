@@ -1,4 +1,4 @@
 @value border-radius-small from 'otkit-borders/token.cssmodules.css';
 @value color-gray-primary, color-gray-utility, color-primary from 'otkit-colors/token.cssmodules.css';
 @value spacing-large, spacing-medium, spacing-small, spacing-xlarge, spacing-xsmall from 'otkit-spacing/token.cssmodules.css';
-@value font-family, font-family-brand, font-size-xsmall, font-weight-bold, font-weight-medium, font-weight-normal, heading-large-font-size, heading-large-font-weight, heading-large-line-height from 'otkit-typography-desktop/token.cssmodules.css';
+@value font-family, font-family-brand, font-size-xsmall, font-weight-bold, font-weight-medium, font-weight-normal, large-bold-font-size, large-bold-font-weight, large-bold-line-height from 'otkit-typography-desktop/token.cssmodules.css';

@@ -8,10 +8,12 @@ import Borders from './otkit-borders.js';
 import Breakpoints from './otkit-breakpoints.js';
 import Shadows from './otkit-shadows.js';
 import Icons from './otkit-icons.js';
+import SectionHeader from '../components/section-header';
 
 export default () => {
   return (
     <div className={styles.body}>
+      <SectionHeader text="Welcome to OTKit Style Guide" />
       <Colors />
       <Typography />
       <Spacing />
