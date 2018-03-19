@@ -16,6 +16,10 @@ test("return 'major' when there is a breaking change on current keys", () => {
       { supercolor: '#000000', bg: '#000000' }
     )
   ).toBe('major');
+
+  expect(
+    diffToSemver({ color: '#000000', bg: '#000000' }, { bg: '#000000' })
+  ).toBe('major');
 });
 
 test("return 'minor' new keys are added", () => {
