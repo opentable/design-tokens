@@ -6,6 +6,7 @@ const path = require('path');
 const yaml = require('yamljs');
 const differ = require('jest-diff');
 const diffToSemver = require('./diffToSemver');
+const packagePathResolver = require('./packagePathResolver');
 const console = require('console');
 
 // run lernaUpdate and return a list of the packages that need to be updated
@@ -60,10 +61,9 @@ const run = () => {
       .then(updated => {
         Promise.all(installLatestFromNPM(updated)).then(() => {
           updated.forEach(pkg => {
-            const updatedPath = pkg.match(/^ottheme/)
-              ? `OTTheme/${pkg}/token.yml`
-              : `OTKit/${pkg}/token.yml`;
-            const updatedContent = yaml.load(path.join(root, updatedPath));
+            const updatedContent = yaml.load(
+              path.join(root, `${packagePathResolver(pkg)}/token.yml`)
+            );
 
             // If no version has been published yet, publish as major
             let version = 'major';
