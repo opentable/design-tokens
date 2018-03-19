@@ -116,6 +116,7 @@ const run = () => {
         });
       })
       .catch(err => {
+        fs.removeSync(latestTemp);
         reject(err);
       });
   });
