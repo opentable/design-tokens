@@ -3,10 +3,12 @@
 exports[`automatic-release process 1`] = `
 Array [
   Array [
-    "npm",
+    "node",
     Array [
-      "run",
+      "node_modules/.bin/lerna",
       "updated",
+      "--json",
+      "--loglevel=silen",
     ],
     Object {
       "cwd": "utils/automatic-release,../../",

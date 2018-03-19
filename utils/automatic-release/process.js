@@ -13,9 +13,13 @@ const root = path.join(__dirname, '../../');
 const latestTemp = path.join(__dirname, './tempNpm');
 
 const checkUPdated = () => {
-  const cmd = spawn('npm', ['run', 'updated'], {
-    cwd: root
-  });
+  const cmd = spawn(
+    'node',
+    ['node_modules/.bin/lerna', 'updated', '--json', '--loglevel=silen'],
+    {
+      cwd: root
+    }
+  );
   let result = '';
   cmd.stdout.on('data', function(data) {
     result += data.toString();
@@ -24,10 +28,9 @@ const checkUPdated = () => {
   return new Promise(resolve => {
     cmd.on('close', code => {
       return resolve(
-        result
-          .split('\n')
-          .filter(line => line.match(/^-\sot/))
-          .map(line => line.replace(/^-\s/, ''))
+        JSON.parse(result)
+          .filter(pkg => !pkg.private)
+          .map(pkg => pkg.name)
       );
     });
   });
