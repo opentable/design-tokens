@@ -1,151 +1,148 @@
 props:
   color-white:
-    value: "{!color-white}"
+    value: "#FFFFFF"
 
   # Reds
   # =============================================
   color-brand-red:
-    value: "{!color-brand-red}"
+    value: "#DA3743"
   color-early-girl:
-    value: "{!color-brand-red}"
+    value: "#DA3743"
   color-caspian-pink:
-    value: "{!color-caspian-pink}"
+    value: "#E5656E"
   color-oyster-pink:
-    value: "{!color-oyster-pink}"
+    value:  "#EFD4D4"
   color-provincial-pink:
-    value: "{!color-provincial-pink}"
+    value: "#FEF8F0"
   color-misty-rose:
-    value: "{!color-misty-rose}"
+    value: "#FFE6E8"
   color-black-cherry:
-    value: "{!color-black-cherry}"
+    value: "#811520"
 
   # Blues (mainly used for restaurant businesses)
   # =============================================
   color-brand-blue:
-    value: "{!color-brand-blue}"
+    value: "#237B98"
   color-blueberry:
-    value: "{!color-blueberry}"
+    value: "#60B2D0"
   color-huckleberry:
-    value: "{!color-huckleberry}"
+    value: "#B1D9E7"
   color-juneberry:
-    value: "{!color-juneberry}"
+    value: "#356273"
   color-malibu:
-    value: "{!color-malibu}"
+    value: "#6CB6F5"
   color-highlight-blue:
-    value: "{!color-highlight-blue}"
+    value: "#EEF4FB"
 
   # Taupes
   # =============================================
   color-cashew:
-    value: "{!color-cashew}"
+    value: "#F3F2F1"
   color-macadamia:
-    value: "{!color-macadamia}"
+    value: "#DBD9D5"
   color-almond:
-    value: "{!color-almond}"
+    value: "#C4BFB9"
 
   # Greys
   # =============================================
   color-light-gray:
-    value: "{!color-light-gray}"
+    value: "#ECECEC"
   color-mid-gray:
-    value: "{!color-mid-gray}"
+    value: "#CCCCCC"
   color-light-silver:
-    value: "{!color-light-silver}"
+    value: "#ACACAC"
   color-dark-gray:
-    value: "{!color-dark-gray}"
+    value: "#878787"
   color-silver:
-    value: "{!color-silver}"
+    value: "#666666"
   color-granite:
-    value: "{!color-granite}"
+    value: "#444444"
   color-chalkboard:
-    value: "{!color-chalkboard}"
+    value: "#333333"
 
   # Colors (primary palette)
   # =============================================
   color-primary:
-    value: "{!color-brand-red}"
+    value: "#DA3743"
   color-primary-darker:
-    value: "{!color-black-cherry}"
+    value: "#811520"
   color-secondary:
-    value: "{!color-brand-blue}"
+    value: "#237B98"
   color-secondary-darker:
-    value: "{!color-juneberry}"
+    value: "#356273"
   color-secondary-lighter:
-    value: "{!color-brand-blue-lighter}"
+    value: "rgba(35,123,152,0.14)"
   color-logo-secondary:
-    value: "{!color-white}"
+    value: "#FFFFFF"
 
   color-mustard:
-    value: "{!color-mustard}"
+    value: "#FCCF44"
   color-icecream:
-    value: "{!color-icecream}"
+    value: "#72C9CA"
   color-pumpkin:
-    value: "{!color-pumpkin}"
+    value: "#EF8F4D"
   color-plum:
-    value: "{!color-plum}"
+    value: "#AA6286"
 
   color-success:
-    value: "{!color-success}"
+    value: "#75B96F"
   color-alert:
-    value: "{!color-alert}"
+    value: "#D30303"
   color-gifts:
-    value: "{!color-gifts}"
+    value: "#AED6D7"
   star-color:
-    value: "{!star-color}"
+    value: "#FEAB6C"
   color-menu:
-    value: "{!color-menu}"
+    value: "#1E1E1E"
   color-menu-link:
-    value: "{!color-menu-link}"
+    value: "rgba(96,178,208,0.14)"
 
   # Colors (greys)
   # =============================================
   color-light:
-    value: "{!color-light}"
+    value: "#999999"
   color-medium:
-    value: "{!color-silver}"
+    value: "#666666"
   color-dark:
-    value: "{!color-chalkboard}"
+    value: "#333333"
   color-darker:
-    value: "{!color-darker}"
+    value: "#000000"
 
   color-transparent:
-    value: "{!color-transparent}"
+    value: "rgba(255,255,255,0.6)"
   darken-percent:
-    value: "{!darken-percent}"
+    value: "10%"
     type: "number"
 
   # Colors (product-specific)
   # =============================================
   color-offers-primary:
-    value: "{!color-offers-primary}"
+    value: "#3B9568"
   color-premium-access-book-modal-background:
-    value: "{!color-premium-access-book-modal-background}"
+    value: "#A67AD3"
 
   # Backgrounds
   body-bg:
-    value: "{!body-bg}"
+    value: "#F7F7F7"
   content-bg:
-    value: "{!body-bg}"
+    value: "#F7F7F7"
 
   # Opacity Colors
   # =============================================
   opacity-color:
-    value: "{!opacity-color}"
+    value: "rgba(0,0,0,0.12)"
   opacity-color-light:
-    value: "{!opacity-color-light}"
+    value: "rgba(0,0,0,0.06)"
   opacity-color-light-hex:
-    value: "{!opacity-color-light-hex}"
+    value: "#F0F0F0"
   opacity-color-dark:
-    value: "{!opacity-color-dark}"
+    value: "rgba(0,0,0,0.2)"
   opacity-color-darker:
-    value: "{!opacity-color-darker}"
+    value: "rgba(0,0,0,0.5)"
   opacity-color-dark-hex:
-    value: "{!color-mid-gray}"
+    value: "#CCCCCC"
   opacity-color-white:
-    value: "{!opacity-color-white}"
-
-imports:
-  - ../aliases.yml
+    value: "rgba(255,255,255,0.3)"
 
 global:
   type: "color"
