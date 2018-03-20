@@ -8,3 +8,4 @@ node_modules
 public
 OTKit/otkit-icons/token.yml
 package-lock.json
+utils/automatic-release/tempNpm/package.json

@@ -5,11 +5,17 @@
     "husky": "^0.14.3",
     "lerna": "^2.9.0",
     "lint-staged": "^7.0.0",
-    "node-yaml": "^3.1.1",    
+    "node-yaml": "^3.1.1",
     "npm-watch": "^0.3.0",
-    "svgo": "^1.0.4",    
+    "svgo": "^1.0.4",
     "theo": "^7.0.1",
-    "prettier": "^1.11.1"
+    "prettier": "^1.11.1",
+    "cross-spawn": "^6.0.5",
+    "fs-extra": "^5.0.0",
+    "yamljs": "^0.3.0",
+    "lodash": "^4.17.5",
+    "jest-diff": "^22.4.0",
+    "jest": "^22.4.2"
   },
   "watch": {
     "build": {
@@ -31,17 +37,22 @@
     "deploy-styleguide": "lerna exec --scope style-guide npm run deploy",
     "develop": "concurrently 'lerna exec --scope style-guide npm run develop' 'npm-watch'",
     "postinstall": "lerna bootstrap",
-    "postpublish": "npm run deploy-styleguide",
     "precommit": "lint-staged",
     "publish": "npm run build && lerna publish --exact",
-    "test": "npm run build-icons && lerna exec --scope ot* theo token.yml -- --transform web --format scss,cssmodules.css,common.js",
+    "test": "npm run build-icons && lerna exec --scope ot* theo token.yml -- --transform web --format scss,cssmodules.css,common.js && npm run unit",
+    "unit": "jest",
     "updated": "lerna updated",
-    "updatetoc": "doctoc README.md --github"
+    "updatetoc": "doctoc README.md --github",
+    "automatic-release": "node utils/automatic-release && npm run deploy-styleguide"
   },
   "lint-staged": {
     "*.js": [
       "prettier --single-quote --write",
       "git add"
     ]
+  },
+  "jest": {
+    "roots": ["utils"],
+    "clearMocks": true
   }
 }

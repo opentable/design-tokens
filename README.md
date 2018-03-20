@@ -25,9 +25,6 @@ Design Tokens repository is the central location to store shared design attribut
   * [Preview and debug](#preview-and-debug)
   * [Publish](#publish)
 * [Contribution](#contribution)
-  * [Contributing a new value](#contributing-a-new-value)
-    * [I need to add a new value, where do I add it?](#i-need-to-add-a-new-value-where-do-i-add-it)
-    * [I need to add a new format, how do I add it?](#i-need-to-add-a-new-format-how-do-i-add-it)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -145,46 +142,6 @@ If you are using a token in your project, you can execute `npm link '<token-name
 
 ---
 
-### Publish
+### Contribution
 
-Since every token is a `npm` package, changes to the token, even if the code is merged, must need a new version published to take effect.
-
-Before you publish, you need to have an NPM account and be among the "Collaborators" list on the official NPM package page, for example `https://www.npmjs.com/package/otkit-colors`, to publish. Contact one of the collaborators if you would like to be added.
-
-Before you publish, make sure you are on your local master branch, and it is fully in sync with this repository's master branch. You do not need to git pull the tags; our `lerna` powered interactive publishing process should take care of that behind the scenes.
-
-Executing `npm run publish` at the root of this repository to publish. Follow the interactive prompts; it should detect all the changes automatically. You will be able to select the version of each token.
-
-## Contribution
-
-Design Tokens aim to democratize the design-development workflow at OpenTable. We encourage you to use what we created, review [pull requests](https://github.com/opentable/design-tokens/pulls), and comment + vote on [discussion threads.](https://github.com/opentable/design-tokens/issues)
-
-If you are a non-technical person (such as designer, product manager, etc), your participation is important to us and your feedback will be especially valued. Please let us know how we can make it easier for you by [submitting an issue.](https://github.com/opentable/design-tokens/issues/new)
-
-### Contributing a new value
-
-1. Find the directory containing the tokens that are relevant to your new value (otkit-typography for typography, otkit-colors for colors, etc.). Within that directory, find the token.yml file and add the new value in the props section. For example, we would add the color-gray-primary value in otkit-colors/token.yml in the following way:
-
-```yml
-props:
-  ...
-  color-black:
-    value: "#000000"
-  ...  
-```
-
-2.  Add, commit, and push your changes. Make a PR on `https://github.com/opentable/design-tokens`. Pat yourself on the back as you wait for your PR to be reviewed.
-
-### Contributing a new format?
-
-1.  Edit the related build system in the project root scripts (within the `package.json` file). Check the [theo](https://github.com/salesforce-ux/theo#available-formats) and [theo-cli](https://github.com/salesforce-ux/theo/blob/master/CLI.md) documentation for more information.
-
-```json
-...
-"scripts": {
-  ...
-  "build-otkit": "lerna exec --scope otkit-* theo cssmodules.css NEWFORMAT",
-  ...
-}
-...
-```
+Please refer to the [contributing doc](/CONTRIBUTING.md)
