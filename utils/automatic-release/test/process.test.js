@@ -2,7 +2,7 @@ const mockSpawn = jest.fn((cmd, params, options) => {
   if (params[0] === 'node_modules/.bin/lerna' && params[1] === 'updated') {
     return {
       stdout: {
-        on: function(event, cb) {
+        on(event, cb) {
           cb(
             JSON.stringify([
               { name: 'ottheme-colors', private: false },
@@ -13,16 +13,15 @@ const mockSpawn = jest.fn((cmd, params, options) => {
               { name: 'style-guide', private: true }
             ])
           );
-          // '- ottheme-colors\n- otkit-borders\n- otkit-breakpoints\n- otkit-colors\n- otkit-icons\n- style-guide (private)'
         }
       },
-      on: function(event, cb) {
+      on(event, cb) {
         cb(0);
       }
     };
   } else {
     return {
-      on: function(event, cb) {
+      on(event, cb) {
         if (event !== 'error') {
           cb(0);
         }
@@ -84,13 +83,13 @@ beforeAll(() => {
   origDirname = global.__dirname;
   global.__dirname = '.';
 
-  //origiLog = global.console.log;
-  // global.console.log = mockLog;
+  origiLog = global.console.log;
+  global.console.log = mockLog;
 });
 
 afterAll(() => {
   global.__dirname = origDirname;
-  // global.console.log = origiLog;
+  global.console.log = origiLog;
 });
 
 const { checkUPdated, installLatestFromNPM, run } = require('../process');

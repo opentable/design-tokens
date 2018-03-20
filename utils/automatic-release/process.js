@@ -22,9 +22,7 @@ const checkUPdated = () => {
     }
   );
   let result = '';
-  cmd.stdout.on('data', function(data) {
-    result += data.toString();
-  });
+  cmd.stdout.on('data', data => (result += data.toString()));
 
   return new Promise(resolve => {
     cmd.on('close', code => {
