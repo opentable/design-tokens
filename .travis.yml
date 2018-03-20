@@ -8,10 +8,7 @@ before_install:
   - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN -q
 
 after_success:
-  # will do:
-  # - test $TRAVIS_BRANCH = "master" && npm run automatic-release
-  # for testing
-  - npm whoami
+  - test $TRAVIS_BRANCH = "DX-457" && npm run updated
 
 notifications:
   email: false
