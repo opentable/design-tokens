@@ -141,6 +141,4 @@ test('automatic-release process', async () => {
 
   expect(mockRemoveSync).toHaveBeenCalledTimes(1);
   expect(mockLoad).toHaveBeenCalledTimes(10);
-
-  expect(mockLog.mock.calls).toMatchSnapshot();
 });
