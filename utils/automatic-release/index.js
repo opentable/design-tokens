@@ -1,7 +1,11 @@
 'use strict';
 
 const { run } = require('./process');
-run()
+
+const argv = require('minimist')(process.argv.slice(2));
+const doPublish = argv['test'] ? false : true;
+
+run(doPublish)
   .then(msg => {
     console.log(msg);
     process.exit(0);
