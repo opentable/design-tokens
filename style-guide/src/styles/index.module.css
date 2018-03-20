@@ -1,4 +1,4 @@
-@value spacing-medium, spacing-large, spacing-xlarge, color-primary, color-gray-primary, font-family from './tokens.module.css';
+@value color-gray-primary, color-primary, font-family, medium-bold-font-size, medium-bold-font-weight, medium-bold-line-height, spacing-medium, spacing-large, spacing-xlarge from './tokens.module.css';
 
 /* local variables */
 @value width-two-column: 992px;
@@ -49,4 +49,10 @@ a {
 
 section {
   margin-bottom: spacing-xlarge;
+}
+
+.mission-statement {
+  font-size: medium-bold-font-size;
+  font-weight: medium-bold-font-weight;
+  line-height: medium-bold-line-height;
 }
