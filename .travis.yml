@@ -8,8 +8,11 @@ before_install:
   - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN -q
 
 after_success:
-  - test $TRAVIS_BRANCH = "master" && npm run automatic-release
-  - test $TRAVIS_BRANCH != "master" && npm run automatic-release-test
+  - if [ $TRAVIS_PULL_REQUEST == false ] && [ $TRAVIS_BRANCH == "master" ]; then
+        echo "# Publish all the things"; 
+      else 
+        echo "Skip publishing"; 
+      fi
 
 notifications:
   email: false
