@@ -4,5 +4,14 @@ matrix:
   include:
     - node_js: "8"
 
+before_install:
+  - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN -q
+
+after_success:
+  # will do:
+  # - test $TRAVIS_BRANCH = "master" && npm run automatic-release
+  # for testing
+  - npm whoami
+
 notifications:
   email: false
