@@ -15,7 +15,8 @@
     "yamljs": "^0.3.0",
     "lodash": "^4.17.5",
     "jest-diff": "^22.4.0",
-    "jest": "^22.4.2"
+    "jest": "^22.4.2",
+    "minimist": "^1.2.0"
   },
   "watch": {
     "build": {
@@ -43,7 +44,8 @@
     "unit": "jest",
     "updated": "lerna updated",
     "updatetoc": "doctoc README.md --github",
-    "automatic-release": "node utils/automatic-release && npm run deploy-styleguide"
+    "automatic-release": "node utils/automatic-release && npm run deploy-styleguide",
+    "automatic-release-test": "node utils/automatic-release --test"
   },
   "lint-staged": {
     "*.js": [
@@ -52,7 +54,9 @@
     ]
   },
   "jest": {
-    "roots": ["utils"],
+    "roots": [
+      "utils"
+    ],
     "clearMocks": true
   }
 }

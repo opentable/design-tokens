@@ -114,7 +114,8 @@ test('install latest from NPM', async () => {
 });
 
 test('automatic-release process', async () => {
-  await run();
+  const doPublish = true;
+  await run(doPublish);
 
   const spawnCalls = mockSpawn.mock.calls.map(call => {
     call[2]['cwd'] = call[2]['cwd'].substring(

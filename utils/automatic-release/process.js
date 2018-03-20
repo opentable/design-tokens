@@ -53,7 +53,7 @@ const installLatestFromNPM = packages => {
   return installed;
 };
 
-const run = () => {
+const run = doPublish => {
   return new Promise((resolve, reject) => {
     checkUPdated()
       .then(updated => {
@@ -84,25 +84,31 @@ const run = () => {
               // https://github.com/lerna/lerna#--force-publish-packages
               // https://github.com/lerna/lerna#--yes
               // https://github.com/lerna/lerna#--cd-version
-              console.log(`publishing ${pkg} as ${version}`);
-              const cmd = spawn(
-                'npm',
-                [
-                  'run',
-                  'publish',
-                  '--',
-                  `--force-publish=${pkg}`,
-                  `--cd-version=${version}`,
-                  '--yes'
-                ],
-                {
-                  cwd: root
-                }
+              console.log(
+                `${
+                  doPublish ? 'publishing' : 'should publish'
+                } ${pkg} as ${version}`
               );
-              cmd.on('error', err => {
-                console.log(`Error publishing ${pkg} as ${version}`, err);
-                throw err;
-              });
+              if (doPublish) {
+                const cmd = spawn(
+                  'npm',
+                  [
+                    'run',
+                    'publish',
+                    '--',
+                    `--force-publish=${pkg}`,
+                    `--cd-version=${version}`,
+                    '--yes'
+                  ],
+                  {
+                    cwd: root
+                  }
+                );
+                cmd.on('error', err => {
+                  console.log(`Error publishing ${pkg} as ${version}`, err);
+                  throw err;
+                });
+              }
             } else {
               console.log(`Skipping publishing ${pkg}`);
             }
