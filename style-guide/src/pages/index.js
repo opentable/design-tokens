@@ -14,6 +14,10 @@ export default () => {
   return (
     <div className={styles.body}>
       <SectionHeader text="Welcome to OTKit Style Guide" />
+      <p className={styles['mission-statement']}>
+        OTKit is a collection of design resources, reusable components and
+        guidelines for creating OpenTable's products.
+      </p>
       <Colors />
       <Typography />
       <Spacing />
