@@ -9,9 +9,9 @@ before_install:
 
 after_success:
   - if [ $TRAVIS_PULL_REQUEST == false ] && [ $TRAVIS_BRANCH == "master" ]; then
-        echo "# Publish all the things"; 
-      else 
-        echo "Skip publishing"; 
+        npm run automatic-release;
+      else
+        npm run automatic-release-test;
       fi
 
 notifications:
