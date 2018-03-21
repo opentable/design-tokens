@@ -44,8 +44,8 @@
     "unit": "jest",
     "updated": "lerna updated",
     "updatetoc": "doctoc README.md --github",
-    "automatic-release": "node utils/automatic-release && npm run deploy-styleguide",
-    "automatic-release-test": "node utils/automatic-release --test"
+    "automatic-release": "npm run build && node utils/automatic-release && npm run deploy-styleguide",
+    "automatic-release-test": "npm run build && node utils/automatic-release --test"
   },
   "lint-staged": {
     "*.js": [
