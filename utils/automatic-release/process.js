@@ -116,7 +116,7 @@ const run = doPublish => {
             console.log('--------------------------------');
           });
           fs.removeSync(latestTemp);
-          resolve('Automatic release successful');
+          resolve(`Automatic release ${doPublish ? '' : 'test'} successful`);
         });
       })
       .catch(err => {
