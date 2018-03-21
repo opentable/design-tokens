@@ -21,6 +21,11 @@ const mockSpawn = jest.fn((cmd, params, options) => {
     };
   } else {
     return {
+      stdout: {
+        on(event, cb) {
+          cb('');
+        }
+      },
       on(event, cb) {
         if (event !== 'error') {
           cb(0);

@@ -104,6 +104,9 @@ const run = doPublish => {
                     cwd: root
                   }
                 );
+
+                cmd.stdout.on('data', data => console.log(data.toString()));
+
                 cmd.on('error', err => {
                   console.log(`Error publishing ${pkg} as ${version}`, err);
                   throw err;
