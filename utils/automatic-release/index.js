@@ -1,6 +1,6 @@
 'use strict';
 
-const { run } = require('./process');
+const run = require('./lib/process');
 
 const argv = require('minimist')(process.argv.slice(2));
 const doPublish = argv['test'] ? false : true;

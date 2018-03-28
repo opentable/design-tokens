@@ -1,4 +1,4 @@
-const diffToSemver = require('../diffToSemver');
+const diffToSemver = require('../lib/defineVersion/diffToSemver');
 
 test('return undefined when no change', () => {
   expect(
