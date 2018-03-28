@@ -8,10 +8,11 @@ Array [
       "node_modules/.bin/lerna",
       "updated",
       "--json",
-      "--loglevel=silen",
+      "--loglevel=silent",
     ],
     Object {
-      "cwd": "utils/automatic-release,../../",
+      "cwd": "utils/automatic-release/lib,../../../",
+      "stdout": "inherit",
     },
   ],
   Array [
@@ -21,7 +22,7 @@ Array [
       "ottheme-colors",
     ],
     Object {
-      "cwd": "utils/automatic-release,./tempNpm",
+      "cwd": "utils/automatic-release/lib,./tempNpm",
       "stdio": "inherit",
     },
   ],
@@ -32,7 +33,7 @@ Array [
       "otkit-borders",
     ],
     Object {
-      "cwd": "utils/automatic-release,./tempNpm",
+      "cwd": "utils/automatic-release/lib,./tempNpm",
       "stdio": "inherit",
     },
   ],
@@ -43,7 +44,7 @@ Array [
       "otkit-breakpoints",
     ],
     Object {
-      "cwd": "utils/automatic-release,./tempNpm",
+      "cwd": "utils/automatic-release/lib,./tempNpm",
       "stdio": "inherit",
     },
   ],
@@ -54,7 +55,7 @@ Array [
       "otkit-colors",
     ],
     Object {
-      "cwd": "utils/automatic-release,./tempNpm",
+      "cwd": "utils/automatic-release/lib,./tempNpm",
       "stdio": "inherit",
     },
   ],
@@ -65,7 +66,7 @@ Array [
       "otkit-icons",
     ],
     Object {
-      "cwd": "utils/automatic-release,./tempNpm",
+      "cwd": "utils/automatic-release/lib,./tempNpm",
       "stdio": "inherit",
     },
   ],
@@ -80,7 +81,8 @@ Array [
       "--yes",
     ],
     Object {
-      "cwd": "utils/automatic-release,../../",
+      "cwd": "utils/automatic-release/lib,../../../",
+      "stdout": "inherit",
     },
   ],
   Array [
@@ -94,7 +96,8 @@ Array [
       "--yes",
     ],
     Object {
-      "cwd": "utils/automatic-release,../../",
+      "cwd": "utils/automatic-release/lib,../../../",
+      "stdout": "inherit",
     },
   ],
   Array [
@@ -108,7 +111,8 @@ Array [
       "--yes",
     ],
     Object {
-      "cwd": "utils/automatic-release,../../",
+      "cwd": "utils/automatic-release/lib,../../../",
+      "stdout": "inherit",
     },
   ],
 ]

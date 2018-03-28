@@ -97,10 +97,12 @@ afterAll(() => {
   global.console.log = origiLog;
 });
 
-const { checkUPdated, installLatestFromNPM, run } = require('../process');
+const checkUpdated = require('../lib/checkUpdated');
+const installLatestFromNPM = require('../lib/installPackages');
+const run = require('../lib/process');
 
 test('check updated', async () => {
-  const updated = await checkUPdated();
+  const updated = await checkUpdated();
   expect(updated).toEqual([
     'ottheme-colors',
     'otkit-borders',
@@ -111,7 +113,10 @@ test('check updated', async () => {
 });
 
 test('install latest from NPM', async () => {
-  const installing = installLatestFromNPM(['ottheme-colors', 'otkit-borders']);
+  const installing = installLatestFromNPM(
+    ['ottheme-colors', 'otkit-borders'],
+    './tempNpm'
+  );
   expect(await Promise.all(installing)).toEqual([
     'ottheme-colors',
     'otkit-borders'
