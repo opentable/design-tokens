@@ -6,6 +6,9 @@ matrix:
 
 before_install:
   - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN -q
+  - git remote set-url origin git@github.com:opentable/design-tokens.git
+  - git config --global github.user nickbalestra
+  - git config --global github.token $GH_TOKEN
 
 after_success:
   - if [ $TRAVIS_PULL_REQUEST == false ] && [ $TRAVIS_BRANCH == "master" ]; then
