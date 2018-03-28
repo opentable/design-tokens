@@ -3,7 +3,7 @@
 const spawn = require('cross-spawn');
 
 const publishPackage = (pkg, version, root) =>
-  new Promise((resolve, erject) => {
+  new Promise((resolve, reject) => {
     // spawn lerna publish --force-publish=package --cd-version=version --yes
     // https://github.com/lerna/lerna#--force-publish-packages
     // https://github.com/lerna/lerna#--yes
