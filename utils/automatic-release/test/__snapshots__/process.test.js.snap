@@ -12,6 +12,7 @@ Array [
     ],
     Object {
       "cwd": "utils/automatic-release,../../",
+      "stdout": "inherit",
     },
   ],
   Array [
@@ -81,6 +82,7 @@ Array [
     ],
     Object {
       "cwd": "utils/automatic-release,../../",
+      "stdout": "inherit",
     },
   ],
   Array [
@@ -95,6 +97,7 @@ Array [
     ],
     Object {
       "cwd": "utils/automatic-release,../../",
+      "stdout": "inherit",
     },
   ],
   Array [
@@ -109,6 +112,7 @@ Array [
     ],
     Object {
       "cwd": "utils/automatic-release,../../",
+      "stdout": "inherit",
     },
   ],
 ]
