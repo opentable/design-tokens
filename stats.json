@@ -41,8 +41,8 @@
       "path---otkit-borders-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-95efd294abb732d5f102.js",
-      "component---src-layouts-index-js-95efd294abb732d5f102.js.map"
+      "component---src-layouts-index-js-d3d1f51cfeb9c2ba0da5.js",
+      "component---src-layouts-index-js-d3d1f51cfeb9c2ba0da5.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -75,9 +75,9 @@
       "component---src-pages-otkit-borders-js-9dc07cad3f2c9b61e949.js.map"
     ],
     "app": [
-      "app-0e30ecfc9cfe37832377.js",
+      "app-577bc8c313b4ec04a264.js",
       "build-js-styles.css",
-      "app-0e30ecfc9cfe37832377.js.map",
+      "app-577bc8c313b4ec04a264.js.map",
       "build-js-styles.css.map"
     ],
     "path---otkit-spacing": [
