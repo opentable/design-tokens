@@ -24,6 +24,8 @@ const publishPackage = (pkg, version, root) =>
       }
     );
 
+    let error = '';
+    cmd.stderr.on('data', data => (error += data.toString()));
     cmd.stdout.on('data', data => console.log(data.toString()));
     cmd.on('error', err => {
       console.log(`Error publishing ${pkg} as ${version}`, err);
@@ -34,7 +36,7 @@ const publishPackage = (pkg, version, root) =>
         console.log(`publishing ${pkg} as ${version}`);
         resolve(pkg);
       } else {
-        reject(code);
+        reject(error);
       }
     });
   });
