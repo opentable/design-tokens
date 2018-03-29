@@ -71,11 +71,11 @@ Array [
     },
   ],
   Array [
-    "npm",
+    "node",
     Array [
-      "run",
+      "node_modules/.bin/lerna",
       "publish",
-      "--",
+      "--exact",
       "--force-publish=ottheme-colors",
       "--cd-version=patch",
       "--yes",
@@ -86,11 +86,11 @@ Array [
     },
   ],
   Array [
-    "npm",
+    "node",
     Array [
-      "run",
+      "node_modules/.bin/lerna",
       "publish",
-      "--",
+      "--exact",
       "--force-publish=otkit-borders",
       "--cd-version=major",
       "--yes",
@@ -101,11 +101,11 @@ Array [
     },
   ],
   Array [
-    "npm",
+    "node",
     Array [
-      "run",
+      "node_modules/.bin/lerna",
       "publish",
-      "--",
+      "--exact",
       "--force-publish=otkit-breakpoints",
       "--cd-version=minor",
       "--yes",

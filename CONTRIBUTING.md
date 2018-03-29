@@ -21,6 +21,8 @@ The following rules are automatically identified in CI:
 - **Minor version (0.x.0)** -> A minor version will be automatically released when a new functionality is added in a backwards-compatible manner. This means that for a specific design-system you are adding new decisions (ie: a new color is added)
 - **Major version (x.0.0)** -> A major version will be automatically released when a breaking changes is identified. This means that for a specific design token some values where removed (ie: a color was removed)
 
+The style-guide get continously deployed and can be accessed here: https://opentable.github.io/design-tokens/
+
 
 # To contributing a new value
 

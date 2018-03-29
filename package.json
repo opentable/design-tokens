@@ -41,7 +41,6 @@
     "develop": "concurrently 'lerna exec --scope style-guide npm run develop' 'npm-watch'",
     "postinstall": "lerna bootstrap",
     "precommit": "lint-staged",
-    "publish": "lerna publish --exact",
     "test": "npm run build-icons && lerna exec --scope ot* theo token.yml -- --transform web --format scss,cssmodules.css,common.js && npm run unit",
     "unit": "jest",
     "updated": "lerna updated",
