@@ -9,11 +9,11 @@ const publishPackage = (pkg, version, root) =>
     // https://github.com/lerna/lerna#--yes
     // https://github.com/lerna/lerna#--cd-version
     const cmd = spawn(
-      'npm',
+      'node',
       [
-        'run',
+        'node_modules/.bin/lerna',
         'publish',
-        '--',
+        '--exact',
         `--force-publish=${pkg}`,
         `--cd-version=${version}`,
         '--yes'
