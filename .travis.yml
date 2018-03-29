@@ -12,7 +12,7 @@ before_install:
 
 after_success:
   - if [ $TRAVIS_PULL_REQUEST == false ] && [ $TRAVIS_BRANCH == "master" ]; then
-        npm run automatic-release;
+        git checkout master && npm run automatic-release;
       else
         npm run automatic-release-test;
       fi
