@@ -12,8 +12,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build --prefix-paths",
-    "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "serve": "gatsby serve"
   },
   "dependencies": {
     "chroma-js": "^1.3.6",
