@@ -53,9 +53,9 @@
       "component---src-pages-otkit-shadows-js-a80fe6426a466df307c0.js.map"
     ],
     "commons": [
-      "commons-fdef0391c3bdbc9b9b77.js",
+      "commons-5498d7e9d7df17facabf.js",
       "build-js-styles.css",
-      "commons-fdef0391c3bdbc9b9b77.js.map",
+      "commons-5498d7e9d7df17facabf.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-otkit-breakpoints-js": [
@@ -75,9 +75,9 @@
       "component---src-pages-otkit-borders-js-9dc07cad3f2c9b61e949.js.map"
     ],
     "app": [
-      "app-e0c9908a9253d2579ac6.js",
+      "app-0e30ecfc9cfe37832377.js",
       "build-js-styles.css",
-      "app-e0c9908a9253d2579ac6.js.map",
+      "app-0e30ecfc9cfe37832377.js.map",
       "build-js-styles.css.map"
     ],
     "path---otkit-spacing": [
