@@ -11,9 +11,8 @@
   "homepage": "https://opentable.github.io/design-tokens/",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "build": "gatsby build --prefix-paths",
+    "serve": "gatsby serve"
   },
   "dependencies": {
     "chroma-js": "^1.3.6",
@@ -27,8 +26,5 @@
     "otkit-shadows": "1.0.3",
     "otkit-spacing": "2.0.3",
     "otkit-typography-desktop": "2.0.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^1.1.0"
   }
 }

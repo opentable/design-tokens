@@ -17,7 +17,8 @@
     "prettier": "^1.11.1",
     "svgo": "^1.0.4",
     "theo": "^7.0.1",
-    "yamljs": "^0.3.0"
+    "yamljs": "^0.3.0",
+    "gh-pages": "^1.1.0"
   },
   "watch": {
     "build": {
@@ -35,8 +36,8 @@
     "build-icons": "lerna exec --scope otkit-icons npm run build",
     "build-otkit": "npm run build-icons && lerna exec --scope otkit-* theo token.yml -- --transform web --format scss,cssmodules.css,common.js --dest .",
     "build-ottheme": "lerna exec --scope ottheme-* theo token.yml -- --transform web --format scss,cssmodules.css,common.js --dest .",
+    "build-styleguide": "lerna exec --scope style-guide npm run build",
     "clean": "lerna clean",
-    "deploy-styleguide": "lerna exec --scope style-guide npm run deploy",
     "develop": "concurrently 'lerna exec --scope style-guide npm run develop' 'npm-watch'",
     "postinstall": "lerna bootstrap",
     "precommit": "lint-staged",
@@ -45,7 +46,7 @@
     "unit": "jest",
     "updated": "lerna updated",
     "updatetoc": "doctoc README.md --github",
-    "automatic-release": "npm run build && node utils/automatic-release && npm run deploy-styleguide",
+    "automatic-release": "npm run build && node utils/automatic-release && npm run build-styleguide && node utils/deploy-styleguide",
     "automatic-release-test": "npm run build && node utils/automatic-release --test"
   },
   "lint-staged": {
