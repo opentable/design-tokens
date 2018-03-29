@@ -3,6 +3,7 @@
 const console = require('console');
 const fs = require('fs-extra');
 const path = require('path');
+const Promise = require('bluebird');
 
 const checkUpdated = require('./checkUpdated');
 const defineVersion = require('./defineVersion');
@@ -17,7 +18,7 @@ const run = doPublish => {
     checkUpdated(root).then(updated => {
       Promise.all(installPackages(updated, latestTemp))
         .then(installed =>
-          installed.map(pkg => {
+          Promise.each(installed, pkg => {
             const { diff, version } = defineVersion(pkg, root, latestTemp);
             if (version) {
               if (doPublish) {
@@ -34,21 +35,18 @@ const run = doPublish => {
           })
         )
         .then(published => {
-          Promise.all(published)
-            .then(() => {
-              fs.removeSync(latestTemp);
-              resolvePublish(
-                `Automatic release ${doPublish ? '' : 'test'} successful`
-              );
-            })
-            .catch(err => {
-              fs.removeSync(latestTemp);
-              rejectPublish(
-                `Automatic release ${
-                  doPublish ? '' : 'test'
-                } failed with err ${err}`
-              );
-            });
+          fs.removeSync(latestTemp);
+          resolvePublish(
+            `Automatic release ${doPublish ? '' : 'test'} successful`
+          );
+        })
+        .catch(err => {
+          fs.removeSync(latestTemp);
+          rejectPublish(
+            `Automatic release ${
+              doPublish ? '' : 'test'
+            } failed with err ${err}`
+          );
         });
     });
   });
