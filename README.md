@@ -128,6 +128,35 @@ Note that depending on how you use `postcss`, your processors array may be in a 
 
 If you're not already using [postcss](https://github.com/postcss/postcss), you will either have to use it as an additional build step after you transform your CSS with your current tool or use it as a complete replacement for your current CSS transformation process.
 
+---
+
+### SVG icons
+
+SVG icons are imported in the same way as the other tokens.
+
+```javascript
+import icons from 'otkit-icons/token.common';
+```
+
+You can then access the icon as well as its size in pixels.
+
+```javascript
+const { iconSize, icCatering } = icons;
+const iconSizePx = `${iconSize}px`;
+const viewBox = `0 0 ${iconSize} ${iconSize}`;
+
+const icon = (
+  <svg
+    width={iconSizePx}
+    height={iconSizePx}
+    viewBox={viewBox}
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    dangerouslySetInnerHTML={{ __html: icCatering }}
+  />
+);
+```
+
 ## Development
 
 ### Preview and debug
