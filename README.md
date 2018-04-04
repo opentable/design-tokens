@@ -32,7 +32,7 @@ A token is a set of design attributes bundled together around a common theme.
 
 We have two sets of design tokens available to consume.
 
-### OTKit
+### OTKit 
 
 Standard design tokens. Use them if you are following the new design guidelines.
 
