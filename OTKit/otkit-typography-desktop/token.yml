@@ -69,6 +69,20 @@ props:
     value: "24px"
 
 
+  # Design decisions for font group small-bold.
+  #
+  # =============================================
+  small-regular-font-size:
+    type: "size"
+    value: "16px"
+  small-regular-font-weight:
+    type: "raw"
+    value: "bold"
+  small-regular-line-height:
+    type: "size"
+    value: "24px"
+
+
   # Design decisions for font group small-medium.
   #
   # =============================================
@@ -79,6 +93,20 @@ props:
     type: "raw"
     value: "500"
   small-medium-line-height:
+    type: "size"
+    value: "24px"
+
+
+  # Design decisions for font group medium-regular.
+  #
+  # =============================================
+  medium-bold-font-size:
+    type: "size"
+    value: "18px"
+  medium-bold-font-weight:
+    type: "raw"
+    value: "normal"
+  medium-bold-line-height:
     type: "size"
     value: "24px"
 
@@ -109,6 +137,20 @@ props:
   large-bold-line-height:
     type: "size"
     value: "32px"
+
+
+  # Design decisions for font group xlarge-regular.
+  #
+  # =============================================
+  xlarge-bold-font-size:
+    type: "size"
+    value: "32px"
+  xlarge-bold-font-weight:
+    type: "raw"
+    value: "normal"
+  xlarge-bold-line-height:
+    type: "size"
+    value: "40px"
 
 
   # Design decisions for font group xlarge-bold.
