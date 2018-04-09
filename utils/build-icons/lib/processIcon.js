@@ -1,36 +1,7 @@
 'use strict';
 
-const svgToMiniDataURI = require('mini-svg-data-uri');
-const xml2js = require('xml2js');
-
+const { messages, builder, buildSVGDataURI } = require('./processIconHelpers');
 const { iconSize } = require('./config');
-
-const builder = new xml2js.Builder({
-  renderOpts: {
-    pretty: false
-  },
-  headless: true
-});
-
-const buildSVGDataURI = (xmlns, viewBox, path) =>
-  svgToMiniDataURI(`<svg xmlns="${xmlns}" viewBox="${viewBox}">${path}</svg>`);
-
-const messages = {
-  def: fileName =>
-    `    warning: skipping ${fileName} as it has definitions, check SVG`,
-  g: fileName =>
-    `    warning: ${fileName} has at least one root grouped path, try to convert into just paths`,
-  multiCombined: fileName =>
-    `    warning: skipping ${fileName} as it has multiple groups or paths at the root which cannot be combined`,
-  multiRootPaths: fileName =>
-    `    warning: skipping ${fileName} as it has multiple root paths`,
-  missingTopLevelPathOrGroup: fileName =>
-    `     warning: skipping ${fileName} as it does not have a top level path or group`,
-  missingViewBox: fileName =>
-    `    warning: skipping ${fileName} as it doesn't define a viewbox`,
-  vewBoxSize: fileName =>
-    `    warning: skipping ${fileName} as the viewbox isn't ${iconSize}`
-};
 
 /* Parse the XML. 
   * Warn if there is an defs (because that means an i and a xlink which could collide).
@@ -57,7 +28,7 @@ const processIcon = ({ icon, fileName, id }) => {
   if (!innerContent['$'].viewBox) {
     return console.log(messages.missingViewBox(fileName));
   } else if (innerContent['$'].viewBox != `0 0 ${iconSize} ${iconSize}`) {
-    return console.log(messages.vewBoxSize(fileName));
+    return console.log(messages.viewBoxSize(fileName, iconSize));
   }
 
   if (innerContent.path) {
