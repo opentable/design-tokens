@@ -118,14 +118,11 @@ test('check updated', async () => {
 });
 
 test('install latest from NPM', async () => {
-  const installing = installLatestFromNPM(
+  const installed = installLatestFromNPM(
     ['ottheme-colors', 'otkit-borders'],
     './tempNpm'
   );
-  expect(await Promise.all(installing)).toEqual([
-    'ottheme-colors',
-    'otkit-borders'
-  ]);
+  expect(await installed).toEqual(['ottheme-colors', 'otkit-borders']);
 });
 
 test('automatic-release process', async () => {

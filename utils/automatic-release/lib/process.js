@@ -16,19 +16,23 @@ const latestTemp = path.join(__dirname, './tempNpm');
 const run = doPublish => {
   return new Promise((resolvePublish, rejectPublish) => {
     checkUpdated(root).then(updated => {
-      Promise.all(installPackages(updated, latestTemp))
+      installPackages(updated, latestTemp)
         .then(installed =>
           Promise.each(installed, pkg => {
             const { diff, version } = defineVersion(pkg, root, latestTemp);
+            const printDiff = () =>
+              console.log(
+                `${diff ||
+                  '<DIFF NOT AVAILABLE>'}\n--------------------------------`
+              );
+
             if (version) {
               if (doPublish) {
-                console.log(diff);
-                console.log('--------------------------------');
+                printDiff();
                 return publishPackage(pkg, version, root);
               } else {
                 console.log(`TEST: "Should publish ${pkg} as ${version}"`);
-                console.log(diff);
-                console.log('--------------------------------');
+                printDiff();
                 return Promise.resolve(pkg);
               }
             }
