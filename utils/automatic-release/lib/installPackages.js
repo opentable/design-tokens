@@ -9,7 +9,7 @@ const installPackagesFromNPM = (packages, latestTemp) => {
   fs.ensureDirSync(latestTemp);
   fs.writeJsonSync(`${latestTemp}/package.json`, { name: 'release' });
 
-  return Promise.each(packages, pkg => {
+  return Promise.mapSeries(packages, pkg => {
     const cmd = spawn('npm', ['install', pkg], {
       stdio: 'inherit',
       cwd: latestTemp

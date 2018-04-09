@@ -33,7 +33,7 @@ const publishPackage = (pkg, version, root) =>
     });
     cmd.on('close', code => {
       if (code === 0) {
-        console.log(`publishing ${pkg} as ${version}`);
+        console.log(`published ${pkg} as ${version}`);
         resolve(pkg);
       } else {
         reject(error);
