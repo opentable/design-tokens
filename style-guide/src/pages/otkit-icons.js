@@ -14,19 +14,17 @@ const Icons = () => {
 
   const tokens = actualIcons.map(name => {
     const value = icons[name];
-    const icon = (
-      <svg
-        width={iconSizePx}
-        height={iconSizePx}
-        viewBox={viewBox}
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        dangerouslySetInnerHTML={{ __html: value }}
-      />
-    );
+    const divStyle = {
+      backgroundImage: `url("${value}")`,
+      width: iconSizePx,
+      height: iconSizePx
+    };
+
     return (
       <div className={styles['card']} key={name}>
-        <div className={styles['icon-block']}>{icon}</div>
+        <div className={styles['icon-block']}>
+          <div style={divStyle} />
+        </div>
         <div className={styles['icon-name']}>{_.kebabCase(name)}</div>
       </div>
     );
