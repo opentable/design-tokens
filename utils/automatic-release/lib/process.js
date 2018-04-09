@@ -20,16 +20,19 @@ const run = doPublish => {
         .then(installed =>
           Promise.each(installed, pkg => {
             const { diff, version } = defineVersion(pkg, root, latestTemp);
-            const sep = '--------------------------------';
-            const printDiff = `${diff || '<DIFF NOT AVAILABLE>'}\n`;
+            const printDiff = () =>
+              console.log(
+                `${diff ||
+                  '<DIFF NOT AVAILABLE>'}\n--------------------------------`
+              );
 
             if (version) {
               if (doPublish) {
-                console.log(printDiff + sep);
+                printDiff();
                 return publishPackage(pkg, version, root);
               } else {
                 console.log(`TEST: "Should publish ${pkg} as ${version}"`);
-                console.log(printDiff + sep);
+                printDiff();
                 return Promise.resolve(pkg);
               }
             }
