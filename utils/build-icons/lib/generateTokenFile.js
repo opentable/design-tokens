@@ -16,7 +16,7 @@ const generateTokenFile = () => {
     Promise.all(icons)
       .then(writeToken)
       .then(() => resolve('icons generated successfully'))
-      .catch(err => reject('error generating icons:\n', err));
+      .catch(err => reject(`error generating icons:\n ${err}`));
   });
 };
 
