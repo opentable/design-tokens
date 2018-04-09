@@ -1,6 +1,5 @@
 'use strict';
 
-jest.setTimeout(100000);
 let originCWD;
 const mockCWD = jest.fn(() => 'somePath');
 beforeAll(() => {
