@@ -72,7 +72,7 @@ jest.mock('node-yaml', () => {
 
 const generateTokenFile = require('../lib/generateTokenFile');
 
-test('generate icon token file', async () => {
+test('Generate icon token file', async () => {
   const run = await generateTokenFile();
   expect(run).toBe('icons generated successfully');
 

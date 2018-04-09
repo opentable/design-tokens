@@ -36,7 +36,7 @@ jest.mock('path', () => {
 
 const getIconFileList = require('../lib/getIconFileList');
 
-test('', async () => {
+test('Get list of icon files', async () => {
   const iconFileList = await getIconFileList();
   expect(iconFileList.length).toBe(3);
   const resolvedList = await Promise.all(iconFileList);

@@ -28,7 +28,7 @@ jest.mock('fs-extra', () => {
 
 const getIconData = require('../lib/getIconData');
 
-test('', async () => {
+test('Get icon data', async () => {
   const iconData = await getIconData({
     fileName: 'ic_ticket.svg',
     id: 'ic_ticket'

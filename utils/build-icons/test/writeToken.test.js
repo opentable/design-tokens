@@ -34,7 +34,7 @@ const icons = [
 
 const writeToken = require('../lib/writeToken');
 
-test('', async () => {
+test('Write token.yml', async () => {
   const wrote = await writeToken(icons);
   expect(mockWrite).toHaveBeenCalledTimes(1);
   expect(mockWrite.mock.calls[0][0]).toBe('somePath/token.yml');

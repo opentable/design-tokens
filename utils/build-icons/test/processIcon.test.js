@@ -21,7 +21,7 @@ const iconData = {
   id: 'ic_ticket'
 };
 
-test('', async () => {
+test('Process icon', async () => {
   const icon = await processIcon(iconData);
   expect(icon).toEqual({
     id: 'ic_ticket',
