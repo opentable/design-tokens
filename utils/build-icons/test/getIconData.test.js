@@ -26,13 +26,6 @@ jest.mock('fs-extra', () => {
   };
 });
 
-// jest.mock("path", () => {
-//   return {
-//     extname: jest.fn(fileName => fileName.substring(fileName.indexOf("."))),
-//     basename: jest.fn((fileName, ext) => fileName.replace(ext, ""))
-//   };
-// });
-
 const getIconData = require('../lib/getIconData');
 
 test('', async () => {
