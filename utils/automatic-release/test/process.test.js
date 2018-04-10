@@ -1,47 +1,21 @@
-const mockSpawn = jest.fn((cmd, params, options) => {
-  if (params[0] === 'node_modules/.bin/lerna' && params[1] === 'updated') {
-    return {
-      stdout: {
-        on(event, cb) {
-          cb(
-            JSON.stringify([
-              { name: 'ottheme-colors', private: false },
-              { name: 'otkit-borders', private: false },
-              { name: 'otkit-breakpoints', private: false },
-              { name: 'otkit-colors', private: false },
-              { name: 'otkit-icons', private: false },
-              { name: 'style-guide', private: true }
-            ])
-          );
-        }
-      },
-      on(event, cb) {
-        cb(0);
-      }
-    };
-  } else {
-    return {
-      stdout: {
-        on(event, cb) {
-          cb('');
-        }
-      },
-      stderr: {
-        on(event, cb) {
-          cb('');
-        }
-      },
-      on(event, cb) {
-        if (event !== 'error') {
-          cb(0);
-        }
-      }
-    };
+const mockRunCmd = jest.fn((script, commands, options) => {
+  if (commands[0] === 'node_modules/.bin/lerna' && commands[1] === 'updated') {
+    return Promise.resolve(
+      JSON.stringify([
+        { name: 'ottheme-colors', private: false },
+        { name: 'otkit-borders', private: false },
+        { name: 'otkit-breakpoints', private: false },
+        { name: 'otkit-colors', private: false },
+        { name: 'otkit-icons', private: false },
+        { name: 'style-guide', private: true }
+      ])
+    );
   }
+  return Promise.resolve();
 });
 
-jest.mock('cross-spawn', () => {
-  return mockSpawn;
+jest.mock('../lib/runCmd', () => {
+  return mockRunCmd;
 });
 
 const mockEnsureDirSync = jest.fn();
@@ -132,13 +106,13 @@ test('automatic-release process', async () => {
   const doPublish = true;
   await run(doPublish);
 
-  const spawnCalls = mockSpawn.mock.calls.map(call => {
+  const runCmdCalls = mockRunCmd.mock.calls.map(call => {
     call[2]['cwd'] = call[2]['cwd'].substring(
       call[2]['cwd'].indexOf('/utils/') + 1
     );
     return call;
   });
-  expect(spawnCalls).toMatchSnapshot();
+  expect(runCmdCalls).toMatchSnapshot();
 
   mockEnsureDirSync.mock.calls.forEach(call => {
     expect(call[0]).toContain('./tempNpm');
