@@ -18,7 +18,7 @@ const run = doPublish => {
     checkUpdated(root).then(updated => {
       installPackages(updated, latestTemp)
         .then(installed =>
-          Promise.each(installed, pkg => {
+          Promise.mapSeries(installed, pkg => {
             const { diff, version } = defineVersion(pkg, root, latestTemp);
             const printDiff = () =>
               console.log(
@@ -26,15 +26,17 @@ const run = doPublish => {
                   '<DIFF NOT AVAILABLE>'}\n--------------------------------`
               );
 
-            if (version) {
-              if (doPublish) {
-                printDiff();
-                return publishPackage(pkg, version, root);
-              } else {
-                console.log(`TEST: "Should publish ${pkg} as ${version}"`);
-                printDiff();
-                return Promise.resolve(pkg);
-              }
+            if (!version) {
+              return Promise.resolve();
+            }
+
+            if (doPublish) {
+              printDiff();
+              return publishPackage(pkg, version, root);
+            } else {
+              console.log(`TEST: "Should publish ${pkg} as ${version}"`);
+              printDiff();
+              return Promise.resolve(pkg);
             }
           })
         )
