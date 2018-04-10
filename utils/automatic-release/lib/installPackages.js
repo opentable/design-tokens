@@ -15,7 +15,7 @@ const installPackagesFromNPM = (packages, latestTemp) => {
       cwd: latestTemp
     });
     return new Promise(resolve =>
-      cmd.on('close', code => resolve(code === 0 ? pkg : null))
+      cmd.on('close', code => resolve({ pkg, success: code === 0 }))
     );
   });
 };
