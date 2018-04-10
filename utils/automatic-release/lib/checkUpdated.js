@@ -1,29 +1,21 @@
 'use strict';
 
-const spawn = require('cross-spawn');
+const runCmd = require('./runCmd');
 
 // run lernaUpdate and return a list of the packages that need to be updated
-const checkUpdated = root => {
-  const cmd = spawn(
+const checkUpdated = root =>
+  runCmd(
     'node',
     ['node_modules/.bin/lerna', 'updated', '--json', '--loglevel=silent'],
     {
-      cwd: root,
-      stdout: 'inherit'
+      cwd: root
     }
+  ).then(result =>
+    Promise.resolve(
+      JSON.parse(result || '[]')
+        .filter(pkg => !pkg.private)
+        .map(pkg => pkg.name)
+    )
   );
-  let result = '';
-  cmd.stdout.on('data', data => (result += data.toString()));
-
-  return new Promise(resolve => {
-    cmd.on('close', code => {
-      return resolve(
-        JSON.parse(result)
-          .filter(pkg => !pkg.private)
-          .map(pkg => pkg.name)
-      );
-    });
-  });
-};
 
 module.exports = checkUpdated;
