@@ -65,42 +65,78 @@ Array [
     },
   ],
   Array [
-    "node",
+    "npm",
     Array [
-      "node_modules/.bin/lerna",
-      "publish",
-      "--exact",
-      "--force-publish=ottheme-colors",
-      "--cd-version=patch",
-      "--yes",
+      "version",
+      "patch",
+      "--message",
+      "patch release for ottheme-colors. New version: %s",
     ],
     Object {
-      "cwd": "utils/automatic-release/lib,../../../",
+      "cwd": "utils/automatic-release/lib,../../../,OTTheme/ottheme-colors",
     },
   ],
   Array [
-    "node",
+    "npm",
     Array [
-      "node_modules/.bin/lerna",
       "publish",
-      "--exact",
-      "--force-publish=otkit-borders",
-      "--cd-version=major",
-      "--yes",
+      "ottheme-colors",
     ],
     Object {
-      "cwd": "utils/automatic-release/lib,../../../",
+      "cwd": "utils/automatic-release/lib,../../../,OTTheme/ottheme-colors",
     },
   ],
   Array [
-    "node",
+    "npm",
     Array [
-      "node_modules/.bin/lerna",
+      "version",
+      "major",
+      "--message",
+      "major release for otkit-borders. New version: %s",
+    ],
+    Object {
+      "cwd": "utils/automatic-release/lib,../../../,OTKit/otkit-borders",
+    },
+  ],
+  Array [
+    "npm",
+    Array [
       "publish",
-      "--exact",
-      "--force-publish=otkit-breakpoints",
-      "--cd-version=minor",
-      "--yes",
+      "otkit-borders",
+    ],
+    Object {
+      "cwd": "utils/automatic-release/lib,../../../,OTKit/otkit-borders",
+    },
+  ],
+  Array [
+    "npm",
+    Array [
+      "version",
+      "minor",
+      "--message",
+      "minor release for otkit-breakpoints. New version: %s",
+    ],
+    Object {
+      "cwd": "utils/automatic-release/lib,../../../,OTKit/otkit-breakpoints",
+    },
+  ],
+  Array [
+    "npm",
+    Array [
+      "publish",
+      "otkit-breakpoints",
+    ],
+    Object {
+      "cwd": "utils/automatic-release/lib,../../../,OTKit/otkit-breakpoints",
+    },
+  ],
+  Array [
+    "git",
+    Array [
+      "push",
+      "origin",
+      "master",
+      "--follow-tags",
     ],
     Object {
       "cwd": "utils/automatic-release/lib,../../../",

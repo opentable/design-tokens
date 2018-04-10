@@ -1,22 +1,14 @@
 'use strict';
 
+const path = require('path');
+
+const packagePathResolver = require('./defineVersion/packagePathResolver');
 const runCmd = require('./runCmd');
 
-const publishPackage = (pkg, version, root) =>
-  runCmd(
-    'node',
-    [
-      'node_modules/.bin/lerna',
-      'publish',
-      '--exact',
-      `--force-publish=${pkg}`,
-      `--cd-version=${version}`,
-      '--yes'
-    ],
-    {
-      cwd: root
-    }
-  )
+const publishPackage = ({ pkg, version, root }) =>
+  runCmd('npm', ['publish', pkg], {
+    cwd: path.join(root, packagePathResolver(pkg))
+  })
     .then(() => {
       console.log(`Published ${pkg} as ${version}`);
       return Promise.resolve(pkg);
