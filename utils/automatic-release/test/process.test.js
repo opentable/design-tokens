@@ -122,7 +122,10 @@ test('install latest from NPM', async () => {
     ['ottheme-colors', 'otkit-borders'],
     './tempNpm'
   );
-  expect(await installed).toEqual(['ottheme-colors', 'otkit-borders']);
+  expect(await installed).toEqual([
+    { pkg: 'ottheme-colors', success: true },
+    { pkg: 'otkit-borders', success: true }
+  ]);
 });
 
 test('automatic-release process', async () => {

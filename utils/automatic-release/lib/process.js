@@ -18,8 +18,12 @@ const run = doPublish => {
     checkUpdated(root).then(updated => {
       installPackages(updated, latestTemp)
         .then(installed =>
-          Promise.mapSeries(installed, pkg => {
-            const { diff, version } = defineVersion(pkg, root, latestTemp);
+          Promise.mapSeries(installed, ({ pkg, success }) => {
+            const newPackage = { diff: null, version: 'major' };
+            const { diff, version } = success
+              ? defineVersion(pkg, root, latestTemp)
+              : newPackage;
+
             const printDiff = () =>
               console.log(
                 `${diff ||

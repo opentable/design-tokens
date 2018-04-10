@@ -8,8 +8,7 @@ const differ = require('jest-diff');
 const diffToSemver = require('./diffToSemver');
 
 const defineVersion = (pkg, root, latestTemp) => {
-  let version = 'major';
-  let diff;
+  let version, diff;
 
   const updatedContent = yaml.load(
     path.join(root, `${packagePathResolver(pkg)}/token.yml`)
