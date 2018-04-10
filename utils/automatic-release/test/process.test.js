@@ -102,6 +102,14 @@ test('install latest from NPM', async () => {
   ]);
 });
 
+jest.mock('../lib/publishPackage', () => () => Promise.resolve());
+
+jest.mock('../lib/versionAddCommitTagPackage', () =>
+  jest.fn(() => Promise.resolve())
+);
+
+const versionAddCommitTagPackage = require('../lib/publishPackage');
+
 test('automatic-release process', async () => {
   const doPublish = true;
   await run(doPublish);
