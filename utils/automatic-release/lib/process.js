@@ -5,7 +5,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const Promise = require('bluebird');
 
-const checkUpdated = require('./checkUpdated');
+const getTokenList = require('./getTokenList');
 const defineVersion = require('./defineVersion');
 const installPackages = require('./installPackages');
 const publishPackage = require('./publishPackage');
@@ -15,8 +15,8 @@ const latestTemp = path.join(__dirname, './tempNpm');
 
 const run = doPublish => {
   return new Promise((resolvePublish, rejectPublish) => {
-    checkUpdated(root).then(updated => {
-      installPackages(updated, latestTemp)
+    getTokenList(root).then(tokens => {
+      installPackages(tokens, latestTemp)
         .then(installed =>
           Promise.mapSeries(installed, ({ pkg, success }) => {
             const newPackage = { diff: null, version: 'major' };

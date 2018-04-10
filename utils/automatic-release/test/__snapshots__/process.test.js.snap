@@ -6,7 +6,7 @@ Array [
     "node",
     Array [
       "node_modules/.bin/lerna",
-      "updated",
+      "ls",
       "--json",
       "--loglevel=silent",
     ],
