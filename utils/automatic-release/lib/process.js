@@ -8,7 +8,7 @@ const Promise = require('bluebird');
 const getTokenList = require('./getTokenList');
 const defineVersion = require('./defineVersion');
 const installPackages = require('./installPackages');
-const versionPackage = require('./versionPackage');
+const versionAddCommitTagPackage = require('./versionAddCommitTagPackage');
 const publishPackage = require('./publishPackage');
 const pushChanges = require('./pushChanges');
 
@@ -38,7 +38,9 @@ const run = doPublish => {
 
             if (doPublish) {
               printDiff();
-              return versionPackage(pkg, version, root).then(publishPackage);
+              return versionAddCommitTagPackage({ pkg, version, root }).then(
+                publishPackage
+              );
             } else {
               console.log(`TEST: "Should publish ${pkg} as ${version}"`);
               printDiff();
