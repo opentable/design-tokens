@@ -1,6 +1,6 @@
 {
   "name": "otkit-icons",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "OpenTable icons design token",
   "author": {
     "email": "design-tokens@opentable.com"
@@ -16,5 +16,10 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "files": ["package.json", "token.cssmodules.css", "token.scss", "token.yml"]
+  "files": [
+    "package.json",
+    "token.cssmodules.css",
+    "token.scss",
+    "token.yml"
+  ]
 }
