@@ -18,7 +18,7 @@ const processIcon = ({ icon, fileName, id }) => {
   }
 
   if (innerContent['g']) {
-    return console.log(messages.g(fileName));
+    console.log(messages.g(fileName));
   }
 
   if (Object.keys(innerContent).length != 2) {
