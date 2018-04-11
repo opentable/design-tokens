@@ -5,18 +5,20 @@ const fs = require('fs-extra');
 const path = require('path');
 const Promise = require('bluebird');
 
-const checkUpdated = require('./checkUpdated');
+const getTokenList = require('./getTokenList');
 const defineVersion = require('./defineVersion');
 const installPackages = require('./installPackages');
+const versionAddCommitTagPackage = require('./versionAddCommitTagPackage');
 const publishPackage = require('./publishPackage');
+const pushChanges = require('./pushChanges');
 
 const root = path.join(__dirname, '../../../');
 const latestTemp = path.join(__dirname, './tempNpm');
 
 const run = doPublish => {
   return new Promise((resolvePublish, rejectPublish) => {
-    checkUpdated(root).then(updated => {
-      installPackages(updated, latestTemp)
+    getTokenList(root).then(tokens => {
+      installPackages(tokens, latestTemp)
         .then(installed =>
           Promise.mapSeries(installed, ({ pkg, success }) => {
             const newPackage = { diff: null, version: 'major' };
@@ -36,7 +38,9 @@ const run = doPublish => {
 
             if (doPublish) {
               printDiff();
-              return publishPackage(pkg, version, root);
+              return versionAddCommitTagPackage({ pkg, version, root }).then(
+                publishPackage
+              );
             } else {
               console.log(`TEST: "Should publish ${pkg} as ${version}"`);
               printDiff();
@@ -44,7 +48,8 @@ const run = doPublish => {
             }
           })
         )
-        .then(published => {
+        .then(() => (doPublish ? pushChanges(root) : Promise.resolve()))
+        .then(() => {
           fs.removeSync(latestTemp);
           resolvePublish(
             `Automatic release ${doPublish ? '' : 'test'} successful`

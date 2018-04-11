@@ -3,10 +3,10 @@
 const runCmd = require('./runCmd');
 
 // run lernaUpdate and return a list of the packages that need to be updated
-const checkUpdated = root =>
+const getTokenList = root =>
   runCmd(
     'node',
-    ['node_modules/.bin/lerna', 'updated', '--json', '--loglevel=silent'],
+    ['node_modules/.bin/lerna', 'ls', '--json', '--loglevel=silent'],
     {
       cwd: root
     }
@@ -18,4 +18,4 @@ const checkUpdated = root =>
     )
   );
 
-module.exports = checkUpdated;
+module.exports = getTokenList;

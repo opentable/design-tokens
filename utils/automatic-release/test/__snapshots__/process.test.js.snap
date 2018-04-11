@@ -6,7 +6,7 @@ Array [
     "node",
     Array [
       "node_modules/.bin/lerna",
-      "updated",
+      "ls",
       "--json",
       "--loglevel=silent",
     ],
@@ -65,42 +65,12 @@ Array [
     },
   ],
   Array [
-    "node",
+    "git",
     Array [
-      "node_modules/.bin/lerna",
-      "publish",
-      "--exact",
-      "--force-publish=ottheme-colors",
-      "--cd-version=patch",
-      "--yes",
-    ],
-    Object {
-      "cwd": "utils/automatic-release/lib,../../../",
-    },
-  ],
-  Array [
-    "node",
-    Array [
-      "node_modules/.bin/lerna",
-      "publish",
-      "--exact",
-      "--force-publish=otkit-borders",
-      "--cd-version=major",
-      "--yes",
-    ],
-    Object {
-      "cwd": "utils/automatic-release/lib,../../../",
-    },
-  ],
-  Array [
-    "node",
-    Array [
-      "node_modules/.bin/lerna",
-      "publish",
-      "--exact",
-      "--force-publish=otkit-breakpoints",
-      "--cd-version=minor",
-      "--yes",
+      "push",
+      "origin",
+      "master",
+      "--follow-tags",
     ],
     Object {
       "cwd": "utils/automatic-release/lib,../../../",

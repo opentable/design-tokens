@@ -1,5 +1,5 @@
 const mockRunCmd = jest.fn((script, commands, options) => {
-  if (commands[0] === 'node_modules/.bin/lerna' && commands[1] === 'updated') {
+  if (commands[0] === 'node_modules/.bin/lerna' && commands[1] === 'ls') {
     return Promise.resolve(
       JSON.stringify([
         { name: 'ottheme-colors', private: false },
@@ -76,13 +76,13 @@ afterAll(() => {
   global.console.log = origiLog;
 });
 
-const checkUpdated = require('../lib/checkUpdated');
+const getTokenList = require('../lib/getTokenList');
 const installLatestFromNPM = require('../lib/installPackages');
 const run = require('../lib/process');
 
-test('check updated', async () => {
-  const updated = await checkUpdated();
-  expect(updated).toEqual([
+test('Get tokens list', async () => {
+  const tokens = await getTokenList();
+  expect(tokens).toEqual([
     'ottheme-colors',
     'otkit-borders',
     'otkit-breakpoints',
@@ -101,6 +101,14 @@ test('install latest from NPM', async () => {
     { pkg: 'otkit-borders', success: true }
   ]);
 });
+
+jest.mock('../lib/publishPackage', () => () => Promise.resolve());
+
+jest.mock('../lib/versionAddCommitTagPackage', () =>
+  jest.fn(() => Promise.resolve())
+);
+
+const versionAddCommitTagPackage = require('../lib/publishPackage');
 
 test('automatic-release process', async () => {
   const doPublish = true;
