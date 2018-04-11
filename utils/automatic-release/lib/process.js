@@ -16,6 +16,8 @@ const root = path.join(__dirname, '../../../');
 const latestTemp = path.join(__dirname, './tempNpm');
 
 const run = doPublish => {
+  const published = [];
+
   return new Promise((resolvePublish, rejectPublish) => {
     getTokenList(root).then(tokens => {
       installPackages(tokens, latestTemp)
@@ -38,9 +40,12 @@ const run = doPublish => {
 
             if (doPublish) {
               printDiff();
-              return versionAddCommitTagPackage({ pkg, version, root }).then(
-                publishPackage
-              );
+              return versionAddCommitTagPackage({ pkg, version, root })
+                .then(publishPackage)
+                .then(pkg => {
+                  published.push(pkg);
+                  return Promise.resolve(pkg);
+                });
             } else {
               console.log(`TEST: "Should publish ${pkg} as ${version}"`);
               printDiff();
@@ -48,7 +53,12 @@ const run = doPublish => {
             }
           })
         )
-        .then(() => (doPublish ? pushChanges(root) : Promise.resolve()))
+        .then(
+          () =>
+            doPublish && published.length
+              ? pushChanges(root)
+              : Promise.resolve()
+        )
         .then(() => {
           fs.removeSync(latestTemp);
           resolvePublish(
