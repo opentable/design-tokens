@@ -7,10 +7,10 @@ matrix:
 after_success:
   - if [ $TRAVIS_PULL_REQUEST == false ] && [ $TRAVIS_BRANCH == "master" ]; then
         npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN -q;
-        git remote set-url origin git@github.com:opentable/design-tokens.git;
-        git config --global github.user nickbalestra;
-        git config --global github.token $GH_TOKEN;
+        git config --global user.name nickbalestra;
+        git config --global user.email nbalestra@opentable.com;
         git checkout master;
+        git remote set-url origin https://${GH_TOKEN}@github.com/opentable/design-tokens.git; 
         npm run automatic-release;
       else
         npm run automatic-release-test;
