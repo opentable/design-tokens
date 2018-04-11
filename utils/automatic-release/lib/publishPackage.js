@@ -6,7 +6,7 @@ const packagePathResolver = require('./defineVersion/packagePathResolver');
 const runCmd = require('./runCmd');
 
 const publishPackage = ({ pkg, version, root }) =>
-  runCmd('npm', ['publish', pkg], {
+  runCmd('npm', ['publish', '.'], {
     cwd: path.join(root, packagePathResolver(pkg))
   })
     .then(() => {
