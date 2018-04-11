@@ -19,7 +19,9 @@
 .icon-block {
   border-radius: border-radius-small;
   padding: spacing-medium 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-name {

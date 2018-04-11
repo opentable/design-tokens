@@ -16,14 +16,5 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "scripts": {
-    "build": "node build-icons.js"
-  },
-  "devDependencies": {
-    "fs-extra": "^5.0.0",
-    "node-yaml": "^3.1.1",
-    "svgo": "^1.0.5",
-    "xml2js": "^0.4.19"
-  },
   "files": ["package.json", "token.cssmodules.css", "token.scss", "token.yml"]
 }
