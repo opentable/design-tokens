@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <title>icon/details/ic_email</title>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/ic_email</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="icon/details/ic_email" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M4,4 L20,4 C21.1045695,4 22,4.8954305 22,6 L22,18 C22,19.1045695 21.1045695,20 20,20 L4,20 C2.8954305,20 2,19.1045695 2,18 L2,6 C2,4.8954305 2.8954305,4 4,4 Z M4,6 L4,18 L20,18 L20,6 L4,6 Z M4,8 L11.5527864,11.7763932 C11.8343139,11.9171569 12.1656861,11.9171569 12.4472136,11.7763932 L20,8 L20,10 L12.4472136,13.7763932 C12.1656861,13.9171569 11.8343139,13.9171569 11.5527864,13.7763932 L4,10 L4,8 Z" id="Combined-Shape" fill="#333333"></path>
+    <g id="icon/ic_email" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4,4 L20,4 C21.1045695,4 22,4.8954305 22,6 L22,18 C22,19.1045695 21.1045695,20 20,20 L4,20 C2.8954305,20 2,19.1045695 2,18 L2,6 C2,4.8954305 2.8954305,4 4,4 Z M4,6 L4,18 L20,18 L20,6 L4,6 Z M4,8 L11.5527864,11.7763932 C11.8343139,11.9171569 12.1656861,11.9171569 12.4472136,11.7763932 L20,8 L20,10 L12.4472136,13.7763932 C12.1656861,13.9171569 11.8343139,13.9171569 11.5527864,13.7763932 L4,10 L4,8 Z" id="ic_email" fill="#333333"></path>
     </g>
 </svg>

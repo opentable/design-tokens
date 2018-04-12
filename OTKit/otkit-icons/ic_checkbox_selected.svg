@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
-    <title>universal / icon / action / medium / ic_checkbox_selected</title>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/ic_checkbox_selected</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <path d="M10.935534,12.7639611 L9.16776705,10.9961942 C8.9725049,10.800932 8.65592241,10.800932 8.46066027,10.9961942 L7.75355349,11.703301 C7.55829134,11.8985631 7.55829134,12.2151456 7.75355349,12.4104077 L10.5819806,15.2388349 C10.6796117,15.3364659 10.8075728,15.3852815 10.935534,15.3852815 C11.0634952,15.3852815 11.1914563,15.3364659 11.2890874,15.2388349 L16.2388349,10.2890874 C16.434097,10.0938252 16.434097,9.77724276 16.2388349,9.58198061 L15.5317281,8.87487383 C15.3364659,8.67961168 15.0198834,8.67961168 14.8246213,8.87487383 L10.935534,12.7639611 Z M5,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,19 C21,20.1045695 20.1045695,21 19,21 L5,21 C3.8954305,21 3,20.1045695 3,19 L3,5 C3,3.8954305 3.8954305,3 5,3 Z" id="path-1"></path>
-    </defs>
-    <g id="universal-/-icon-/-action-/-medium-/-ic_checkbox_selected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <mask id="mask-2" fill="white">
-            <use xlink:href="#path-1"></use>
-        </mask>
-        <use id="ic_checkbox_selected" fill="#DA3743" xlink:href="#path-1"></use>
+    <defs></defs>
+    <g id="icon/ic_checkbox_selected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10.935534,12.7639611 L9.16776705,10.9961942 C8.9725049,10.800932 8.65592241,10.800932 8.46066027,10.9961942 L7.75355349,11.703301 C7.55829134,11.8985631 7.55829134,12.2151456 7.75355349,12.4104077 L10.5819806,15.2388349 C10.6796117,15.3364659 10.8075728,15.3852815 10.935534,15.3852815 C11.0634952,15.3852815 11.1914563,15.3364659 11.2890874,15.2388349 L16.2388349,10.2890874 C16.434097,10.0938252 16.434097,9.77724276 16.2388349,9.58198061 L15.5317281,8.87487383 C15.3364659,8.67961168 15.0198834,8.67961168 14.8246213,8.87487383 L10.935534,12.7639611 Z M5,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,19 C21,20.1045695 20.1045695,21 19,21 L5,21 C3.8954305,21 3,20.1045695 3,19 L3,5 C3,3.8954305 3.8954305,3 5,3 Z" id="ic_checkbox_selected" fill="#DA3743"></path>
     </g>
 </svg>

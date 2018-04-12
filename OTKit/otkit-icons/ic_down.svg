@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
-    <title>universal / icon / navigation / medium / ic_down</title>
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/ic_down</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <path d="M10.9926407,9.74264069 L10.9926407,13.2426407 C10.9926407,13.5187831 10.7687831,13.7426407 10.4926407,13.7426407 L9.49264069,13.7426407 C9.21649831,13.7426407 8.99264069,13.5187831 8.99264069,13.2426407 L8.99264069,9.24264069 L8.99264069,8.24264069 C8.99264069,7.96649831 9.21649831,7.74264069 9.49264069,7.74264069 L14.4926407,7.74264069 C14.7687831,7.74264069 14.9926407,7.96649831 14.9926407,8.24264069 L14.9926407,9.24264069 C14.9926407,9.51878306 14.7687831,9.74264069 14.4926407,9.74264069 L10.9926407,9.74264069 Z" id="path-1"></path>
-    </defs>
-    <g id="universal-/-icon-/-navigation-/-medium-/-ic_down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <mask id="mask-2" fill="white">
-            <use xlink:href="#path-1"></use>
-        </mask>
-        <use id="ic_down" fill="#2D333F" transform="translate(11.992641, 10.742641) rotate(-135.000000) translate(-11.992641, -10.742641) " xlink:href="#path-1"></use>
+    <defs></defs>
+    <g id="icon/ic_down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M11,11 L11,14.5 C11,14.7761424 10.7761424,15 10.5,15 L9.5,15 C9.22385763,15 9,14.7761424 9,14.5 L9,10.5 L9,9.5 C9,9.22385763 9.22385763,9 9.5,9 L14.5,9 C14.7761424,9 15,9.22385763 15,9.5 L15,10.5 C15,10.7761424 14.7761424,11 14.5,11 L11,11 Z" id="ic_down" fill="#333333" transform="translate(12.000000, 12.000000) rotate(-135.000000) translate(-12.000000, -12.000000) "></path>
     </g>
 </svg>

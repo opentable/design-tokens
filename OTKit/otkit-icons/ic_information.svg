@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/ic_information</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/ic_information" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 Z M12,19 C8.13400675,19 5,15.8659932 5,12 C5,8.13400675 8.13400675,5 12,5 C15.8659932,5 19,8.13400675 19,12 C19,15.8659932 15.8659932,19 12,19 Z M11.49,11 C11.2138576,11 10.99,11.2238576 10.99,11.5 L10.99,15.5 C10.99,15.7761424 11.2138576,16 11.49,16 L12.49,16 C12.7661424,16 12.99,15.7761424 12.99,15.5 L12.99,11.5 C12.99,11.2238576 12.7661424,11 12.49,11 L11.49,11 Z M11.49,7.5 C11.2138576,7.5 10.99,7.72385763 10.99,8 L10.99,9 C10.99,9.27614237 11.2138576,9.5 11.49,9.5 L12.49,9.5 C12.7661424,9.5 12.99,9.27614237 12.99,9 L12.99,8 C12.99,7.72385763 12.7661424,7.5 12.49,7.5 L11.49,7.5 Z" id="ic_information" fill="#333333" fill-rule="nonzero"></path>
+    </g>
+</svg>
