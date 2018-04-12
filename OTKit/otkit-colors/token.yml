@@ -2,29 +2,29 @@ props:
   # Primary Action
   # This color is only used on objects, backgrounds with large text (24px or larger, bold), and will be used as a color to guide users towards actionable content.
   # =============================================
-  color-primary:
+  color-brand:
     value: "#da3743"
   color-primary-active:
     value: "#b8222d"
 
   # Primary Gray, used on all text sizes
   # =============================================
-  color-gray-primary:
+  color-neutral-2:
     value: "#2d333f"
 
   # Secondary Gray, used on smaller font sizes and for disabled primary buttons
   # =============================================
-  color-gray-secondary:
+  color-neutral-3:
     value: "#6f737b"
 
   # Utility Gray, used for borders, dividers, containers
   # =============================================
-  color-gray-utility:
+  color-neutral-4:
     value: "#d8d9db"
 
   # Lightest gray, used for backgrounds for the page and backgrounds for active/hover states
   # =============================================
-  color-gray-active:
+  color-neutral-5:
     value: "#f1f2f4"
 
   # White, used for button text and (if necessary) backgrounds
