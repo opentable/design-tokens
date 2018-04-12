@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>universal / icon / navigation / medium / ic_back</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.6568542,9.65685425 L10.6568542,15.1568542 C10.6568542,15.4329966 10.4329966,15.6568542 10.1568542,15.6568542 L9.15685425,15.6568542 C8.88071187,15.6568542 8.65685425,15.4329966 8.65685425,15.1568542 L8.65685425,9.15685425 L8.65685425,8.15685425 C8.65685425,7.88071187 8.88071187,7.65685425 9.15685425,7.65685425 L16.1568542,7.65685425 C16.4329966,7.65685425 16.6568542,7.88071187 16.6568542,8.15685425 L16.6568542,9.15685425 C16.6568542,9.43299662 16.4329966,9.65685425 16.1568542,9.65685425 L10.6568542,9.65685425 Z" id="path-1"></path>
+    </defs>
+    <g id="universal-/-icon-/-navigation-/-medium-/-ic_back" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="ic_back" fill="#2D333F" transform="translate(12.656854, 11.656854) rotate(-45.000000) translate(-12.656854, -11.656854) " xlink:href="#path-1"></use>
+    </g>
+</svg>
