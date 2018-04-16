@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/ic_radio_selected</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/ic_radio_selected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,3 C16.9705627,3 21,7.02943725 21,12 C21,16.9705627 16.9705627,21 12,21 C7.02943725,21 3,16.9705627 3,12 C3,7.02943725 7.02943725,3 12,3 Z M12,9.3 C10.5088312,9.3 9.3,10.5088312 9.3,12 C9.3,13.4911688 10.5088312,14.7 12,14.7 C13.4911688,14.7 14.7,13.4911688 14.7,12 C14.7,10.5088312 13.4911688,9.3 12,9.3 Z" id="ic_radio_selected" fill="#DA3743"></path>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/ic_entertainment</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/ic_entertainment" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M13.6836089,9 L12.9998267,14.4702574 C12.9999421,14.4801579 13,14.4900722 13,14.5 C13,15.8807119 11.8807119,17 10.5,17 C9.11928813,17 8,15.8807119 8,14.5 C8,13.1192881 9.11928813,12 10.5,12 C10.7770264,12 11.0435287,12.0450586 11.292578,12.1282469 L11.8788611,7.43798263 C11.9101379,7.18776822 12.1228384,7 12.375,7 L13.3672178,7 L15.5,7 C15.7761424,7 16,7.22385763 16,7.5 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L13.6836089,9 Z M5,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,19 C21,20.1045695 20.1045695,21 19,21 L5,21 C3.8954305,21 3,20.1045695 3,19 L3,5 C3,3.8954305 3.8954305,3 5,3 Z M5,5 L5,19 L19,19 L19,5 L5,5 Z" id="ic_entertainment" fill="#333333"></path>
+    </g>
+</svg>

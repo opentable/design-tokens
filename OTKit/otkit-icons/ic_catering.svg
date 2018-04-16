@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <title>icon/details/ic_catering</title>
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/ic_catering</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="icon/details/ic_catering" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="icon/ic_catering" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <path d="M13.9733448,6.21701085 C17.9947044,7.1165952 21,10.7073354 21,15 L21,16 L3,16 L3,15 C3,10.7073354 6.00529555,7.1165952 10.0266552,6.21701085 C10.1589888,5.52388142 10.7683149,5 11.5,5 L12.5,5 C13.2316851,5 13.8410112,5.52388142 13.9733448,6.21701085 Z M15,19 C15,19.5522847 14.5522847,20 14,20 L10,20 C9.44771525,20 9,19.5522847 9,19 L4,19 C3.44771525,19 3,18.5522847 3,18 C3,17.4477153 3.44771525,17 4,17 L20,17 C20.5522847,17 21,17.4477153 21,18 C21,18.5522847 20.5522847,19 20,19 L15,19 Z M12,8 C8.53766836,8 5.58280989,10.5031407 5.01360608,13.9183635 L5,14 L19,14 L18.9863939,13.9183635 C18.4171901,10.5031407 15.4623316,8 12,8 Z" id="Combined-Shape" fill="#333333"></path>
     </g>
 </svg>
