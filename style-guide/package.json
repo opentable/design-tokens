@@ -22,7 +22,7 @@
     "otkit-borders": "^1.0.3",
     "otkit-breakpoints": "^4.0.2",
     "otkit-colors": "^2.2.4",
-    "otkit-icons": "^0.1.1",
+    "otkit-icons": "0.2.0",
     "otkit-shadows": "^1.0.3",
     "otkit-spacing": "^2.0.3",
     "otkit-typography-desktop": "^2.0.0"
