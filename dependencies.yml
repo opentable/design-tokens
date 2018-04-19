@@ -3,7 +3,8 @@ dependencies:
 
   - type: js
     path: /
-    filters:
+    manifest_updates:
+      filters:
       - name: ".*"
         versions: "Y.Y.Y"
   
@@ -12,7 +13,7 @@ dependencies:
 
     settings:
       constraint_prefix: '^'
-    
-    filters:
+    manifest_updates:
+      filters:
       - name: ".*"
         versions: "Y.Y.Y"
