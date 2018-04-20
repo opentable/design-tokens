@@ -2,7 +2,7 @@ props:
   # Used in containers, cards and modals
   # =============================================
   border-radius-small:
-    value: "2px"
+    value: "4px"
 
 global:
   platform: "core"
