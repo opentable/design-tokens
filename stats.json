@@ -1,12 +1,12 @@
 {
   "assetsByChunkName": {
     "component---src-pages-otkit-colors-js": [
-      "component---src-pages-otkit-colors-js-e012f5285ba09ae8bb01.js",
-      "component---src-pages-otkit-colors-js-e012f5285ba09ae8bb01.js.map"
+      "component---src-pages-otkit-colors-js-2d1c9ce91d0a3abf3cc8.js",
+      "component---src-pages-otkit-colors-js-2d1c9ce91d0a3abf3cc8.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-937b45cba813356a52cb.js",
-      "component---src-pages-index-js-937b45cba813356a52cb.js.map"
+      "component---src-pages-index-js-c13c3974a7f94b22b0b0.js",
+      "component---src-pages-index-js-c13c3974a7f94b22b0b0.js.map"
     ],
     "path---otkit-icons": [
       "path---otkit-icons-a0e39f21c11f6a62c5ab.js",
@@ -25,8 +25,8 @@
       "component---src-pages-otkit-spacing-js-ab2cc333fabf2a9e6791.js.map"
     ],
     "component---src-pages-otkit-icons-js": [
-      "component---src-pages-otkit-icons-js-b184891f9dba4be01443.js",
-      "component---src-pages-otkit-icons-js-b184891f9dba4be01443.js.map"
+      "component---src-pages-otkit-icons-js-5e654bfd54fe3cd86756.js",
+      "component---src-pages-otkit-icons-js-5e654bfd54fe3cd86756.js.map"
     ],
     "path---otkit-shadows": [
       "path---otkit-shadows-a0e39f21c11f6a62c5ab.js",
@@ -71,8 +71,8 @@
       "path---otkit-typography-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-otkit-borders-js": [
-      "component---src-pages-otkit-borders-js-9dc07cad3f2c9b61e949.js",
-      "component---src-pages-otkit-borders-js-9dc07cad3f2c9b61e949.js.map"
+      "component---src-pages-otkit-borders-js-b0e6ce76fe6326145443.js",
+      "component---src-pages-otkit-borders-js-b0e6ce76fe6326145443.js.map"
     ],
     "app": [
       "app-577bc8c313b4ec04a264.js",
