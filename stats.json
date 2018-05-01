@@ -1,12 +1,12 @@
 {
   "assetsByChunkName": {
     "component---src-pages-otkit-colors-js": [
-      "component---src-pages-otkit-colors-js-2d1c9ce91d0a3abf3cc8.js",
-      "component---src-pages-otkit-colors-js-2d1c9ce91d0a3abf3cc8.js.map"
+      "component---src-pages-otkit-colors-js-ed224e904f0267aa548f.js",
+      "component---src-pages-otkit-colors-js-ed224e904f0267aa548f.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-c13c3974a7f94b22b0b0.js",
-      "component---src-pages-index-js-c13c3974a7f94b22b0b0.js.map"
+      "component---src-pages-index-js-f1b4da039de89960cb98.js",
+      "component---src-pages-index-js-f1b4da039de89960cb98.js.map"
     ],
     "path---otkit-icons": [
       "path---otkit-icons-a0e39f21c11f6a62c5ab.js",
@@ -53,9 +53,9 @@
       "component---src-pages-otkit-shadows-js-a80fe6426a466df307c0.js.map"
     ],
     "commons": [
-      "commons-91791d1025b0bc0a3690.js",
+      "commons-92c57ed30e6c50815d84.js",
       "build-js-styles.css",
-      "commons-91791d1025b0bc0a3690.js.map",
+      "commons-92c57ed30e6c50815d84.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-otkit-breakpoints-js": [
@@ -75,9 +75,9 @@
       "component---src-pages-otkit-borders-js-b0e6ce76fe6326145443.js.map"
     ],
     "app": [
-      "app-577bc8c313b4ec04a264.js",
+      "app-3af73d9555dd5e7cb1d7.js",
       "build-js-styles.css",
-      "app-577bc8c313b4ec04a264.js.map",
+      "app-3af73d9555dd5e7cb1d7.js.map",
       "build-js-styles.css.map"
     ],
     "path---otkit-spacing": [
