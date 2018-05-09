@@ -1,6 +1,5 @@
 'use strict';
 
-const svgToMiniDataURI = require('mini-svg-data-uri');
 const xml2js = require('xml2js');
 
 const messages = {
@@ -27,11 +26,11 @@ const builder = new xml2js.Builder({
   headless: true
 });
 
-const buildSVGDataURI = (xmlns, viewBox, path) =>
-  svgToMiniDataURI(`<svg xmlns="${xmlns}" viewBox="${viewBox}">${path}</svg>`);
+const buildSVG = (xmlns, viewBox, path) =>
+  `<svg xmlns="${xmlns}" viewBox="${viewBox}">${path}</svg>`;
 
 module.exports = {
   messages,
   builder,
-  buildSVGDataURI
+  buildSVG
 };
