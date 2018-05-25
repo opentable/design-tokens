@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/ic_points</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/ic_points" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M20.93,8.83 L17.11,4.38 C16.9060548,4.13054221 16.6021894,3.98410104 16.28,3.98 L7.72,3.98 C7.39781061,3.98410104 7.09394518,4.13054221 6.89,4.38 L3.07,8.83 C2.74991228,9.20422402 2.74991228,9.75577598 3.07,10.13 L11.24,19.66 C11.4299882,19.8821664 11.7076758,20.0100769 12,20.0100769 C12.2923242,20.0100769 12.5700118,19.8821664 12.76,19.66 L20.93,10.13 C21.2500877,9.75577598 21.2500877,9.20422402 20.93,8.83 Z M18,8.53 L16.1,8.53 L14.93,6 L15.85,6 L18,8.53 Z M13.89,8.53 L10.08,8.53 L11.3,6 L12.72,6 L13.89,8.53 Z M13.95,10.53 L11.95,15.18 L9.95,10.53 L13.95,10.53 Z M17.95,10.53 L14.38,14.7 L16.17,10.53 L17.95,10.53 Z M8.15,6 L9.08,6 L7.87,8.53 L6,8.53 L8.15,6 Z M9.62,14.7 L6,10.53 L7.8,10.53 L9.62,14.7 Z" id="ic_points" fill="#2D333F" fill-rule="nonzero"></path>
+    </g>
+</svg>
