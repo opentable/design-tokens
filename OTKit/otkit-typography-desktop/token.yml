@@ -27,7 +27,7 @@ props:
     value: "'BrandonText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
 
 
-  # Design decisions for font group sxmall-medium.
+  # Design decisions for font group xsmall-medium.
   #
   # =============================================
   xsmall-medium-font-size:
