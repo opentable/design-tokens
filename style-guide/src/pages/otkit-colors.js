@@ -18,29 +18,51 @@ const textColor = hex => {
 };
 
 const Colors = () => {
-  var tokens = _.toPairsIn(token);
-
-  tokens = tokens.map((token, index) => {
-    const rgb = token[1];
-    const colorBlock =
-      chroma.contrast(rgb, 'white') > 4 ? 'color-block' : 'color-block-border';
-    return (
-      <div className={styles['card']} key={index}>
-        <div
-          className={styles[colorBlock]}
-          style={{ backgroundColor: rgb, color: textColor(rgb) }}
-        >
-          <div className={styles['color-hex']}>{chroma(rgb).hex()}</div>
-          <div className={styles['color-rgb']}>{rgb}</div>
-        </div>
-        <div className={styles['color-name']}>{_.kebabCase(token[0])}</div>
-      </div>
-    );
+  /* find all the base colors, then display their derived colors in groups,
+   by color. */
+  const baseColors = _.pickBy(token, (value, key) => {
+    return _.kebabCase(key).indexOf('-') == -1;
   });
+
+  const groups = _.map(baseColors, (value, key) => {
+    const relatedColors = _.pickBy(token, (val, proposedKey) => {
+      return proposedKey.indexOf(key) != -1;
+    });
+
+    const tokens = _.toPairsIn(relatedColors)
+      .sort((left, right) => {
+        return chroma(left[1]).luminance() - chroma(right[1]).luminance();
+      })
+      .map((token, index) => {
+        const rgb = token[1];
+        const name = token[0];
+
+        const colorBlock =
+          chroma.contrast(rgb, 'white') > 4
+            ? 'color-block'
+            : 'color-block-border';
+
+        return (
+          <div className={styles['card']} key={index}>
+            <div
+              className={styles[colorBlock]}
+              style={{ backgroundColor: rgb, color: textColor(rgb) }}
+            >
+              <div className={styles['color-hex']}>{chroma(rgb).hex()}</div>
+              <div className={styles['color-rgb']}>{rgb}</div>
+            </div>
+            <div className={styles['color-name']}>{_.kebabCase(name)}</div>
+          </div>
+        );
+      });
+
+    return <div className={styles['section-color']}>{tokens}</div>;
+  });
+
   return (
     <section>
       <SectionHeader text="Colors" />
-      <div className={styles['section-color']}>{tokens}</div>
+      {groups.map((group, index) => <div key={index}>{group}</div>)}
     </section>
   );
 };

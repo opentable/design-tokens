@@ -1,36 +1,201 @@
 props:
-  # Primary Action
-  # This color is only used on objects, backgrounds with large text (24px or larger, bold), and will be used as a color to guide users towards actionable content.
-  # =============================================
-  color-primary:
-    value: "#da3743"
-  color-primary-active:
-    value: "#b8222d"
-
-  # Primary Gray, used on all text sizes
-  # =============================================
-  color-gray-primary:
-    value: "#2d333f"
-
-  # Secondary Gray, used on smaller font sizes and for disabled primary buttons
-  # =============================================
-  color-gray-secondary:
-    value: "#6f737b"
-
-  # Utility Gray, used for borders, dividers, containers
-  # =============================================
-  color-gray-utility:
-    value: "#d8d9db"
-
-  # Lightest gray, used for backgrounds for the page and backgrounds for active/hover states
-  # =============================================
-  color-gray-active:
+  ash-lightest:
     value: "#f1f2f4"
 
-  # White, used for button text and (if necessary) backgrounds
-  # =============================================
-  color-white:
-    value: "#FFF"
+  ash-lighter:
+    value: "#d8d9db"
+
+  ash-light:
+    value: "#91949a"
+
+  ash:
+    value: "#6f737b"
+
+  ash-dark:
+    value: "#2d333f"
+
+  ash-darker:
+    value: "#141a26"
+
+  red-lightest:
+    value: "#fceeef"
+
+  red-lighter:
+    value: "#eea0a5"
+
+  red-light:
+    value: "#e15b64"
+
+  red:
+    value: "#da3743"
+
+  red-dark:
+    value: "#931b23"
+
+  red-darker:
+    value: "#450d10"
+
+  aqua-lightest:
+    value: "#eefcf9"
+
+  aqua-lighter:
+    value: "#3ddbb6"
+
+  aqua-light:
+    value: "#1fa888"
+
+  aqua:
+    value: "#18856b"
+
+  aqua-dark:
+    value: "#0c4134"
+
+  aqua-darker:
+    value: "#09342a"
+
+  blue-lightest:
+    value: "#eef1fc"
+
+  blue-lighter:
+    value: "#b1c1f1"
+
+  blue-light:
+    value: "#6c8ae4"
+
+  blue:
+    value: "#4a6fde"
+
+  blue-dark:
+    value: "#2146b5"
+
+  blue-darker:
+    value: "#0d1b45"
+
+  fuschia-lightest:
+    value: "#fceef5"
+
+  fuschia-lighter:
+    value: "#eb93bf"
+
+  fuschia-light:
+    value: "#df4e96"
+
+  fuschia:
+    value: "#d82c82"
+
+  fuschia-dark:
+    value: "#971c59"
+
+  fuschia-darker:
+    value: "#450d29"
+
+  green-lightest:
+    value: "#f0faf3"
+
+  green-lighter:
+    value: "#64c987"
+
+  green-light:
+    value: "#39a25e"
+
+  green:
+    value: "#2f864d"
+
+  green-dark:
+    value: "#194829"
+
+  green-darker:
+    value: "#153c23"
+
+  orange-lightest:
+    value: "#fcf1ee"
+
+  orange-lighter:
+    value: "#e69b84"
+
+  orange-light:
+    value: "#d86441"
+
+  orange:
+    value: "#c84f29"
+
+  orange-dark:
+    value: "#83331b"
+
+  orange-darker:
+    value: "#441a0e"
+
+  purple-lightest:
+    value: "#f8f0fa"
+
+  purple-lighter:
+    value: "#d7a7e2"
+
+  purple-light:
+    value: "#bb6acd"
+
+  purple:
+    value: "#ad4cc3"
+
+  purple-dark:
+    value: "#7c2f8e"
+
+  purple-darker:
+    value: "#36143d"
+
+  teal-lightest:
+    value: "#eef8fb"
+
+  teal-lighter:
+    value: "#61bddb"
+
+  teal-light:
+    value: "#2b9abf"
+
+  teal:
+    value: "#247f9e"
+
+  teal-dark:
+    value: "#154a5b"
+
+  teal-darker:
+    value: "#0f3643"
+
+  violet-lightest:
+    value: "#f1edfc"
+
+  violet-lighter:
+    value: "#d5c9f7"
+
+  violet-light:
+    value: "#9d82ed"
+
+  violet:
+    value: "#7f5ce8"
+
+  violet-dark:
+    value: "#4d1fd6"
+
+  violet-darker:
+    value: "#1a0a47"
+
+  yellow-lightest:
+    value: "#fff8eb"
+
+  yellow-lighter:
+    value: "#fdc958"
+
+  yellow-light:
+    value: "#fdaf08"
+
+  yellow:
+    value: "#d99502"
+
+  yellow-dark:
+    value: "#885e01"
+
+  yellow-darker:
+    value: "#513701"
 
 global:
   platform: "core"

@@ -1,4 +1,5 @@
-@value spacing-xsmall, spacing-small, spacing-medium, font-size-xsmall, border-radius-small, color-gray-utility from './tokens.module.css';
+@value spacing-xsmall, spacing-small, spacing-medium, xsmall-regular-line-height, xsmall-regular-font-size, xsmall-regular-font-weight, border-radius-small from './tokens.module.css';
+@value ash-lighter from 'otkit-colors/token.cssmodules.css';
 
 .section-icon {
   display: flex;
@@ -25,8 +26,10 @@
 }
 
 .icon-name {
-  border: 1px solid color-gray-utility;
-  font-size: font-size-xsmall;
+  border: 1px solid ash-lighter;
+  font-size: xsmall-regular-font-size;
+  font-weight: xsmall-regular-font-weight;
+  line-height: xsmall-regular-line-height;
   padding: spacing-xsmall;
   margin: spacing-small 0;
 }
