@@ -1,6 +1,6 @@
 {
   "name": "otkit-colors",
-  "version": "2.2.4",
+  "version": "3.0.1",
   "description": "OpenTable colors design token",
   "author": {
     "email": "design-tokens@opentable.com"
