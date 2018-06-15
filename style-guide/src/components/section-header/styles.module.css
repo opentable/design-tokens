@@ -1,11 +1,12 @@
-@value spacing-large, spacing-medium, large-bold-font-size, large-bold-font-weight, large-bold-line-height, color-gray-primary, color-gray-utility from '../../styles/tokens.module.css';
+@value spacing-large, spacing-medium, large-bold-font-size, large-bold-font-weight, large-bold-line-height from '../../styles/tokens.module.css';
+@value ash-lighter, ash-dark from 'otkit-colors/token.cssmodules.css';
 
 .section-header {
-  font-size: large-font-size;
+  font-size: large-bold-font-size;
   font-weight: large-bold-font-weight;
-  line-height: large-line-height;
-  color: color-gray-primary;
-  border-bottom: 1px solid color-gray-utility;
+  line-height: large-bold-line-height;
+  color: ash-dark;
+  border-bottom: 1px solid ash-lighter;
   padding-bottom: spacing-medium;
   margin: 0 0 spacing-medium 0;
   display: flex;

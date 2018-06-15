@@ -1,46 +1,49 @@
-@value spacing-xsmall, spacing-small, spacing-medium, font-size-xsmall, font-weight-medium, border-radius-small, color-gray-utility from './tokens.module.css';
+@value spacing-xsmall, spacing-small, spacing-medium, spacing-xlarge, xsmall-regular-font-size, xsmall-regular-font-weight, xsmall-regular-line-height, xsmall-medium-font-size, xsmall-medium-font-weight, xsmall-medium-line-height, border-radius-small from './tokens.module.css';
+@value ash-lighter from 'otkit-colors/token.cssmodules.css';
 
 .section-color {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  &:after {
-    content: "";
-    width: 23%;
-  }
 }
 
 .card {
   text-align: center;
-  width: 23%;
+  width: 16%;
   margin-bottom: spacing-medium;
 }
 
 .color-block {
   border-radius: border-radius-small;
   padding: spacing-medium 0;
-  text-align: center;
+  height: calc(xsmall-medium-line-height * 2 + spacing-xsmall * 2 + xsmall-regular-line-height);
 }
 
 .color-block-border {
   composes: color-block;
-  border: 1px solid color-gray-utility;
+  border: 1px solid ash-lighter;
 }
 
 .color-name {
-  border: 1px solid color-gray-utility;
-  font-size: font-size-xsmall;
+  border: 1px solid ash-lighter;
+  font-size: xsmall-regular-font-size;
+  font-weight: xsmall-regular-font-weight;
+  line-height: xsmall-regular-line-height;
   padding: spacing-xsmall;
   margin: spacing-small 0;
 }
 
 .color-hex {
-  font-weight: font-weight-medium;
+  font-size: xsmall-medium-font-size;
+  font-weight: xsmall-medium-font-weight;
+  line-height: xsmall-medium-line-height;
   text-transform: uppercase;
 }
 
 .color-rgb {
-  font-size: font-size-xsmall;
+  font-size: xsmall-regular-font-size;
+  font-weight: xsmall-regular-font-weight;
+  line-height: xsmall-regular-line-height;
   opacity: .7;
   margin: spacing-xsmall 0;
 }
