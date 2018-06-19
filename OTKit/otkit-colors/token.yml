@@ -17,24 +17,6 @@ props:
   ash-darker:
     value: "#141a26"
 
-  red-lightest:
-    value: "#fceeef"
-
-  red-lighter:
-    value: "#eea0a5"
-
-  red-light:
-    value: "#e15b64"
-
-  red:
-    value: "#da3743"
-
-  red-dark:
-    value: "#931b23"
-
-  red-darker:
-    value: "#450d10"
-
   aqua-lightest:
     value: "#eefcf9"
 
@@ -143,6 +125,24 @@ props:
   purple-darker:
     value: "#36143d"
 
+  red-lightest:
+    value: "#fceeef"
+
+  red-lighter:
+    value: "#eea0a5"
+
+  red-light:
+    value: "#e15b64"
+
+  red:
+    value: "#da3743"
+
+  red-dark:
+    value: "#931b23"
+
+  red-darker:
+    value: "#450d10"
+
   teal-lightest:
     value: "#eef8fb"
 
@@ -178,6 +178,9 @@ props:
 
   violet-darker:
     value: "#1a0a47"
+
+  white:
+    value: "#ffffff"
 
   yellow-lightest:
     value: "#fff8eb"
