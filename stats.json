@@ -1,12 +1,12 @@
 {
   "assetsByChunkName": {
     "component---src-pages-otkit-colors-js": [
-      "component---src-pages-otkit-colors-js-c183e309cf1958e82e81.js",
-      "component---src-pages-otkit-colors-js-c183e309cf1958e82e81.js.map"
+      "component---src-pages-otkit-colors-js-35a7a7e52050b3d9f960.js",
+      "component---src-pages-otkit-colors-js-35a7a7e52050b3d9f960.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-aceecafe251e56611dd0.js",
-      "component---src-pages-index-js-aceecafe251e56611dd0.js.map"
+      "component---src-pages-index-js-6e2e3dd8341e7213e69e.js",
+      "component---src-pages-index-js-6e2e3dd8341e7213e69e.js.map"
     ],
     "path---otkit-icons": [
       "path---otkit-icons-a0e39f21c11f6a62c5ab.js",
@@ -53,9 +53,9 @@
       "component---src-pages-otkit-shadows-js-a80fe6426a466df307c0.js.map"
     ],
     "commons": [
-      "commons-d26777758fba8c540b52.js",
+      "commons-dc0e0062ab3024c94825.js",
       "build-js-styles.css",
-      "commons-d26777758fba8c540b52.js.map",
+      "commons-dc0e0062ab3024c94825.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-otkit-breakpoints-js": [
