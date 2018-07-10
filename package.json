@@ -7,7 +7,7 @@
     "fs-extra": "6.0.1",
     "gh-pages": "^1.1.0",
     "husky": "^0.14.3",
-    "jest": "23.3.0",
+    "jest": "23.4.0",
     "jest-diff": "23.2.0",
     "lerna": "^2.9.0",
     "lint-staged": "^7.0.0",
