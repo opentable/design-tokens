@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/ic_metric_change_down@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/ic_metric_change_down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M13,9.58578644 L13,17.5 C13,17.7761424 12.7761424,18 12.5,18 L11.5,18 C11.2238576,18 11,17.7761424 11,17.5 L11,9.58578644 L9.52512627,11.0606602 C9.32986412,11.2559223 9.01328163,11.2559223 8.81801948,11.0606602 L8.1109127,10.3535534 C7.91565056,10.1582912 7.91565056,9.84170876 8.1109127,9.64644661 L10.9393398,6.81801948 L11.6464466,6.1109127 C11.8417088,5.91565056 12.1582912,5.91565056 12.3535534,6.1109127 L15.8890873,9.64644661 C16.0843494,9.84170876 16.0843494,10.1582912 15.8890873,10.3535534 L15.1819805,11.0606602 C14.9867184,11.2559223 14.6701359,11.2559223 14.4748737,11.0606602 L13,9.58578644 Z" id="ic_metric_change" fill="#2D333F" transform="translate(12.000000, 11.982233) scale(1, -1) translate(-12.000000, -11.982233) "></path>
+    </g>
+</svg>
