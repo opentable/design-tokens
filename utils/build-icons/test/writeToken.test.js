@@ -24,28 +24,53 @@ jest.mock('node-yaml', () => {
   };
 });
 
-const icons = [
-  {
-    id: 'ic_ticket',
-    svgDataUri:
-      "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath d='M9.707 8.85l-5.379 5.378.472.471c1.39-.36 2.585-.04 3.584.959 1 1 1.387 2.262 1.162 3.787l.44.44 5.378-5.379-5.657-5.657zm1.414-1.415l5.657 5.657 3.107-3.107-.472-.471c-1.403.145-2.605-.281-3.604-1.28-1-1-1.37-2.145-1.11-3.434l-.471-.472-3.107 3.107zm-8.207 5.379l9.9-9.9a2 2 0 0 1 2.828 0l.792.792a1 1 0 0 1 .156 1.211c-.436.747-.28 1.493.466 2.24.747.747 1.494.902 2.24.466a1 1 0 0 1 1.212.157l.791.791a2 2 0 0 1 0 2.829l-9.9 9.9a2 2 0 0 1-2.828 0l-.791-.793a1 1 0 0 1-.157-1.21c.436-.747.28-1.494-.466-2.24-.747-.747-1.493-.903-2.24-.467a1 1 0 0 1-1.211-.156l-.792-.792a2 2 0 0 1 0-2.828z' fill-rule='evenodd'/%3e%3c/svg%3e"
-  }
-];
+const aGoodIcon = {
+  id: 'ic_good',
+  svg: 'goodsvg',
+  svgIds: ['a']
+};
+
+const aBadIcon = {
+  id: 'ic_bad1',
+  error: ['bad error 1', 'bad error 1-second'],
+  svgIds: ['b']
+};
+
+const aSecondBadIcon = {
+  id: 'ic_bad2',
+  error: ['bad error 2'],
+  svgIds: ['b']
+};
 
 const writeToken = require('../lib/writeToken');
 
-test('Write token.yml', async () => {
-  const wrote = await writeToken(icons);
+test('write token works when there are no errors', async () => {
+  const icons = [aGoodIcon];
+  await writeToken(icons);
   expect(mockWrite).toHaveBeenCalledTimes(1);
   expect(mockWrite.mock.calls[0][0]).toBe('somePath/token.yml');
   expect(mockWrite.mock.calls[0][1]).toEqual({
     global: { category: 'icon', platform: 'core', type: 'icon' },
     props: {
-      ic_ticket: {
-        value:
-          "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath d='M9.707 8.85l-5.379 5.378.472.471c1.39-.36 2.585-.04 3.584.959 1 1 1.387 2.262 1.162 3.787l.44.44 5.378-5.379-5.657-5.657zm1.414-1.415l5.657 5.657 3.107-3.107-.472-.471c-1.403.145-2.605-.281-3.604-1.28-1-1-1.37-2.145-1.11-3.434l-.471-.472-3.107 3.107zm-8.207 5.379l9.9-9.9a2 2 0 0 1 2.828 0l.792.792a1 1 0 0 1 .156 1.211c-.436.747-.28 1.493.466 2.24.747.747 1.494.902 2.24.466a1 1 0 0 1 1.212.157l.791.791a2 2 0 0 1 0 2.829l-9.9 9.9a2 2 0 0 1-2.828 0l-.791-.793a1 1 0 0 1-.157-1.21c.436-.747.28-1.494-.466-2.24-.747-.747-1.493-.903-2.24-.467a1 1 0 0 1-1.211-.156l-.792-.792a2 2 0 0 1 0-2.828z' fill-rule='evenodd'/%3e%3c/svg%3e"
+      ic_good: {
+        value: 'goodsvg'
       },
-      iconSize: { value: 24 }
+      iconSize: { value: '24px' }
     }
   });
+});
+
+test('write token errors but goes through all files and checks ids', async () => {
+  const icons = [aBadIcon, aGoodIcon, aSecondBadIcon];
+  try {
+    await writeToken(icons);
+  } catch (err) {
+    expect(mockWrite).not.toHaveBeenCalled();
+    expect(err).toEqual(
+      'bad error 1\nbad error 1-second\nbad error 2\n\tthere are duplicate ids:\n\t\tb'
+    );
+    return;
+  }
+
+  throw 'write Token did not error';
 });
