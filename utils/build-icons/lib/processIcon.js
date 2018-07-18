@@ -1,9 +1,9 @@
 'use strict';
 
-const { messages, builder, buildSVGDataURI } = require('./processIconHelpers');
+const { messages, builder, buildSVG } = require('./processIconHelpers');
 const { iconSize } = require('./config');
 
-/* Parse the XML. 
+/* Parse the XML.
   * Warn if there is an defs (because that means an i and a xlink which could collide).
   *
   * Once we are sure icons from design are single paths, we can extract the
@@ -39,7 +39,7 @@ const processIcon = ({ icon, fileName, id }) => {
     const viewBox = innerContent['$'].viewBox;
     const xmlns = innerContent['$'].xmlns;
 
-    return { id, svgDataUri: buildSVGDataURI(xmlns, viewBox, path) };
+    return { id, svg: buildSVG(xmlns, viewBox, path) };
   } else if (innerContent.g) {
     if (innerContent.g.length > 1) {
       return console.log(messages.multiRootPaths(fileName));
@@ -48,7 +48,7 @@ const processIcon = ({ icon, fileName, id }) => {
     const viewBox = innerContent['$'].viewBox;
     const xmlns = innerContent['$'].xmlns;
 
-    return { id, svgDataUri: buildSVGDataURI(xmlns, viewBox, path) };
+    return { id, svg: buildSVG(xmlns, viewBox, path) };
   } else {
     return console.log(messages.missingTopLevelPathOrGroup(fileName));
   }

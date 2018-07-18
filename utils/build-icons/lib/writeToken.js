@@ -10,11 +10,11 @@ const writeToken = icons => {
   const props = icons.reduce(
     (accum, val) => {
       if (val != undefined) {
-        accum[val.id] = { value: val.svgDataUri };
+        accum[val.id] = { type: 'xml', value: val.svg };
       }
       return accum;
     },
-    { iconSize: { value: iconSize } }
+    { iconSize: { type: 'number', value: iconSize } }
   );
 
   const iconFile = {
