@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Fill/ic_guest_requests_fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icon/Fill/ic_guest_requests_fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4.5,7.99715203 C4.5,6.34187067 5.84435073,5 7.49942248,5 L16.5005775,5 C18.1571128,5 19.5,6.34162278 19.5,7.99715203 L19.5,14.002848 C19.5,15.6581293 18.1556493,17 16.5005775,17 L7.49942248,17 C5.84288718,17 4.5,15.6583772 4.5,14.002848 L4.5,7.99715203 Z M7.90909091,8.78768263 L7.90909091,10.0502435 L16.0909091,10.0502435 L16.0909091,8.78768263 L7.90909091,8.78768263 Z M7.90909091,11.3128044 L7.90909091,12.5753653 L16.0909091,12.5753653 L16.0909091,11.3128044 L7.90909091,11.3128044 Z M9.86923495,20 C9.54963268,20 9.27272727,19.8722324 9.27272727,19.5196813 L9.27272727,17 L14.7272727,17 C14.7272727,17 11.2756514,18.985266 10.6363636,19.5196813 C10.4356979,19.6874286 10.1249168,20 9.86923495,20 Z" id="ic_guest_requests_fill" fill="#2D333F"></path>
+    </g>
+</svg>
