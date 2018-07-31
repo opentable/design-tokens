@@ -18,8 +18,7 @@
   },
   "files": [
     "package.json",
-    "token.cssmodules.css",
-    "token.scss",
-    "token.yml"
+    "token.yml",
+    "token.common.js"
   ]
 }
