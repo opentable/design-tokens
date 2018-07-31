@@ -7,23 +7,19 @@ import styles from '../styles/otkit-icons.module.css';
 
 const Icons = () => {
   const { iconSize } = icons;
-  const iconSizePx = `${iconSize}px`;
-  const viewBox = `0 0 ${iconSize} ${iconSize}`;
   const keys = _.keys(icons).sort();
   const actualIcons = _.without(keys, 'iconSize');
 
   const tokens = actualIcons.map(name => {
     const value = icons[name];
-    const divStyle = {
-      backgroundImage: `url("${value}")`,
-      width: iconSizePx,
-      height: iconSizePx
-    };
 
     return (
       <div className={styles['card']} key={name}>
         <div className={styles['icon-block']}>
-          <div style={divStyle} />
+          <div
+            className={styles['icon']}
+            dangerouslySetInnerHTML={{ __html: value }}
+          />
         </div>
         <div className={styles['icon-name']}>{_.kebabCase(name)}</div>
       </div>

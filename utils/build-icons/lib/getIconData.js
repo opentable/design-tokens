@@ -13,14 +13,31 @@ const getIconData = ({ fileName, id }) =>
     .then(file => svgo.optimize(file, { path: fileName }))
     .then(
       iconData =>
-        new Promise((resolve, reject) =>
-          xml2js.parseString(iconData.data, (err, result) => {
-            if (err) {
-              return reject(err);
+        new Promise((resolve, reject) => {
+          const ids = [];
+
+          xml2js.parseString(
+            iconData.data,
+            {
+              attrValueProcessors: [
+                (val, name) => {
+                  if (name === 'id') {
+                    ids.push(val);
+                  }
+
+                  return val;
+                }
+              ]
+            },
+            (err, result) => {
+              if (err) {
+                return reject(err);
+              }
+
+              return resolve({ icon: result, fileName, id, svgIds: ids });
             }
-            return resolve({ icon: result, fileName, id });
-          })
-        )
+          );
+        })
     );
 
 module.exports = getIconData;

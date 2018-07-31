@@ -1,5 +1,6 @@
 @value spacing-xsmall, spacing-small, spacing-medium, xsmall-regular-line-height, xsmall-regular-font-size, xsmall-regular-font-weight, border-radius-small from './tokens.module.css';
 @value ash-lighter from 'otkit-colors/token.cssmodules.css';
+@value icon-size from 'otkit-icons/token.cssmodules.css';
 
 .section-icon {
   display: flex;
@@ -23,6 +24,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.icon {
+  width: icon-size;
+  height: icon-size;
 }
 
 .icon-name {
