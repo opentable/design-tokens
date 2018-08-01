@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Fill/ic_arrived_fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icon/Fill/ic_arrived_fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M14,21 L14,17 C14,15.8954305 13.1045695,15 12,15 C10.8954305,15 10,15.8954305 10,17 L10,21 L6,21 C4.8954305,21 4,20.1045695 4,19 L4,9.6402327 C4,9.02026399 4.28751287,8.43534721 4.77839309,8.05666819 L10.7783931,3.42809676 C11.4981581,2.87284944 12.5018419,2.87284944 13.2216069,3.42809676 L19.2216069,8.05666819 C19.7124871,8.43534721 20,9.02026399 20,9.6402327 L20,19 C20,20.1045695 19.1045695,21 18,21 L14,21 Z" id="ic_arrived_fill" fill="#2D333F"></path>
+    </g>
+</svg>

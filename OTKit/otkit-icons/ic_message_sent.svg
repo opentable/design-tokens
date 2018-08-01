@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Line/ic_message_sent</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icon/Line/ic_message_sent" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10.1428571,18.8145975 L15.1666431,16.0714286 L16.9974065,16.0714286 C18.1012326,16.0714286 19,15.175806 19,14.07623 L19,7.49519859 C19,6.39698065 18.0996499,5.5 16.9905224,5.5 L7.00947762,5.5 C5.89212072,5.5 5,6.39008569 5,7.49519859 L5,15.0794483 C5,15.6189791 5.45304567,16.0714286 6.00308902,16.0714286 L10.1428571,16.0714286 L10.1428571,18.8145975 Z" id="ic_message_sent" stroke="#2D333F" stroke-width="2"></path>
+    </g>
+</svg>

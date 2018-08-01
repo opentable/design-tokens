@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Fill/ic_partially_arrived_fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icon/Fill/ic_partially_arrived_fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4.78260435,8.04662183 L10.782599,3.41568594 C11.5007011,2.86143802 12.4992882,2.86143802 13.2173903,3.41568594 L19.2173858,8.04662249 C19.7107512,8.42741341 19.9999896,9.01740544 19.9999902,9.64298828 L20,18.9879448 C20.000001,20.0991712 19.1045712,20.999999 18.0000017,21 L6,20.9999982 C4.8954305,20.9999982 4,20.0991712 4,18.9879448 L4,9.64298937 C4,9.01740592 4.28923849,8.42741312 4.78260435,8.04662183 Z M12.0000002,19.4909599 L18.0000004,19.4909599 C18.2761428,19.4909596 18.5000002,19.2657527 18.5,18.9879464 L18.4999902,9.6429896 C18.49999,9.48659389 18.4276804,9.33909588 18.3043391,9.24389815 L12.3043436,4.6129616 C12.2448348,4.56703131 12.1439822,4.53239189 12.001786,4.50904333 L12.0000002,19.4909599 Z" id="ic_partially_arrived_fill" fill="#2D333F" fill-rule="nonzero"></path>
+    </g>
+</svg>
