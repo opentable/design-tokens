@@ -54,10 +54,10 @@ module.exports = {
         convertColors: true
       },
       {
-        convertPathData: true
+        convertPathData: false
       },
       {
-        convertTransform: true
+        convertTransform: false
       },
       {
         removeUnknownsAndDefaults: true
@@ -72,31 +72,31 @@ module.exports = {
         removeUnusedNS: true
       },
       {
-        cleanupIDs: true
+        cleanupIDs: false
       },
       {
         cleanupNumericValues: true
       },
       {
-        moveElemsAttrsToGroup: true
+        moveElemsAttrsToGroup: false
       },
       {
-        moveGroupAttrsToElems: true
+        moveGroupAttrsToElems: false
       },
       {
-        collapseGroups: true
+        collapseGroups: false
       },
       {
-        removeRasterImages: true
+        removeRasterImages: false
       },
       {
-        mergePaths: true
+        mergePaths: false
       },
       {
-        convertShapeToPath: true
+        convertShapeToPath: false
       },
       {
-        sortAttrs: true
+        sortAttrs: false
       },
       {
         transformsWithOnePath: false
@@ -105,7 +105,7 @@ module.exports = {
         removeDimensions: true
       },
       {
-        removeAttrs: { attrs: '(stroke|fill)' }
+        removeAttrs: false
       }
     ]
   }
