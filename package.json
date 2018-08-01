@@ -60,6 +60,7 @@
     "roots": [
       "utils"
     ],
-    "clearMocks": true
+    "clearMocks": true,
+    "testURL": "http://localhost/"
   }
 }
