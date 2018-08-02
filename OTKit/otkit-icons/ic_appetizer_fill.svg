@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Fill/ic_appetizer_fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icon/Fill/ic_appetizer_fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,21 C7.02943725,21 3,16.9705627 3,12 C3,7.02943725 7.02943725,3 12,3 C16.9705627,3 21,7.02943725 21,12 C21,16.9705627 16.9705627,21 12,21 Z M10.872,16.88 C10.872,17.056 11,17.2 11.192,17.2 L13.016,17.2 C13.176,17.2 13.32,17.056 13.32,16.88 L13.32,6.304 C13.32,6.144 13.176,6 13.016,6 L11.816,6 C11.592,6 11.416,6.064 11.24,6.192 L9.096,7.872 C9.048,7.92 9,7.984 9,8.112 L9,9.152 C9,9.328 9.128,9.472 9.288,9.472 L10.872,9.472 L10.872,16.88 Z" id="ic_appetizer_fill" fill="#2D333F"></path>
+    </g>
+</svg>
