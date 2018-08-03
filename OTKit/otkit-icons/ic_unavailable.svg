@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Line/ic_unavailable</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icon/Line/ic_unavailable" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7.80782891,17.6063847 C8.97640944,18.4815965 10.4276649,19 12,19 C15.8659932,19 19,15.8659932 19,12 C19,10.4276649 18.4815965,8.97640944 17.6063847,7.80782891 L7.80782891,17.6063847 Z M6.39361534,16.1921711 L16.1921711,6.39361534 C15.0235906,5.51840355 13.5723351,5 12,5 C8.13400675,5 5,8.13400675 5,12 C5,13.5723351 5.51840355,15.0235906 6.39361534,16.1921711 Z M12,21 C7.02943725,21 3,16.9705627 3,12 C3,7.02943725 7.02943725,3 12,3 C16.9705627,3 21,7.02943725 21,12 C21,16.9705627 16.9705627,21 12,21 Z" id="ic_unavailable" fill="#2D333F"></path>
+    </g>
+</svg>
