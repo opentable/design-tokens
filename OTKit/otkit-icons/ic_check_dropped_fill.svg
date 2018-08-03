@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Fill/ic_check_dropped_fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icon/Fill/ic_check_dropped_fill" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7,3 L17,3 C18.1045695,3 19,3.8954305 19,5 L19,19 C19,20.1045695 18.1045695,21 17,21 L7,21 C5.8954305,21 5,20.1045695 5,19 L5,5 C5,3.8954305 5.8954305,3 7,3 Z M9,7 C8.72385763,7 8.5,7.22385763 8.5,7.5 L8.5,8.5 C8.5,8.77614237 8.72385763,9 9,9 L15,9 C15.2761424,9 15.5,8.77614237 15.5,8.5 L15.5,7.5 C15.5,7.22385763 15.2761424,7 15,7 L9,7 Z M9,11 C8.72385763,11 8.5,11.2238576 8.5,11.5 L8.5,12.5 C8.5,12.7761424 8.72385763,13 9,13 L15,13 C15.2761424,13 15.5,12.7761424 15.5,12.5 L15.5,11.5 C15.5,11.2238576 15.2761424,11 15,11 L9,11 Z M9,15 C8.72385763,15 8.5,15.2238576 8.5,15.5 L8.5,16.5 C8.5,16.7761424 8.72385763,17 9,17 L15,17 C15.2761424,17 15.5,16.7761424 15.5,16.5 L15.5,15.5 C15.5,15.2238576 15.2761424,15 15,15 L9,15 Z" id="ic_check_dropped_fill" fill="#2D333F"></path>
+    </g>
+</svg>
