@@ -15,7 +15,7 @@
     "mini-svg-data-uri": "^1.0.0",
     "minimist": "^1.2.0",
     "node-yaml": "^3.1.1",
-    "npm-watch": "^0.3.0",
+    "npm-watch": "0.4.0",
     "prettier": "^1.11.1",
     "svgo": "^1.0.4",
     "theo": "^7.0.1",
