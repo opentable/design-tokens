@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 import SectionHeader from '../components/section-header';
 import token from 'otkit-breakpoints/token.common';
+import styles from '../styles/index.module.css';
 
 const Breakpoints = () => {
   var tokens = _.toPairsIn(token);
@@ -15,10 +16,10 @@ const Breakpoints = () => {
     );
   });
   return (
-    <section>
-      <SectionHeader text="Breakpoints" />
+    <div className={styles['main-container']}>
+      <SectionHeader text="Breakpoints" type="SectionHeader__small" />
       {tokens}
-    </section>
+    </div>
   );
 };
 

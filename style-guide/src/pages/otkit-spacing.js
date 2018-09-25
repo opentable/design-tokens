@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 import SectionHeader from '../components/section-header';
 import token from 'otkit-spacing/token.common';
+import styles from '../styles/index.module.css';
 
 const Spacing = () => {
   var tokens = _.toPairsIn(token);
@@ -15,10 +16,10 @@ const Spacing = () => {
     );
   });
   return (
-    <section>
-      <SectionHeader text="Spacing" />
+    <div className={styles['main-container']}>
+      <SectionHeader text="Spacing" type="SectionHeader__small" />
       {tokens}
-    </section>
+    </div>
   );
 };
 

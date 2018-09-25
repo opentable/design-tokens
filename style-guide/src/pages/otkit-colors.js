@@ -60,10 +60,10 @@ const Colors = () => {
   });
 
   return (
-    <section>
-      <SectionHeader text="Colors" />
+    <div className={styles['main-container']}>
+      <SectionHeader text="Colors" type="SectionHeader__small" />
       {groups.map((group, index) => <div key={index}>{group}</div>)}
-    </section>
+    </div>
   );
 };
 

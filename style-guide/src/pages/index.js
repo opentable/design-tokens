@@ -12,11 +12,14 @@ import SectionHeader from '../components/section-header';
 
 export default () => {
   return (
-    <div className={styles.body}>
-      <SectionHeader text="Welcome to OTKit Style Guide" />
-      <p className={styles['mission-statement']}>
-        OTKit is a collection of design resources, reusable components and
-        guidelines for creating OpenTable's products.
+    <div className={styles['main-container']}>
+      <SectionHeader text="Design Tokens" />
+      <p>
+        This page shows current design tokens used in OTKit. To contribute, or
+        add an issue, visit the{' '}
+        <a href="https://github.com/opentable/design-tokens" target="_blank">
+          design-tokens repository
+        </a>.
       </p>
       <Colors />
       <Typography />

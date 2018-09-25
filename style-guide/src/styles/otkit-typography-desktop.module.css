@@ -1,5 +1,12 @@
-@value spacing-medium from './tokens.module.css';
+@value spacing-medium, spacing-large from './tokens.module.css';
+@value width-main: 768px;
 
 .font-item {
   margin-bottom: spacing-medium;
+}
+
+.main-container {
+  width: width-main;
+  padding-top: spacing-large;
+  margin: 0 auto;
 }

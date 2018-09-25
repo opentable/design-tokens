@@ -1,5 +1,6 @@
-@value spacing-xsmall, spacing-small, spacing-medium, spacing-xlarge, xsmall-regular-font-size, xsmall-regular-font-weight, xsmall-regular-line-height, xsmall-medium-font-size, xsmall-medium-font-weight, xsmall-medium-line-height, border-radius-small from './tokens.module.css';
+@value spacing-xsmall, spacing-small, spacing-medium, spacing-large, spacing-xlarge, xsmall-regular-font-size, xsmall-regular-font-weight, xsmall-regular-line-height, xsmall-medium-font-size, xsmall-medium-font-weight, xsmall-medium-line-height, border-radius-small from './tokens.module.css';
 @value ash-lighter from 'otkit-colors/token.cssmodules.css';
+@value width-main: 768px;
 
 .section-color {
   display: flex;
@@ -11,6 +12,12 @@
   text-align: center;
   width: 16%;
   margin-bottom: spacing-medium;
+}
+
+.main-container {
+  width: width-main;
+  padding-top: spacing-large;
+  margin: 0 auto;
 }
 
 .color-block {

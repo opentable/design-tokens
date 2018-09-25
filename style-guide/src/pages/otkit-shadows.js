@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 import SectionHeader from '../components/section-header';
 import token from 'otkit-shadows/token.common';
+import styles from '../styles/index.module.css';
 
 const Shadows = () => {
   var tokens = _.toPairsIn(token);
@@ -15,10 +16,10 @@ const Shadows = () => {
     );
   });
   return (
-    <section>
-      <SectionHeader text="Shadows" />
+    <div className={styles['main-container']}>
+      <SectionHeader text="Shadows" type="SectionHeader__small" />
       {tokens}
-    </section>
+    </div>
   );
 };
 
