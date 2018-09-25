@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 import SectionHeader from '../components/section-header';
 import token from 'otkit-borders/token.common';
+import styles from '../styles/index.module.css';
 
 const Borders = () => {
   var tokens = _.toPairsIn(token);
@@ -15,10 +16,10 @@ const Borders = () => {
     );
   });
   return (
-    <section>
-      <SectionHeader text="Borders" />
+    <div className={styles['main-container']}>
+      <SectionHeader text="Borders" type="SectionHeader__small" />
       {tokens}
-    </section>
+    </div>
   );
 };
 
