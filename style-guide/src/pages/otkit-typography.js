@@ -30,10 +30,10 @@ const TypographyDesktop = () => {
     );
   });
   return (
-    <section>
-      <SectionHeader text="Typography – Desktop" />
+    <div className={styles['main-container']}>
+      <SectionHeader text="Typography – Desktop" type="SectionHeader__small" />
       <div className={styles['font-column']}>{groups}</div>
-    </section>
+    </div>
   );
 };
 

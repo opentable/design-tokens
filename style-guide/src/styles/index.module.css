@@ -1,14 +1,18 @@
-@value font-family, medium-bold-font-size, medium-bold-font-weight, medium-bold-line-height, spacing-medium, spacing-large, spacing-xlarge from './tokens.module.css';
-@value ash-dark, red from 'otkit-colors/token.cssmodules.css';
+@value font-family, xsmall-medium-font-weight, xsmall-medium-font-size, medium-bold-font-size, medium-bold-font-weight, medium-bold-line-height, spacing-small, spacing-medium, spacing-large, spacing-xlarge from './tokens.module.css';
+@value ash-lightest, ash-lighter, ash-dark, ash, red from 'otkit-colors/token.cssmodules.css';
 
 /* local variables */
-@value width-two-column: 992px;
-@value width-nav: 320px;
-@value width-main: 640px;
+@value width-nav: 300px;
+@value width-main: 768px;
+@value header-height: 68px;
+@value font-weight-normal: normal;
+@value font-weight-medium: 500;
+@value font-weight-bold: bold;
 
 body {
   font-family: font-family;
   color: ash-dark;
+  margin: 0;
 }
 
 a {
@@ -16,16 +20,79 @@ a {
   color: red;
 }
 
-.two-column {
+h4 {
+  font-weight: xsmall-medium-font-weight;
+  font-size: xsmall-medium-font-size;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: spacing-medium;
+  color: ash;
+}
+
+.header {
+  border-bottom: 1px solid ash-lighter;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  height: header-height;
+  width: 100%;
+  background-color: ash-dark;
+  padding-left: spacing-medium;
   display: flex;
-  max-width: width-two-column;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.header a {
+  color: white;
+  display: flex;
+}
+
+.header h1 {
+  display: inline-block;
+  margin-left: spacing-medium;
+  line-height: 24px;
+}
+
+.header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header li {
+  display: flex;
+  align-items: center;
+  margin: spacing-small;
+}
+
+.header-link {
+  padding: spacing-medium;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: font-weight-medium;
+}
+
+.header-link:hover {
+  text-shadow: 1px 1px black;
+}
+
+.header-link-active {
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  width: 30px;
 }
 
 .nav {
   width: width-nav;
-  margin: 0 spacing-medium 0 0;
+  padding: spacing-medium 0 0 spacing-xlarge;
+  box-sizing: border-box;
+  background-color: ash-lightest;
+  height: calc(100vh - 3.5rem + 1px);
+  position: fixed;
+  overflow-y: auto;
+  top: calc(3.5rem - 1px);
 }
 
 .nav-link {
@@ -38,9 +105,22 @@ a {
   border-bottom: 2px solid red;
 }
 
+.nav-section {
+  margin: spacing-large 0 spacing-xlarge;
+}
+
+.main-body {
+  padding-top: header-height;
+}
+
 .main {
+  padding-left: width-nav;
+}
+
+.main-container {
   width: width-main;
-  margin: spacing-large 0 0 spacing-medium;
+  padding-top: spacing-large;
+  margin: 0 auto;
 }
 
 .link-secondary,
@@ -49,11 +129,5 @@ a {
 }
 
 section {
-  margin-bottom: spacing-xlarge;
-}
-
-.mission-statement {
-  font-size: medium-bold-font-size;
-  font-weight: medium-bold-font-weight;
-  line-height: medium-bold-line-height;
+  margin: spacing-large 0 spacing-xlarge;
 }

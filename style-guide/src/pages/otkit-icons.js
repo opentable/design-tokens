@@ -26,10 +26,10 @@ const Icons = () => {
     );
   });
   return (
-    <section>
-      <SectionHeader text="Icons" />
+    <div className={styles['main-container']}>
+      <SectionHeader text="Icons" type="SectionHeader__small" />
       <div className={styles['section-icon']}>{tokens}</div>
-    </section>
+    </div>
   );
 };
 

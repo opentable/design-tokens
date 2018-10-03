@@ -1,6 +1,7 @@
-@value spacing-xsmall, spacing-small, spacing-medium, xsmall-regular-line-height, xsmall-regular-font-size, xsmall-regular-font-weight, border-radius-small from './tokens.module.css';
+@value spacing-xsmall, spacing-small, spacing-medium, spacing-large, xsmall-regular-line-height, xsmall-regular-font-size, xsmall-regular-font-weight, border-radius-small from './tokens.module.css';
 @value ash-lighter from 'otkit-colors/token.cssmodules.css';
 @value icon-size from 'otkit-icons/token.cssmodules.css';
+@value width-main: 768px;
 
 .section-icon {
   display: flex;
@@ -10,6 +11,12 @@
     content: "";
     width: 23%;
   }
+}
+
+.main-container {
+  width: width-main;
+  padding-top: spacing-large;
+  margin: 0 auto;
 }
 
 .card {
