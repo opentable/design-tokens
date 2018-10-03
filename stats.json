@@ -1,12 +1,12 @@
 {
   "assetsByChunkName": {
     "component---src-pages-otkit-colors-js": [
-      "component---src-pages-otkit-colors-js-22c9351f442ac7bfafc9.js",
-      "component---src-pages-otkit-colors-js-22c9351f442ac7bfafc9.js.map"
+      "component---src-pages-otkit-colors-js-ed396fc5fefa8cca2201.js",
+      "component---src-pages-otkit-colors-js-ed396fc5fefa8cca2201.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-0fc0334df84cb68ebf5a.js",
-      "component---src-pages-index-js-0fc0334df84cb68ebf5a.js.map"
+      "component---src-pages-index-js-00c5bd41ea35b7789525.js",
+      "component---src-pages-index-js-00c5bd41ea35b7789525.js.map"
     ],
     "path---otkit-icons": [
       "path---otkit-icons-a0e39f21c11f6a62c5ab.js",
@@ -21,46 +21,46 @@
       "path---otkit-colors-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-otkit-spacing-js": [
-      "component---src-pages-otkit-spacing-js-ab2cc333fabf2a9e6791.js",
-      "component---src-pages-otkit-spacing-js-ab2cc333fabf2a9e6791.js.map"
+      "component---src-pages-otkit-spacing-js-c85672bb6579beb80b19.js",
+      "component---src-pages-otkit-spacing-js-c85672bb6579beb80b19.js.map"
     ],
     "component---src-pages-otkit-icons-js": [
-      "component---src-pages-otkit-icons-js-df19404ea59e005a2047.js",
-      "component---src-pages-otkit-icons-js-df19404ea59e005a2047.js.map"
+      "component---src-pages-otkit-icons-js-25111ca7d6449777939d.js",
+      "component---src-pages-otkit-icons-js-25111ca7d6449777939d.js.map"
     ],
     "path---otkit-shadows": [
       "path---otkit-shadows-a0e39f21c11f6a62c5ab.js",
       "path---otkit-shadows-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-otkit-typography-js": [
-      "component---src-pages-otkit-typography-js-687cb70cd3b9691fc613.js",
-      "component---src-pages-otkit-typography-js-687cb70cd3b9691fc613.js.map"
+      "component---src-pages-otkit-typography-js-3db72caceb80e4352b52.js",
+      "component---src-pages-otkit-typography-js-3db72caceb80e4352b52.js.map"
     ],
     "path---otkit-borders": [
       "path---otkit-borders-a0e39f21c11f6a62c5ab.js",
       "path---otkit-borders-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-b3f01ba9a5468e9cc655.js",
-      "component---src-layouts-index-js-b3f01ba9a5468e9cc655.js.map"
+      "component---src-layouts-index-js-110902210219e66f70c0.js",
+      "component---src-layouts-index-js-110902210219e66f70c0.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-otkit-shadows-js": [
-      "component---src-pages-otkit-shadows-js-a80fe6426a466df307c0.js",
-      "component---src-pages-otkit-shadows-js-a80fe6426a466df307c0.js.map"
+      "component---src-pages-otkit-shadows-js-e902c6a6fc71d3794a85.js",
+      "component---src-pages-otkit-shadows-js-e902c6a6fc71d3794a85.js.map"
     ],
     "commons": [
-      "commons-5de7dc672246047304e7.js",
+      "commons-702fc434935d84a87d55.js",
       "build-js-styles.css",
-      "commons-5de7dc672246047304e7.js.map",
+      "commons-702fc434935d84a87d55.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-otkit-breakpoints-js": [
-      "component---src-pages-otkit-breakpoints-js-76943cafb7fd24d05be3.js",
-      "component---src-pages-otkit-breakpoints-js-76943cafb7fd24d05be3.js.map"
+      "component---src-pages-otkit-breakpoints-js-8ae44b2fc364b9d7d547.js",
+      "component---src-pages-otkit-breakpoints-js-8ae44b2fc364b9d7d547.js.map"
     ],
     "path---otkit-breakpoints": [
       "path---otkit-breakpoints-a0e39f21c11f6a62c5ab.js",
@@ -71,8 +71,8 @@
       "path---otkit-typography-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-otkit-borders-js": [
-      "component---src-pages-otkit-borders-js-b0e6ce76fe6326145443.js",
-      "component---src-pages-otkit-borders-js-b0e6ce76fe6326145443.js.map"
+      "component---src-pages-otkit-borders-js-9ea756a67835ffd8fcb8.js",
+      "component---src-pages-otkit-borders-js-9ea756a67835ffd8fcb8.js.map"
     ],
     "app": [
       "app-0a9bb18e27c5de688a8e.js",
