@@ -126,13 +126,13 @@ props:
   # =============================================
   large-bold-font-size:
     type: "size"
-    value: "24px"
+    value: "22px"
   large-bold-font-weight:
     type: "raw"
     value: "bold"
   large-bold-line-height:
     type: "size"
-    value: "32px"
+    value: "28px"
 
 
   # Design decisions for font group xlarge-bold.
@@ -140,13 +140,13 @@ props:
   # =============================================
   xlarge-bold-font-size:
     type: "size"
-    value: "32px"
+    value: "28px"
   xlarge-bold-font-weight:
     type: "raw"
     value: "bold"
   xlarge-bold-line-height:
     type: "size"
-    value: "40px"
+    value: "36px"
 
 
   # Design decisions for font group xxlarge-bold.
