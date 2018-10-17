@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>icon/ic_indeterminate</title>
+    <title>icon/ic_checkbox_indeterminate</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="icon/ic_indeterminate" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M5,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,19 C21,20.1045695 20.1045695,21 19,21 L5,21 C3.8954305,21 3,20.1045695 3,19 L3,5 C3,3.8954305 3.8954305,3 5,3 Z M8.5,11 C8.22385763,11 8,11.2238576 8,11.5 L8,12.5 C8,12.7761424 8.22385763,13 8.5,13 L15.5,13 C15.7761424,13 16,12.7761424 16,12.5 L16,11.5 C16,11.2238576 15.7761424,11 15.5,11 L8.5,11 Z" id="ic_indeterminate" fill="#2D333F"></path>
+    <g id="icon/ic_checkbox_indeterminate" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M5,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,19 C21,20.1045695 20.1045695,21 19,21 L5,21 C3.8954305,21 3,20.1045695 3,19 L3,5 C3,3.8954305 3.8954305,3 5,3 Z M8.5,11 C8.22385763,11 8,11.2238576 8,11.5 L8,12.5 C8,12.7761424 8.22385763,13 8.5,13 L15.5,13 C15.7761424,13 16,12.7761424 16,12.5 L16,11.5 C16,11.2238576 15.7761424,11 15.5,11 L8.5,11 Z" id="ic_checkbox_indeterminate" fill="#2D333F"></path>
     </g>
 </svg>
