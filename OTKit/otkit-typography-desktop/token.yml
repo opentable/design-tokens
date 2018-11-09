@@ -27,6 +27,21 @@ props:
     value: "'BrandonText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
 
 
+  # Design decisions for font group xxsmall-regular.
+  # WARNING: This should only be used for footnotes.
+  #
+  # =============================================
+  xxsmall-regular-font-size:
+    type: "size"
+    value: "12px"
+  xxsmall-regular-font-weight:
+    type: "raw"
+    value: "normal"
+  xxsmall-regular-line-height:
+    type: "size"
+    value: "16px"
+
+
   # Design decisions for font group xsmall-medium.
   #
   # =============================================
