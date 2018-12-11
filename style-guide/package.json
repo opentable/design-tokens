@@ -15,7 +15,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "chroma-js": "^1.3.6",
+    "chroma-js": "^2.0.1",
     "gatsby": "^1.9.199",
     "gatsby-link": "^1.6.36",
     "lodash": "^4.17.5",
