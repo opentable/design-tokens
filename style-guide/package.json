@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "chroma-js": "^1.3.6",
-    "gatsby": "^1.9.199",
+    "gatsby": "^2.0.85",
     "gatsby-link": "^1.6.36",
     "lodash": "^4.17.5",
     "otkit-borders": "^1.0.3",
