@@ -19,6 +19,7 @@
   "files": [
     "package.json",
     "token.yml",
+    "token.scss",
     "token.common.js"
   ]
 }
