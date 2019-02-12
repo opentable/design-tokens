@@ -53,22 +53,22 @@ props:
   blue-darker:
     value: "#0d1b45"
 
-  fuschia-lightest:
+  fuchsia-lightest:
     value: "#fceef5"
 
-  fuschia-lighter:
+  fuchsia-lighter:
     value: "#eb93bf"
 
-  fuschia-light:
+  fuchsia-light:
     value: "#df4e96"
 
-  fuschia:
+  fuchsia:
     value: "#d82c82"
 
-  fuschia-dark:
+  fuchsia-dark:
     value: "#971c59"
 
-  fuschia-darker:
+  fuchsia-darker:
     value: "#450d29"
 
   green-lightest:
