@@ -34,7 +34,7 @@ const TypographyDesktop = () => {
       <SectionHeader text="Typography – Desktop" type="SectionHeader__small" />
       <p>
         To use these OTKit typography rules in your project, we have a
-        production-tested pacakge that exports readily made font groupings for
+        production-tested package that exports readily made font groupings for
         you:{' '}
         <a href="https://github.com/opentable/ot-react-ui-components/tree/master/styles/typography-desktop">
           @ot-react-ui/typography-desktop.
