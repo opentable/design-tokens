@@ -1,0 +1,20 @@
+props:
+  # These grid values are for viewports between 768px and 1023px.
+  # These grid values are for viewports wider than 1024px.
+  # =============================================
+  margin-large:
+    value: "32px"
+  gutter-large:
+    value: "16px"
+
+  # These grid values are for viewports between 320px and 767px.
+  # =============================================
+  margin-small:
+    value: "24px"
+  gutter-small:
+    value: "12px"
+
+global:
+  platform: "core"
+  type: "grid"
+  category: "grid"
