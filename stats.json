@@ -1,12 +1,12 @@
 {
   "assetsByChunkName": {
     "component---src-pages-otkit-colors-js": [
-      "component---src-pages-otkit-colors-js-31e67332ef5a241e3b43.js",
-      "component---src-pages-otkit-colors-js-31e67332ef5a241e3b43.js.map"
+      "component---src-pages-otkit-colors-js-b0d7e068e2068588c057.js",
+      "component---src-pages-otkit-colors-js-b0d7e068e2068588c057.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-d280573a3df152b4dd80.js",
-      "component---src-pages-index-js-d280573a3df152b4dd80.js.map"
+      "component---src-pages-index-js-8efc2ffa62f123b6087a.js",
+      "component---src-pages-index-js-8efc2ffa62f123b6087a.js.map"
     ],
     "path---otkit-icons": [
       "path---otkit-icons-a0e39f21c11f6a62c5ab.js",
@@ -25,16 +25,16 @@
       "component---src-pages-otkit-spacing-js-c85672bb6579beb80b19.js.map"
     ],
     "component---src-pages-otkit-icons-js": [
-      "component---src-pages-otkit-icons-js-6be36230f8b354614b99.js",
-      "component---src-pages-otkit-icons-js-6be36230f8b354614b99.js.map"
+      "component---src-pages-otkit-icons-js-466d46d74ea564421b5c.js",
+      "component---src-pages-otkit-icons-js-466d46d74ea564421b5c.js.map"
     ],
     "path---otkit-shadows": [
       "path---otkit-shadows-a0e39f21c11f6a62c5ab.js",
       "path---otkit-shadows-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-otkit-typography-js": [
-      "component---src-pages-otkit-typography-js-bdfcceb1018cb0d28fbf.js",
-      "component---src-pages-otkit-typography-js-bdfcceb1018cb0d28fbf.js.map"
+      "component---src-pages-otkit-typography-js-bdd64049229494470ac2.js",
+      "component---src-pages-otkit-typography-js-bdd64049229494470ac2.js.map"
     ],
     "path---otkit-borders": [
       "path---otkit-borders-a0e39f21c11f6a62c5ab.js",
@@ -53,9 +53,9 @@
       "component---src-pages-otkit-shadows-js-adeb9d76e465cc6094f6.js.map"
     ],
     "commons": [
-      "commons-22d5c515e80298d1fe38.js",
+      "commons-d891721cb6f06f48d254.js",
       "build-js-styles.css",
-      "commons-22d5c515e80298d1fe38.js.map",
+      "commons-d891721cb6f06f48d254.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-otkit-breakpoints-js": [
