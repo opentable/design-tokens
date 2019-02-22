@@ -10,5 +10,5 @@ props:
 
 global:
   platform: "core"
-  type: "breakpoints"
-  category: "breakpoints"
+  type: "breakpoint"
+  category: "breakpoint"
