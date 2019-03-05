@@ -1,7 +1,7 @@
 {
-  "name": "otkit-colors",
-  "version": "4.0.0",
-  "description": "OpenTable colors design token",
+  "name": "otkit-grids",
+  "version": "1.0.0",
+  "description": "OpenTable grids design token",
   "author": {
     "email": "design-tokens@opentable.com"
   },

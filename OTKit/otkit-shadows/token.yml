@@ -2,7 +2,7 @@ props:
   # Used in restaurant profile; generic containers
   # =============================================
   box-shadow-container:
-    value: "0px 2px 8px rgba(153, 153, 153, .4)"
+    value: "0px 2px 4px rgba(45, 51, 63, .2)"
 
 global:
   platform: "core"

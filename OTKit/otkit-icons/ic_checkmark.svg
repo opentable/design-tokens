@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/line/ic_checkmark/Light UI - Default</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.045,15.5407864 L18.2426407,6.34314575 C18.633165,5.95262146 19.26633,5.95262146 19.6568542,6.34314575 C20.0473785,6.73367004 20.0473785,7.36683502 19.6568542,7.75735931 L9.80371037,17.6105032 C9.78789846,17.6287732 9.77131535,17.6466067 9.75396103,17.663961 C9.36343674,18.0544853 8.73027176,18.0544853 8.33974747,17.663961 L4.09710678,13.4213203 C3.70658249,13.0307961 3.70658249,12.3976311 4.09710678,12.0071068 C4.48763107,11.6165825 5.12079605,11.6165825 5.51132034,12.0071068 L9.045,15.5407864 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/line/ic_checkmark/Light-UI---Default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="ic_checkmark" fill="#2D333F" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>
