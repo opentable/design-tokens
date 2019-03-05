@@ -7,6 +7,7 @@ import Spacing from './otkit-spacing.js';
 import Borders from './otkit-borders.js';
 import Breakpoints from './otkit-breakpoints.js';
 import Shadows from './otkit-shadows.js';
+import Grids from './otkit-grids.js';
 import Icons from './otkit-icons.js';
 import SectionHeader from '../components/section-header';
 
@@ -23,6 +24,7 @@ export default () => {
       </p>
       <Colors />
       <Typography />
+      <Grids />
       <Spacing />
       <Borders />
       <Breakpoints />
