@@ -5,8 +5,8 @@
       "component---src-pages-otkit-colors-js-b0d7e068e2068588c057.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-d4eb6c91a04489371cdd.js",
-      "component---src-pages-index-js-d4eb6c91a04489371cdd.js.map"
+      "component---src-pages-index-js-b6ea3556ef0bc979286a.js",
+      "component---src-pages-index-js-b6ea3556ef0bc979286a.js.map"
     ],
     "path---otkit-icons": [
       "path---otkit-icons-a0e39f21c11f6a62c5ab.js",
@@ -41,8 +41,8 @@
       "path---otkit-borders-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-110902210219e66f70c0.js",
-      "component---src-layouts-index-js-110902210219e66f70c0.js.map"
+      "component---src-layouts-index-js-2c27631da104303ed3b6.js",
+      "component---src-layouts-index-js-2c27631da104303ed3b6.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -75,14 +75,22 @@
       "component---src-pages-otkit-borders-js-9ea756a67835ffd8fcb8.js.map"
     ],
     "app": [
-      "app-f31aaa5803fdb8ba598f.js",
+      "app-823e964bb9d64ecbd7da.js",
       "build-js-styles.css",
-      "app-f31aaa5803fdb8ba598f.js.map",
+      "app-823e964bb9d64ecbd7da.js.map",
       "build-js-styles.css.map"
+    ],
+    "component---src-pages-otkit-grids-js": [
+      "component---src-pages-otkit-grids-js-26628dfab6c2934c50fd.js",
+      "component---src-pages-otkit-grids-js-26628dfab6c2934c50fd.js.map"
     ],
     "path---otkit-spacing": [
       "path---otkit-spacing-a0e39f21c11f6a62c5ab.js",
       "path---otkit-spacing-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---otkit-grids": [
+      "path---otkit-grids-a0e39f21c11f6a62c5ab.js",
+      "path---otkit-grids-a0e39f21c11f6a62c5ab.js.map"
     ]
   }
 }
