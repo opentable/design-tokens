@@ -21,5 +21,6 @@
     "token.yml",
     "token.scss",
     "token.common.js"
-  ]
+  ],
+  "main": "token.common.js"
 }
