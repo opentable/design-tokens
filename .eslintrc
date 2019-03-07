@@ -1,0 +1,21 @@
+{
+    "extends": "eslint:recommended",
+    "plugins": [ "jest" ],
+    "env": {
+        "node": true,
+        "jest/globals": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2017,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "rules": {
+        "semi": "error",
+        "indent": ["error", 2],
+        "no-console": "off"
+    }
+}

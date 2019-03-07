@@ -8,6 +8,8 @@ const _ = require('lodash');
 const { messages } = require('./processIconHelpers');
 const { iconSize } = require('./config');
 
+const BASE_CDN = 'https://cdn.otstatic.com/otKitSvgs/';
+
 const writeToken = icons => {
   const props = icons.reduce(
     (accum, val) => {
@@ -17,7 +19,7 @@ const writeToken = icons => {
         accum.errors = accum.errors.concat(val.error);
       }
 
-      accum.output[val.id] = { value: val.svg };
+      accum.output[val.id] = { value: BASE_CDN + val.transformedFileName };
 
       return accum;
     },

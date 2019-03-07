@@ -6,6 +6,7 @@ generateTokenFile()
     process.exit(0);
   })
   .catch(err => {
+    console.log('Problem generating icons!');
     console.log(err);
     process.exit(1);
   });

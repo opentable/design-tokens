@@ -1,8 +1,5 @@
 'use strict';
 
-const path = require('path');
-
-const packagePathResolver = require('./defineVersion/packagePathResolver');
 const runCmd = require('./runCmd');
 
 const pushChanges = root =>

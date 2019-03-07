@@ -11,12 +11,6 @@ afterAll(() => {
   global.process.cwd = originCWD;
 });
 
-jest.mock('path', () => {
-  return {
-    join: jest.fn((a, b) => a + '/' + b)
-  };
-});
-
 const mockWrite = jest.fn((path, file, cb) => cb(null));
 jest.mock('node-yaml', () => {
   return {
@@ -27,17 +21,20 @@ jest.mock('node-yaml', () => {
 const aGoodIcon = {
   id: 'ic_good',
   svg: 'goodsvg',
+  transformedFileName: 'ic_good_some-color.svg',
   svgIds: ['a']
 };
 
 const aBadIcon = {
   id: 'ic_bad1',
+  transformedFileName: 'ic_good_some-color.svg',
   error: ['bad error 1', 'bad error 1-second'],
   svgIds: ['b']
 };
 
 const aSecondBadIcon = {
   id: 'ic_bad2',
+  transformedFileName: 'ic_good_some-color.svg',
   error: ['bad error 2'],
   svgIds: ['b']
 };
@@ -53,7 +50,7 @@ test('write token works when there are no errors', async () => {
     global: { category: 'icon', platform: 'core', type: 'icon' },
     props: {
       ic_good: {
-        value: 'goodsvg'
+        value: 'https://cdn.otstatic.com/otKitSvgs/ic_good_some-color.svg'
       },
       iconSize: { value: '24px' }
     }

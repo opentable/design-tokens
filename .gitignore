@@ -10,3 +10,4 @@ OTKit/otkit-icons/token.yml
 package-lock.json
 yarn.lock
 utils/automatic-release/tempNpm/package.json
+publicDist

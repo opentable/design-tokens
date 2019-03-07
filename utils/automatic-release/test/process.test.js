@@ -1,4 +1,4 @@
-const mockRunCmd = jest.fn((script, commands, options) => {
+const mockRunCmd = jest.fn((script, commands) => {
   if (commands[0] === 'node_modules/.bin/lerna' && commands[1] === 'ls') {
     return Promise.resolve(
       JSON.stringify([
@@ -54,7 +54,7 @@ jest.mock('yamljs', () => {
   };
 });
 
-mockLog = jest.fn();
+const mockLog = jest.fn();
 jest.mock('console', () => {
   return {
     log: mockLog
@@ -107,8 +107,6 @@ jest.mock('../lib/publishPackage', () => () => Promise.resolve());
 jest.mock('../lib/versionAddCommitTagPackage', () =>
   jest.fn(() => Promise.resolve())
 );
-
-const versionAddCommitTagPackage = require('../lib/publishPackage');
 
 test('automatic-release process', async () => {
   const doPublish = true;
