@@ -103,10 +103,12 @@ test('Generate icon token file', async () => {
         value: 'https://cdn.otstatic.com/otKitSvgs/ic_ticket-fakeH.svg'
       },
       ic_ticket_coolColor: {
-        value: 'https://cdn.otstatic.com/otKitSvgs/ic_ticket_coolColor-fakeH.svg'
+        value:
+          'https://cdn.otstatic.com/otKitSvgs/ic_ticket_coolColor-fakeH.svg'
       },
       ic_ticket_lameColor: {
-        value: 'https://cdn.otstatic.com/otKitSvgs/ic_ticket_lameColor-fakeH.svg'
+        value:
+          'https://cdn.otstatic.com/otKitSvgs/ic_ticket_lameColor-fakeH.svg'
       },
       iconSize: { value: '24px' }
     }

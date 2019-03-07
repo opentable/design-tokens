@@ -3,13 +3,15 @@
 const yaml = require('node-yaml');
 const path = require('path');
 
-const otKitColors = yaml.readSync(path.resolve(__dirname, '../../../OTKit/otkit-colors/token.yml')).props;
+const otKitColors = yaml.readSync(
+  path.resolve(__dirname, '../../../OTKit/otkit-colors/token.yml')
+).props;
 
 const { builder } = require('./processIconHelpers');
 
 const FILL_VARIABLE = '[[FILL_COLOR]]';
 
-module.exports = (iconData) => {
+module.exports = iconData => {
   let assumedFillColor;
   let multipleFillColors = false;
   const originalRawSvg = builder.buildObject(iconData.icon);
@@ -32,7 +34,7 @@ module.exports = (iconData) => {
 
   // We always include the original token so older users of OTKit don't
   // need to update anything.  This also covers the multi-color case.
-  const icons = [ { ...iconData, svg: originalRawSvg }];
+  const icons = [{ ...iconData, svg: originalRawSvg }];
 
   // If the icon has multiple fill colors, we assume that the color of the icon is
   // significant, and thus cannot be automatically transformed into multiple colors.

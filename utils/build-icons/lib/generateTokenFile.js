@@ -11,7 +11,9 @@ const generateIconColorVariants = require('./generateIconColorVariants');
 const validateIcon = require('./validateIcon');
 const exportSvgFile = require('./exportSvgFile');
 
-const generateTokenFile = (transformedSvgsDir = path.resolve(__dirname, '../../../publicDist')) => {
+const generateTokenFile = (
+  transformedSvgsDir = path.resolve(__dirname, '../../../publicDist')
+) => {
   if (transformedSvgsDir) {
     if (fs.existsSync(transformedSvgsDir)) rimraf.sync(transformedSvgsDir);
     fs.mkdirSync(transformedSvgsDir);

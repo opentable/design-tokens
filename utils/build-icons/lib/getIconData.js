@@ -23,13 +23,14 @@ const getIconData = ({ fileName, id }) =>
         return val;
       };
 
-      return parseXMLString(iconData.data, { attrValueProcessors: [ valueProcessor ]})
-        .then(icon => ({
-          icon,
-          fileName,
-          id,
-          svgIds
-        }));
+      return parseXMLString(iconData.data, {
+        attrValueProcessors: [valueProcessor]
+      }).then(icon => ({
+        icon,
+        fileName,
+        id,
+        svgIds
+      }));
     });
 
 module.exports = getIconData;

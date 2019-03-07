@@ -6,7 +6,7 @@ const { iconSize } = require('./config');
 /*
  * We can add various warning and analysis checks here, but for now,
  * we are primarily concerned about sizing of the viewbox.
-*/
+ */
 const processIcon = iconData => {
   const { icon, fileName } = iconData;
   const innerContent = icon.svg;
