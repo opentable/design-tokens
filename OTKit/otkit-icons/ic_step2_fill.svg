@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/navigation/ic_step2_fill/Light UI - Default</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M10.988,16.224 L10.988,16.256 L15.148,16.256 C15.324,16.256 15.468,16.352 15.468,16.576 L15.468,17.36 C15.468,17.568 15.324,17.68 15.148,17.68 L8.78,17.68 C8.588,17.68 8.46,17.536 8.46,17.36 L8.46,17.232 C8.46,17.024 8.46,16.944 8.652,16.72 C9.852,15.328 11.452,13.376 12.62,12.016 C13.436,11.088 13.868,10.288 13.868,9.616 C13.868,8.784 13.292,7.824 11.836,7.824 C10.94,7.824 10.188,8.448 9.74,8.928 C9.612,9.056 9.436,9.056 9.308,8.928 L8.748,8.368 C8.636,8.272 8.604,8.064 8.732,7.936 C8.732,7.936 9.964,6.32 11.916,6.32 C14.284,6.32 15.532,7.824 15.532,9.552 C15.532,10.816 14.844,11.68 13.948,12.752 C13.084,13.792 11.948,15.12 10.988,16.224 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/navigation/ic_step2_fill/Light-UI---Default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="ic_step2_fill" fill="#2D333F" xlink:href="#path-1"></use>
+    </g>
+</svg>
