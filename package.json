@@ -46,7 +46,7 @@
     "develop": "concurrently 'lerna exec --scope style-guide npm run develop' 'npm-watch'",
     "postinstall": "lerna bootstrap",
     "lint": "eslint utils/",
-    "test": "npm run lint && npm run build-icons && lerna exec --scope ot* theo token.yml -- --format scss,cssmodules.css,common.js && npm run unit",
+    "test": "npm run lint && npm run build-icons && lerna exec --scope ot* theo token.yml -- --format scss,cssmodules.css,common.js 1> /dev/null && npm run unit",
     "unit": "jest",
     "updated": "lerna updated",
     "updatetoc": "doctoc README.md --github",

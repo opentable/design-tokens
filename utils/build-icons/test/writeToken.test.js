@@ -1,5 +1,7 @@
 'use strict';
 
+process.env.DESIGN_TOKENS_CDN_PATH = 'https://cdn.otstatic.com/otKitSvgs/';
+
 let originCWD;
 const mockCWD = jest.fn(() => 'somePath');
 beforeAll(() => {

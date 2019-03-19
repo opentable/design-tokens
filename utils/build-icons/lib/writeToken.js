@@ -4,11 +4,10 @@ const nodeYAML = require('node-yaml');
 const path = require('path');
 const Promise = require('bluebird');
 const _ = require('lodash');
+const url = require('url');
 
 const { messages } = require('./processIconHelpers');
 const { iconSize } = require('./config');
-
-const BASE_CDN = 'https://cdn.otstatic.com/otKitSvgs/';
 
 const writeToken = icons => {
   const props = icons.reduce(
@@ -19,7 +18,7 @@ const writeToken = icons => {
         accum.errors = accum.errors.concat(val.error);
       }
 
-      accum.output[val.id] = { value: BASE_CDN + val.transformedFileName };
+      accum.output[val.id] = { value: url.resolve(process.env.DESIGN_TOKENS_CDN_PATH, val.transformedFileName) };
 
       return accum;
     },
