@@ -64,11 +64,14 @@ jest.mock('node-yaml', () => {
     readSync: jest.fn(() => ({
       props: {
         coolColor: { value: '#coolColorValue' },
-        lameColor: { value: '#lameColorValue' }
+        lameColor: { value: '#lameColorValue' },
+        someUnusedColor: { value: '#someUnusedColor' }
       }
     }))
   };
 });
+
+jest.mock('../../../OTKit/otkit-icons/icon-colors.json', () => [ 'coolColor', 'lameColor' ]);
 
 jest.mock('crypto', () => {
   const createHashMock = {

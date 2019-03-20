@@ -2,6 +2,7 @@
 
 const yaml = require('node-yaml');
 const path = require('path');
+const iconColors = require('../../../OTKit/otkit-icons/icon-colors.json');
 
 const otKitColors = yaml.readSync(
   path.resolve(__dirname, '../../../OTKit/otkit-colors/token.yml')
@@ -42,7 +43,7 @@ module.exports = iconData => {
 
   const rawSVGTemplate = builder.buildObject(iconData.icon);
 
-  Object.keys(otKitColors).forEach(colorName => {
+  iconColors.forEach(colorName => {
     const colorValue = otKitColors[colorName].value;
 
     icons.push({
