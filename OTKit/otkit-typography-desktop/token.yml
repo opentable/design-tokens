@@ -49,6 +49,19 @@ props:
     value: "16px"
 
 
+  # Design decisions for font group xsmall-bold.
+  #
+  # =============================================
+  xsmall-bold-font-size:
+    type: "size"
+    value: "14px"
+  xsmall-bold-font-weight:
+    type: "raw"
+    value: "bold"
+  xsmall-bold-line-height:
+    type: "size"
+    value: "20px"
+
   # Design decisions for font group xsmall-medium.
   #
   # =============================================
