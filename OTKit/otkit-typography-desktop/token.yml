@@ -26,6 +26,13 @@ props:
     type: "raw"
     value: "'BrandonText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
 
+  # The entire font family definition for OpenTable's desktop web for Japanese.
+  # In Japanese, we prefer a different font stack to provide better look n feel.
+  # Apply to the appropriate root element such as <html>, <body> or `reactroot`.
+  # =============================================
+  font-family-ja:
+    type: "raw"
+    value: "'BrandonText', 'Helvetica Neue', Helvetica, Arial, OpenTableHiragino, Roboto, Droid Sans, '游ゴシック体', OpenTableYuGothic, YuGothic, Yu Gothic, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif"
 
   # Design decisions for font group xxsmall-regular.
   # WARNING: This should only be used for footnotes.
