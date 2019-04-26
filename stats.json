@@ -1,12 +1,12 @@
 {
   "assetsByChunkName": {
     "component---src-pages-otkit-colors-js": [
-      "component---src-pages-otkit-colors-js-b0d7e068e2068588c057.js",
-      "component---src-pages-otkit-colors-js-b0d7e068e2068588c057.js.map"
+      "component---src-pages-otkit-colors-js-96779c1afb6cb71d4c01.js",
+      "component---src-pages-otkit-colors-js-96779c1afb6cb71d4c01.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-5799aa558d4eecd944d3.js",
-      "component---src-pages-index-js-5799aa558d4eecd944d3.js.map"
+      "component---src-pages-index-js-0883ce6a6552740e84c7.js",
+      "component---src-pages-index-js-0883ce6a6552740e84c7.js.map"
     ],
     "path---otkit-icons": [
       "path---otkit-icons-a0e39f21c11f6a62c5ab.js",
@@ -21,8 +21,8 @@
       "path---otkit-colors-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-otkit-spacing-js": [
-      "component---src-pages-otkit-spacing-js-c85672bb6579beb80b19.js",
-      "component---src-pages-otkit-spacing-js-c85672bb6579beb80b19.js.map"
+      "component---src-pages-otkit-spacing-js-941941aa59fa92f3a96b.js",
+      "component---src-pages-otkit-spacing-js-941941aa59fa92f3a96b.js.map"
     ],
     "component---src-pages-otkit-icons-js": [
       "component---src-pages-otkit-icons-js-b9b508475c303f96186a.js",
@@ -53,9 +53,9 @@
       "component---src-pages-otkit-shadows-js-adeb9d76e465cc6094f6.js.map"
     ],
     "commons": [
-      "commons-a38d90ae5aa289a7633b.js",
+      "commons-6682add4b62d579c579f.js",
       "build-js-styles.css",
-      "commons-a38d90ae5aa289a7633b.js.map",
+      "commons-6682add4b62d579c579f.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-otkit-breakpoints-js": [
