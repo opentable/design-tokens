@@ -1,6 +1,6 @@
 {
   "name": "otkit-icons",
-  "version": "7.0.0",
+  "version": "7.6.0",
   "description": "OpenTable icons design token",
   "author": {
     "email": "design-tokens@opentable.com"
@@ -21,5 +21,6 @@
     "token.yml",
     "token.scss",
     "token.common.js"
-  ]
+  ],
+  "main": "token.common.js"
 }

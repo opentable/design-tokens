@@ -10,7 +10,7 @@ If you are a non-technical person (such as designer, product manager, etc), your
 2. Clone the repo. If it was already cloned, then git pull to get the latest from master.
 3. Run `npm install` before anything else, and wait.
 4. Write code.
-5. Make sure tests pass (`npm run test`) and make a pull request against the master branch. If you are adding a new token, make sure to update the related READMEs ([main radme](https://github.com/opentable/design-tokens/blob/master/README.md) and design-system specific: [ottheme readme](https://github.com/opentable/design-tokens/blob/master/OTTheme/README.md) or [otkit readme](https://github.com/opentable/design-tokens/blob/master/OTKit/README.md) )
+5. Make sure tests pass (`npm run test`) and make a pull request against the master branch. Do not forget to update the [README](https://github.com/opentable/design-tokens/blob/master/README.md) if you consider it appropriate for the changes you have made.
 
 # To release new versions
 
@@ -23,7 +23,6 @@ The following rules are automatically identified in CI:
 
 The style-guide get continously deployed and can be accessed here: https://opentable.github.io/design-tokens/
 
-
 # To contributing a new value
 
 1. Find the directory containing the tokens that are relevant to your new value (otkit-typography for typography, otkit-colors for colors, etc.). Within that directory, find the token.yml file and add the new value in the props section. For example, we would add the color-gray-primary value in otkit-colors/token.yml in the following way:
@@ -33,7 +32,7 @@ props:
   ...
   color-black:
     value: "#000000"
-  ...  
+  ...
 ```
 
 2.  Add, commit, and push your changes. Make a PR on `https://github.com/opentable/design-tokens`. Pat yourself on the back as you wait for your PR to be reviewed.

@@ -8,6 +8,8 @@ props:
   spacing-large:
     value: "32px"
   spacing-xlarge:
+    value: "48px"
+  spacing-xxlarge:
     value: "64px"
 
 global:

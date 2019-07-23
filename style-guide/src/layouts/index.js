@@ -57,6 +57,7 @@ export default ({ children }) => (
           </div>
           <NavLink to="/otkit-colors/">Colors</NavLink>
           <NavLink to="/otkit-typography">Typography</NavLink>
+          <NavLink to="/otkit-grids">Grids</NavLink>
           <NavLink to="/otkit-spacing/">Spacing</NavLink>
           <NavLink to="/otkit-borders/">Borders</NavLink>
           <NavLink to="/otkit-breakpoints/">Breakpoints</NavLink>
