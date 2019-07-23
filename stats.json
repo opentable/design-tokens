@@ -41,8 +41,8 @@
       "path---otkit-borders-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-2c27631da104303ed3b6.js",
-      "component---src-layouts-index-js-2c27631da104303ed3b6.js.map"
+      "component---src-layouts-index-js-73d94b4683a20a8f3abe.js",
+      "component---src-layouts-index-js-73d94b4683a20a8f3abe.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -53,9 +53,9 @@
       "component---src-pages-otkit-shadows-js-adeb9d76e465cc6094f6.js.map"
     ],
     "commons": [
-      "commons-6682add4b62d579c579f.js",
+      "commons-bcbc4d532c561afe2b28.js",
       "build-js-styles.css",
-      "commons-6682add4b62d579c579f.js.map",
+      "commons-bcbc4d532c561afe2b28.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-otkit-breakpoints-js": [
