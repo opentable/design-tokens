@@ -22,7 +22,7 @@ export default ({ children }) => (
       <ul>
         <li>
           <Link to="/otkit/getting-started" className={styles['header-link']}>
-            🍹 OTKit Guidelines
+            OTKit Guidelines
           </Link>
         </li>
         <li>
@@ -31,17 +31,17 @@ export default ({ children }) => (
             target="_blank"
             className={styles['header-link']}
           >
-            🍷 Design Tokens
+            Design Tokens
           </a>
         </li>
         <li>
           <Link to="/data/getting-started" className={styles['header-link']}>
-            🍺 Data
+             Data
           </Link>
         </li>
         <li>
           <Link to="/copy/copy-guidelines" className={styles['header-link']}>
-            🍸 Copy guidelines
+            Copy Guidelines
           </Link>
         </li>
       </ul>
