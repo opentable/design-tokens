@@ -9,9 +9,12 @@ const typographyGroups = [
   'xxlarge-bold',
   'xlarge-bold',
   'large-bold',
+  'large-medium',
   'medium-bold',
+  'small-bold',
   'small-medium',
   'small-regular',
+  'xsmall-bold',
   'xsmall-medium',
   'xsmall-regular'
 ];
