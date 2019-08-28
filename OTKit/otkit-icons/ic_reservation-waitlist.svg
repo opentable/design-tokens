@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon/line/ic_reservation-waitlist/Light UI/Default</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,3 L16.0462318,3 C16.3345944,3 16.6089204,3.12448043 16.7988085,3.34149539 L19.7525767,6.71723051 C19.9120818,6.899522 20,7.13351197 20,7.37573512 L20,19 C20,20.1045695 19.1045695,21 18,21 L6,21 C4.8954305,21 4,20.1045695 4,19 L4,5 C4,3.8954305 4.8954305,3 6,3 Z M6,5 L6,19 L18,19 L18,10 L14.5,10 C13.9477153,10 13.5,9.55228475 13.5,9 L13.5,5 L6,5 Z M15.5,5 L15.5,8 L18.2,8 L15.5,5 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/line/ic_reservation-waitlist/Light-UI/Default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="ic_reservation-waitlist" fill="#2D333F" xlink:href="#path-1"></use>
+    </g>
+</svg>
