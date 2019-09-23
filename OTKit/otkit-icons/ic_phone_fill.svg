@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon/line/ic_phone_fill/Light UI/Default</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/line/ic_phone_fill/Light-UI/Default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" opacity="0" x="0" y="0" width="24" height="24"></rect>
+        <g id="phone-filled" transform="translate(4.000000, 4.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M13.2404,9.74632 L15.47896,11.98488 C16.15728,12.6632 16.17568,13.74464 15.52,14.40032 C13.33448,16.58584 9.72928,16.52416 7.46816,14.26296 L1.737024,8.53192 C-0.524152,6.270704 -0.585864,2.665512 1.599688,0.479968 C2.255352,-0.175696 3.336792,-0.157304 4.015144,0.521048 L6.253704,2.759608 C6.82632,3.332224 6.84184,4.245096 6.288384,4.79856 C6.167296,4.919648 6.014432,5.004408 5.846152,5.043784 L4.83916,5.279408 C3.984168,5.479464 3.80796,6.47464 4.444448,7.11112 L8.88888,11.55552 C9.52536,12.19208 10.52056,12.01584 10.72056,11.16088 L10.95624,10.15384 C10.9956,9.9856 11.08032,9.83272 11.20144,9.7116 C11.75488,9.15816 12.66776,9.17368 13.2404,9.74632 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
