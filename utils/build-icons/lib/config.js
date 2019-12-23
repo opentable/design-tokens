@@ -57,7 +57,7 @@ module.exports = {
         convertPathData: true
       },
       {
-        convertTransform: false
+        convertTransform: true
       },
       {
         removeUnknownsAndDefaults: true
