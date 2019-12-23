@@ -1,5 +1,4 @@
 'use strict';
-const Promise = require('bluebird');
 
 let originCWD;
 const mockCWD = jest.fn(() => 'somePath');
