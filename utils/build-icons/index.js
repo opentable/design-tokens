@@ -1,6 +1,9 @@
-const generateTokenFile = require('./lib/generateTokenFile');
+const Promise = require('bluebird');
 
-generateTokenFile()
+const generateTokenFile = require('./lib/generateTokenFile');
+const generateThemeableTokenFile = require('./lib/generateThemeableTokenFile');
+
+Promise.all([generateTokenFile(), generateThemeableTokenFile()])
   .then(msg => {
     console.log(msg);
     process.exit(0);

@@ -101,6 +101,52 @@ html {
 
 ---
 
+### `otkit-icons` token usages
+
+The `otkit-icons` token offers two different sets of icons:
+
+* Standard icons with defined colors
+* Themeable icons using `currentColor`
+
+They are available for SCSS, CSS Modules and CommonJS
+
+*Note: The themeable icons are only available in version `7.9.0` and above*
+
+#### Standard icons
+
+This is the standard icons with predefined color for `fill` and `stroke`.
+
+```javascript
+import { icTicket } from 'otkit-icons/token.common'
+
+/*
+<svg ...>
+  <g id="icon/ic_ticket" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M12.7133596,8.1066091 ..." id="ic_ticket" fill="#2D333F"></path>
+  </g>
+</svg>/*
+```
+
+#### Themeable icons
+
+This is the themeable icons where the icons colors will be inherited from the parent element/component. The `fill` and `stroke`
+have `currentColor` as their values.
+
+```javascript
+import { icTicket } from 'otkit-icons/token.theme.common'
+
+/*
+<svg ...>
+  <g id="icon/ic_ticket" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M12.7133596,8.1066091 ..." id="ic_ticket" fill="currentColor"></path>
+  </g>
+</svg>
+*/
+
+```
+
+---
+
 ### Pixel to Rem conversion
 
 All contributions to this project should be in pixels. For users of these tokens, you will have to install [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem) to handle the pixel to rem conversion in your CSS files.

@@ -8,7 +8,7 @@ const _ = require('lodash');
 const { messages } = require('./processIconHelpers');
 const { iconSize } = require('./config');
 
-const writeToken = icons => {
+const writeToken = (icons, isThemeable = false) => {
   const props = icons.reduce(
     (accum, val) => {
       accum.ids = accum.ids.concat(val.svgIds);
@@ -53,8 +53,8 @@ const writeToken = icons => {
     if (message.length > 0) {
       return reject(message);
     }
-
-    nodeYAML.write(path.join(process.cwd(), 'token.yml'), iconFile, err => {
+    const filename = isThemeable ? 'token.theme.yml' : 'token.yml';
+    nodeYAML.write(path.join(process.cwd(), filename), iconFile, err => {
       if (err) {
         return reject(err);
       }

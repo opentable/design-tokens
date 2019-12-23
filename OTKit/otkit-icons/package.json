@@ -20,7 +20,12 @@
     "package.json",
     "token.yml",
     "token.scss",
-    "token.common.js"
+    "token.cssmodules.css",
+    "token.common.js",
+    "token.theme.yml",
+    "token.theme.scss",
+    "token.theme.cssmodules.css",
+    "token.theme.common.js"
   ],
   "main": "token.common.js"
 }
