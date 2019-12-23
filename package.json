@@ -28,7 +28,10 @@
         "OTKit",
         "OTTheme"
       ],
-      "ignore": "OTKit/otkit-icons/token.yml",
+      "ignore": [
+        "OTKit/otkit-icons/token.yml",
+        "OTKit/otkit-icons/token.theme.yml"
+      ],
       "extensions": "yml, svg",
       "delay": 0
     }
@@ -36,13 +39,15 @@
   "scripts": {
     "build": "npm run build-ottheme && npm run build-otkit",
     "build-icons": "lerna exec --scope *-icons -- node '$LERNA_ROOT_PATH/utils/build-icons'",
-    "build-otkit": "npm run build-icons && lerna exec --scope otkit-* theo token.yml -- --format scss,cssmodules.css,common.js --dest .",
+    "build-otkit": "npm run build-icons && npm run build-otkit-all && npm run build-otkit-theme-icon",
+    "build-otkit-all": "lerna exec --scope otkit-* theo token.yml -- --format scss,cssmodules.css,common.js --dest .",
+    "build-otkit-theme-icon": "lerna exec --scope otkit-icons theo token.theme.yml -- --format scss,cssmodules.css,common.js --dest .",
     "build-ottheme": "lerna exec --scope ottheme-* theo token.yml -- --format scss,cssmodules.css,common.js --dest .",
     "build-styleguide": "lerna exec --scope style-guide npm run build",
     "clean": "lerna clean",
     "develop": "concurrently 'lerna exec --scope style-guide npm run develop' 'npm-watch'",
     "postinstall": "lerna bootstrap",
-    "test": "npm run build-icons && lerna exec --scope ot* theo token.yml -- --format scss,cssmodules.css,common.js && npm run unit",
+    "test": "npm run build-icons && lerna exec --scope ot* theo token.yml -- --format scss,cssmodules.css,common.js && lerna exec --scope otkit-icons theo token.theme.yml -- --format scss,cssmodules.css,common.js && npm run unit",
     "unit": "jest",
     "updated": "lerna updated",
     "updatetoc": "doctoc README.md --github",
