@@ -54,7 +54,7 @@ module.exports = {
         convertColors: true
       },
       {
-        convertPathData: true
+        convertPathData: false
       },
       {
         convertTransform: false
