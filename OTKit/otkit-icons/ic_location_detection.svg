@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/ic_location_detection</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/ic_location_detection" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="location_services" fill="#DA3743" points="20 4 4 12.3476174 10.320316 13.680484 11.6539827 20.0008"></polygon>
+    </g>
+</svg>
