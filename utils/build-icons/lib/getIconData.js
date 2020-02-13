@@ -7,7 +7,7 @@ const xml2js = require('xml2js');
 const { svgo: svgoConfig } = require('./config');
 const svgo = new SVGO(svgoConfig);
 
-const getIconData = ({ fileName, id }) =>
+const getIconData = ({ fileName, id }, isThemeable = false) =>
   fs
     .readFile(fileName, 'utf8')
     .then(file => svgo.optimize(file, { path: fileName }))
@@ -15,7 +15,6 @@ const getIconData = ({ fileName, id }) =>
       iconData =>
         new Promise((resolve, reject) => {
           const ids = [];
-
           xml2js.parseString(
             iconData.data,
             {
@@ -23,6 +22,15 @@ const getIconData = ({ fileName, id }) =>
                 (val, name) => {
                   if (name === 'id') {
                     ids.push(val);
+                  }
+
+                  // Skip fill="none" or stroke="none" and applies for the rest
+                  if (
+                    isThemeable &&
+                    val !== 'none' &&
+                    (name === 'fill' || name === 'stroke')
+                  ) {
+                    return 'currentColor';
                   }
 
                   return val;
