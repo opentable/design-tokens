@@ -42,7 +42,7 @@ Standard design tokens. Use them if you are following the new design guidelines.
 | [`otkit-breakpoints`](/OTKit/otkit-breakpoints)               | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-breakpoints.svg)](http://badge.fury.io/js/otkit-breakpoints)               |
 | [`otkit-colors`](/OTKit/otkit-colors)                         | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-colors.svg)](http://badge.fury.io/js/otkit-colors)                         |
 | [`otkit-grids`](/OTKit/otkit-grids)                           | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-grids.svg)](http://badge.fury.io/js/otkit-grids)                           |
-| [`otkit-icons`](/OTKit/otkit-icons)                           | `scss, cssmodules.css`            | [![npm version](https://badge.fury.io/js/otkit-icons.svg)](http://badge.fury.io/js/otkit-icons)                           |
+| [`otkit-icons`](/OTKit/otkit-icons)                           | `scss, cssmodules.css, common.js`  | [![npm version](https://badge.fury.io/js/otkit-icons.svg)](http://badge.fury.io/js/otkit-icons)                           |
 | [`otkit-shadows`](/OTKit/otkit-shadows)                       | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-shadows.svg)](http://badge.fury.io/js/otkit-shadows)                       |
 | [`otkit-spacing`](/OTKit/otkit-spacing)                       | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-spacing.svg)](http://badge.fury.io/js/otkit-spacing)                       |
 | [`otkit-typography` (DEPRECATED)](/OTKit/otkit-typography)    | `scss, cssmodules.css, common.js` | [![npm version](https://badge.fury.io/js/otkit-typography.svg)](http://badge.fury.io/js/otkit-typography)                 |
@@ -97,6 +97,52 @@ import color from 'otkit-colors/token.common.js';
 html {
   font-size: font-size-base;
 }
+```
+
+---
+
+### `otkit-icons` token usages
+
+The `otkit-icons` token offers two different sets of icons:
+
+* Standard icons with defined colors
+* Themeable icons using `currentColor`
+
+They are available for SCSS, CSS Modules and CommonJS
+
+*Note: The themeable icons are only available in version `7.9.0` and above*
+
+#### Standard icons
+
+This is the standard icons with predefined color for `fill` and `stroke`.
+
+```javascript
+import { icTicket } from 'otkit-icons/token.common'
+
+/*
+<svg ...>
+  <g id="icon/ic_ticket" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M12.7133596,8.1066091 ..." id="ic_ticket" fill="#2D333F"></path>
+  </g>
+</svg>/*
+```
+
+#### Themeable icons
+
+This is the themeable icons where the icons colors will be inherited from the parent element/component. The `fill` and `stroke`
+have `currentColor` as their values.
+
+```javascript
+import { icTicket } from 'otkit-icons/token.theme.common'
+
+/*
+<svg ...>
+  <g id="icon/ic_ticket" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <path d="M12.7133596,8.1066091 ..." id="ic_ticket" fill="currentColor"></path>
+  </g>
+</svg>
+*/
+
 ```
 
 ---
