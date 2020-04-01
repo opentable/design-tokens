@@ -143,6 +143,8 @@ props:
     value: "#CCCCCC"
   opacity-color-white:
     value: "rgba(255,255,255,0.3)"
+  opacity-color-red: 
+    value: "rgba(250, 229, 231, 0.3)"
 
 global:
   type: "color"
