@@ -125,6 +125,9 @@ props:
   purple-darker:
     value: "#36143d"
 
+  red-lightest-opacity-30:
+    value: "#fce5e8"
+
   red-lightest:
     value: "#fceeef"
 
