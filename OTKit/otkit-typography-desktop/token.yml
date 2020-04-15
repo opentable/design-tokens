@@ -161,7 +161,7 @@ props:
   # =============================================
   large-bold-font-size:
     type: "size"
-    value: "22px"
+    value: "24px"
   large-bold-font-weight:
     type: "raw"
     value: "bold"
@@ -175,7 +175,7 @@ props:
   # =============================================
   xlarge-bold-font-size:
     type: "size"
-    value: "28px"
+    value: "32px"
   xlarge-bold-font-weight:
     type: "raw"
     value: "bold"
