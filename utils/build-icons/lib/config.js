@@ -71,8 +71,13 @@ module.exports = {
       {
         removeUnusedNS: true
       },
+      // Note: This rule must be true so that ids are removed from the svgs. IDs are supposed to be globally unuiqe.
+      // If we inline an svg with an id multiple times, then the id uniqueness rule will be broken.
+      // If your svg internally references ids, update it so that it doesn't. if you MUST internally reference ids,
+      // add the prefixIds rules and give us a really good explanation why your id couldn't be fixed or why you couldn't
+      // use a very unique and specific class name instead
       {
-        cleanupIDs: false
+        cleanupIDs: true
       },
       {
         cleanupNumericValues: true
