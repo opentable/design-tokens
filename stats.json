@@ -5,8 +5,8 @@
       "component---src-pages-otkit-colors-js-96779c1afb6cb71d4c01.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-0fa4b1231762225e1714.js",
-      "component---src-pages-index-js-0fa4b1231762225e1714.js.map"
+      "component---src-pages-index-js-873f8a789b72303a39a7.js",
+      "component---src-pages-index-js-873f8a789b72303a39a7.js.map"
     ],
     "path---otkit-icons": [
       "path---otkit-icons-a0e39f21c11f6a62c5ab.js",
@@ -40,9 +40,13 @@
       "path---otkit-borders-a0e39f21c11f6a62c5ab.js",
       "path---otkit-borders-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-otkit-icons-theme-js": [
+      "component---src-pages-otkit-icons-theme-js-1834abed3f114a734a79.js",
+      "component---src-pages-otkit-icons-theme-js-1834abed3f114a734a79.js.map"
+    ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-73d94b4683a20a8f3abe.js",
-      "component---src-layouts-index-js-73d94b4683a20a8f3abe.js.map"
+      "component---src-layouts-index-js-757cc3b2440516a01aeb.js",
+      "component---src-layouts-index-js-757cc3b2440516a01aeb.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -53,9 +57,9 @@
       "component---src-pages-otkit-shadows-js-adeb9d76e465cc6094f6.js.map"
     ],
     "commons": [
-      "commons-9b042964cacd97a8f47c.js",
+      "commons-903d26edc0cc413ea69a.js",
       "build-js-styles.css",
-      "commons-9b042964cacd97a8f47c.js.map",
+      "commons-903d26edc0cc413ea69a.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-otkit-breakpoints-js": [
@@ -75,14 +79,18 @@
       "component---src-pages-otkit-borders-js-9ea756a67835ffd8fcb8.js.map"
     ],
     "app": [
-      "app-c94cb0066ede0bccdde4.js",
+      "app-51923d91f270c382b129.js",
       "build-js-styles.css",
-      "app-c94cb0066ede0bccdde4.js.map",
+      "app-51923d91f270c382b129.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-otkit-grids-js": [
       "component---src-pages-otkit-grids-js-26628dfab6c2934c50fd.js",
       "component---src-pages-otkit-grids-js-26628dfab6c2934c50fd.js.map"
+    ],
+    "path---otkit-icons-theme": [
+      "path---otkit-icons-theme-a0e39f21c11f6a62c5ab.js",
+      "path---otkit-icons-theme-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---otkit-spacing": [
       "path---otkit-spacing-a0e39f21c11f6a62c5ab.js",
