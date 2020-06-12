@@ -36,7 +36,7 @@ export default ({ children }) => (
         </li>
         <li>
           <Link to="/data/getting-started" className={styles['header-link']}>
-             Data
+            Data
           </Link>
         </li>
         <li>
@@ -63,6 +63,7 @@ export default ({ children }) => (
           <NavLink to="/otkit-breakpoints/">Breakpoints</NavLink>
           <NavLink to="/otkit-shadows/">Shadows</NavLink>
           <NavLink to="/otkit-icons/">Icons</NavLink>
+          <NavLink to="/otkit-icons-theme/">Icons (theme)</NavLink>
         </div>
       </div>
       <div className={styles['main-body']}>
