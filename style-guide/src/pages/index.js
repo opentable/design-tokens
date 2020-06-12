@@ -9,6 +9,7 @@ import Breakpoints from './otkit-breakpoints.js';
 import Shadows from './otkit-shadows.js';
 import Grids from './otkit-grids.js';
 import Icons from './otkit-icons.js';
+import IconsTheme from './otkit-icons-theme.js';
 import SectionHeader from '../components/section-header';
 
 export default () => {
@@ -20,7 +21,8 @@ export default () => {
         add an issue, visit the{' '}
         <a href="https://github.com/opentable/design-tokens" target="_blank">
           design-tokens repository
-        </a>.
+        </a>
+        .
       </p>
       <Colors />
       <Typography />
@@ -30,6 +32,7 @@ export default () => {
       <Breakpoints />
       <Shadows />
       <Icons />
+      <IconsTheme />
     </div>
   );
 };

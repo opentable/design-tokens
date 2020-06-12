@@ -6,14 +6,26 @@
   font-weight: xlarge-bold-font-weight;
   line-height: xlarge-bold-line-height;
   color: ash-dark;
-  border-bottom: 1px solid ash-lighter;
-  padding-bottom: spacing-medium;
-  margin: 0 0 spacing-medium 0;
-  display: flex;
-  justify-content: space-between;
+  margin: 0;
+  flex: 1;
 }
 
 .section-header-small {
 	composes: section-header;
 	font-size: large-bold-font-size;
+}
+
+.section-container {
+  border-bottom: 1px solid ash-lighter;
+  padding-bottom: spacing-medium;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: spacing-medium;
+}
+
+.section-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
