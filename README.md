@@ -110,7 +110,7 @@ The `otkit-icons` token offers two different sets of icons:
 
 They are available for SCSS, CSS Modules and CommonJS
 
-*Note: The themeable icons are only available in version `7.9.0` and above*
+*Note: The themeable icons are only available in version `9.0.0` and above*
 
 #### Standard icons
 
