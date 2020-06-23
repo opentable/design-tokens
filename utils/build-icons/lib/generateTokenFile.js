@@ -10,13 +10,13 @@ const writeToken = require('./writeToken');
 const generateTokenFile = () => {
   return new Promise((resolve, reject) => {
     const icons = getIconFileList()
-      .mapSeries(getIconData)
+      .mapSeries(icons => getIconData(icons, false))
       .mapSeries(processIcon);
 
     Promise.all(icons)
-      .then(writeToken)
-      .then(() => resolve('icons generated successfully'))
-      .catch(err => reject(`error generating icons:\n ${err}`));
+      .then(icons => writeToken(icons, false))
+      .then(() => resolve('Standard icons generated successfully'))
+      .catch(err => reject(`error generating standard icons:\n ${err}`));
   });
 };
 

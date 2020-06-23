@@ -22,7 +22,7 @@ export default ({ children }) => (
       <ul>
         <li>
           <Link to="/otkit/getting-started" className={styles['header-link']}>
-            🍹 OTKit Guidelines
+            OTKit Guidelines
           </Link>
         </li>
         <li>
@@ -31,17 +31,17 @@ export default ({ children }) => (
             target="_blank"
             className={styles['header-link']}
           >
-            🍷 Design Tokens
+            Design Tokens
           </a>
         </li>
         <li>
           <Link to="/data/getting-started" className={styles['header-link']}>
-            🍺 Data
+            Data
           </Link>
         </li>
         <li>
           <Link to="/copy/copy-guidelines" className={styles['header-link']}>
-            🍸 Copy guidelines
+            Copy Guidelines
           </Link>
         </li>
       </ul>
@@ -57,11 +57,13 @@ export default ({ children }) => (
           </div>
           <NavLink to="/otkit-colors/">Colors</NavLink>
           <NavLink to="/otkit-typography">Typography</NavLink>
+          <NavLink to="/otkit-grids">Grids</NavLink>
           <NavLink to="/otkit-spacing/">Spacing</NavLink>
           <NavLink to="/otkit-borders/">Borders</NavLink>
           <NavLink to="/otkit-breakpoints/">Breakpoints</NavLink>
           <NavLink to="/otkit-shadows/">Shadows</NavLink>
           <NavLink to="/otkit-icons/">Icons</NavLink>
+          <NavLink to="/otkit-icons-theme/">Icons (theme)</NavLink>
         </div>
       </div>
       <div className={styles['main-body']}>

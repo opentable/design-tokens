@@ -1,0 +1,19 @@
+{
+  "name": "otkit-grids",
+  "version": "1.0.0",
+  "description": "OpenTable grids design token",
+  "author": {
+    "email": "design-tokens@opentable.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opentable/design-tokens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/opentable/design-tokens/issues"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}

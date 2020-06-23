@@ -9,9 +9,12 @@ const typographyGroups = [
   'xxlarge-bold',
   'xlarge-bold',
   'large-bold',
+  'large-medium',
   'medium-bold',
+  'small-bold',
   'small-medium',
   'small-regular',
+  'xsmall-bold',
   'xsmall-medium',
   'xsmall-regular'
 ];
@@ -32,6 +35,20 @@ const TypographyDesktop = () => {
   return (
     <div className={styles['main-container']}>
       <SectionHeader text="Typography – Desktop" type="SectionHeader__small" />
+      <p>
+        To use these OTKit typography rules in your project, we have a
+        production-tested package that exports readily made font groupings for
+        you:{' '}
+        <a href="https://github.com/opentable/ot-react-ui-components/tree/master/styles/typography-desktop">
+          @ot-react-ui/typography-desktop.
+        </a>{' '}
+        See its README for details.
+      </p>
+      <p>
+        It is generally <em>not recommended</em> to directly consume / reference
+        the values in this token unless for explicit reasons, such as
+        overriding.
+      </p>
       <div className={styles['font-column']}>{groups}</div>
     </div>
   );

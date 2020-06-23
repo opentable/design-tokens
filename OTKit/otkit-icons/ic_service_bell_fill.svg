@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/fill/ic_service_bell_fill/Light UI - Default@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/fill/ic_service_bell_fill/Light-UI---Default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M11,6 L10,6 C9.44771525,6 9,5.55228475 9,5 C9,4.44771525 9.44771525,4 10,4 L14,4 C14.5522847,4 15,4.44771525 15,5 C15,5.55228475 14.5522847,6 14,6 L13,6 L13,7.05492878 C17.4999505,7.55237307 21,11.3674463 21,16 L21,17 L13,17 L13,18 L20,18 C20.5522847,18 21,18.4477153 21,19 C21,19.5522847 20.5522847,20 20,20 L4,20 C3.44771525,20 3,19.5522847 3,19 C3,18.4477153 3.44771525,18 4,18 L11,18 L11,17 L3,17 L3,16 C3,11.3674463 6.50004954,7.55237307 11,7.05492878 L11,6 Z" id="ic_service_bell_fill" fill="#2D333F"></path>
+    </g>
+</svg>

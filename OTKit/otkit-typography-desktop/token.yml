@@ -26,6 +26,41 @@ props:
     type: "raw"
     value: "'BrandonText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
 
+  # The entire font family definition for OpenTable's desktop web for Japanese.
+  # In Japanese, we prefer a different font stack to provide better look n feel.
+  # Apply to the appropriate root element such as <html>, <body> or `reactroot`.
+  # =============================================
+  font-family-ja:
+    type: "raw"
+    value: "'BrandonText', 'Helvetica Neue', Helvetica, Arial, OpenTableHiragino, Roboto, Droid Sans, '游ゴシック体', OpenTableYuGothic, YuGothic, Yu Gothic, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif"
+
+  # Design decisions for font group xxsmall-regular.
+  # WARNING: This should only be used for footnotes.
+  #
+  # =============================================
+  xxsmall-regular-font-size:
+    type: "size"
+    value: "12px"
+  xxsmall-regular-font-weight:
+    type: "raw"
+    value: "normal"
+  xxsmall-regular-line-height:
+    type: "size"
+    value: "16px"
+
+
+  # Design decisions for font group xsmall-bold.
+  #
+  # =============================================
+  xsmall-bold-font-size:
+    type: "size"
+    value: "14px"
+  xsmall-bold-font-weight:
+    type: "raw"
+    value: "bold"
+  xsmall-bold-line-height:
+    type: "size"
+    value: "20px"
 
   # Design decisions for font group xsmall-medium.
   #
@@ -132,7 +167,7 @@ props:
     value: "bold"
   large-bold-line-height:
     type: "size"
-    value: "32px"
+    value: "28px"
 
 
   # Design decisions for font group xlarge-bold.
@@ -146,7 +181,7 @@ props:
     value: "bold"
   xlarge-bold-line-height:
     type: "size"
-    value: "40px"
+    value: "36px"
 
 
   # Design decisions for font group xxlarge-bold.
