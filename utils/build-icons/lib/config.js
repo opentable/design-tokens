@@ -111,6 +111,15 @@ module.exports = {
       },
       {
         removeAttrs: false
+      },
+      {
+        addAttributesToSVGElement: {
+          attributes: [
+            {
+              focusable: 'false'
+            }
+          ]
+        }
       }
     ]
   }
