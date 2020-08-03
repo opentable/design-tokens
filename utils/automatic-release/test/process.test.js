@@ -22,12 +22,14 @@ const mockEnsureDirSync = jest.fn();
 const mockWriteJsonSync = jest.fn();
 const mockPathExistsSync = jest.fn(() => true);
 const mockRemoveSync = jest.fn();
+const mockReadFileSync = jest.fn(v => v);
 jest.mock('fs-extra', () => {
   return {
     ensureDirSync: mockEnsureDirSync,
     writeJsonSync: mockWriteJsonSync,
     pathExistsSync: mockPathExistsSync,
-    removeSync: mockRemoveSync
+    removeSync: mockRemoveSync,
+    readFileSync: mockReadFileSync
   };
 });
 
