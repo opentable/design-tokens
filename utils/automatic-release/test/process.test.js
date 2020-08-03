@@ -48,9 +48,9 @@ mockLoad
   .mockReturnValueOnce({ props: { color: '#005' } })
   .mockReturnValue({ props: { supercolor: '#007' } });
 
-jest.mock('yamljs', () => {
+jest.mock('js-yaml', () => {
   return {
-    load: mockLoad
+    safeLoad: mockLoad
   };
 });
 
