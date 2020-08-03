@@ -16,12 +16,11 @@ const defineVersion = (pkg, root, latestTemp) => {
     })
   );
   const latestPath = path.join(latestTemp, 'node_modules', pkg, 'token.yml');
-  console.log('--->', root);
+
   if (fs.pathExistsSync(latestPath)) {
     const latestContent = yaml.safeLoad(fs.readFileSync(latestPath), {
       encoding: 'utf-8'
     });
-    console.log('----', latestPath);
     diff = differ(latestContent.props, updatedContent.props);
     version = diffToSemver(latestContent.props, updatedContent.props);
   }
