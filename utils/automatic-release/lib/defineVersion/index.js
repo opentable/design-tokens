@@ -8,10 +8,10 @@ const fs = require('fs');
 const differ = require('jest-diff');
 const diffToSemver = require('./diffToSemver');
 
-const defineVersion = (pkg, root, latestTemp) => {
+const defineVersion = async (pkg, root, latestTemp) => {
   let version, diff;
 
-  const updatedContent = yaml.safeLoad(
+  const updatedContent = await yaml.safeLoad(
     fs.readFileSync(path.join(root, `${packagePathResolver(pkg)}/token.yml`), {
       encoding: 'utf-8'
     })
@@ -19,7 +19,7 @@ const defineVersion = (pkg, root, latestTemp) => {
   const latestPath = path.join(latestTemp, 'node_modules', pkg, 'token.yml');
 
   if (fsExtra.pathExistsSync(latestPath)) {
-    const latestContent = yaml.safeLoad(fs.readFileSync(latestPath), {
+    const latestContent = await yaml.safeLoad(fs.readFileSync(latestPath), {
       encoding: 'utf-8'
     });
     diff = differ(latestContent.props, updatedContent.props);
