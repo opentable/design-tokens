@@ -1,26 +1,30 @@
 import React from 'react';
-import { withPrefix } from 'gatsby-link';
 
-let stylesStr;
-if (process.env.NODE_ENV === `production`) {
-  try {
-    stylesStr = require(`!raw-loader!../public/styles.css`);
-  } catch (e) {
-    console.log(e);
-  }
-}
+const favicons = [
+  {
+    size: 16,
+    url: '//cdn.otstatic.com/cfe/4/images/favicon-16-eec075.png',
+  },
+  {
+    size: 32,
+    url: '//cdn.otstatic.com/cfe/4/images/favicon-32-76aa16.png',
+  },
+  {
+    size: 48,
+    url: '//cdn.otstatic.com/cfe/4/images/favicon-48-b39a55.png',
+  },
+  {
+    size: 64,
+    url: '//cdn.otstatic.com/cfe/4/images/favicon-64-ee0fa3.png',
+  },
+  {
+    size: 128,
+    url: '//cdn.otstatic.com/cfe/4/images/favicon-128-d256f1.png',
+  },
+];
 
-module.exports = class HTML extends React.Component {
+export default class HTML extends React.Component {
   render() {
-    let css;
-    if (process.env.NODE_ENV === `production`) {
-      css = (
-        <style
-          id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{ __html: stylesStr }}
-        />
-      );
-    }
     return (
       <html {...this.props.htmlAttributes}>
         <head>
@@ -31,13 +35,10 @@ module.exports = class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <link
-            rel="shortcut icon"
-            href={withPrefix('/favicon.ico')}
-            type="image/x-icon"
-          />
+          {favicons.map((favicon) => (
+            <link rel="icon" sizes={`${favicon.size}x${favicon.size}`} href={favicon.url} />
+          ))}
           {this.props.headComponents}
-          {css}
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
