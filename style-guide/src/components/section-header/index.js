@@ -1,19 +1,19 @@
 import React from 'react';
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 export default function SectionHeader({ text, type, content }) {
   return (
-    <div className={styles['section-container']}>
+    <div className={styles.sectionContainer}>
       <h2
         className={
           type === 'SectionHeader__small'
-            ? styles['section-header-small']
-            : styles['section-header']
+            ? styles.sectionHeaderSmall
+            : styles.sectionHeader
         }
       >
         {text}
       </h2>
-      {content && <div className={styles['section-content']}>{content}</div>}
+      {content && <div className={styles.sectionContent}>{content}</div>}
     </div>
   );
 }
