@@ -1,10 +1,10 @@
 import React from 'react';
 import _ from 'lodash';
-
-import SectionHeader from '../components/section-header';
 import icons from 'otkit-icons/token.theme.common';
 import colors from 'otkit-colors/token.common';
-import styles from '../styles/otkit-icons.module.css';
+
+import SectionHeader from '../section-header';
+import styles from '../../styles/otkit-icons.module.scss';
 
 class Icons extends React.Component {
   constructor() {
@@ -41,33 +41,34 @@ class Icons extends React.Component {
   };
 
   render() {
-    const { iconSize } = icons;
     const keys = _.keys(icons).sort();
     const actualIcons = _.without(keys, 'iconSize');
 
     const tokens = actualIcons.map(name => {
       const value = icons[name];
+
       return (
-        <div className={styles['card']} key={name}>
-          <div className={styles['icon-block']}>
+        <div className={styles.card} key={name}>
+          <div className={styles.iconBlock}>
             <div
-              className={styles['icon']}
+              className={styles.icon}
               dangerouslySetInnerHTML={{ __html: value }}
               style={{ color: this.state.color }}
             />
           </div>
-          <div className={styles['icon-name']}>{_.kebabCase(name)}</div>
+          <div className={styles.iconName}>{_.kebabCase(name)}</div>
         </div>
       );
     });
+
     return (
-      <div className={styles['main-container']}>
+      <div className={styles.mainContainer}>
         <SectionHeader
           text="Icons (theme)"
           type="SectionHeader__small"
           content={this.renderSelect()}
         />
-        <div className={styles['section-icon']}>{tokens}</div>
+        <div className={styles.sectionIcon}>{tokens}</div>
       </div>
     );
   }

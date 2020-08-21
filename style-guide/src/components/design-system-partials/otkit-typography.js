@@ -1,9 +1,9 @@
 import React from 'react';
 import _ from 'lodash';
-import SectionHeader from '../components/section-header';
-
 import token from 'otkit-typography-desktop/token.common';
-import styles from '../styles/otkit-typography-desktop.module.css';
+
+import SectionHeader from '../section-header';
+import styles from '../../styles/otkit-typography-desktop.module.scss';
 
 const typographyGroups = [
   'xxlarge-bold',
@@ -25,15 +25,17 @@ const TypographyDesktop = () => {
     const fontWeight = token[_.camelCase(`${group}-font-weight`)];
     const lineHeight = token[_.camelCase(`${group}-line-height`)];
     const divStyle = { fontSize, fontWeight, lineHeight };
+
     return (
-      <div className={styles['font-item']} style={divStyle} key={index}>
+      <div className={styles.fontItem} style={divStyle} key={index}>
         {group} | font-size: {fontSize} | font-weight: {fontWeight} |
         line-height: {lineHeight}
       </div>
     );
   });
+
   return (
-    <div className={styles['main-container']}>
+    <div className={styles.mainContainer}>
       <SectionHeader text="Typography – Desktop" type="SectionHeader__small" />
       <p>
         To use these OTKit typography rules in your project, we have a
@@ -49,7 +51,7 @@ const TypographyDesktop = () => {
         the values in this token unless for explicit reasons, such as
         overriding.
       </p>
-      <div className={styles['font-column']}>{groups}</div>
+      <div className={styles.fontColumn}>{groups}</div>
     </div>
   );
 };

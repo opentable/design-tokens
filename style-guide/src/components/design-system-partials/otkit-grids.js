@@ -1,9 +1,9 @@
 import React from 'react';
 import _ from 'lodash';
-
-import SectionHeader from '../components/section-header';
 import token from 'otkit-grids/token.common';
-import styles from '../styles/index.module.css';
+
+import SectionHeader from '../section-header';
+import styles from '../../styles/index.module.scss';
 
 const Grids = () => {
   var tokens = _.toPairsIn(token);
@@ -16,7 +16,7 @@ const Grids = () => {
     );
   });
   return (
-    <div className={styles['main-container']}>
+    <div className={styles.mainContainer}>
       <SectionHeader text="Grids" type="SectionHeader__small" />
       {tokens}
     </div>
