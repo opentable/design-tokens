@@ -1,9 +1,12 @@
 node_modules
 *.log
 .DS_Store
-*.scss
-*.cssmodules.css
-*.common.js
+OTKit/**/*.scss
+OTKit/**/*.cssmodules.css
+OTKit/**/*.common.js
+OTTheme/**/*.scss
+OTTheme/**/*.cssmodules.css
+OTTheme/**/*.common.js
 .cache
 public
 OTKit/otkit-icons/token.yml
