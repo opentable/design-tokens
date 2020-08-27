@@ -1,0 +1,13 @@
+@import 'otkit-spacing/token.scss';
+
+$width-main: 768px;
+
+.font-item {
+  margin-bottom: $spacing-medium;
+}
+
+.main-container {
+  width: $width-main;
+  padding-top: $spacing-large;
+  margin: 0 auto;
+}

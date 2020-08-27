@@ -1,0 +1,51 @@
+@import 'otkit-colors/token.scss';
+@import 'otkit-spacing/token.scss';
+@import 'otkit-borders/token.scss';
+@import 'otkit-typography-desktop/token.scss';
+
+$icon-size: 24px;
+$width-main: 768px;
+
+.section-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &:after {
+    content: "";
+    width: 23%;
+  }
+}
+
+.main-container {
+  width: $width-main;
+  padding-top: $spacing-large;
+  margin: 0 auto;
+}
+
+.card {
+  text-align: center;
+  width: 23%;
+  margin-bottom: $spacing-medium;
+}
+
+.icon-block {
+  border-radius: $border-radius-small;
+  padding: $spacing-medium 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: $icon-size;
+  height: $icon-size;
+}
+
+.icon-name {
+  border: 1px solid $ash-lighter;
+  font-size: $xsmall-regular-font-size;
+  font-weight: $xsmall-regular-font-weight;
+  line-height: $xsmall-regular-line-height;
+  padding: $spacing-xsmall;
+  margin: $spacing-small 0;
+}

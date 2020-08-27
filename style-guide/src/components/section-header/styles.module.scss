@@ -1,0 +1,36 @@
+@import 'otkit-spacing/token.scss';
+@import 'otkit-typography-desktop/token.scss';
+@import 'otkit-colors/token.scss';
+
+%header {
+  font-size: $xlarge-bold-font-size;
+  font-weight: $xlarge-bold-font-weight;
+  line-height: $xlarge-bold-line-height;
+  color: $ash-dark;
+  margin: 0;
+  flex: 1;
+}
+
+.section-header {
+  @extend %header;
+}
+
+.section-header-small {
+  @extend %header;
+	font-size: $large-bold-font-size;
+}
+
+.section-container {
+  border-bottom: 1px solid $ash-lighter;
+  padding-bottom: $spacing-medium;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: $spacing-medium;
+}
+
+.section-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
