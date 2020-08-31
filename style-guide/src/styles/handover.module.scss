@@ -1,0 +1,47 @@
+@import './variables.module.scss';
+@import './typography.module.scss';
+@import './fonts.module.scss';
+@import 'otkit-spacing/token.scss';
+@import 'otkit-colors/token.scss';
+
+.noPadding {
+  padding: 0;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.main-container {
+  @extend %container;
+}
+
+.banner {
+  width: 100%;
+}
+
+.title {
+  @extend %largeBold;
+}
+
+.subtext {
+  @extend %smallRegular;
+}
+
+.phase {
+  color: teal;
+  @extend %mediumBold;
+}
+
+.phaseHeader {
+  @extend %xLargeBold;
+  margin-bottom: $spacing-xlarge;
+}
+
+.phaseTitle {
+  @extend %mediumBold;
+}
+
+.description {
+
+}

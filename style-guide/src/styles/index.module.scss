@@ -2,14 +2,7 @@
 @import 'otkit-colors/token.scss';
 @import 'otkit-typography-desktop/token.scss';
 @import 'otkit-spacing/token.scss';
-
-/* local variables */
-$width-nav: 300px;
-$width-main: 768px;
-$header-height: 68px;
-$font-weight-normal: normal;
-$font-weight-medium: 500;
-$font-weight-bold: bold;
+@import './variables.module.scss';
 
 body {
   font-family: $font-family;
@@ -120,9 +113,7 @@ h4 {
 }
 
 .main-container {
-  width: $width-main;
-  padding-top: $spacing-large;
-  margin: 0 auto;
+  @extend %container;
 }
 
 .link-secondary,
