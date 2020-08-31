@@ -58,6 +58,8 @@ export default () => {
         <p className={styles.subtext}>{copy['subtext2']}</p>
       </div>
 
+      <img className={styles.illustration} src={amazeDesigners} alt="amazeDesigners"/>
+
       <div className={styles.phaseNav}>
         {
           navItems.map((item, key) => (
@@ -68,7 +70,6 @@ export default () => {
           ))
         }
       </div>
-      <img className={styles.illustration} src={amazeDesigners} alt="amazeDesigners"/>
 
       <PhaseOne addHashRoute={addHashRoute} />
 
