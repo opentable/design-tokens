@@ -3,9 +3,19 @@
 @import './fonts.module.scss';
 @import 'otkit-spacing/token.scss';
 @import 'otkit-colors/token.scss';
+@import 'otkit-borders/token.scss';
+
+.link {
+  color: teal;
+  cursor: pointer;
+}
 
 .noPadding {
   padding: 0;
+}
+
+.mt0 {
+  margin-top: 0;
 }
 
 .alignCenter {
@@ -28,8 +38,37 @@
   @extend %smallRegular;
 }
 
+.subtext:first-child {
+  padding-top: 0;
+}
+
+.phaseNav {
+  @extend %smallRegular;
+  position: sticky;
+  top: 69px;
+  float: left;
+  background: $white;
+  border: 1px solid $ash-lighter;
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px rgba(45, 51, 63, 0.2);
+  border-radius: $border-radius-small;
+  color: $ash-dark;
+  width: 220px;
+  margin-left: 10%;
+  margin-top: $spacing-large;
+}
+
+.navItem {
+  padding: $spacing-small $spacing-medium;
+}
+
+.active {
+  background-color: $teal-lightest;
+}
+
 .phase {
   color: teal;
+  cursor: pointer;
   @extend %mediumBold;
 }
 
@@ -38,10 +77,31 @@
   margin-bottom: $spacing-xlarge;
 }
 
+.content {
+  margin: $spacing-large 0;
+}
 .phaseTitle {
   @extend %mediumBold;
 }
 
-.description {
+.phaseListTitle {
+  @extend %smallMedium;
+}
 
+.phaseList {
+  @extend %smallRegular;
+  margin: 0;
+  padding-inline-start: 20px;
+}
+
+.illustration {
+  margin: 0 auto;
+  display: flex;
+}
+
+@media only screen and (max-device-width: 1023px) {
+  .phaseNav {
+    position: fixed;
+    margin: 0;
+  }
 }
