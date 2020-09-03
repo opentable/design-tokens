@@ -14,22 +14,18 @@ export default ({ children, nav = null, className = '' }) => (
       <ul>
         <li>
           <Link to="/" className={styles.headerLink}>
-            Design Tokens
+            Design tokens
           </Link>
         </li>
         <li>
           <Link to="/handover-process" className={styles.headerLink}>
-            Design &amp; engineering handover process
+            Process guidelines
           </Link>
         </li>
       </ul>
     </div>
     <div>
-      {nav ? (
-        <div className={styles.nav}>
-          {nav}
-        </div>
-      ): null}
+      {nav ? <div className={styles.nav}>{nav}</div> : null}
       <div className={styles.mainBody}>
         <div className={`${styles.main} ${className}`}>{children}</div>
       </div>
