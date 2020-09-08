@@ -10,21 +10,35 @@ import PhaseTwo from "../components/handover-process/PhaseTwo";
 import PhaseThree from "../components/handover-process/PhaseThree";
 import PhaseFour from "../components/handover-process/PhaseFour";
 import PhaseFive from "../components/handover-process/PhaseFive";
-import storyMapping from "../assets/storyMapping.png";
+import _ from 'lodash';
 
 const navItems = ['phase1', 'phase2', 'phase3', 'phase4', 'phase5'];
+const offsetTop = 120;
 
 export default () => {
   const [selectedPhase, setSelectedPhase] = useState(null);
 
   useEffect(() => {
+    window.addEventListener('scroll', debouncedScroll);
     const phaseNumber = window.location.hash.replace("#", '');
     setSelectedPhase(phaseNumber);
+    scrollTo(phaseNumber);
+
+    return () => {
+      window.removeEventListener('scroll', debouncedScroll);
+    }
   }, []);
 
-  useEffect(() => {
-    scrollTo(selectedPhase);
-  }, [selectedPhase]);
+  const debouncedScroll = _.debounce(handleScroll, 300);
+
+  function handleScroll() {
+    navItems.forEach((item) => {
+      const el = document.getElementById(item);
+      if (el && el.getBoundingClientRect().top >=0 && el.getBoundingClientRect().top <= offsetTop) {
+        setSelectedPhase(item);
+      }
+    });
+  }
 
   function scrollTo(phaseNumber) {
     if (phaseNumber) {
@@ -41,6 +55,7 @@ export default () => {
     }
 
     setSelectedPhase(phaseNumber);
+    scrollTo(phaseNumber);
   }
 
   return (
