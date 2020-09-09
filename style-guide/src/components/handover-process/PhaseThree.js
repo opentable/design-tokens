@@ -1,13 +1,16 @@
 import styles from "../../styles/handover.module.scss";
 import copy from "../../../static/handover-process";
 import React from "react";
+import PhaseHeader from "./PhaseHeader";
+import ResourceBox from "./ResourceBox";
+import Quote from "./Quote";
 
 export default ({addHashRoute}) => (
   <div className={styles.mainContainer}>
-    <div className={styles.phase} id="phase3" onClick={() => {
-      addHashRoute('phase3')
-    }}>{copy["phase3"]}</div>
-    <div className={styles.phaseHeader}>{copy['phase3.header']}</div>
+    <PhaseHeader
+      addHashRoute={() => addHashRoute('phase3')}
+      phase='phase3'
+    />
     <div className={styles.phaseTitle}>{copy['phase3.subheader1']}</div>
     <p className={`${styles.subtext} ${styles.mt0}`}>{copy['phase3.description1']}</p>
 
@@ -34,6 +37,14 @@ export default ({addHashRoute}) => (
       <div className={styles.phaseListTitle}>{copy['phase3.header1.list3.title']}</div>
       <p className={`${styles.subtext} ${styles.mt0}`}>{copy['phase3.header1.list3.desc']}</p>
     </div>
+
+    <div className={styles.flex}>
+      <ResourceBox resource="resource5" />
+      <ResourceBox resource="resource6" />
+    </div>
+
+
+    <Quote title="quote2" />
 
     <div className={styles.phaseTitle}>{copy['phase3.subheader2']}</div>
     <p className={`${styles.subtext} ${styles.mt0}`}>{copy['phase3.description2']}</p>

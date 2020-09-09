@@ -1,15 +1,16 @@
 import styles from "../../styles/handover.module.scss";
 import copy from "../../../static/handover-process";
 import React from "react";
-import storyMapping2 from "../../assets/storyMapping2.png";
+import PhaseHeader from "./PhaseHeader";
+import ResourceBox from "./ResourceBox";
 
 export default ({addHashRoute}) => (
   <>
     <div className={styles.mainContainer}>
-      <div className={styles.phase} id="phase2" onClick={() => {
-        addHashRoute('phase2')
-      }}>{copy["phase2"]}</div>
-      <div className={styles.phaseHeader}>{copy['phase2.header']}</div>
+      <PhaseHeader
+        addHashRoute={() => addHashRoute('phase2')}
+        phase='phase2'
+      />
       <div className={styles.phaseTitle}>{copy['phase2.subheader1']}</div>
       <p className={`${styles.subtext} ${styles.mt0}`}>{copy['phase2.description1']}</p>
 
@@ -43,8 +44,14 @@ export default ({addHashRoute}) => (
           <li>{copy['phase2.header2.list1.3']}</li>
         </ul>
       </div>
-    </div>
 
-    <img className={styles.illustration} src={storyMapping2} alt="storyMapping"/>
+      <ResourceBox resource="resource3" />
+
+      <div className={styles.phaseTitle}>{copy['phase2.subheader3']}</div>
+      <p className={`${styles.subtext} ${styles.mt0}`}>{copy['phase2.description3']}</p>
+
+      <ResourceBox resource="resource4" />
+
+    </div>
   </>
 );

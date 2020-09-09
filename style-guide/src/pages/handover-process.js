@@ -10,10 +10,12 @@ import PhaseTwo from "../components/handover-process/PhaseTwo";
 import PhaseThree from "../components/handover-process/PhaseThree";
 import PhaseFour from "../components/handover-process/PhaseFour";
 import PhaseFive from "../components/handover-process/PhaseFive";
+import PhaseBox from "../components/handover-process/PhaseBox";
 import _ from 'lodash';
+import { images } from "../../static/constants";
 
 const navItems = ['phase1', 'phase2', 'phase3', 'phase4', 'phase5'];
-const offsetTop = 120;
+const offsetTop = 200;
 
 export default () => {
   const [selectedPhase, setSelectedPhase] = useState(null);
@@ -29,7 +31,7 @@ export default () => {
     }
   }, []);
 
-  const debouncedScroll = _.debounce(handleScroll, 300);
+  const debouncedScroll = _.debounce(handleScroll, 150);
 
   function handleScroll() {
     navItems.forEach((item) => {
@@ -43,6 +45,8 @@ export default () => {
   function scrollTo(phaseNumber) {
     if (phaseNumber) {
       const elem = document.getElementById(phaseNumber);
+      if (!elem) return;
+
       elem.scrollIntoView({behavior: 'smooth', block: 'start', inline: "nearest"})
     }
   }
@@ -69,11 +73,24 @@ export default () => {
       <img src={banner} alt="banner" className={styles.banner}/>
       <div className={styles.mainContainer}>
         <div className={styles.title}>{copy["title"]}</div>
-        <p className={styles.subtext}>{copy['subtext1']}</p>
+        <div className={styles.subtext}>{copy['subtext1']}</div>
         <p className={styles.subtext}>{copy['subtext2']}</p>
       </div>
 
-      <img className={styles.illustration} src={amazeDesigners} alt="amazeDesigners"/>
+      <div className={styles.boxContainer}>
+        {
+          navItems.map((item, index) => {
+            return <PhaseBox
+              key={index}
+              addHashRoute={() => addHashRoute(item)}
+              title={copy[item]}
+              illustration={images[item]}
+              description={copy[`${item}.header`]}
+
+            />
+          })
+        }
+      </div>
 
       <div className={styles.phaseNav}>
         {
@@ -89,6 +106,8 @@ export default () => {
       <PhaseOne addHashRoute={addHashRoute} />
 
       <PhaseTwo addHashRoute={addHashRoute} />
+
+      <img className={styles.illustration} src={amazeDesigners} alt="amazeDesigners"/>
 
       <PhaseThree addHashRoute={addHashRoute} />
 

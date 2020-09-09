@@ -10,6 +10,10 @@
   cursor: pointer;
 }
 
+.flex {
+  display: flex;
+}
+
 .noPadding {
   padding: 0;
 }
@@ -28,6 +32,7 @@
 
 .banner {
   width: 100%;
+  margin-top: $spacing-xxlarge;
 }
 
 .title {
@@ -66,6 +71,17 @@
   background-color: $teal-lightest;
 }
 
+.phaseContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: $spacing-xlarge;
+}
+
+.phaseContainer img {
+  margin-left: $spacing-large;
+  width: 100px;
+}
+
 .phase {
   color: teal;
   cursor: pointer;
@@ -74,7 +90,7 @@
 
 .phaseHeader {
   @extend %xLargeBold;
-  margin-bottom: $spacing-xlarge;
+  width: 520px;
 }
 
 .content {
@@ -101,8 +117,7 @@
 
 @media only screen and (max-device-width: 1023px) {
   .phaseNav {
-    position: fixed;
-    margin: 0;
+    display: none;
   }
 }
 
@@ -112,4 +127,95 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+}
+
+//PhaseBox styles
+
+.boxContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $spacing-xlarge;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 190px;
+  border: 1px solid transparent;
+  background: $teal-lightest;
+  border-radius: $border-radius-small;
+  margin: $spacing-small;
+  padding: $spacing-medium;
+  box-sizing: border-box;
+}
+
+.box img {
+  width: 100px;
+}
+
+.box:hover {
+  border: 1px solid $teal;
+  cursor: pointer;
+}
+
+.boxTitle {
+  @extend %mediumBold;
+  color: $teal;
+  padding-top: $spacing-medium;
+}
+
+.boxDesc {
+  @extend %smallBold;
+  color: $ash-dark;
+  padding-top: $spacing-small;
+  text-align: center;
+}
+
+// Resource Box styles
+.resource {
+  width: 325px;
+  border: 1px solid $ash-lighter;
+  border-radius: $border-radius-small;
+  padding: $spacing-medium;
+  box-sizing: border-box;
+  margin: $spacing-large $spacing-small $spacing-xlarge 0;
+}
+
+.resourceTitle {
+  display: flex;
+}
+
+.resourceTitle svg {
+  margin-right: $spacing-medium;
+}
+
+.resourceDesc {
+  @extend %xSmallRegular;
+  margin-top: $spacing-medium;
+  margin-bottom: $spacing-xlarge;
+}
+
+.resourceLink {
+  @extend %smallMedium;
+  color: $teal;
+}
+
+
+// Quotes styles
+.quote {
+  @extend %xxLargeBold;
+  color: $teal;
+}
+
+.quoteTitle {
+  @extend %largeBold;
+  color: $teal;
+}
+
+.quoteUser {
+  @extend %smallRegular;
+  color: $teal;
+  padding-top: $spacing-medium;
+  margin-bottom: $spacing-xlarge;
 }

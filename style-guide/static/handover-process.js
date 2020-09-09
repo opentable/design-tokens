@@ -1,4 +1,5 @@
 export default {
+
   "nav.phase1": "Phase 1: Discovery",
   "nav.phase2": "Phase 2: Collect feedback",
   "nav.phase3": "Phase 3: Implementation",
@@ -7,7 +8,7 @@ export default {
 
   "header": "Opentable's design and development process guidelines",
   "description": "An interactive guide on how to work better together",
-  "title": "What is this?",
+  "title": "Away with the 'hand-off' and in with the ongoing collaboration",
   "subtext1": "At OpenTable, we don’t believe in a final hand-off to engineers during the product development process. We believe that ongoing collaboration between engineers and designers is crucial to ensuring user-friendly and effective experiences.",
   "subtext2": "This is a guide for engineers and designers on when and what to do to make working together seamless and productive.",
 
@@ -44,6 +45,9 @@ export default {
   "phase2.header2.list1.1": "Is there another way to solve this that can be less effort for engineering?",
   "phase2.header2.list1.2": "If we reduce scope, are we still solving the user problem?",
   "phase2.header2.list1.3": "How can the work be phased so that we ship fast and ultimately get to the final ideal product?",
+
+  "phase2.subheader3": "Collaborate and share content",
+  "phase2.description3": "Keep everyone happy by ensuring content is aligned by all stakeholders before it’s in engineering hands. For designers, that may mean using a source of truth document to track all content. Use this tool as a way to collaborate with stakeholders and also communicate to engineering on content updates.",
 
   "phase3": "Phase 3",
   "phase3.header": "Document and implement",
@@ -83,4 +87,45 @@ export default {
   "phase5.header": "Monitor and launch post-launch",
   "phase5.subheader1": "Communicate if updates need to be made",
   "phase5.description1": "After launch you’ll learn new things based on usage and feedback from users. If there are updates, document changes in Jira so that engineers can prioritize with other tasks. Where relevant, provide customer feedback with tickets to help provide context.",
+
+  "quote1": "The storymapping exercise was so beneficial for expectation setting with the product development team. It becomes a delivery tool, supports release planning and creates a shared discussion about workflows without needing to create designs.",
+  "quote1.user": "Jake Clements, Engineering Manager",
+
+  "quote2": " Open communication is critical to the product development process. Finding the preferred way of keeping track of design or copy changes (whether that is Jira, Figma or Slack) upfront avoids confusion down the road.",
+  "quote2.user": "Briana Lee, Product Designer",
+
+  "resource1.title": "Product brief template",
+  "resource1.description": "There is no need to start from scratch. Use this template to get a project started.",
+  "resource1.linkTitle": "View the product brief template",
+  "resource1.link": "https://google.com",
+
+  "resource2.title": "Learn how to Story Map",
+  "resource2.description": "Story mapping is a pattern. It’s how you make sense of a whole product or feature. You do so by breaking down large stories into smaller ones.",
+  "resource2.linkTitle": "View the guide",
+  "resource2.link": "https://google.com",
+
+  "resource3.title": "Critiquing designs",
+  "resource3.description": "Critique builds shared perspectives and values, leverages the strength of the entire team, and drives iteration and improvement.",
+  "resource3.linkTitle": "Learn how to critique",
+  "resource3.link": "https://google.com",
+
+  "resource4.title": "Product content process",
+  "resource4.description": "Manage the way you collaborate and share final content with stakeholders with this guide.",
+  "resource4.linkTitle": "View the guide and template",
+  "resource4.link": "https://google.com",
+
+  "resource5.title": "Buffet library",
+  "resource5.description": "View all the components that exist today in Buffet Storybook. These are components used throughout the restaurant product.",
+  "resource5.linkTitle": "View Buffet components",
+  "resource5.link": "https://google.com",
+
+  "resource6.title": "Decision Tree",
+  "resource6.description": "Need help prioritizing your features? Use the decision tree template to move your project along.",
+  "resource6.linkTitle": "View the decision tree",
+  "resource6.link": "https://google.com",
+
+  "resource7.title": "Quality assurance template",
+  "resource7.description": "Want to maintain consistency and quality as you ship new products and features? Use this template to keep track of all issues.",
+  "resource7.linkTitle": "View the QA template",
+  "resource7.link": "https://google.com"
 }
