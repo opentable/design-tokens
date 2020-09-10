@@ -51,7 +51,7 @@
 .phaseNav {
   @extend %smallRegular;
   position: sticky;
-  top: 69px;
+  top: calc(69px + #{$spacing-large});
   float: left;
   background: $white;
   border: 1px solid $ash-lighter;
