@@ -7,11 +7,7 @@ const isPartiallyActive = ({ isCurrent }) => {
 };
 const NavLink = props => (
   <div className={styles.navLink}>
-    <Link
-      to={props.to}
-      getProps={isPartiallyActive}
-      activeClassName={styles.linkActive}
-    >
+    <Link to={props.to} getProps={isPartiallyActive}>
       {props.children}
     </Link>
   </div>
