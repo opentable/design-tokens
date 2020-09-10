@@ -2,9 +2,13 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styles from '../../styles/index.module.scss';
 
-const NavLink = (props) => (
+const NavLink = props => (
   <div className={styles.navLink}>
-    <Link to={props.to} exact={props.exact} activeClassName={styles.linkActive}>
+    <Link
+      to={props.to}
+      partiallyActive={props.exact ? false : true}
+      activeClassName={styles.linkActive}
+    >
       {props.children}
     </Link>
   </div>
@@ -13,7 +17,9 @@ const NavLink = (props) => (
 export default () => (
   <div className={styles.navSection}>
     <h4>DESIGN TOKENS</h4>
-    <NavLink exact to="/">All Design Tokens</NavLink>
+    <NavLink exact to="/">
+      All Design Tokens
+    </NavLink>
     <NavLink to="/otkit/colors">Colors</NavLink>
     <NavLink to="/otkit/typography">Typography</NavLink>
     <NavLink to="/otkit/grids">Grids</NavLink>
