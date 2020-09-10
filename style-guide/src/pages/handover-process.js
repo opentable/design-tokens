@@ -47,7 +47,7 @@ export default () => {
       const elem = document.getElementById(phaseNumber);
       if (!elem) return;
 
-      elem.scrollIntoView({behavior: 'smooth', block: 'start', inline: "nearest"})
+      elem.scrollIntoView({behavior: 'smooth', block: 'center', inline: "nearest"})
     }
   }
 

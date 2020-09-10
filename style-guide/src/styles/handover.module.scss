@@ -28,6 +28,7 @@
 
 .main-container {
   @extend %container;
+  width: 640px
 }
 
 .banner {
@@ -65,6 +66,7 @@
 
 .navItem {
   padding: $spacing-small $spacing-medium;
+  cursor: pointer;
 }
 
 .active {
@@ -113,12 +115,7 @@
 .illustration {
   margin: 0 auto;
   display: flex;
-}
-
-@media only screen and (max-device-width: 1023px) {
-  .phaseNav {
-    display: none;
-  }
+  max-width: 1026px;
 }
 
 .figma-embed {
@@ -218,4 +215,13 @@
   color: $teal;
   padding-top: $spacing-medium;
   margin-bottom: $spacing-xlarge;
+}
+
+@media only screen and (max-device-width: 1023px) {
+  .phaseNav {
+    display: none;
+  }
+  .illustration, .figma-embed {
+    width: 100%;
+  }
 }
