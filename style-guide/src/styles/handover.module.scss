@@ -118,14 +118,6 @@
   max-width: 1026px;
 }
 
-.figma-embed {
-  width: 1000px;
-  height: 560px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
-
 //PhaseBox styles
 
 .boxContainer {
@@ -221,7 +213,7 @@
   .phaseNav {
     display: none;
   }
-  .illustration, .figma-embed {
+  .illustration {
     width: 100%;
   }
 }

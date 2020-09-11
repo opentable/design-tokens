@@ -4,6 +4,7 @@ import React from 'react';
 import PhaseHeader from "./PhaseHeader";
 import ResourceBox from "./ResourceBox";
 import Quote from "./Quote";
+import storyMapping from '../../assets/storyMapping.png';
 
 export default ({addHashRoute}) => {
   return (
@@ -31,11 +32,7 @@ export default ({addHashRoute}) => {
 
         <Quote title="quote1" />
       </div>
-      <iframe
-        className={styles.figmaEmbed}
-        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fycka6tvpSm1ZAzYJtq3GNw%2FCollaboration-Templates%3Fnode-id%3D269%253A977&chrome=DOCUMENTATION"
-        allowFullScreen
-      />
+      <img className={styles.illustration} src={storyMapping} alt="storyMapping" />
     </>
   );
 };
