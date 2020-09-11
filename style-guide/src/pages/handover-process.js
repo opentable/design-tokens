@@ -42,12 +42,12 @@ export default () => {
     });
   }
 
-  function scrollTo(phaseNumber) {
+  function scrollTo(phaseNumber, position = 'start') {
     if (phaseNumber) {
       const elem = document.getElementById(phaseNumber);
       if (!elem) return;
 
-      elem.scrollIntoView({behavior: 'smooth', block: 'center', inline: "nearest"})
+      elem.scrollIntoView({behavior: 'smooth', block: position})
     }
   }
 
@@ -59,7 +59,7 @@ export default () => {
     }
 
     setSelectedPhase(phaseNumber);
-    scrollTo(phaseNumber);
+    scrollTo(phaseNumber, 'center');
   }
 
   return (
