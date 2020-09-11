@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import styles from '../../styles/index.module.scss';
 import logo from '../../assets/logo.svg';
 
-export default ({ children, location, nav = null }) => (
+export default ({ children, nav = null, className = '' }) => (
   <div>
     <div className={styles.header}>
       <Link to="/" style={{ marginRight: '60px' }}>
@@ -14,24 +14,20 @@ export default ({ children, location, nav = null }) => (
       <ul>
         <li>
           <Link to="/" className={styles.headerLink}>
-            Design Tokens
+            Design tokens
           </Link>
         </li>
-        {/* <li>
+        <li>
           <Link to="/handover-process" className={styles.headerLink}>
-            Design &amp; engineering handover process
+            Process guidelines
           </Link>
-        </li> */}
+        </li>
       </ul>
     </div>
     <div>
-      {nav ? (
-        <div className={styles.nav}>
-          {nav}
-        </div>
-      ): null}
+      {nav ? <div className={styles.nav}>{nav}</div> : null}
       <div className={styles.mainBody}>
-        <div className={styles.main}>{children}</div>
+        <div className={`${styles.main} ${className}`}>{children}</div>
       </div>
     </div>
   </div>

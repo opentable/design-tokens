@@ -1,0 +1,79 @@
+@import 'otkit-typography-desktop/token.scss';
+
+%xxSmallBold {
+  font-size: $xxsmall-regular-font-size;
+  font-weight: $small-bold-font-weight;
+  line-height: $xxsmall-regular-line-height;
+}
+
+%xSmallBold {
+  font-size: $xsmall-bold-font-size;
+  font-weight: $xsmall-bold-font-weight;
+  line-height: $xsmall-bold-line-height;
+}
+
+%xSmallMedium {
+  font-size: $xsmall-medium-font-size;
+  font-weight: $xsmall-medium-font-weight;
+  line-height: $xsmall-medium-line-height;
+}
+
+%xSmallRegular {
+  font-size: $xsmall-regular-font-size;
+  font-weight: $xsmall-regular-font-weight;
+  line-height: $xsmall-regular-line-height;
+}
+
+%smallMedium {
+  font-size: $small-medium-font-size;
+  font-weight: $small-medium-font-weight;
+  line-height: $small-medium-line-height;
+}
+
+%smallBold {
+  font-size: $small-bold-font-size;
+  font-weight: $small-bold-font-weight;
+  line-height: $small-bold-line-height;
+}
+
+%smallRegular {
+  font-size: $small-regular-font-size;
+  font-weight: $small-regular-font-weight;
+  line-height: $small-regular-line-height;
+}
+
+%mediumBold {
+  font-size: $medium-bold-font-size;
+  font-weight: $medium-bold-font-weight;
+  line-height: $medium-bold-line-height;
+}
+
+%mediumRegular {
+  font-size: $medium-bold-font-size;
+  font-weight: $small-regular-line-height;
+  line-height: $medium-bold-line-height;
+}
+
+%largeMedium {
+  font-size: $large-medium-font-size;
+  font-weight: $large-medium-font-weight;
+  line-height: $large-bold-line-height;
+}
+
+%largeBold {
+  font-size: $large-bold-font-size;
+  font-weight: $large-bold-font-weight;
+  line-height: $large-bold-line-height;
+}
+
+%xLargeBold {
+  font-size: $xlarge-bold-font-size;
+  font-weight: $xlarge-bold-font-weight;
+  line-height: $xlarge-bold-line-height;
+}
+
+%xxLargeBold {
+  font-size: $xxlarge-bold-font-size;
+  font-weight: $xxlarge-bold-font-weight;
+  line-height: $xxlarge-bold-line-height;
+}

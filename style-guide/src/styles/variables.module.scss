@@ -1,0 +1,15 @@
+@import 'otkit-spacing/token.scss';
+
+$width-nav: 300px;
+$width-main: 768px;
+$header-height: 68px;
+$font-weight-normal: normal;
+$font-weight-medium: 500;
+$font-weight-bold: bold;
+
+
+%container {
+  width: $width-main;
+  padding-top: $spacing-large;
+  margin: 0 auto;
+}
