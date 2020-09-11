@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import _ from 'lodash';
 import icons from 'otkit-icons/token.theme.common';
 import colors from 'otkit-colors/token.common';
@@ -6,22 +6,31 @@ import colors from 'otkit-colors/token.common';
 import SectionHeader from '../section-header';
 import styles from '../../styles/otkit-icons.module.scss';
 
-class Icons extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      color: '#000000'
-    };
-    this.updateColor = this.updateColor.bind(this);
-  }
+const Icons = () => {
+  const [color, setColor] = useState('#000000');
+  const [filter, setFilter] = useState('');
 
-  renderSelect() {
+  const keys = _.keys(icons).sort();
+  const actualIcons = _.without(keys, 'iconSize');
+
+  const updateColor = color => {
+    setColor(color);
+  };
+
+  const getFilter = event => {
+    const key = event.target.value || '';
+    setFilter(key.toLowerCase());
+  };
+
+  const renderHeaderContent = () => {
     const keys = Object.keys(colors).sort();
     return (
       <div>
+        {/* eslint-disable-next-line jsx-a11y/no-onchange */}
         <select
-          onChange={e => this.updateColor(e.target.value)}
-          value={this.state.color}
+          className={styles.form}
+          onChange={e => updateColor(e.target.value)}
+          value={color}
         >
           <option value="#000000" default>
             Black - #000000
@@ -32,19 +41,26 @@ class Icons extends React.Component {
             </option>
           ))}
         </select>
+        <input
+          className={styles.form}
+          type="text"
+          onChange={getFilter}
+          placeholder="Search icon"
+        />
       </div>
     );
-  }
-
-  updateColor = color => {
-    this.setState({ color });
   };
 
-  render() {
-    const keys = _.keys(icons).sort();
-    const actualIcons = _.without(keys, 'iconSize');
-
-    const tokens = actualIcons.map(name => {
+  const tokens = actualIcons
+    .filter(name => {
+      if (filter === '') {
+        return true;
+      }
+      const iconName = _.kebabCase(name);
+      const regex = RegExp(`.*${filter}.*`, 'g');
+      return iconName.match(regex);
+    })
+    .map(name => {
       const value = icons[name];
 
       return (
@@ -53,7 +69,7 @@ class Icons extends React.Component {
             <div
               className={styles.icon}
               dangerouslySetInnerHTML={{ __html: value }}
-              style={{ color: this.state.color }}
+              style={{ color }}
             />
           </div>
           <div className={styles.iconName}>{_.kebabCase(name)}</div>
@@ -61,17 +77,16 @@ class Icons extends React.Component {
       );
     });
 
-    return (
-      <div className={styles.mainContainer}>
-        <SectionHeader
-          text="Icons (theme)"
-          type="SectionHeader__small"
-          content={this.renderSelect()}
-        />
-        <div className={styles.sectionIcon}>{tokens}</div>
-      </div>
-    );
-  }
-}
+  return (
+    <div className={styles.mainContainer}>
+      <SectionHeader
+        text="Icons (theme)"
+        type="SectionHeader__small"
+        content={renderHeaderContent()}
+      />
+      <div className={styles.sectionIcon}>{tokens}</div>
+    </div>
+  );
+};
 
 export default Icons;
