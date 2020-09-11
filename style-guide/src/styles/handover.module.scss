@@ -5,6 +5,8 @@
 @import 'otkit-colors/token.scss';
 @import 'otkit-borders/token.scss';
 
+$navigation-top: 69px + $spacing-large; // height of the topbar
+
 .link {
   color: teal;
   cursor: pointer;
@@ -51,7 +53,7 @@
 .phaseNav {
   @extend %smallRegular;
   position: sticky;
-  top: 69px;
+  top: $navigation-top;
   float: left;
   background: $white;
   border: 1px solid $ash-lighter;

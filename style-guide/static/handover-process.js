@@ -97,35 +97,35 @@ export default {
   "resource1.title": "Product brief template",
   "resource1.description": "There is no need to start from scratch. Use this template to get a project started.",
   "resource1.linkTitle": "View the product brief template",
-  "resource1.link": "https://google.com",
+  "resource1.link": "https://docs.google.com/document/d/1T-pNbKWrZpIy1OqIqJSYPl0OEBDcvu4kdkDhDVn9y64",
 
   "resource2.title": "Learn how to Story Map",
   "resource2.description": "Story mapping is a pattern. It’s how you make sense of a whole product or feature. You do so by breaking down large stories into smaller ones.",
   "resource2.linkTitle": "View the guide",
-  "resource2.link": "https://google.com",
+  "resource2.link": "https://docs.google.com/presentation/d/1o7Y8i4FBvle93ozsOYqCB5nABY6bUhkgjb1ChHnU10E",
 
   "resource3.title": "Critiquing designs",
   "resource3.description": "Critique builds shared perspectives and values, leverages the strength of the entire team, and drives iteration and improvement.",
   "resource3.linkTitle": "Learn how to critique",
-  "resource3.link": "https://google.com",
+  "resource3.link": "https://docs.google.com/presentation/d/1EUcknMgPzcaTFD86qGMvJh7eVOHjBb3Kw7e4Z5jBAZE",
 
   "resource4.title": "Product content process",
   "resource4.description": "Manage the way you collaborate and share final content with stakeholders with this guide.",
   "resource4.linkTitle": "View the guide and template",
-  "resource4.link": "https://google.com",
+  "resource4.link": "https://docs.google.com/presentation/d/1DsTeOJDLtgidOcITfzJATFbHgMRk17XhwZ_bIJFlzZw",
 
   "resource5.title": "Buffet library",
   "resource5.description": "View all the components that exist today in Buffet Storybook. These are components used throughout the restaurant product.",
   "resource5.linkTitle": "View Buffet components",
-  "resource5.link": "https://google.com",
+  "resource5.link": "http://buffet-preview.pp-rs.otenv.com/",
 
   "resource6.title": "Decision Tree",
   "resource6.description": "Need help prioritizing your features? Use the decision tree template to move your project along.",
   "resource6.linkTitle": "View the decision tree",
-  "resource6.link": "https://google.com",
+  "resource6.link": "https://docs.google.com/presentation/d/1OnmICmT_CPCMmV6YGj1lrhfgw5pXbbR-MzBRhBCUQqA",
 
   "resource7.title": "Quality assurance template",
   "resource7.description": "Want to maintain consistency and quality as you ship new products and features? Use this template to keep track of all issues.",
   "resource7.linkTitle": "View the QA template",
-  "resource7.link": "https://google.com"
+  "resource7.link": "https://docs.google.com/spreadsheets/d/1MMqCNwuekumASLel3F9juv9ZJ_l1K22Hg3RiGS7X7Co"
 }
