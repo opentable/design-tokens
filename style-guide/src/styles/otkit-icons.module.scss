@@ -49,3 +49,12 @@ $width-main: 768px;
   padding: $spacing-xsmall;
   margin: $spacing-small 0;
 }
+
+.form {
+  border: 1px solid $ash-lighter;
+  padding: $spacing-small;
+  margin: 0 $spacing-xsmall;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
