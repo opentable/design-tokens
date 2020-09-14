@@ -169,9 +169,15 @@
   padding: $spacing-medium;
   box-sizing: border-box;
   margin: $spacing-large $spacing-small $spacing-xlarge 0;
+  cursor: pointer;
+}
+
+.resource:hover {
+  border: 1px solid $teal;
 }
 
 .resourceTitle {
+  @extend %smallMedium;
   display: flex;
 }
 
