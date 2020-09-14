@@ -163,6 +163,8 @@
 
 // Resource Box styles
 .resource {
+  @extend %smallMedium;
+  font-family: inherit;
   width: 325px;
   border: 1px solid $ash-lighter;
   border-radius: $border-radius-small;
@@ -170,14 +172,20 @@
   box-sizing: border-box;
   margin: $spacing-large $spacing-small $spacing-xlarge 0;
   cursor: pointer;
+  text-align: left;
+  background-color: $white;
+  color: $ash-dark;
 }
 
 .resource:hover {
   border: 1px solid $teal;
 }
 
+.resource:focus {
+  outline: none;
+}
+
 .resourceTitle {
-  @extend %smallMedium;
   display: flex;
 }
 
@@ -192,7 +200,6 @@
 }
 
 .resourceLink {
-  @extend %smallMedium;
   color: $teal;
 }
 
