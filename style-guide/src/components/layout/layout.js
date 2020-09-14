@@ -13,12 +13,12 @@ export default ({ children, nav = null, className = '' }) => (
       </Link>
       <ul>
         <li>
-          <Link to="/" className={styles.headerLink}>
+          <Link to="/" className={styles.headerLink} activeClassName={styles.headerLinkActive} partiallyActive={window.location.pathname.includes('/otkit/')}>
             Design tokens
           </Link>
         </li>
         <li>
-          <Link to="/handover-process" className={styles.headerLink}>
+          <Link to="/handover-process" className={styles.headerLink} activeClassName={styles.headerLinkActive}>
             Process guidelines
           </Link>
         </li>
