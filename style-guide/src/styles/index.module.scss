@@ -36,12 +36,8 @@ h4 {
   display: flex;
 }
 
-.header a {
-  color: white;
-  display: flex;
-}
-
 .header h1 {
+  color: white;
   display: inline-block;
   margin-left: $spacing-medium;
   line-height: 24px;
@@ -61,6 +57,8 @@ h4 {
 }
 
 .header-link {
+  color: $ash-light;
+  display: flex;
   padding: $spacing-medium;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -68,11 +66,12 @@ h4 {
 }
 
 .header-link:hover {
+  color: white;
   text-shadow: 1px 1px black;
 }
 
 .header-link-active {
-  border-bottom: 2px solid white;
+  color: white;
 }
 
 .logo {
@@ -96,8 +95,8 @@ h4 {
 }
 
 .nav-link .link-active {
-  color: red;
-  border-bottom: 2px solid red;
+  color: $teal;
+  border-bottom: 2px solid $teal;
 }
 
 .nav-section {
