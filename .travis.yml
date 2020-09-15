@@ -5,21 +5,17 @@ matrix:
     - node_js: "12"
 
 script:
-  - if [$TRAVIS_TEST_RESULT == 1]; then
-      return 1;
-    fi
+  npm run automatic-release-test;
 
 after_success:
   - if [ $TRAVIS_PULL_REQUEST == false ] && [ $TRAVIS_BRANCH == "master" ]; then
-        npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN -q;
-        git config --global user.name ${GH_USERNAME};
-        git config --global user.email ${GH_EMAIL};
-        git checkout master;
-        git remote set-url origin https://${GH_TOKEN}@github.com/opentable/design-tokens.git; 
-        npm run automatic-release;
-      else
-        npm run automatic-release-test;
-      fi
+      npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN -q;
+      git config --global user.name ${GH_USERNAME};
+      git config --global user.email ${GH_EMAIL};
+      git checkout master;
+      git remote set-url origin https://${GH_TOKEN}@github.com/opentable/design-tokens.git; 
+      npm run automatic-release;
+    fi
 
 notifications:
   email: false
