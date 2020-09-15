@@ -6,7 +6,7 @@ export default {
   'nav.phase5': 'Phase 5: Post launch',
 
   header: "Opentable's design and development process guidelines",
-  description: 'An interactive guide on how to work better together',
+  description: 'An interactive guide on how to work better together.',
   title: "Away with the 'hand-off' and in with the ongoing collaboration",
   subtext1:
     'At OpenTable, we don’t believe in a final hand-off to engineers during the product development process. We believe that ongoing collaboration between engineers and designers is crucial to ensuring user-friendly and effective experiences.',

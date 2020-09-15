@@ -6,10 +6,8 @@ export default function SectionHeader({ text, type, content, className = '' }) {
     ? styles.sectionHeaderSmall
     : styles.sectionHeader;
   return (
-    <div className={styles.sectionContainer}>
-      <h2
-        className={`${headerClassName} ${className}`}
-      >
+    <div className={`${styles.sectionContainer} ${className}`}>
+      <h2 className={headerClassName}>
         {text}
       </h2>
       {content && <div className={styles.sectionContent}>{content}</div>}
