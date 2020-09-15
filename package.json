@@ -52,7 +52,7 @@
     "updated": "lerna updated",
     "updatetoc": "doctoc README.md --github",
     "automatic-release": "npm run build && node utils/automatic-release && npm run build-styleguide && node utils/deploy-styleguide",
-    "automatic-release-test": "npm run build && node utils/automatic-release --test"
+    "automatic-release-test": "npm run build && node utils/automatic-release --test && npm run build-styleguide"
   },
   "lint-staged": {
     "*.js": [
