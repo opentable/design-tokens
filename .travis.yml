@@ -4,6 +4,11 @@ matrix:
   include:
     - node_js: "12"
 
+script:
+  - if [$TRAVIS_TEST_RESULT == 1]; then
+      return 1;
+    fi
+
 after_success:
   - if [ $TRAVIS_PULL_REQUEST == false ] && [ $TRAVIS_BRANCH == "master" ]; then
         npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN -q;
