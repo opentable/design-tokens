@@ -4,6 +4,7 @@ import React from "react";
 import PhaseHeader from "./PhaseHeader";
 import ResourceBox from "./ResourceBox";
 import Quote from "./Quote";
+import documentation from '../../assets/documentation.png';
 
 export default ({addHashRoute}) => (
   <>
@@ -47,6 +48,7 @@ export default ({addHashRoute}) => (
 
       <Quote title="quote2"/>
     </div>
+    <img className={styles.illustration} src={documentation} alt="documentation"/>
     <div className={styles.mainContainer}>
 
       <div className={styles.phaseTitle}>{copy['phase3.subheader2']}</div>
