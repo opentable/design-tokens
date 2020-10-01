@@ -5,7 +5,7 @@ export default {
   'nav.phase4': 'Phase 4: Review',
   'nav.phase5': 'Phase 5: Post launch',
 
-  header: "Opentable's design and development process guidelines",
+  header: "OpenTable's design and development process guidelines",
   description: 'An interactive guide on how to work better together.',
   title: "Away with the 'hand-off' and in with the ongoing collaboration",
   subtext1:
