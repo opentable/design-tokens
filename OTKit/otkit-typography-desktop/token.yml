@@ -34,6 +34,19 @@ props:
     type: "raw"
     value: "'BrandonText', 'Helvetica Neue', Helvetica, Arial, OpenTableHiragino, Roboto, Droid Sans, '游ゴシック体', OpenTableYuGothic, YuGothic, Yu Gothic, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif"
 
+  # Design decisions for font group xxxsmall-regular.
+  #
+  # =============================================
+  xxxsmall-regular-font-size:
+    type: "size"
+    value: "10px"
+  xxxsmall-regular-font-weight:
+    type: "raw"
+    value: "normal"
+  xxxsmall-regular-line-height:
+    type: "size"
+    value: "12px"
+
   # Design decisions for font group xxsmall-regular.
   # WARNING: This should only be used for footnotes.
   #
