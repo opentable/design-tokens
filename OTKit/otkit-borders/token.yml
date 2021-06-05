@@ -4,6 +4,19 @@ props:
   border-radius-small:
     value: "4px"
 
+  # #d8d9db is ash-lighter from otkit-colors
+  border-default:
+    value: "1px solid #d8d9db"
+
+  # #da3743 is red from otkit-colors
+  border-hover:
+    value: "2px solid #da3743"
+
+  # #d8d9db is ash-lighter from otkit-colors
+  divider-default:
+    value: "1px solid #d8d9db"
+
+
 global:
   platform: "core"
   type: "border"
