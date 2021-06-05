@@ -11,7 +11,5 @@ OTTheme/**/*.common.js
 public
 OTKit/otkit-icons/token.yml
 OTKit/otkit-icons/token.theme.yml
-package-lock.json
-yarn.lock
 utils/automatic-release/tempNpm/package.json
 .idea
