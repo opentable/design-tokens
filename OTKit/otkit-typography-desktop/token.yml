@@ -39,13 +39,13 @@ props:
   # =============================================
   xxxsmall-regular-font-size:
     type: "size"
-    value: "10px"
+    value: "0.625rem"
   xxxsmall-regular-font-weight:
     type: "raw"
     value: "normal"
   xxxsmall-regular-line-height:
     type: "size"
-    value: "12px"
+    value: "0.75rem"
 
   # Design decisions for font group xxsmall-regular.
   # WARNING: This should only be used for footnotes.
@@ -53,13 +53,13 @@ props:
   # =============================================
   xxsmall-regular-font-size:
     type: "size"
-    value: "12px"
+    value: "0.75rem"
   xxsmall-regular-font-weight:
     type: "raw"
     value: "normal"
   xxsmall-regular-line-height:
     type: "size"
-    value: "16px"
+    value: "1rem"
 
 
   # Design decisions for font group xsmall-bold.
@@ -67,26 +67,26 @@ props:
   # =============================================
   xsmall-bold-font-size:
     type: "size"
-    value: "14px"
+    value: "0.875rem"
   xsmall-bold-font-weight:
     type: "raw"
     value: "bold"
   xsmall-bold-line-height:
     type: "size"
-    value: "20px"
+    value: "1.25rem"
 
   # Design decisions for font group xsmall-medium.
   #
   # =============================================
   xsmall-medium-font-size:
     type: "size"
-    value: "14px"
+    value: "0.875rem"
   xsmall-medium-font-weight:
     type: "raw"
     value: "500"
   xsmall-medium-line-height:
     type: "size"
-    value: "20px"
+    value: "1.25rem"
 
 
   # Design decisions for font group xsmall-regular.
@@ -94,13 +94,13 @@ props:
   # =============================================
   xsmall-regular-font-size:
     type: "size"
-    value: "14px"
+    value: "0.875rem"
   xsmall-regular-font-weight:
     type: "raw"
     value: "normal"
   xsmall-regular-line-height:
     type: "size"
-    value: "20px"
+    value: "1.25rem"
 
 
   # Design decisions for font group small-regular.
@@ -108,13 +108,13 @@ props:
   # =============================================
   small-regular-font-size:
     type: "size"
-    value: "16px"
+    value: "1rem"
   small-regular-font-weight:
     type: "raw"
     value: "normal"
   small-regular-line-height:
     type: "size"
-    value: "24px"
+    value: "1.5rem"
 
 
   # Design decisions for font group small-medium.
@@ -122,65 +122,65 @@ props:
   # =============================================
   small-medium-font-size:
     type: "size"
-    value: "16px"
+    value: "1rem"
   small-medium-font-weight:
     type: "raw"
     value: "500"
   small-medium-line-height:
     type: "size"
-    value: "24px"
+    value: "1.5rem"
 
   # Design decisions for font group small-bold.
   #
   # =============================================
   small-bold-font-size:
     type: "size"
-    value: "16px"
+    value: "1rem"
   small-bold-font-weight:
     type: "raw"
     value: "bold"
   small-bold-line-height:
     type: "size"
-    value: "24px"
+    value: "1.5rem"
 
   # Design decisions for font group medium-bold.
   #
   # =============================================
   medium-bold-font-size:
     type: "size"
-    value: "18px"
+    value: "1.125rem"
   medium-bold-font-weight:
     type: "raw"
     value: "bold"
   medium-bold-line-height:
     type: "size"
-    value: "24px"
+    value: "1.5rem"
 
   # Design decisions for font group large-medium.
   #
   # =============================================
   large-medium-font-size:
     type: "size"
-    value: "24px"
+    value: "1.5rem"
   large-medium-font-weight:
     type: "raw"
     value: "500"
   large-medium-line-height:
     type: "size"
-    value: "32px"
+    value: "2rem"
 
   # Design decisions for font group large-bold.
   #
   # =============================================
   large-bold-font-size:
     type: "size"
-    value: "24px"
+    value: "1.5rem"
   large-bold-font-weight:
     type: "raw"
     value: "bold"
   large-bold-line-height:
     type: "size"
-    value: "28px"
+    value: "1.75rem"
 
 
   # Design decisions for font group xlarge-bold.
@@ -188,13 +188,13 @@ props:
   # =============================================
   xlarge-bold-font-size:
     type: "size"
-    value: "32px"
+    value: "2rem"
   xlarge-bold-font-weight:
     type: "raw"
     value: "bold"
   xlarge-bold-line-height:
     type: "size"
-    value: "36px"
+    value: "2.25rem"
 
 
   # Design decisions for font group xxlarge-bold.
@@ -202,13 +202,13 @@ props:
   # =============================================
   xxlarge-bold-font-size:
     type: "size"
-    value: "48px"
+    value: "3rem"
   xxlarge-bold-font-weight:
     type: "raw"
     value: "bold"
   xxlarge-bold-line-height:
     type: "size"
-    value: "56px"
+    value: "3.5rem"
 
 
 global:
