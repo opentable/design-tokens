@@ -1,16 +1,16 @@
 props:
   spacing-xsmall:
-    value: "4px"
+    value: "0.25rem"
   spacing-small:
-    value: "8px"
+    value: "0.5rem"
   spacing-medium:
-    value: "16px"
+    value: "1rem"
   spacing-large:
-    value: "32px"
+    value: "2rem"
   spacing-xlarge:
-    value: "48px"
+    value: "3rem"
   spacing-xxlarge:
-    value: "64px"
+    value: "4rem"
 
 global:
   platform: "core"
