@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{Y8PZ:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),s=t.n(a),c=t("rBsb"),r=t("ZgDQ");e.default=Object(c.a)((function(){return s.a.createElement(r.a,null)}),"design-system-nav")}}]);
+//# sourceMappingURL=component---src-pages-otkit-colors-js-11b791de6eaf4b11c3d3.js.map
