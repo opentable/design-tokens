@@ -18,7 +18,6 @@ props:
     type: "raw"
     value: "bold"
 
-
   # The entire font family definition for OpenTable's desktop web.
   # Apply to the appropriate root element such as <html>, <body> or `reactroot`.
   # =============================================
@@ -61,7 +60,6 @@ props:
     type: "size"
     value: "16px"
 
-
   # Design decisions for font group xsmall-bold.
   #
   # =============================================
@@ -88,7 +86,6 @@ props:
     type: "size"
     value: "20px"
 
-
   # Design decisions for font group xsmall-regular.
   #
   # =============================================
@@ -102,7 +99,6 @@ props:
     type: "size"
     value: "20px"
 
-
   # Design decisions for font group small-regular.
   #
   # =============================================
@@ -115,7 +111,6 @@ props:
   small-regular-line-height:
     type: "size"
     value: "24px"
-
 
   # Design decisions for font group small-medium.
   #
@@ -182,7 +177,6 @@ props:
     type: "size"
     value: "28px"
 
-
   # Design decisions for font group xlarge-bold.
   #
   # =============================================
@@ -196,7 +190,6 @@ props:
     type: "size"
     value: "36px"
 
-
   # Design decisions for font group xxlarge-bold.
   #
   # =============================================
@@ -209,7 +202,6 @@ props:
   xxlarge-bold-line-height:
     type: "size"
     value: "56px"
-
 
 global:
   platform: "desktop"
