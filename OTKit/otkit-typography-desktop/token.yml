@@ -60,6 +60,20 @@ props:
     type: "size"
     value: "16px"
 
+  # Design decisions for font group xxsmall-medium.
+  # WARNING: This should only be used for footnotes.
+  #
+  # =============================================
+  xxsmall-medium-font-size:
+    type: "size"
+    value: "12px"
+  xxsmall-medium-font-weight:
+    type: "raw"
+    value: "medium"
+  xxsmall-medium-line-height:
+    type: "size"
+    value: "16px"
+
   # Design decisions for font group xsmall-bold.
   #
   # =============================================
