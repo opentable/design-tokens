@@ -69,7 +69,7 @@ props:
     value: "12px"
   xxsmall-medium-font-weight:
     type: "raw"
-    value: "medium"
+    value: "500"
   xxsmall-medium-line-height:
     type: "size"
     value: "16px"
